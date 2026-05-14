@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5454-2-1.jpg"
+heroImageAlt: "SAMP/T missil avfyres i ørken"
 ---
 
 ## Introduction

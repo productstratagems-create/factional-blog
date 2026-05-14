@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-20.png"
+heroImageAlt: "Lastebilmontert missiellauncher avfyrer"
 ---
 
 ## Exo-Atmospheric Defense with Competitive Pricing

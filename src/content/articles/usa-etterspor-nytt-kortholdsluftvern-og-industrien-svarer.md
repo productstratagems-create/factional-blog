@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5962-1.jpg"
+heroImageAlt: "Sporvogn med hevet radarmast"
 ---
 
 Et tidligere innlegg omhandlet hvordan den amerikanske hæren nå planlegger å revitalisere manøveravdelingene med moderne mobilt kortholdsluftvern, og at industrien er invitert til å demonstrere systemer som er tilgjengelige på kort sikt. [Ny giv for kortholdsluftvernet](http://norskluftvern.com/2017/05/24/us-army-revitaliserer-kortholdsluftvernet/)

@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5412.jpg"
+heroImageAlt: "Patriot-ammunisjonslastebil med missiler"
 ---
 
 What does Patriot cost in Europe and globally?

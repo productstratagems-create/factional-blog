@@ -6,6 +6,8 @@ category: anskaffelse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5413-1.jpg"
+heroImageAlt: "Polsk Pilica+ luftvernbatteri diagram"
 ---
 
 Den amerikanske hæren har forespurt industrien om en midlertidig luftvernløsning på 72 Stryker kjøretøy for manøveravdelinger. Anskaffelsen er imidlertid ikke like rundt hjørnet.

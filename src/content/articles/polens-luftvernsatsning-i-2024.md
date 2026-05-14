@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5837.jpg"
+heroImageAlt: "Polsk Pilica+, Narew og Wisla systemroller illustrasjon"
 ---
 
 Polen signerte i september 2023 kontrakter med europeiske og amerikanske selskaper for å styrke landets luftforsvar. Landet planlegger å bruke 137 milliarder zloty (32,9 milliarder dollar) i 2024, tilsvarende 4% av BNP.

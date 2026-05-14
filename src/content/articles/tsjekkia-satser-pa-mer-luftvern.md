@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5423-1.jpg"
+heroImageAlt: "Polsk offisielt taler om nytt militært utstyr"
 ---
 
 I tillegg til å planlegge kjøp av middelsrekkende luftvern til drøyt 4 mrd. kr, nærmer det seg en løsning for nytt luftvern til landstyrkene.

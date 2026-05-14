@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5965-1.jpg"
+heroImageAlt: "Missil avfyres i skumringen over steinete landskap"
 ---
 
 *Et forsøk på en strukturell målestokk*

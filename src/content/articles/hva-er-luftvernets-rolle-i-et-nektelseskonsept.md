@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_3402.jpg"
+heroImageAlt: "Tre militære misjonskategorier med ikoner"
 ---
 
 Det pågår en diskusjon i USA om hvordan den amerikanske luftmaktsdoktrinen skal videreutvikles eller kanskje endres fra det bestående, som i lang tid i stor grad har basert seg på bruk av offensiv luftmakt for å få kontroll i luften, og der målet har vært luftherredømme. I konfliktene de siste tiårene har dette vært normen, og der amerikansk luftmakt har vært involvert så har motstanderens luftstyrker enten raskt blitt nedkjempet eller de har frivillig avstått fra videre kamp.

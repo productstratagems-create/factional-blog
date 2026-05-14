@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_2980.jpg"
+heroImageAlt: "NIKE-dekkningskart over Oslo med navngitte byer"
 ---
 
 I løpet av drøyt ti dager i mars-april under Gulfkrigen i 2003, så ble to av koalisjonens kampfly skutt ned av luftvern. Og et tredje fly avfyrte antiradarmissil som respons på en oppfattet SA-2 luftverntrussel.

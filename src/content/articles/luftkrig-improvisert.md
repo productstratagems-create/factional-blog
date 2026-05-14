@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-29.png"
+heroImageAlt: "Jagerfly nær dramatisk fjelltopp"
 ---
 
 Når tilsynelatende truende objekter flyr gjennom lufta, og tiden de er der oppe ikke tillater oppsending av jagerfly, hva er alternativet da? Skyter man med luftvern?

@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5452-1.jpg"
+heroImageAlt: "Patriot-missil avfyres fra bakkebasert plattform"
 ---
 
 Det er 18 nasjoner verden over som har eller er i ferd med å anskaffe Patriot i dag, og antall brukerland i Europa har doblet seg på 5-6 år. Hva er fordelene med langtrekkende luftvern? Og hva er det land, som bruker relativt mye penger på tross alt få systemer, implisitt "velger bort"?

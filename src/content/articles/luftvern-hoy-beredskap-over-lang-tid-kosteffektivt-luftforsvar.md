@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5480-1.jpg"
+heroImageAlt: "Luftvernkommandosenter interiør med skjermer"
 ---
 
 Norge og andre europeiske land har de siste årene opplevd økt behov for **høy luftmilitær beredskap** som følge av endrede sikkerhetspolitiske forhold, særlig etter krigen i Ukraina. Erfaringene fra både norske og allierte styrker viser at et moderne luftvern kan opprettholde høy beredskap over lang tid, samtidig som det gir et **kosteffektivt vern mot lufttrusler**[1](https://www.forsvaretsforum.no/luftforsvaret-luftvern-nasams/vaert-tastetrykk-unna-a-skyte-missil/446170)[2](https://www.nrof.no/pro-patria-artikler/luftvern-i-ukraina/)[3](https://luftled.info/pa-beredskap-for-nato/).

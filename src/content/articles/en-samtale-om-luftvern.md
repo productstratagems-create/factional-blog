@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5838.jpg"
+heroImageAlt: "Militær operatør ved kontrollkonsoll med kartdata"
 ---
 
 Det følgende er en «samtale» med ChatGPT versjon mars 2023. Minner også om at ChatGPT på dette tidspunktet har begrenset kunnskap/kjennskap om Verden og hendelser etter 2021.

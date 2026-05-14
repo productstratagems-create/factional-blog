@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5443.jpg"
+heroImageAlt: "Patriot-system i ørken med antenner"
 ---
 
 Den 30. april 2024 utstedte det sveitsiske føderale kontoret for forsvarsanskaffelser, Armasuisse, offisielt en forespørsel om forslag til tre produsenter for anskaffelse av nye bakkebaserte luftvernsystemer med middels rekkevidde.

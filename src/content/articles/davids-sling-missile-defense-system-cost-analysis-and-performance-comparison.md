@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-35.png"
+heroImageAlt: "Militært launcherkjøretøy avfyrer med eksplosjon"
 ---
 
 ## Cost-Effective Excellence in Medium-Range Defense

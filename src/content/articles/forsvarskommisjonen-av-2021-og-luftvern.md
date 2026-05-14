@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_3073.jpg"
+heroImageAlt: "Norsk forsvarstidsplan 1992–2001"
 ---
 
 Forsvarskommisjonen anbefaler å bruke minst 90 mrd. de neste 10 årene til nye og pågående investeringer for å styrke luftvernet. Det pekes på tre løft som må starte samtidig og fullføres i sin helhet for å oppnå nødvendig effekt. 

@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5411.jpg"
+heroImageAlt: "Vertikalskytende rakettystem på grønt militærkjøretøy"
 ---
 
 *En analyse av de underliggende rotårsakene til utsettelsen av Norges ballistiske missilforsvar*

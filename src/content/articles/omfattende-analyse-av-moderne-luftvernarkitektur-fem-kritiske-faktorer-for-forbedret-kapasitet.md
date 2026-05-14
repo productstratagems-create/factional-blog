@@ -6,6 +6,8 @@ category: teknologi
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_3687.jpg"
+heroImageAlt: "Illustrasjon av missiler med vernede dekkningssoner"
 ---
 
 ## Sammendrag

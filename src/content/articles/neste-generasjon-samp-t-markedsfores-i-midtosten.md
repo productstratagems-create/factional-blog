@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5466-1.jpg"
+heroImageAlt: "SAMP versus Pilica+ alternative plattformer diagram"
 ---
 
 Selskapet Eurosam – et samarbeid mellom det franske selskapet MBDA og den franske sensorprodusenten Thales – presenterte nylig sin nyeste luftvernløsning, kalt SAMP/T NG ved International Defence Exhibition (IDEX 2025) i Abu Dhabi. Dette systemet, som bruker det oppgraderte missilet Aster 30 B1NT, er designet for å gi en bredere og mer effektiv beskyttelse mot ulike typer flygende trusler.

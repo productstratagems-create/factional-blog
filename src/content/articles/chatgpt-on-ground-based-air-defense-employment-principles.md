@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_3343.jpg"
+heroImageAlt: "Menneskehånd og robotisk hånd berører hverandre – AI-samarbeidstema"
 ---
 
 Introduction to Air Defense Employment Principles

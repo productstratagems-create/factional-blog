@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-12.png"
+heroImageAlt: "Flere missillaunchere avfyrer synkront ved solnedgang"
 ---
 
 ## **From Early Systems to Future Prospects Against Ballistic and Hypersonic Threats**

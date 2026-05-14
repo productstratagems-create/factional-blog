@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-17.png"
+heroImageAlt: "Launcherkjøretøy med vindturbiner i bakgrunnen"
 ---
 
 **The largest defense export in Israeli history marks a paradigm shift in European missile defense**

@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_3027.jpg"
+heroImageAlt: "Patriot-batteri i felt med soldater og støtteutstyr"
 ---
 
 Prop. 87 S (2023–2024)

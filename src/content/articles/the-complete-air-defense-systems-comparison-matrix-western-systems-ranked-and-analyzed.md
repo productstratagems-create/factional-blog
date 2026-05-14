@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-15.png"
+heroImageAlt: "Mobil launcher avfyrer missiler ved solnedgang"
 ---
 
 *A systematic guide to understanding how Patriot, SAMP/T, THAAD, Arrow, NASAMS, IRIS-T, and other NATO-aligned systems compare across range, cost, capability, and operational deployment.*

@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5444-1.jpg"
+heroImageAlt: "Diagram over missilengasjementshøyde og -rekkevidde"
 ---
 
 Denne teksten omhandler faktorene som bestemmer hva som utgjør et luftvernsystems sone for effektiv ildgivning - selve nedskytingssonen der luftvernvåpenet treffer målet sitt.
