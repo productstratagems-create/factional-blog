@@ -25,12 +25,11 @@ const searchIndex = articles
     const plain = extractText(entry.body ?? '');
     const firstPara = plain.split(/\s{2,}/).find(s => s.trim().length > 25) ?? '';
     return {
-      title:    entry.data.title,
-      href:     articleHref(entry.id),
-      category: entry.data.category?.toLowerCase() ?? '',
-      year:     entry.data.date.getFullYear(),
+      title:     entry.data.title,
+      href:      articleHref(entry.id),
+      date:      entry.data.date.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' }),
       firstPara: firstPara.slice(0, 250),
-      body:     plain.slice(0, 500),
+      body:      plain.slice(0, 500),
     };
   });
 ---
@@ -85,26 +84,12 @@ const searchIndex = articles
       result:  (n) => n === 1 ? `${n} resultat` : `${n} resultater`,
       none:    (q) => `Ingen artikler matcher «${q}»`,
       tryOther: 'Prøv et annet søkeord.',
-      cats: {
-        luftvern: 'Luftvern', missilforsvar: 'Missilforsvar',
-        'missile-systems': 'Missilforsvar', anskaffelse: 'Anskaffelse',
-        procurement: 'Anskaffelser', history: 'Historie',
-        analyse: 'Analyse', analysis: 'Analyse',
-        teknologi: 'Teknologi', nato: 'NATO',
-      },
     },
     en: {
       among:   (n) => `Search among ${n} articles`,
       result:  (n) => n === 1 ? `${n} result` : `${n} results`,
       none:    (q) => `No articles match «${q}»`,
       tryOther: 'Try a different search term.',
-      cats: {
-        luftvern: 'Air Defense', missilforsvar: 'Missile Defense',
-        'missile-systems': 'Missile Defense', anskaffelse: 'Procurement',
-        procurement: 'Procurement', history: 'History',
-        analyse: 'Analysis', analysis: 'Analysis',
-        teknologi: 'Technology', nato: 'NATO',
-      },
     },
   };
 
@@ -203,14 +188,11 @@ const searchIndex = articles
   }
 
   function resultHTML(a, i, q) {
-    const t = SEARCH_T[sl()];
-    const cat = (a.category && t.cats[a.category]) || '';
-    const meta = [cat, a.year].filter(Boolean).join(' · ');
     return `
       <li id="search-result-${i}" role="option" aria-selected="false" class="search-item">
         <a href="${a.href}" class="search-item-link">
           <span class="si-title">${highlight(a.title, q)}</span>
-          ${meta ? `<span class="si-meta">${meta}</span>` : ''}
+          <span class="si-date">${a.date}</span>
         </a>
       </li>`;
   }
@@ -390,9 +372,9 @@ const searchIndex = articles
 
   .search-item-link {
     display: flex;
-    flex-direction: column;
-    gap: 2px;
-    padding: 0.65rem 1rem 0.65rem calc(1rem - 2px);
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0.6rem 1rem 0.6rem calc(1rem - 2px);
     border-left: 2px solid transparent;
     text-decoration: none;
     transition: background 0.1s, border-color 0.12s;
@@ -409,19 +391,24 @@ const searchIndex = articles
   }
 
   .si-title {
+    flex: 1;
+    min-width: 0;
     font-family: var(--font-ui);
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--color-heading);
     line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  .si-meta {
+  .si-date {
+    flex-shrink: 0;
     font-family: var(--font-ui);
-    font-size: 0.68rem;
+    font-size: 0.72rem;
     color: var(--color-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
+    white-space: nowrap;
   }
 
   /* Highlight marks */
