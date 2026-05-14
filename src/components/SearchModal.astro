@@ -9,150 +9,261 @@ const searchIndex = articles
     title: entry.data.title,
     href: articleHref(entry.id),
     category: entry.data.category,
-    excerpt: (entry.data.excerpt ?? '').slice(0, 140),
+    excerpt: (entry.data.excerpt ?? '').slice(0, 160),
     lang: entry.data.lang ?? 'no',
   }));
 ---
 
-<div class="search-modal" id="search-modal" role="dialog" aria-modal="true" aria-label="Søk">
-  <div class="search-backdrop" id="search-backdrop"></div>
-  <div class="search-box">
-    <div class="search-input-wrap">
-      <svg class="search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+<dialog class="search-dialog" id="search-dialog" aria-label="Søk i artikler">
+  <div class="search-panel">
+
+    <!-- Input row -->
+    <div class="search-input-row">
+      <svg class="search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+           stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
         <circle cx="8.5" cy="8.5" r="5.25"/>
         <line x1="12.5" y1="12.5" x2="17" y2="17"/>
       </svg>
       <input
-        type="search"
         id="search-input"
+        type="search"
         class="search-input"
         placeholder="Søk i artikler…"
         autocomplete="off"
         spellcheck="false"
-        aria-label="Søk i artikler"
+        aria-label="Søk"
+        aria-autocomplete="list"
+        aria-controls="search-listbox"
+        aria-haspopup="listbox"
       />
-      <button class="search-close" id="search-close" aria-label="Lukk søk">Esc</button>
+      <button class="search-close-btn" id="search-close" aria-label="Lukk søk">
+        <kbd>Esc</kbd>
+      </button>
     </div>
-    <ul class="search-results" id="search-results" role="listbox" aria-label="Søkeresultater"></ul>
-    <p class="search-hint" id="search-hint">Søk blant {searchIndex.length} artikler&ensp;·&ensp;<kbd>⌘K</kbd> for å åpne</p>
+
+    <!-- Results -->
+    <ul class="search-listbox" id="search-listbox" role="listbox" aria-label="Søkeresultater"></ul>
+
+    <!-- Footer -->
+    <div class="search-footer">
+      <span class="search-status" id="search-status" aria-live="polite">
+        Søk blant {searchIndex.length} artikler
+      </span>
+      <span class="search-keys" aria-hidden="true">
+        <kbd>↑</kbd><kbd>↓</kbd> naviger &ensp;
+        <kbd>↵</kbd> åpne &ensp;
+        <kbd>Esc</kbd> lukk
+      </span>
+    </div>
+
   </div>
-</div>
+</dialog>
 
 <script define:vars={{ searchIndex }}>
-  const modal    = document.getElementById('search-modal');
-  const input    = document.getElementById('search-input');
-  const results  = document.getElementById('search-results');
-  const hint     = document.getElementById('search-hint');
-  const backdrop = document.getElementById('search-backdrop');
+  const dialog  = document.getElementById('search-dialog');
+  const input   = document.getElementById('search-input');
+  const listbox = document.getElementById('search-listbox');
+  const status  = document.getElementById('search-status');
   const closeBtn = document.getElementById('search-close');
 
-  function openSearch() {
-    document.body.classList.add('search-open');
-    requestAnimationFrame(() => input?.focus());
+  let activeIdx   = -1;
+  let lastTrigger = null;
+  let debounce    = null;
+
+  // ── Open / Close ──────────────────────────────────────────────
+
+  function openSearch(trigger = null) {
+    lastTrigger = trigger;
+    input.value = '';
+    renderEmpty();
+    activeIdx = -1;
+    dialog.showModal();
+    requestAnimationFrame(() => input.focus());
   }
 
   function closeSearch() {
-    document.body.classList.remove('search-open');
-    if (input) input.value = '';
-    renderResults('');
+    dialog.close();
+    lastTrigger?.focus();
   }
 
-  function esc(s) {
-    return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // Backdrop click (click lands on <dialog> itself, not .search-panel)
+  dialog.addEventListener('click', e => { if (e.target === dialog) closeSearch(); });
+
+  // Native Escape via dialog 'cancel'
+  dialog.addEventListener('cancel', e => { e.preventDefault(); closeSearch(); });
+
+  closeBtn.addEventListener('click', closeSearch);
+
+  // Wire up all header search buttons
+  document.querySelectorAll('.search-btn').forEach(btn => {
+    btn.addEventListener('click', () => openSearch(btn));
+  });
+
+  // Global keyboard shortcut
+  document.addEventListener('keydown', e => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      dialog.open ? closeSearch() : openSearch();
+    }
+  });
+
+  // ── Input with debounce ───────────────────────────────────────
+
+  input.addEventListener('input', () => {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => {
+      activeIdx = -1;
+      renderResults(input.value);
+    }, 80);
+  });
+
+  // ── Arrow-key / Enter navigation ─────────────────────────────
+
+  input.addEventListener('keydown', e => {
+    const items = listbox.querySelectorAll('[role="option"]');
+    if (!items.length) return;
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      setActive(Math.min(activeIdx + 1, items.length - 1), items);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      const next = activeIdx - 1;
+      if (next < 0) {
+        // Return focus to input, deselect all
+        setActive(-1, items);
+      } else {
+        setActive(next, items);
+      }
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (activeIdx >= 0) {
+        items[activeIdx]?.querySelector('a')?.click();
+      } else if (items.length > 0) {
+        // Enter with no selection → go to first result
+        items[0]?.querySelector('a')?.click();
+      }
+    }
+  });
+
+  function setActive(idx, items) {
+    items.forEach((el, i) => {
+      const selected = i === idx;
+      el.setAttribute('aria-selected', selected ? 'true' : 'false');
+      el.classList.toggle('is-active', selected);
+    });
+    activeIdx = idx;
+
+    if (idx >= 0) {
+      input.setAttribute('aria-activedescendant', items[idx].id);
+      items[idx].scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    } else {
+      input.removeAttribute('aria-activedescendant');
+    }
   }
+
+  // ── Render ────────────────────────────────────────────────────
+
+  function escRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 
   function highlight(text, q) {
     if (!q) return text;
-    return text.replace(new RegExp(`(${esc(q)})`, 'gi'), '<mark>$1</mark>');
+    return text.replace(new RegExp(`(${escRe(q)})`, 'gi'), '<mark>$1</mark>');
+  }
+
+  function renderEmpty() {
+    listbox.innerHTML = '';
+    status.textContent = `Søk blant ${searchIndex.length} artikler`;
+    input.removeAttribute('aria-activedescendant');
   }
 
   function renderResults(query) {
-    const q = query.trim().toLowerCase();
-    if (!q) {
-      results.innerHTML = '';
-      hint.hidden = false;
+    const q  = query.trim();
+    const ql = q.toLowerCase();
+
+    if (!q) { renderEmpty(); return; }
+
+    const matches = searchIndex.filter(a =>
+      a.title.toLowerCase().includes(ql) || a.excerpt.toLowerCase().includes(ql)
+    );
+
+    const total = matches.length;
+    status.textContent = total
+      ? `${total} resultat${total === 1 ? '' : 'er'}`
+      : `Ingen resultater for «${q}»`;
+
+    if (!total) {
+      listbox.innerHTML = `
+        <li class="no-results">
+          Ingen artikler matcher <strong>«${q}»</strong>
+        </li>`;
       return;
     }
-    hint.hidden = true;
-    const matches = searchIndex
-      .filter(a => a.title.toLowerCase().includes(q) || a.excerpt.toLowerCase().includes(q))
-      .slice(0, 12);
 
-    if (matches.length === 0) {
-      results.innerHTML = '<li class="search-no-results">Ingen resultater</li>';
-      return;
-    }
-
-    results.innerHTML = matches.map(a => `
-      <li>
-        <a href="${a.href}" class="search-result-link">
-          <span class="sr-category">${a.category}</span>
-          <span class="sr-title">${highlight(a.title, query.trim())}</span>
-          <span class="sr-excerpt">${highlight(a.excerpt, query.trim())}</span>
+    listbox.innerHTML = matches.slice(0, 12).map((a, i) => `
+      <li id="search-result-${i}" role="option" aria-selected="false" class="search-item">
+        <a href="${a.href}" class="search-item-link">
+          <span class="si-meta">
+            <span class="si-category">${a.category}</span>
+            <span class="si-lang">${a.lang.toUpperCase()}</span>
+          </span>
+          <span class="si-title">${highlight(a.title, q)}</span>
+          <span class="si-excerpt">${highlight(a.excerpt, q)}</span>
         </a>
       </li>
     `).join('');
+
+    listbox.querySelectorAll('a').forEach(a => a.addEventListener('click', closeSearch));
   }
-
-  // Wire up all search buttons in the page
-  document.querySelectorAll('.search-btn').forEach(btn => {
-    btn.addEventListener('click', openSearch);
-  });
-
-  backdrop?.addEventListener('click', closeSearch);
-  closeBtn?.addEventListener('click', closeSearch);
-  input?.addEventListener('input', e => renderResults(e.target.value));
-
-  // Close on result click
-  results?.addEventListener('click', closeSearch);
-
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeSearch();
-    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-      e.preventDefault();
-      openSearch();
-    }
-  });
 </script>
 
 <style>
-  .search-modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 500;
-    padding: 10vh 1rem 1rem;
-    justify-content: center;
-    align-items: flex-start;
+  /* Native <dialog> resets */
+  .search-dialog {
+    padding: 0;
+    border: none;
+    border-radius: var(--radius-md);
+    background: transparent;
+    overflow: visible;
+    width: min(640px, 94vw);
+    max-height: 85vh;
+    /* Position near top */
+    margin-top: 10vh;
+    margin-inline: auto;
+    /* Slide-in animation */
+    opacity: 0;
+    transform: translateY(-12px) scale(0.98);
+    transition: opacity 0.18s ease, transform 0.18s ease;
   }
 
-  :global(body.search-open) .search-modal { display: flex; }
-
-  .search-backdrop {
-    position: fixed;
-    inset: 0;
-    background: rgba(10, 3, 3, 0.55);
-    backdrop-filter: blur(2px);
+  .search-dialog[open] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 
-  .search-box {
-    position: relative;
-    z-index: 1;
-    width: min(640px, 100%);
+  .search-dialog::backdrop {
+    background: rgba(10, 3, 3, 0.5);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+  }
+
+  /* ── Panel ── */
+  .search-panel {
     background: var(--color-bg);
     border-radius: var(--radius-md);
-    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.28), 0 0 0 1px rgba(0,0,0,0.06);
     overflow: hidden;
-    max-height: 78vh;
     display: flex;
     flex-direction: column;
+    max-height: 85vh;
   }
 
-  .search-input-wrap {
+  /* ── Input row ── */
+  .search-input-row {
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    padding: 0.8rem 1rem;
+    padding: 0.85rem 1rem;
     border-bottom: 1px solid var(--color-border);
     flex-shrink: 0;
   }
@@ -173,57 +284,83 @@ const searchIndex = articles
     color: var(--color-text);
     background: transparent;
     min-width: 0;
+    caret-color: var(--color-teal);
   }
 
   .search-input::placeholder { color: var(--color-muted); }
-
-  /* Remove browser default search cancel button */
   .search-input::-webkit-search-cancel-button { display: none; }
 
-  .search-close {
+  .search-close-btn {
+    flex-shrink: 0;
     border: 1px solid var(--color-border);
     background: var(--color-surface);
+    border-radius: 5px;
     cursor: pointer;
-    color: var(--color-muted);
+    padding: 2px 8px;
+    transition: background 0.15s;
+  }
+
+  .search-close-btn:hover { background: var(--color-border); }
+
+  .search-close-btn kbd {
     font-family: var(--font-ui);
     font-size: 0.65rem;
     font-weight: 600;
-    padding: 2px 7px;
-    border-radius: 4px;
-    flex-shrink: 0;
-    transition: background 0.15s, color 0.15s;
+    color: var(--color-muted);
+    pointer-events: none;
   }
 
-  .search-close:hover { color: var(--color-heading); background: var(--color-border); }
-
-  .search-results {
+  /* ── Results listbox ── */
+  .search-listbox {
     list-style: none;
     margin: 0;
-    padding: 0.4rem 0;
+    padding: 0.35rem 0;
     overflow-y: auto;
     flex: 1;
+    scroll-padding-block: 0.35rem;
   }
 
-  .search-no-results {
-    padding: 1rem 1.25rem;
+  .no-results {
+    padding: 1.25rem 1.25rem;
     font-family: var(--font-ui);
     font-size: 0.875rem;
     color: var(--color-muted);
   }
 
-  .search-result-link {
-    display: flex;
-    flex-direction: column;
+  .no-results strong { color: var(--color-heading); font-weight: 600; }
+
+  /* ── Individual result ── */
+  .search-item { display: block; }
+
+  .search-item-link {
+    display: grid;
+    grid-template-rows: auto auto auto;
     gap: 1px;
-    padding: 0.55rem 1.25rem;
+    padding: 0.6rem 1.25rem;
     text-decoration: none;
     transition: background 0.1s;
+    cursor: pointer;
   }
 
-  .search-result-link:hover,
-  .search-result-link:focus { background: var(--color-surface); outline: none; }
+  .search-item-link:hover,
+  .search-item.is-active .search-item-link {
+    background: var(--color-surface);
+  }
 
-  .sr-category {
+  /* Left border accent on active item */
+  .search-item.is-active .search-item-link {
+    border-left: 2px solid var(--color-teal);
+    padding-left: calc(1.25rem - 2px);
+  }
+
+  .si-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1px;
+  }
+
+  .si-category {
     font-family: var(--font-ui);
     font-size: 0.6rem;
     font-weight: 700;
@@ -232,49 +369,84 @@ const searchIndex = articles
     color: var(--color-teal);
   }
 
-  .sr-title {
+  .si-lang {
+    font-family: var(--font-ui);
+    font-size: 0.55rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--color-muted);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    padding: 0 4px;
+    line-height: 1.6;
+  }
+
+  .si-title {
     font-family: var(--font-display);
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.02em;
     color: var(--color-heading);
     line-height: 1.2;
+    display: block;
   }
 
-  .sr-excerpt {
+  .si-excerpt {
     font-family: var(--font-body);
     font-size: 0.78rem;
+    line-height: 1.4;
     color: var(--color-muted);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 1.4;
+    display: block;
   }
 
-  .search-result-link :global(mark) {
-    background: rgba(91, 191, 181, 0.35);
+  /* Highlight */
+  .search-item-link :global(mark) {
+    background: rgba(91, 191, 181, 0.28);
     color: inherit;
     border-radius: 2px;
     padding: 0 1px;
   }
 
-  .search-hint {
-    padding: 0.6rem 1.25rem;
+  /* ── Footer ── */
+  .search-footer {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1.25rem;
+    border-top: 1px solid var(--color-border);
+    background: var(--color-surface);
+  }
+
+  .search-status {
     font-family: var(--font-ui);
     font-size: 0.72rem;
     color: var(--color-muted);
-    margin: 0;
-    border-top: 1px solid var(--color-border);
-    flex-shrink: 0;
   }
 
-  .search-hint kbd {
+  .search-keys {
     font-family: var(--font-ui);
+    font-size: 0.68rem;
+    color: var(--color-muted);
+    display: none;
+  }
+
+  @media (min-width: 500px) { .search-keys { display: inline; } }
+
+  .search-keys kbd {
+    display: inline-block;
+    font-family: inherit;
     font-size: 0.65rem;
     border: 1px solid var(--color-border);
     border-radius: 3px;
-    padding: 1px 4px;
-    background: var(--color-surface);
+    padding: 1px 5px;
+    background: var(--color-bg);
+    color: var(--color-muted);
   }
 </style>
