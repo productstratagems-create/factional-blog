@@ -6,6 +6,8 @@ category: anskaffelse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_9125.png"
+heroImageAlt: "Air Defense Systems Cost Database - anskaffelse, interceptor og livssykluskostnader"
 ---
 
 [Updated version March 2026](https://norskluftvern.com/2026/03/06/air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs-editors-update-march-2026/)
