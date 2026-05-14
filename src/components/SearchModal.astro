@@ -1,23 +1,38 @@
 ---
 import { getCollection } from 'astro:content';
-import { articleHref } from '../utils/slug';
+import { articleHref, assetSrc } from '../utils/slug';
+
+const CATEGORY_LABELS: Record<string, string> = {
+  missilforsvar:   'Missilforsvar',
+  'missile-systems': 'Missilsystemer',
+  procurement:     'Anskaffelser',
+  anskaffelse:     'Anskaffelse',
+  policy:          'Forsvarspolitikk',
+  exercises:       'Øvelser',
+  history:         'Historie',
+  analyse:         'Analyse',
+  analysis:        'Analyse',
+  teknologi:       'Teknologi',
+  nato:            'NATO',
+};
 
 const articles = await getCollection('articles', ({ data }) => !data.draft);
 const searchIndex = articles
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .map(entry => ({
-    title: entry.data.title,
-    href: articleHref(entry.id),
-    category: entry.data.category,
-    excerpt: (entry.data.excerpt ?? '').slice(0, 160),
-    lang: entry.data.lang ?? 'no',
+    title:         entry.data.title,
+    href:          articleHref(entry.id),
+    category:      CATEGORY_LABELS[entry.data.category?.toLowerCase()] ?? entry.data.category ?? '',
+    excerpt:       entry.data.excerpt ?? '',
+    lang:          entry.data.lang ?? 'no',
+    date:          entry.data.date.toLocaleDateString('nb-NO', { day: 'numeric', month: 'short', year: 'numeric' }),
+    thumb:         entry.data.heroImage ? assetSrc(entry.data.heroImage) : null,
   }));
 ---
 
 <dialog class="search-dialog" id="search-dialog" aria-label="Søk i artikler">
   <div class="search-panel">
 
-    <!-- Input row -->
     <div class="search-input-row">
       <svg class="search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor"
            stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
@@ -41,18 +56,14 @@ const searchIndex = articles
       </button>
     </div>
 
-    <!-- Results -->
     <ul class="search-listbox" id="search-listbox" role="listbox" aria-label="Søkeresultater"></ul>
 
-    <!-- Footer -->
     <div class="search-footer">
-      <span class="search-status" id="search-status" aria-live="polite">
+      <span class="search-status" id="search-status" aria-live="polite" aria-atomic="true">
         Søk blant {searchIndex.length} artikler
       </span>
       <span class="search-keys" aria-hidden="true">
-        <kbd>↑</kbd><kbd>↓</kbd> naviger &ensp;
-        <kbd>↵</kbd> åpne &ensp;
-        <kbd>Esc</kbd> lukk
+        <kbd>↑</kbd><kbd>↓</kbd> naviger &ensp; <kbd>↵</kbd> åpne &ensp; <kbd>Esc</kbd> lukk
       </span>
     </div>
 
@@ -60,23 +71,23 @@ const searchIndex = articles
 </dialog>
 
 <script define:vars={{ searchIndex }}>
-  const dialog  = document.getElementById('search-dialog');
-  const input   = document.getElementById('search-input');
-  const listbox = document.getElementById('search-listbox');
-  const status  = document.getElementById('search-status');
+  const dialog   = document.getElementById('search-dialog');
+  const input    = document.getElementById('search-input');
+  const listbox  = document.getElementById('search-listbox');
+  const status   = document.getElementById('search-status');
   const closeBtn = document.getElementById('search-close');
 
   let activeIdx   = -1;
   let lastTrigger = null;
   let debounce    = null;
 
-  // ── Open / Close ──────────────────────────────────────────────
+  // ── Open / Close ─────────────────────────────────────────────
 
   function openSearch(trigger = null) {
     lastTrigger = trigger;
     input.value = '';
-    renderEmpty();
     activeIdx = -1;
+    renderEmpty();
     dialog.showModal();
     requestAnimationFrame(() => input.focus());
   }
@@ -86,20 +97,14 @@ const searchIndex = articles
     lastTrigger?.focus();
   }
 
-  // Backdrop click (click lands on <dialog> itself, not .search-panel)
   dialog.addEventListener('click', e => { if (e.target === dialog) closeSearch(); });
-
-  // Native Escape via dialog 'cancel'
   dialog.addEventListener('cancel', e => { e.preventDefault(); closeSearch(); });
-
   closeBtn.addEventListener('click', closeSearch);
 
-  // Wire up all header search buttons
-  document.querySelectorAll('.search-btn').forEach(btn => {
-    btn.addEventListener('click', () => openSearch(btn));
-  });
+  document.querySelectorAll('.search-btn').forEach(btn =>
+    btn.addEventListener('click', () => openSearch(btn))
+  );
 
-  // Global keyboard shortcut
   document.addEventListener('keydown', e => {
     if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
       e.preventDefault();
@@ -107,17 +112,14 @@ const searchIndex = articles
     }
   });
 
-  // ── Input with debounce ───────────────────────────────────────
+  // ── Input ────────────────────────────────────────────────────
 
   input.addEventListener('input', () => {
     clearTimeout(debounce);
-    debounce = setTimeout(() => {
-      activeIdx = -1;
-      renderResults(input.value);
-    }, 80);
+    debounce = setTimeout(() => { activeIdx = -1; renderResults(input.value); }, 80);
   });
 
-  // ── Arrow-key / Enter navigation ─────────────────────────────
+  // ── Keyboard navigation ──────────────────────────────────────
 
   input.addEventListener('keydown', e => {
     const items = listbox.querySelectorAll('[role="option"]');
@@ -128,41 +130,29 @@ const searchIndex = articles
       setActive(Math.min(activeIdx + 1, items.length - 1), items);
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
-      const next = activeIdx - 1;
-      if (next < 0) {
-        // Return focus to input, deselect all
-        setActive(-1, items);
-      } else {
-        setActive(next, items);
-      }
+      setActive(activeIdx <= 0 ? -1 : activeIdx - 1, items);
     } else if (e.key === 'Enter') {
       e.preventDefault();
-      if (activeIdx >= 0) {
-        items[activeIdx]?.querySelector('a')?.click();
-      } else if (items.length > 0) {
-        // Enter with no selection → go to first result
-        items[0]?.querySelector('a')?.click();
-      }
+      const target = activeIdx >= 0 ? items[activeIdx] : items[0];
+      target?.querySelector('a')?.click();
     }
   });
 
   function setActive(idx, items) {
     items.forEach((el, i) => {
-      const selected = i === idx;
-      el.setAttribute('aria-selected', selected ? 'true' : 'false');
-      el.classList.toggle('is-active', selected);
+      el.setAttribute('aria-selected', i === idx ? 'true' : 'false');
+      el.classList.toggle('is-active', i === idx);
     });
     activeIdx = idx;
-
     if (idx >= 0) {
       input.setAttribute('aria-activedescendant', items[idx].id);
-      items[idx].scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      items[idx].scrollIntoView({ block: 'nearest' });
     } else {
       input.removeAttribute('aria-activedescendant');
     }
   }
 
-  // ── Render ────────────────────────────────────────────────────
+  // ── Helpers ──────────────────────────────────────────────────
 
   function escRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 
@@ -171,16 +161,57 @@ const searchIndex = articles
     return text.replace(new RegExp(`(${escRe(q)})`, 'gi'), '<mark>$1</mark>');
   }
 
+  // Show text around the match, not always from the start
+  function snippet(text, q, ctx = 90) {
+    if (!text) return '';
+    const idx = text.toLowerCase().indexOf(q.toLowerCase());
+    if (idx === -1 || !q) return text.slice(0, ctx * 2) + (text.length > ctx * 2 ? '…' : '');
+    const start = Math.max(0, idx - ctx);
+    const end   = Math.min(text.length, idx + q.length + ctx);
+    return (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '');
+  }
+
+  function resultHTML(a, i, q) {
+    const thumb = a.thumb
+      ? `<img class="si-thumb" src="${a.thumb}" alt="" loading="lazy" decoding="async">`
+      : `<div class="si-thumb si-thumb-empty"><span>NL</span></div>`;
+    const titleHTML   = q ? highlight(a.title, q)          : a.title;
+    const excerptHTML = q ? highlight(snippet(a.excerpt, q), q) : '';
+    return `
+      <li id="search-result-${i}" role="option" aria-selected="false" class="search-item">
+        <a href="${a.href}" class="search-item-link">
+          ${thumb}
+          <div class="si-body">
+            <span class="si-meta">${a.category}${a.category && a.date ? ' · ' : ''}${a.date}</span>
+            <span class="si-title">${titleHTML}</span>
+            ${excerptHTML ? `<span class="si-excerpt">${excerptHTML}</span>` : ''}
+          </div>
+          <svg class="si-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <path d="M5 8h6M8 5l3 3-3 3"/>
+          </svg>
+        </a>
+      </li>`;
+  }
+
+  function attachResultListeners() {
+    listbox.querySelectorAll('a').forEach(a => a.addEventListener('click', closeSearch));
+  }
+
+  // ── Render ───────────────────────────────────────────────────
+
   function renderEmpty() {
-    listbox.innerHTML = '';
+    const recent = searchIndex.slice(0, 6);
     status.textContent = `Søk blant ${searchIndex.length} artikler`;
     input.removeAttribute('aria-activedescendant');
+    listbox.innerHTML = `
+      <li class="search-section-label" aria-hidden="true">Siste artikler</li>
+      ${recent.map((a, i) => resultHTML(a, i, '')).join('')}`;
+    attachResultListeners();
   }
 
   function renderResults(query) {
     const q  = query.trim();
     const ql = q.toLowerCase();
-
     if (!q) { renderEmpty(); return; }
 
     const matches = searchIndex.filter(a =>
@@ -193,32 +224,16 @@ const searchIndex = articles
       : `Ingen resultater for «${q}»`;
 
     if (!total) {
-      listbox.innerHTML = `
-        <li class="no-results">
-          Ingen artikler matcher <strong>«${q}»</strong>
-        </li>`;
+      listbox.innerHTML = `<li class="no-results">Ingen artikler matcher <strong>«${q}»</strong>. Prøv et annet søkeord.</li>`;
       return;
     }
 
-    listbox.innerHTML = matches.slice(0, 12).map((a, i) => `
-      <li id="search-result-${i}" role="option" aria-selected="false" class="search-item">
-        <a href="${a.href}" class="search-item-link">
-          <span class="si-meta">
-            <span class="si-category">${a.category}</span>
-            <span class="si-lang">${a.lang.toUpperCase()}</span>
-          </span>
-          <span class="si-title">${highlight(a.title, q)}</span>
-          <span class="si-excerpt">${highlight(a.excerpt, q)}</span>
-        </a>
-      </li>
-    `).join('');
-
-    listbox.querySelectorAll('a').forEach(a => a.addEventListener('click', closeSearch));
+    listbox.innerHTML = matches.slice(0, 12).map((a, i) => resultHTML(a, i, q)).join('');
+    attachResultListeners();
   }
 </script>
 
 <style>
-  /* Native <dialog> resets */
   .search-dialog {
     padding: 0;
     border: none;
@@ -227,18 +242,16 @@ const searchIndex = articles
     overflow: visible;
     width: min(640px, 94vw);
     max-height: 85vh;
-    /* Position near top */
     margin-top: 10vh;
     margin-inline: auto;
-    /* Slide-in animation */
     opacity: 0;
-    transform: translateY(-12px) scale(0.98);
-    transition: opacity 0.18s ease, transform 0.18s ease;
+    transform: translateY(-10px) scale(0.98);
+    transition: opacity 0.15s ease, transform 0.15s ease;
   }
 
   .search-dialog[open] {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: none;
   }
 
   .search-dialog::backdrop {
@@ -247,33 +260,27 @@ const searchIndex = articles
     -webkit-backdrop-filter: blur(3px);
   }
 
-  /* ── Panel ── */
   .search-panel {
     background: var(--color-bg);
     border-radius: var(--radius-md);
-    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.28), 0 0 0 1px rgba(0,0,0,0.06);
+    box-shadow: 0 24px 64px rgba(0,0,0,0.25), 0 0 0 1px rgba(0,0,0,0.07);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     max-height: 85vh;
   }
 
-  /* ── Input row ── */
+  /* ── Input ── */
   .search-input-row {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
-    padding: 0.85rem 1rem;
+    gap: 0.65rem;
+    padding: 0.9rem 1rem;
     border-bottom: 1px solid var(--color-border);
     flex-shrink: 0;
   }
 
-  .search-icon {
-    width: 18px;
-    height: 18px;
-    color: var(--color-muted);
-    flex-shrink: 0;
-  }
+  .search-icon { width: 18px; height: 18px; color: var(--color-muted); flex-shrink: 0; }
 
   .search-input {
     flex: 1;
@@ -296,8 +303,8 @@ const searchIndex = articles
     background: var(--color-surface);
     border-radius: 5px;
     cursor: pointer;
-    padding: 2px 8px;
-    transition: background 0.15s;
+    padding: 3px 8px;
+    transition: background 0.12s;
   }
 
   .search-close-btn:hover { background: var(--color-border); }
@@ -310,103 +317,146 @@ const searchIndex = articles
     pointer-events: none;
   }
 
-  /* ── Results listbox ── */
+  /* ── List ── */
   .search-listbox {
     list-style: none;
     margin: 0;
-    padding: 0.35rem 0;
+    padding: 0.4rem 0;
     overflow-y: auto;
     flex: 1;
-    scroll-padding-block: 0.35rem;
+    scroll-padding-block: 0.4rem;
   }
 
-  .no-results {
-    padding: 1.25rem 1.25rem;
+  /* Section label (e.g. "Siste artikler") */
+  .search-section-label {
+    padding: 0.35rem 1rem 0.25rem;
     font-family: var(--font-ui);
-    font-size: 0.875rem;
-    color: var(--color-muted);
-  }
-
-  .no-results strong { color: var(--color-heading); font-weight: 600; }
-
-  /* ── Individual result ── */
-  .search-item { display: block; }
-
-  .search-item-link {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    gap: 1px;
-    padding: 0.6rem 1.25rem;
-    text-decoration: none;
-    transition: background 0.1s;
-    cursor: pointer;
-  }
-
-  .search-item-link:hover,
-  .search-item.is-active .search-item-link {
-    background: var(--color-surface);
-  }
-
-  /* Left border accent on active item */
-  .search-item.is-active .search-item-link {
-    border-left: 2px solid var(--color-teal);
-    padding-left: calc(1.25rem - 2px);
-  }
-
-  .si-meta {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1px;
-  }
-
-  .si-category {
-    font-family: var(--font-ui);
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--color-teal);
+    color: var(--color-muted);
   }
 
-  .si-lang {
+  .no-results {
+    padding: 1.5rem 1rem;
     font-family: var(--font-ui);
-    font-size: 0.55rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
+    font-size: 0.875rem;
     color: var(--color-muted);
+    text-align: center;
+  }
+
+  .no-results strong { color: var(--color-heading); }
+
+  /* ── Result row ── */
+  .search-item { display: block; }
+
+  .search-item-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 0 0.4rem;
+    transition: background 0.1s;
+    outline: none;
+  }
+
+  .search-item-link:hover {
     background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: 3px;
-    padding: 0 4px;
-    line-height: 1.6;
+  }
+
+  /* Keyboard-selected item: strong teal ring */
+  .search-item.is-active .search-item-link {
+    background: var(--color-surface);
+    box-shadow: inset 0 0 0 2px var(--color-teal);
+  }
+
+  /* Thumbnail */
+  .si-thumb {
+    flex-shrink: 0;
+    width: 56px;
+    height: 42px;
+    border-radius: 4px;
+    object-fit: cover;
+    display: block;
+    background: var(--color-surface);
+  }
+
+  .si-thumb-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-heading) 0%, #3D1515 100%);
+    border-radius: 4px;
+  }
+
+  .si-thumb-empty span {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 0.1em;
+  }
+
+  /* Content block */
+  .si-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .si-meta {
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    color: var(--color-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .si-title {
-    font-family: var(--font-display);
-    font-size: 0.88rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+    font-weight: 600;
     color: var(--color-heading);
-    line-height: 1.2;
-    display: block;
+    line-height: 1.25;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .si-excerpt {
     font-family: var(--font-body);
-    font-size: 0.78rem;
+    font-size: 0.75rem;
     line-height: 1.4;
     color: var(--color-muted);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: block;
   }
 
-  /* Highlight */
+  /* Arrow chevron — visible on hover/active */
+  .si-arrow {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    color: var(--color-border);
+    transition: color 0.1s, transform 0.1s;
+  }
+
+  .search-item-link:hover .si-arrow,
+  .search-item.is-active .si-arrow {
+    color: var(--color-teal);
+    transform: translateX(2px);
+  }
+
+  /* Highlight marks */
   .search-item-link :global(mark) {
-    background: rgba(91, 191, 181, 0.28);
+    background: rgba(91, 191, 181, 0.3);
     color: inherit;
     border-radius: 2px;
     padding: 0 1px;
@@ -419,30 +469,32 @@ const searchIndex = articles
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    padding: 0.5rem 1.25rem;
+    padding: 0.5rem 1rem;
     border-top: 1px solid var(--color-border);
     background: var(--color-surface);
   }
 
   .search-status {
     font-family: var(--font-ui);
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     color: var(--color-muted);
   }
 
   .search-keys {
-    font-family: var(--font-ui);
-    font-size: 0.68rem;
-    color: var(--color-muted);
     display: none;
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    color: var(--color-muted);
+    gap: 0.25rem;
+    align-items: center;
   }
 
-  @media (min-width: 500px) { .search-keys { display: inline; } }
+  @media (min-width: 500px) { .search-keys { display: flex; } }
 
   .search-keys kbd {
     display: inline-block;
     font-family: inherit;
-    font-size: 0.65rem;
+    font-size: 0.62rem;
     border: 1px solid var(--color-border);
     border-radius: 3px;
     padding: 1px 5px;
