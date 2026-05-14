@@ -239,7 +239,7 @@ const searchIndex = articles
       return;
     }
 
-    listbox.innerHTML = scored.slice(0, 12).map(({ a }, i) => resultHTML(a, i, q)).join('');
+    listbox.innerHTML = scored.map(({ a }, i) => resultHTML(a, i, q)).join('');
     attachResultListeners();
   }
 
