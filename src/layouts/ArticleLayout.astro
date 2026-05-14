@@ -15,7 +15,7 @@ interface Props {
 }
 
 const { entry, related, prev = null, next = null } = Astro.props;
-const { title, excerpt, date, category, author, heroImage, heroImageAlt, lang = 'no', premium = false } = entry.data;
+const { title, excerpt, date, category, author, heroImage, heroImageAlt, lang = 'no' } = entry.data;
 
 const wordCount = entry.body?.split(/\s+/).length ?? 0;
 const readingTime = entry.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordCount / 200));
@@ -30,7 +30,6 @@ const readingTime = entry.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordC
   showProgress={true}
   ogImage={heroImage}
 >
-  {premium && <style slot="head">#article-body { display: none; }</style>}
   <article class="article-page">
     <!-- Full-bleed hero -->
     <div class="article-hero">
@@ -62,17 +61,6 @@ const readingTime = entry.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordC
       <div class="prose" id="article-body">
         <slot />
       </div>
-
-      {premium && (
-        <div id="premium-gate" class="paywall-gate" style="display:none">
-          <div class="paywall-inner">
-            <span class="paywall-lock" aria-hidden="true">🔒</span>
-            <h3 class="paywall-heading" data-i18n="paywall.heading">Kun for registrerte lesere</h3>
-            <p class="paywall-desc" data-i18n="paywall.desc">Opprett en gratis konto — det er helt gratis.</p>
-            <a href="/login" class="paywall-btn" data-i18n="paywall.btn">Logg inn med Google</a>
-          </div>
-        </div>
-      )}
 
       <Divider spacing="lg" />
 
@@ -360,87 +348,4 @@ const readingTime = entry.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordC
     }
     .article-nav-link--prev { grid-column: 1; text-align: left; }
   }
-
-  /* ── Paywall ── */
-  .paywall-gate {
-    max-width: var(--article-width, 720px);
-    margin-inline: auto;
-    margin-top: var(--spacing-2xl);
-  }
-
-  .paywall-inner {
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    background: var(--color-surface);
-    padding: var(--spacing-2xl) var(--spacing-xl);
-    text-align: center;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-  }
-
-  .paywall-lock {
-    font-size: 2.5rem;
-    display: block;
-    margin-bottom: var(--spacing-md);
-  }
-
-  .paywall-heading {
-    font-family: var(--font-display);
-    font-size: 1.4rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--color-heading);
-    margin: 0 0 var(--spacing-sm);
-  }
-
-  .paywall-desc {
-    font-family: var(--font-body);
-    font-size: 1rem;
-    color: var(--color-muted);
-    margin: 0 0 var(--spacing-xl);
-    line-height: 1.6;
-  }
-
-  .paywall-btn {
-    display: inline-block;
-    padding: 0.75rem 2rem;
-    background: var(--color-navy);
-    color: #fff;
-    font-family: var(--font-ui);
-    font-size: 0.875rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background 0.15s;
-  }
-
-  .paywall-btn:hover { background: var(--color-heading); }
 </style>
-
-{premium && (
-  <script>
-    import { supabase } from '../lib/supabase';
-    const body = document.getElementById('article-body') as HTMLElement | null;
-    const gate = document.getElementById('premium-gate') as HTMLElement | null;
-
-    async function checkSession() {
-      const { data: { session } } = await supabase.auth.getSession();
-      if (session) {
-        if (body) body.style.display = '';
-      } else {
-        if (gate) gate.style.display = '';
-        if (body) sessionStorage.setItem('login-redirect', location.href);
-      }
-    }
-
-    checkSession();
-
-    supabase.auth.onAuthStateChange((_, session) => {
-      if (session) {
-        if (body) body.style.display = '';
-        if (gate) gate.style.display = 'none';
-      }
-    });
-  </script>
-)}

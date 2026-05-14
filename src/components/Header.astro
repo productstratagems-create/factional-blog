@@ -70,11 +70,6 @@ function isActive(href: string) {
         <LangToggle />
       </div>
 
-      <div class="auth-wrap desktop-auth">
-        <a href="/login" class="auth-btn auth-login" id="header-login" data-i18n="nav.login" aria-label="Logg inn">Logg inn</a>
-        <button class="auth-btn auth-logout" id="header-logout" data-i18n="nav.logout" style="display:none" aria-label="Logg ut">Logg ut</button>
-      </div>
-
       <label for="nav-toggle" class="nav-hamburger" aria-label="Åpne meny" data-i18n-aria="nav.menu-open">
         <span></span><span></span><span></span>
       </label>
@@ -100,10 +95,6 @@ function isActive(href: string) {
             </a>
           </li>
         ))}
-        <li class="mobile-auth-row">
-          <a href="/login" class="nav-link mobile-auth-login" id="mobile-login" data-i18n="nav.login">Logg inn</a>
-          <button class="nav-link mobile-auth-logout" id="mobile-logout" data-i18n="nav.logout" style="display:none">Logg ut</button>
-        </li>
       </ul>
     </nav>
   </div>
@@ -259,82 +250,4 @@ function isActive(href: string) {
     .nav-hamburger { display: none; }
     .mobile-nav-wrap { display: none !important; }
   }
-
-  /* ── Auth buttons ── */
-  .auth-wrap { display: flex; align-items: center; margin-left: var(--spacing-sm); }
-
-  .auth-btn {
-    font-family: var(--font-ui);
-    font-size: 0.72rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    padding: 0.35rem 0.85rem;
-    border-radius: 4px;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: background 0.15s, color 0.15s;
-    text-decoration: none;
-  }
-
-  .auth-login {
-    color: var(--color-heading);
-    border: 1.5px solid var(--color-border);
-    background: transparent;
-  }
-
-  .auth-login:hover {
-    border-color: var(--color-navy);
-    color: var(--color-navy);
-  }
-
-  .auth-logout {
-    color: var(--color-muted);
-    border: 1.5px solid var(--color-border);
-    background: transparent;
-  }
-
-  .auth-logout:hover {
-    border-color: var(--color-heading);
-    color: var(--color-heading);
-  }
-
-  .desktop-auth { display: none; }
-
-  @media (min-width: 1024px) {
-    .desktop-auth { display: flex; }
-  }
-
-  .mobile-auth-row { padding-top: var(--spacing-sm); border-top: 1px solid var(--color-border); margin-top: var(--spacing-xs); }
-
-  .mobile-auth-login,
-  .mobile-auth-logout {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    font-size: 0.95rem;
-    padding-block: 0.4em;
-  }
 </style>
-
-<script>
-  import { supabase } from '../lib/supabase';
-
-  function updateAuthUI(loggedIn: boolean) {
-    const loginBtns  = document.querySelectorAll<HTMLElement>('#header-login, #mobile-login');
-    const logoutBtns = document.querySelectorAll<HTMLElement>('#header-logout, #mobile-logout');
-    loginBtns.forEach(el  => el.style.display = loggedIn ? 'none' : '');
-    logoutBtns.forEach(el => el.style.display = loggedIn ? ''     : 'none');
-  }
-
-  supabase.auth.getSession().then(({ data: { session } }) => updateAuthUI(!!session));
-  supabase.auth.onAuthStateChange((_, session) => updateAuthUI(!!session));
-
-  document.querySelectorAll<HTMLButtonElement>('#header-logout, #mobile-logout').forEach(btn => {
-    btn.addEventListener('click', async () => {
-      await supabase.auth.signOut();
-      location.reload();
-    });
-  });
-</script>
