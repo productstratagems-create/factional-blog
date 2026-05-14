@@ -54,7 +54,7 @@ const label = categoryLabels[category] ?? category;
     <div class="container">
       <header class="page-header">
         <p class="page-super" data-i18n="cat.label">Kategori</p>
-        <h1 class="page-title">{label}</h1>
+        <h1 class="page-title" data-i18n={`cat.name.${category}`}>{label}</h1>
         <p class="article-count">{total} <span data-i18n={total === 1 ? 'cat.article' : 'cat.articles'}>{total === 1 ? 'artikkel' : 'artikler'}</span></p>
       </header>
 
