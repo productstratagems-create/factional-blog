@@ -32,6 +32,7 @@ const { articles, columns = 3 } = Astro.props;
           readingTime={readingTime}
           lang={article.data.lang}
           featured={article.data.featured}
+          premium={article.data.premium}
         />
       );
     })}

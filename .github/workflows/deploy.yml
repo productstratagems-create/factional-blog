@@ -31,6 +31,8 @@ jobs:
         run: npm run build
         env:
           SITE: https://productstratagems-create.github.io/factional-blog
+          PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL }}
+          PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}
 
       - uses: actions/upload-pages-artifact@v3
         with:

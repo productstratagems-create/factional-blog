@@ -15,6 +15,7 @@ interface Props {
   readingTime?: number;
   lang?: string;
   featured?: boolean;
+  premium?: boolean;
 }
 
 const {
@@ -28,6 +29,7 @@ const {
   author = 'Redaksjonen',
   readingTime,
   lang = 'no',
+  premium = false,
 } = Astro.props;
 ---
 
@@ -51,6 +53,9 @@ const {
     <div class="card-category">
       <CategoryBadge category={category} />
     </div>
+    {premium && (
+      <div class="card-premium-badge" aria-label="Eksklusiv artikkel" title="Eksklusiv — krever konto">🔒</div>
+    )}
   </a>
 
   <div class="card-body">
@@ -119,6 +124,21 @@ const {
     position: absolute;
     top: var(--spacing-sm);
     left: var(--spacing-sm);
+  }
+
+  .card-premium-badge {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background: rgba(10, 3, 3, 0.7);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    backdrop-filter: blur(4px);
   }
 
   /* ── Body ── */
