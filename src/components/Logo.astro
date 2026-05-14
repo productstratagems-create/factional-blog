@@ -8,17 +8,16 @@ interface Props {
 
 const { size = 'md', class: className } = Astro.props;
 
-// 2:1 crop that eliminates the white padding around the logo content.
-// object-fit:cover + object-position:center shows rows 25%–75% of the square
-// image, which is exactly where the missile icon (31%) and text (58–70%) live.
+// Logo is a 640×640 square with ~25% white padding on each side.
+// Use a wide container with object-fit:cover to crop to the wordmark content.
 const dims = {
-  sm: { h: 40,  w: 80  },
-  md: { h: 58,  w: 116 },
-  lg: { h: 78,  w: 156 },
+  sm: { h: 32,  w: 112 },
+  md: { h: 44,  w: 154 },
+  lg: { h: 58,  w: 203 },
 };
 const { h, w } = dims[size];
 
-const src = assetSrc('/images/image.jpg');
+const src = assetSrc('/images/IMG_9667.jpeg');
 ---
 
 <a href={import.meta.env.BASE_URL} class:list={['logo', className]} aria-label="Norsk Luftvern – forsiden">
