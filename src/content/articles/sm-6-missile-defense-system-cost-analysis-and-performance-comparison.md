@@ -4,7 +4,7 @@ date: 2025-07-19
 excerpt: "America’s Combat-Proven Naval Multi-Mission Shield The Standard Missile-6 stands as the world’s only tri-mission naval interceptor, combining air defense, ballistic missile defense, and anti-surface strike capabilities…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8842.jpg"
 heroImageAlt: "SM-6 missile launching from a destroyer at dusk"

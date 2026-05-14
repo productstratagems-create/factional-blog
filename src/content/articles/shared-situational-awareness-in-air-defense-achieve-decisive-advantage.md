@@ -4,7 +4,7 @@ date: 2025-08-10
 excerpt: "In the complex, high-stakes arena of modern air defense operations, a preferable outcome is often determined not by the force with the most powerful weapons, but by the one that can see, understand, and act the fastest…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_7245-1.jpg"
 heroImageAlt: "Military personnel in a command center with tactical displays"

@@ -4,7 +4,7 @@ date: 2025-06-25
 excerpt: "How Four Nations Built the World’s Most Advanced Shield - And What It Reveals About Modern Alliance Strategy The world’s most sophisticated missile defense systems tell a story that extends far beyond their technical…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8317-1.jpg"
 heroImageAlt: "THAAD missile museum display and launch composite"

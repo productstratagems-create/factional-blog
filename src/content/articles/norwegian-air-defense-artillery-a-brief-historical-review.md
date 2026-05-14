@@ -4,7 +4,7 @@ date: 2024-04-06
 excerpt: "The work of building up air defense in Norway after the war began in October 1945, with Lieutenant Colonel Leif Husjord as the newly appointed Inspector General and Chief of Air Defense Artillery. Just over eight years…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 ---
 

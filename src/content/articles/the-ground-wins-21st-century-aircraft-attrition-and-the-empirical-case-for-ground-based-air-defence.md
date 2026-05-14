@@ -4,7 +4,7 @@ date: 2026-03-24
 excerpt: "What four years of high-intensity air warfare reveal about how aircraft actually die — and why Norway’s unfulfilled ballistic missile defence requirement matters more than ever Introduction A Hush-Kit analysis published…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_9423.jpg"
 heroImageAlt: "Table of aircraft types shot down in modern conflicts"

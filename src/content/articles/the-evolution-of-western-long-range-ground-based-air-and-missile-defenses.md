@@ -4,7 +4,7 @@ date: 2025-08-01
 excerpt: "From Early Systems to Future Prospects Against Ballistic and Hypersonic Threats The trajectory of Western ground-based long-range air and missile defense reflects decades of technological and strategic adaptation.…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/image-12.png"
 heroImageAlt: "Flere missillaunchere avfyrer synkront ved solnedgang"

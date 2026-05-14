@@ -64,7 +64,9 @@ function isActive(href: string) {
         </ul>
       </nav>
 
-      <LangToggle />
+      <div class="desktop-lang">
+        <LangToggle />
+      </div>
 
       <label for="nav-toggle" class="nav-hamburger" aria-label="Åpne meny">
         <span></span><span></span><span></span>
@@ -217,17 +219,18 @@ function isActive(href: string) {
 
   .nav-toggle-input:checked ~ .mobile-nav-wrap { display: block; }
 
-  /* ── Desktop ── */
+  /* Hide desktop toggle on mobile — it lives in the dropdown instead */
+  .desktop-lang { display: none; }
+
   .mobile-lang-wrap {
     padding: var(--spacing-sm) var(--spacing-lg) 0;
   }
 
+  /* ── Desktop ── */
   @media (min-width: 769px) {
-    .header-inner { grid-template-columns: 120px 1fr 180px; }
+    .header-inner { grid-template-columns: 120px 1fr auto; }
 
-    .site-nav {
-      display: block;
-    }
+    .site-nav { display: block; }
 
     .site-nav ul {
       list-style: none;
@@ -236,7 +239,10 @@ function isActive(href: string) {
       display: flex;
       gap: var(--spacing-lg);
       justify-content: flex-end;
+      align-items: center;
     }
+
+    .desktop-lang { display: flex; align-items: center; margin-left: var(--spacing-md); }
 
     .nav-hamburger { display: none; }
     .mobile-nav-wrap { display: none !important; }

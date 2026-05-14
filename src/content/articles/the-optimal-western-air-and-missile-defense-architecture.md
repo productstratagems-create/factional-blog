@@ -4,7 +4,7 @@ date: 2026-03-21
 excerpt: "What the best layered IAMD system money can buy would actually look like — and why no one has built it This is the kind of question that defense planners spend entire careers wrestling with — and the honest answer is…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/image-7.png"
 heroImageAlt: "Radar and targeting system with concentric circles over a cityscape"

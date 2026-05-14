@@ -4,7 +4,7 @@ date: 2026-01-01
 excerpt: "Denmark’s September 2025 selection of SAMP/T NG over Patriot possibly sent shockwaves through European defense circles, signaling that delivery timelines and European sovereignty now rival raw combat performance in…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_5465-1.jpg"
 heroImageAlt: "SAMP/TNG system med dekkningssoner diagram"

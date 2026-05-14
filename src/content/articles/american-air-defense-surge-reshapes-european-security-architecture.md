@@ -4,7 +4,7 @@ date: 2025-07-10
 excerpt: "In the vast expanse of the New Mexico desert, a PAC-3 MSE missile streaks skyward, its exhaust trail cutting through the dawn sky like a silver thread. Inside the Lockheed Martin production facility, workers attach the…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_3410.jpg"
 heroImageAlt: "Stort militært transportfly med jagerfly i formasjon"

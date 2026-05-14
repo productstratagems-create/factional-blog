@@ -4,7 +4,7 @@ date: 2025-07-05
 excerpt: "The Ukraine conflict has fundamentally validated two cornerstone air defense systems: Norway’s NASAMS and America’s PATRIOT. Both systems have proven their combat effectiveness against sophisticated Russian threats, but…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_9124.png"
 heroImageAlt: "NATO-alliert luftvern sammenligningsinfografikk med missiloppskytning"

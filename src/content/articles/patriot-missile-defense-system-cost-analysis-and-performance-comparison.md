@@ -4,7 +4,7 @@ date: 2026-03-09
 excerpt: "The Western World’s Backbone Air Defense at a Crossroads Patriot PAC-3 MSE interceptors cost $4.2 million per unit based on the FY2025 Army budget request, positioning the system as the most widely deployed — and…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8084-1.jpg"
 heroImageAlt: "Patriot missile launch montage with system vehicle and operator console"

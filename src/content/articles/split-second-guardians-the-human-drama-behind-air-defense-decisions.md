@@ -4,7 +4,7 @@ date: 2017-01-01
 excerpt: "Captain Sahar Saudyan was playing Jungle Speed with her teammates just hours before she would make the ultimate sacrifice. The 21-year-old Iron Dome operator had no way of knowing that October 7, 2023, would transform…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_9328.jpg"
 heroImageAlt: "Table of historical friendly-fire incidents in air defense operations"

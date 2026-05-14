@@ -4,7 +4,7 @@ date: 2024-06-22
 excerpt: "On April 30, 2024, the Swiss Federal Office for Armaments Procurement, Armasuisse, officially issued a request for proposals (RFP) to three manufacturers for the acquisition of new medium-range ground-based air defense…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 ---
 

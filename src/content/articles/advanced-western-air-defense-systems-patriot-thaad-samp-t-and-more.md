@@ -4,7 +4,7 @@ date: 2025-06-01
 excerpt: "The evolution of aerial threats—ranging from hypersonic glide vehicles and cruise missiles to drone swarms—has significantly altered global security dynamics. For Western nations, long-range air defense systems have…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/190327-a-yn030-961_-_army_releases_document_charting_course_for_air_and_missile_defense.jpg"
 heroImageAlt: "Multiple air defense missile systems firing simultaneously in bright daylight"

@@ -4,7 +4,7 @@ date: 2025-06-25
 excerpt: "The Nordic region—Sweden, Finland, Norway, and Denmark—has rapidly modernized and expanded its ground-based air defense (GBAD) capabilities in response to heightened security concerns, especially following Russia’s…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8026-1.png"
 heroImageAlt: "Map of Nordic NATO countries"

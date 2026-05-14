@@ -4,7 +4,7 @@ date: 2024-07-08
 excerpt: "Introduction The public debate surrounding Norway's air defense capabilities and requirements is ongoing. However, it is crucial to clarify the terminology often used in these discussions. Key Questions Should Norway…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/image-5.png"
 heroImageAlt: "Air defense radar targeting aircraft in Nordic terrain"

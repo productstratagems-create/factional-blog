@@ -4,7 +4,7 @@ date: 2025-04-07
 excerpt: "In the wake of recent statements from the USA that have cast doubt on the country's continued commitment to European security, several European nations have recently made a series of announcements related to their own…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_7285-1.jpg"
 heroImageAlt: "Infographic: A Wake-Up Call — Europe's Need for Stronger Air Defenses"

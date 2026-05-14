@@ -4,7 +4,7 @@ date: 2017-01-01
 excerpt: "From Early Air Defense Systems to Defense against Ballistic and Hypersonic Threats The trajectory of Western ground-based long-range air and missile defense underscores a continuous adaptation to evolving aerial threats,…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/image-1.png"
 heroImageAlt: "Supersonic missile in flight at sunset"

@@ -4,7 +4,7 @@ date: 2025-06-16
 excerpt: "Two cutting-edge missile defense systems demonstrate complementary approaches to countering ballistic missile threats, with THAAD excelling in mobile deployment and Arrow leading in layered integration and combat…"
 category: teknologi
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8841.jpg"
 heroImageAlt: "THAAD air defense system firing in snowy terrain"

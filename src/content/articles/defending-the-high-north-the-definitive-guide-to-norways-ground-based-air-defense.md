@@ -4,7 +4,7 @@ date: 2025-07-10
 excerpt: "Introduction From the massed gun batteries of the Cold War to a world-leading, network-centric missile shield, Norway's ground-based air defense has undergone a profound transformation. Today, it stands as a critical…"
 category: nato
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_7191-1.jpg"
 heroImageAlt: "Integrated air defense systems in a mountainous Nordic valley"

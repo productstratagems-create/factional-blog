@@ -4,7 +4,7 @@ date: 2026-01-02
 excerpt: "A systematic guide to understanding how Patriot, SAMP/T, THAAD, Arrow, NASAMS, IRIS-T, and other NATO-aligned systems compare across range, cost, capability, and operational deployment. Why This Comparison Matters…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/image-15.png"
 heroImageAlt: "Mobil launcher avfyrer missiler ved solnedgang"

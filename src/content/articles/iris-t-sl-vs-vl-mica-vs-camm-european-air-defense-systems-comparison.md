@@ -4,7 +4,7 @@ date: 2025-07-08
 excerpt: "The selection of advanced air defense systems has become a defining strategic decision for European defense organizations navigating the complex intersection of technological sovereignty, alliance interoperability, and…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_7360-1.jpg"
 heroImageAlt: "IRIS-T SLM air defense system launcher in operational display"

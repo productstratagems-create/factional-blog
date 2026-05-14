@@ -4,7 +4,7 @@ date: 2025-07-04
 excerpt: "World-class IAMD systems succeed through five fundamental criteria: comprehensive multi-layered defense architectures, seamless sensor-to-shooter integration, adaptive threat response capabilities, sustainable…"
 category: nato
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8078-1.jpg"
 heroImageAlt: "Multiple missile interception trajectories glowing in the night sky over a city"

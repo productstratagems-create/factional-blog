@@ -4,7 +4,7 @@ date: 2025-06-28
 excerpt: "Multi-domain missile launcher concepts like the U.S. Army’s CAML program can be successfully adapted across all force classes through modular designs, tiered partnership models, and scalable automation approaches. The…"
 category: nato
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_7960-1.jpg"
 heroImageAlt: "HIMARS high-mobility artillery rocket system launching a missile"

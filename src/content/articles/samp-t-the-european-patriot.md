@@ -4,7 +4,7 @@ date: 2024-05-01
 excerpt: "The SAMP/T air defense system has emerged as Europe’s flagship alternative to the U.S.-made Patriot, offering advanced capabilities while reinforcing continental defense sovereignty. Developed through Franco-Italian…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_5404-1.jpg"
 heroImageAlt: "SAMP/Aster lastebilmontert enhet på visning"

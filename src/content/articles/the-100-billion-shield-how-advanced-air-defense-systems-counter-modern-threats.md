@@ -4,7 +4,7 @@ date: 2025-06-01
 excerpt: "Executive Summary Western nations have invested over $100 billion in advanced air defense systems that can intercept threats at ranges exceeding 200 kilometers. These systems, including the combat-proven Patriot, THAAD,…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8836.jpg"
 heroImageAlt: "Multiple missile launch systems firing simultaneously at dusk"

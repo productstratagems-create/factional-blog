@@ -4,7 +4,7 @@ date: 2025-03-30
 excerpt: "The SkyWall 100 and SkyWall 300, a unique counter-drone system developed by OpenWorks Engineering. Utilizing net-based capture technology, these systems offer a non-destructive method for intercepting unmanned aerial…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 ---
 

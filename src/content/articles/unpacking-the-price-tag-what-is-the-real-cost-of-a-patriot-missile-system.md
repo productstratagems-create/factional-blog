@@ -4,7 +4,7 @@ date: 2025-07-04
 excerpt: "The Patriot Air and Missile Defense System, a cornerstone of Western air defense, is in higher demand than ever. As nations across Europe and the globe seek to bolster their security against increasingly sophisticated…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8025-1.png"
 heroImageAlt: "Cost effectiveness comparison of Patriot PAC-2 and SAMP/T systems"

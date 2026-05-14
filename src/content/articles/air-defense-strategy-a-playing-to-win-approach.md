@@ -4,7 +4,7 @@ date: 2025-03-16
 excerpt: "The safeguarding of friendly forces and assets from aerial threats remains a paramount concern in modern warfare. Air defense, as a direct counter to aerial warfare, encompasses a wide array of weapon systems, sensor…"
 category: teknologi
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8843.png"
 heroImageAlt: "Surface-to-air missiles firing over a city at night"

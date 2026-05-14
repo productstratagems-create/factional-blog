@@ -4,7 +4,7 @@ date: 2026-03-13
 excerpt: "COMPARATIVE ANALYSIS Europe’s Long-Range Air Defense Options in 2026 Introduction The question of which long-range air defense system a European country should buy has never been more consequential—or more constrained.…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_9375.jpg"
 heroImageAlt: "Comparison table for Patriot PAC-3 MSE, IRIS-T SLM/X and SAMP/T NG"

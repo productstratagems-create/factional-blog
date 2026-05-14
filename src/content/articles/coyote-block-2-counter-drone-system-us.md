@@ -4,7 +4,7 @@ date: 2025-03-30
 excerpt: "The Coyote Block 2 counter-drone system is a kinetic interceptor developed by Raytheon Technologies. Designed for military air defense, the system aims to neutralize unmanned aerial threats, particularly small and…"
 category: teknologi
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 ---
 

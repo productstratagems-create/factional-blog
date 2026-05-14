@@ -4,7 +4,7 @@ date: 2025-07-18
 excerpt: "Exo-Atmospheric Defense with Competitive Pricing Arrow-3 interceptors cost approximately $4 million each, making them 86% less expensive than competing SM-3 Block IIA systems while offering superior range and proven…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/image-20.png"
 heroImageAlt: "Lastebilmontert missiellauncher avfyrer"

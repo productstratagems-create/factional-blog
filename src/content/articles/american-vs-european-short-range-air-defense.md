@@ -4,7 +4,7 @@ date: 2026-03-22
 excerpt: "Critical Cost Analysis of U.S. and European SHORAD systems. Short range air defense—the SHORAD tier covering engagements from point-blank out to roughly 15 kilometers, protecting maneuver forces, forward operating bases,…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_9409.jpg"
 heroImageAlt: "Comparison table for M-SHORAD and Skyranger 30 short-range air defense systems"

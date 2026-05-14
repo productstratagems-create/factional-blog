@@ -4,7 +4,7 @@ date: 2025-06-26
 excerpt: "The fundamental economics of drone warfare have created an unsustainable cost asymmetry that threatens traditional air defense models. Ukraine’s combat data reveals that drones account for 70% of combat casualties, while…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_9411.jpg"
 heroImageAlt: "Cost per engagement table for SHORAD weapons against drones"

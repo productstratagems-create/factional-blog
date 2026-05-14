@@ -4,7 +4,7 @@ date: 2025-04-10
 excerpt: "The Patriot system has long served as a cornerstone of U.S. air defense, intercepting aircraft, cruise missiles, and ballistic missiles. However, with adversaries developing faster and more sophisticated threats, the…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_7270-1.jpg"
 heroImageAlt: "Patriot surface-to-air missile test launch with smoke plume"

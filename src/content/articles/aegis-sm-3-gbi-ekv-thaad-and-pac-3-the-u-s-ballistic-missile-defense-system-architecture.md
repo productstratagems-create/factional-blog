@@ -4,7 +4,7 @@ date: 2025-06-26
 excerpt: "The United States operates the world’s most sophisticated ballistic missile defense system, integrating multiple layers of sensors, interceptors, and command networks to counter threats across all phases of ballistic…"
 category: teknologi
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8028-1.jpg"
 heroImageAlt: "Ballistic missile defense phases: boost, midcourse and terminal"
