@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7245-1.jpg"
+heroImageAlt: "Military personnel in a command center with tactical displays"
 ---
 
 In the complex, high-stakes arena of modern air defense operations, a preferable outcome is often determined not by the force with the most powerful weapons, but by the one that can see, understand, and act the fastest and visest. Central to this capability are the concepts of **Situational Awarness (SA)**, which is an individual's understanding of the environment  and **Shared Situational Awareness (SSA)**, which is a state where every team member possesses a synchronized and common understanding of their environment.

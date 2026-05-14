@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_9424.jpg"
+heroImageAlt: "Air defense systems and their confirmed kills in Ukraine and the Middle East"
 ---
 
 **Air defense systems face unsustainable cost asymmetries that favor attackers 10-100:1, but recent combat data reveals significant performance variations that inform strategic investment decisions.** IRIS-T SL delivers the best cost-effectiveness with 99% combat success at $350,000-420,000 per interceptor. Iron Dome handles mass attacks most efficiently despite 40-100:1 cost disadvantages. PATRIOT excels against advanced ballistic missiles but consumes resources unsustainably in prolonged conflicts. Layered defense strategies matching interceptor costs to threat values, combined with emerging directed energy weapons, offer the only path to economically viable air defense against modern mass attack scenarios.

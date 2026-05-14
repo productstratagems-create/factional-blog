@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-6.png"
+heroImageAlt: "Strategic air defense blindspots map visualization"
 ---
 
 The convergence of emerging threats and defensive vulnerabilities is creating a strategic inflection point that most mainstream defense analysis significantly underestimates. While European defense establishments focus on traditional capability modernization, a series of critical trends are reshaping the air defense landscape in ways that could render current approaches obsolete within a decade. This analysis identifies the most consequential developments that require immediate strategic attention from European defense professionals. 

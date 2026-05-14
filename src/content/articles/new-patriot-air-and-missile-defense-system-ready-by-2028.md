@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7270-1.jpg"
+heroImageAlt: "Patriot surface-to-air missile test launch with smoke plume"
 ---
 
 The Patriot system has long served as a cornerstone of U.S. air defense, intercepting aircraft, cruise missiles, and ballistic missiles. However, with adversaries developing faster and more sophisticated threats, the system is being overhauled.

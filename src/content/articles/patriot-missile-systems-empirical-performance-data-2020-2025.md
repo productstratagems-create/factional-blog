@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_9329.png"
+heroImageAlt: "Patriot missiles firing at sunset with soldiers observing"
 ---
 
 Patriot missile systems experienced extensive combat deployment and testing from 2020-2025, providing unprecedented empirical data on system performance. **The most significant finding is the confirmed intercept of Russian Kinzhal hypersonic missiles in Ukraine (May 2023)**, marking the first verified hypersonic missile intercept by any air defense system. However, performance data reveals substantial gaps between manufacturer claims and independently verified results, with success rates varying dramatically by threat type and operational conditions.

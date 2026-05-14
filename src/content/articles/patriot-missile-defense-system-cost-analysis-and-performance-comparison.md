@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8084-1.jpg"
+heroImageAlt: "Patriot missile launch montage with system vehicle and operator console"
 ---
 
 *The Western World’s Backbone Air Defense at a Crossroads*

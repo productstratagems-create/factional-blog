@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8339.jpg"
+heroImageAlt: "US military officer at a podium presenting the national air and missile defense strategy"
 ---
 
 In February 2025, the Norwegian Armed Forces announced that NASAMS air defense systems had achieved a remarkable 94% success rate, intercepting 900 missiles and drones over Ukraine. This battlefield validation of American and Norwegian-developed technology represents more than just a tactical victory—it exemplifies the kind of proven, combat-tested capabilities that are now reshaping American defense strategy for the next two decades.

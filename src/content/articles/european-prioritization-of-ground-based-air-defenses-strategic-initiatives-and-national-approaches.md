@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7276-1.jpg"
+heroImageAlt: "German air defense radar system on a mobile platform in the field"
 ---
 
 The landscape of European ground based air defense (GBAD) has undergone significant transformation in recent years, with leading European nations increasingly prioritizing the development and deployment of advanced air defense capabilities. This shift has been accelerated by Russia's invasion of Ukraine, which has exposed critical vulnerabilities in Europe's aerial defense infrastructure and prompted unprecedented cooperation and investment across the continent. The current strategic environment has created a renewed focus on air defense as a fundamental component of national security strategy, with European powers adopting various approaches to strengthen their capabilities while balancing national interests with collective security requirements.

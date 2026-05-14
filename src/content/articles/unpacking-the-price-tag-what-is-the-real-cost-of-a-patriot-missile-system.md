@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8025-1.png"
+heroImageAlt: "Cost effectiveness comparison of Patriot PAC-2 and SAMP/T systems"
 ---
 
 The Patriot Air and Missile Defense System, a cornerstone of Western air defense, is in higher demand than ever. As nations across Europe and the globe seek to bolster their security against increasingly sophisticated aerial threats, a key question arises: What is the actual cost of acquiring this advanced capability?

@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8044-1.jpg"
+heroImageAlt: "NASAMS air defense system launching a missile over coastal water and mountains"
 ---
 
 ## **A Versatile and Modern Air Defence System  **

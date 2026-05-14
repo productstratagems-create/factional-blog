@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_9328.jpg"
+heroImageAlt: "Table of historical friendly-fire incidents in air defense operations"
 ---
 
 Captain Sahar Saudyan was playing Jungle Speed with her teammates just hours before she would make the ultimate sacrifice. The 21-year-old Iron Dome operator had no way of knowing that October 7, 2023, would transform from routine card games into the largest coordinated attack Israel had ever faced—or that she would become the first Iron Dome operator ever killed in combat while restocking interceptor missiles to protect her homeland. **Her final text to family read: “Take care of yourselves, everything is OK, I’m protecting you.”**

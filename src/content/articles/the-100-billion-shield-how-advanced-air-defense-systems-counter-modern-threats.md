@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8836.jpg"
+heroImageAlt: "Multiple missile launch systems firing simultaneously at dusk"
 ---
 
 # Executive Summary

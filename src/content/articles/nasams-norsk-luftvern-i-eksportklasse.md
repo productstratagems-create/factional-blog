@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8289-1.jpg"
+heroImageAlt: "Royal Norwegian Air Force NASAMS ICC 1995 air defense system"
 ---
 
 NASAMS (Norwegian Advanced Surface-to-Air Missile System) er et norskutviklet, modulært luftvernsystem som har blitt et av verdens mest utbredte mellomdistanse luftvern. Systemet er utviklet av Kongsberg Defence & Aerospace sammen med amerikanske Raytheon, og integrerer amerikanske luft-til-luft-raketter (primært AIM-120 AMRAAM). NASAMS er tatt i bruk av land som USA, Finland, Spania, Nederland, Oman, Chile, India og flere[en.wikipedia.org](https://en.wikipedia.org/wiki/NASAMS#:~:text=NASAMS%20has%20been%20exported%20to,78). Norge selv bruker NASAMS til å beskytte viktige baser (to batterier på Ørland, ett under oppbygging ved Evenes[forsvarsforeningen.no](https://www.forsvarsforeningen.no/norges-forsvar/norges-forsvar-6-2021/vare-baser-er-attraktive-mal/#:~:text=Heldigvis%20klarte%20Luftforsvaret%20%C3%A5%20opprettholde,Etter%20en)). Systemet er også levert til Ukraina, hvor det har vist seg svært effektivt mot russiske missilangrep.

@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8191-1.jpg"
+heroImageAlt: "Iron Dome air defense system firing an interceptor missile"
 ---
 
 ## Precision Defense Despite Premium Costs

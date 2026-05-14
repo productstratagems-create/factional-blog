@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_9423.jpg"
+heroImageAlt: "Table of aircraft types shot down in modern conflicts"
 ---
 
 *What four years of high-intensity air warfare reveal about how aircraft actually die — and why Norway’s unfulfilled ballistic missile defence requirement matters more than ever*

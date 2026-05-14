@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7350.jpg"
+heroImageAlt: "IRIS-T SLM and SLS air defense systems comparison infographic"
 ---
 
 The [NASAMS](https://norskluftvern.com/2025/02/08/nasams-norwegian-advanced-surface-to-air-missile-system-mobilt-og-modulaert-middelsrekkende-luftvernsystem/) and the [IRIS-T SL](https://norskluftvern.com/2025/02/09/iris-t-sl/) are both modern ground‐based air defence solutions used by NATO and partner nations, but differ in terms of architecture, primary interceptor missiles and sensors and operational concepts.

@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8280-1.png"
+heroImageAlt: "Military personnel operating air defense systems with drones at sunset"
 ---
 
 **U.S. Systems**

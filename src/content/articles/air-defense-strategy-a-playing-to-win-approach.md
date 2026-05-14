@@ -6,6 +6,8 @@ category: teknologi
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8843.png"
+heroImageAlt: "Surface-to-air missiles firing over a city at night"
 ---
 
 The safeguarding of friendly forces and assets from aerial threats remains a paramount concern in modern warfare. Air defense, as a direct counter to aerial warfare, encompasses a wide array of weapon systems, sensor technologies, command and control arrangements, and passive measures designed to nullify or diminish the effectiveness of hostile air actions 1. The ultimate objective is to ensure freedom of maneuver for ground, naval, and air forces across all operational environments 1. From the perspective of an opposing force (OPFOR), air defense is viewed as an integral component of combined arms combat, necessitating the comprehensive integration of diverse weapons and equipment into a resilient and effective system 3. Given the increasing complexity of the contemporary battlefield and the need for adaptable and forward-thinking strategies, examining military concepts through the lens of established strategic frameworks from other domains can yield valuable perspectives. Roger Martin’s "Playing to Win," a widely respected framework for strategic decision-making, offers a structured approach to analyze and potentially enhance the understanding and application of core military principles 4. This article aims to analyze the fundamental air defense principles of mass, mix, maneuver, and integration by applying the strategic logic of Martin's "Playing to Win" framework.

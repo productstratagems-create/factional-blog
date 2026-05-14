@@ -6,6 +6,8 @@ category: nato
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8128-1.jpg"
+heroImageAlt: "MH17 fuselage wreckage — a reminder of the cost of misidentification"
 ---
 
 *Three U.S. F-15E Strike Eagles destroyed by a coalition partner's air defences over Kuwait on March 2, 2026. The incident is the most consequential fratricide event in a major U.S.-led air campaign since Iraq in 2003 — and a pattern that stretches back nearly four decades of American military operations in the Persian Gulf.*

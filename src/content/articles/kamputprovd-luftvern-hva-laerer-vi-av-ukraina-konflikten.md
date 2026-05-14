@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7909-1.jpg"
+heroImageAlt: "Ukrainian soldiers with fighter jet and mobile radar system"
 ---
 
 *Ukraina-krigen har gitt oss den første omfattende testen av moderne vestlige luftvernssystemer under reelle kampforhold. Resultatene endrer spillereglene for hvordan vi tenker om luftforsvar.*

@@ -6,6 +6,8 @@ category: history
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7244-1.jpg"
+heroImageAlt: "Mobile Vulcan-style gun air defense system in the field"
 ---
 
 ## **The Resurgence and Revenge of the Gun**

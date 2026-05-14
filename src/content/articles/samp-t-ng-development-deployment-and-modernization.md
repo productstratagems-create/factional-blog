@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_9383.jpg"
+heroImageAlt: "Aerial view of a SAMP/T air defense battery deployed in a field"
 ---
 
 The SAMP/T air defense system has emerged as Europe’s flagship alternative to the U.S.-made Patriot, offering advanced capabilities while reinforcing continental defense sovereignty. Developed through Franco-Italian collaboration and continuously modernized, this system addresses evolving threats through cutting-edge technology and strategic interoperability.

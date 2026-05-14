@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8026-1.png"
+heroImageAlt: "Map of Nordic NATO countries"
 ---
 
 The Nordic region—Sweden, Finland, Norway, and Denmark—has rapidly modernized and expanded its ground-based air defense (GBAD) capabilities in response to heightened security concerns, especially following Russia’s full-scale invasion of Ukraine and the subsequent accession of Finland and Sweden to NATO. Using the mass, mix, maneuver, and integration framework, this article evaluates how these countries’ GBADs collectively fare, with a focus on Sweden’s latest acquisition of German IRIS-T SLM systems.

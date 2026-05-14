@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7374-1.jpg"
+heroImageAlt: "Norsk Luftvern profile on the Bluesky social media platform"
 ---
 
 [@norskluftvern](https://bsky.app/profile/norskluftvern.bsky.social)

@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8023-1.jpg"
+heroImageAlt: "THAAD terminal high altitude area defense system launching an interceptor"
 ---
 
 ## Strategic Defense at Premium Pricing
