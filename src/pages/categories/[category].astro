@@ -1,0 +1,98 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleGrid from '../../components/ArticleGrid.astro';
+import Divider from '../../components/Divider.astro';
+
+export async function getStaticPaths() {
+  const allArticles = await getCollection('articles', (e) => !e.data.draft);
+
+  // Collect all unique categories from actual content
+  const categories = [...new Set(allArticles.map((a) => a.data.category))];
+
+  return categories.map((category) => ({
+    params: { category },
+    props: {
+      articles: allArticles
+        .filter((a) => a.data.category === category)
+        .sort((a, b) => b.data.date.getTime() - a.data.date.getTime()),
+      category,
+    },
+  }));
+}
+
+const { articles, category } = Astro.props;
+
+const categoryLabels: Record<string, string> = {
+  'missilforsvar':   'Missilforsvar',
+  'missile-systems': 'Missilsystemer',
+  'procurement':     'Anskaffelser',
+  'anskaffelse':     'Anskaffelse',
+  'policy':          'Forsvarspolitikk',
+  'exercises':       'Øvelser',
+  'history':         'Historie',
+  'analyse':         'Analyse',
+  'analysis':        'Analyse',
+};
+
+const label = categoryLabels[category] ?? category;
+---
+
+<BaseLayout
+  title={label}
+  description={`Alle artikler om ${label.toLowerCase()} på Norsk Luftvern.`}
+>
+  <div class="category-page">
+    <div class="container">
+      <header class="page-header">
+        <p class="page-super">Kategori</p>
+        <h1 class="page-title">{label}</h1>
+        <p class="article-count">{articles.length} {articles.length === 1 ? 'artikkel' : 'artikler'}</p>
+      </header>
+
+      <Divider spacing="md" />
+
+      <div class="articles-wrapper">
+        <ArticleGrid articles={articles} columns={3} />
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .category-page { padding-bottom: var(--spacing-3xl); }
+
+  .page-header {
+    padding-block: var(--spacing-2xl) var(--spacing-xl);
+  }
+
+  .page-super {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-teal);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-heading);
+    line-height: 1;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .article-count {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--color-muted);
+    margin: 0;
+  }
+
+  .articles-wrapper { padding-block: var(--spacing-xl); }
+</style>

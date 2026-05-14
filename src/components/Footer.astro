@@ -1,0 +1,157 @@
+---
+import Logo from './Logo.astro';
+
+const year = new Date().getFullYear();
+
+const categories = [
+  { href: '/categories/missilforsvar', label: 'Missilsystemer' },
+  { href: '/categories/anskaffelse',   label: 'Anskaffelser' },
+  { href: '/categories/analyse',       label: 'Analyse' },
+  { href: '/categories/history',       label: 'Historie' },
+];
+---
+
+<footer class="site-footer">
+  <div class="footer-inner container">
+    <div class="footer-brand">
+      <Logo size="sm" class="footer-logo" />
+      <p class="tagline">Norges ledende kilde om luftvern<br>og missilforsvar.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Snarveier">
+      <h3>Navigasjon</h3>
+      <ul role="list">
+        <li><a href="/">Forsiden</a></li>
+        <li><a href="/about">Om oss</a></li>
+        <li><a href="/rss.xml">RSS-feed</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-nav" aria-label="Kategorier">
+      <h3>Kategorier</h3>
+      <ul role="list">
+        {categories.map(({ href, label }) => (
+          <li><a href={href}>{label}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; {year} Norsk Luftvern. Alle rettigheter forbeholdt.</p>
+      <a href="/rss.xml" class="rss-link" aria-label="RSS-feed">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+          <circle cx="2.5" cy="13.5" r="1.5"/>
+          <path d="M1 7.5A6.5 6.5 0 0 1 7.5 14H9A7.5 7.5 0 0 0 1 6.5v1z"/>
+          <path d="M1 3.5A10.5 10.5 0 0 1 11.5 14H13A12 12 0 0 0 1 2v1.5z"/>
+        </svg>
+        RSS
+      </a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--color-heading);
+    color: rgba(255,255,255,0.75);
+    margin-top: var(--spacing-3xl);
+  }
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: var(--spacing-2xl);
+    padding-block: var(--spacing-2xl);
+  }
+
+  .footer-logo { filter: brightness(0) invert(1); opacity: 0.9; }
+
+  .tagline {
+    font-family: var(--font-ui);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-top: var(--spacing-md);
+    opacity: 0.65;
+  }
+
+  .footer-nav h3 {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-teal);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .footer-nav a {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .footer-nav a:hover { color: #fff; }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-block: var(--spacing-md);
+  }
+
+  .footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+
+  .footer-bottom p {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    opacity: 0.5;
+    margin: 0;
+  }
+
+  .rss-link {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-teal);
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity 0.15s;
+  }
+
+  .rss-link:hover { opacity: 1; }
+
+  @media (max-width: 768px) {
+    .footer-inner {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-xl);
+      padding-block: var(--spacing-xl);
+    }
+
+    .footer-bottom .container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--spacing-sm);
+    }
+  }
+</style>

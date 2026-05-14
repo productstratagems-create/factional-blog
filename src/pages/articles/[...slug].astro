@@ -1,0 +1,34 @@
+---
+import { getCollection } from 'astro:content';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import { articleSlug } from '../../utils/slug';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('articles', (e) => !e.data.draft);
+  return entries.map((entry) => ({
+    params: { slug: articleSlug(entry.id) },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+// Related: prefer relatedSlugs, else same category
+const allEntries = await getCollection('articles', (e) => !e.data.draft && e.id !== entry.id);
+
+let related = allEntries.filter(
+  (e) => entry.data.relatedSlugs?.includes(articleSlug(e.id))
+);
+
+if (related.length === 0) {
+  related = allEntries
+    .filter((e) => e.data.category === entry.data.category)
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+    .slice(0, 3);
+}
+---
+
+<ArticleLayout entry={entry} related={related}>
+  <Content />
+</ArticleLayout>

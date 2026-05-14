@@ -1,0 +1,169 @@
+---
+import CategoryBadge from './CategoryBadge.astro';
+import ArticleMeta from './ArticleMeta.astro';
+
+interface Props {
+  title: string;
+  excerpt: string;
+  href: string;
+  heroImage?: string;
+  heroImageAlt?: string;
+  category: string;
+  pubDate: Date;
+  author?: string;
+  readingTime?: number;
+  lang?: string;
+  featured?: boolean;
+}
+
+const {
+  title,
+  excerpt,
+  href,
+  heroImage,
+  heroImageAlt = '',
+  category,
+  pubDate,
+  author = 'Redaksjonen',
+  readingTime,
+  lang = 'no',
+  featured = false,
+} = Astro.props;
+---
+
+<article class:list={['article-card', { 'article-card--featured': featured }]}>
+  <a href={href} class="card-image-link" tabindex="-1" aria-hidden="true">
+    {heroImage ? (
+      <img
+        src={heroImage}
+        alt={heroImageAlt}
+        class="card-image"
+        loading="lazy"
+        decoding="async"
+        width="800"
+        height="450"
+      />
+    ) : (
+      <div class="card-placeholder">
+        <span>NL</span>
+      </div>
+    )}
+    <div class="card-category">
+      <CategoryBadge category={category} />
+    </div>
+  </a>
+
+  <div class="card-body">
+    <h2 class="card-title">
+      <a href={href}>{title}</a>
+    </h2>
+    <p class="card-excerpt">{excerpt}</p>
+    <ArticleMeta
+      pubDate={pubDate}
+      author={author}
+      readingTime={readingTime}
+      lang={lang}
+    />
+  </div>
+</article>
+
+<style>
+  .article-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+
+  .article-card:hover {
+    box-shadow: 0 6px 20px rgba(28, 8, 8, 0.12);
+    transform: translateY(-2px);
+  }
+
+  /* ── Image ── */
+  .card-image-link {
+    display: block;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+  }
+
+  .article-card:hover .card-image { transform: scale(1.03); }
+
+  .card-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-heading) 0%, #3D1515 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgba(255,255,255,0.15);
+    letter-spacing: 0.2em;
+  }
+
+  .card-category {
+    position: absolute;
+    top: var(--spacing-sm);
+    left: var(--spacing-sm);
+  }
+
+  /* ── Body ── */
+  .card-body {
+    padding: var(--spacing-md) var(--spacing-lg) var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    flex: 1;
+  }
+
+  .card-title {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--color-heading);
+    margin: 0;
+  }
+
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .card-title a:hover { color: var(--color-navy); }
+
+  .card-excerpt {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* ── Featured variant ── */
+  .article-card--featured .card-title { font-size: 1.3rem; }
+</style>
