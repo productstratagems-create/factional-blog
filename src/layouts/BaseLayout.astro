@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import SearchModal from '../components/SearchModal.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -73,6 +74,7 @@ const fullTitle = title === 'Norsk Luftvern' ? title : `${title} | Norsk Luftver
     )}
 
     <Header currentPath={Astro.url.pathname} />
+    <SearchModal />
 
     <main id="main-content">
       <slot />
