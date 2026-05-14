@@ -1,5 +1,4 @@
 ---
-import Logo from './Logo.astro';
 import { siteHref } from '../utils/slug';
 
 const year = new Date().getFullYear();
@@ -16,7 +15,7 @@ const categories = [
 <footer class="site-footer">
   <div class="footer-inner container">
     <div class="footer-brand">
-      <Logo size="sm" class="footer-logo" />
+      <a href={siteHref('/')} class="footer-wordmark" aria-label="Norsk Luftvern – forsiden">Norsk Luftvern</a>
       <p class="tagline">Norges ledende kilde om luftvern<br>og missilforsvar.</p>
     </div>
 
@@ -68,7 +67,16 @@ const categories = [
     padding-block: var(--spacing-2xl);
   }
 
-  .footer-logo { filter: brightness(0) invert(1); opacity: 0.9; }
+  .footer-wordmark {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    display: inline-block;
+  }
 
   .tagline {
     font-family: var(--font-ui);
