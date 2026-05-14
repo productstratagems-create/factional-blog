@@ -3,7 +3,7 @@ title: "Europeiske NATO-staters dokumenterte synspunkter på potensialet for kon
 date: 2025-06-11
 excerpt: "Østeuropeiske allierte hadde rett om Russland hele tiden. Vesteuropeere våknet først i 2014, og mange ikke før 2022. Kort oppsummert: Østeuropeiske land så den russiske trusselen komme og dokumenterte dette konsekvent…"
 category: nato
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

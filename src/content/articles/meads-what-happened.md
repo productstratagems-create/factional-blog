@@ -3,7 +3,7 @@ title: "MEADS what happened?"
 date: 2024-04-30
 excerpt: "The story of a Patriot that would not go away, and Europe that partly went it alone. - How a multinational approach failed. The system was intended as a replacement for the Patriot, and supposed to go with the PAC-3 MSE…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 ---

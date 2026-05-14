@@ -3,7 +3,7 @@ title: "Litauen og Indonesia kjøper luftvern fra Norge"
 date: 2017-10-26
 excerpt: "Litauen, som har vært i forhandlinger med den norske produsenten siden mai 2016, har nå (26. oktober 2017) inngått en kontrakt pålydende ca. 1 mrd. kr for levering av det som ettersigende skal være to batterier med med…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

@@ -3,7 +3,7 @@ title: "Om Langtidsplanen og veien fremover - Luftvern først"
 date: 2025-03-04
 excerpt: "Denne artikkelen(https://www.vg.no/nyheter/i/Gy28nQ/tidligere-forsvarssjefer-krever-raskere-opprustning-norge-maa-prioritere-luftvern-og-hurtigspor-sier-diesen-og-sunde) fra VG illustrerer en tydelig oppfordring til…"
 category: anskaffelse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

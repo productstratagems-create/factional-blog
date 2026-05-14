@@ -3,7 +3,7 @@ title: "Germany’s F127 Frigates: Sea-Based Missile Defense for the Baltic Era"
 date: 2025-12-06
 excerpt: "The Deutsche Marine’s most ambitious surface combatant program extends Zeitenwende to sea While Germany’s December 2025 deployment of the Arrow 3 system at Holzdorf has dominated headlines about German missile defense,…"
 category: nato
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8309-1.jpg"

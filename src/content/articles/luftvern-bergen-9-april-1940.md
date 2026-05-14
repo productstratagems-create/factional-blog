@@ -3,7 +3,7 @@ title: "Luftvern over Bergen anno 1940"
 date: 2017-06-03
 excerpt: "Neste gang det kommer ukjente fly, skyter jeg på ny hvis ikke instruksen blir forandret. Jeg hørte ikke mer. Jeg meldte saken og fikk neste morgen både Admiralstaben og Generalstaben i telefonen: Hvordan kunne jeg finne…"
 category: teknologi
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_3131.jpg"

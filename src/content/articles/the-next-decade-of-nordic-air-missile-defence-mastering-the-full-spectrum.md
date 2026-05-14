@@ -3,7 +3,7 @@ title: "The Next Decade of Nordic Air &amp; Missile Defence: Mastering the Full 
 date: 2025-08-08
 excerpt: "Defending the Nordic region today means mastering complexity From slow, low drones hugging the terrain to ballistic missiles plunging back through the atmosphere at hypersonic speeds — and everything in between — the…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/create-a-highly-detailed-high-resolution-image-showcasing-a-modern-nordic.png"

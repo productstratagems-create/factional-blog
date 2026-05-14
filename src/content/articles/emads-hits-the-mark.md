@@ -3,7 +3,7 @@ title: "EMADS hits the mark?"
 date: 2024-04-24
 excerpt: "The EMADS system, not a classic \"off-the-shelf system\" with everything you need in a box, but rather an idea, where the launch platform with missiles is the only clear common denominator, and the rest seems to be up to…"
 category: nato
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_3065.jpg"

@@ -3,7 +3,7 @@ title: "Untitled"
 date: 2017-01-01
 excerpt: "<?php // Function to register the shortcode for Norges Luftvernløft Infographic function norgesluftverninfographicshortcode() { obstart(); // Start output buffering ? <div class=\"wp-luftvern-infographic\" <-- Font loading…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

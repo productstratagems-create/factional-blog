@@ -3,7 +3,7 @@ title: "Forsvarskommisjonen av 2021 og luftvern"
 date: 2023-05-03
 excerpt: "Forsvarskommisjonen anbefaler å bruke minst 90 mrd. de neste 10 årene til nye og pågående investeringer for å styrke luftvernet. Det pekes på tre løft som må starte samtidig og fullføres i sin helhet for å oppnå…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_3073.jpg"

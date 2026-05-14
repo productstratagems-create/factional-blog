@@ -3,7 +3,7 @@ title: "Norge har formelt bedt USA om tilbud på Patriot-systemet"
 date: 2024-12-07
 excerpt: "Norge skal anskaffe to nye, langtrekkende luftvernbatterier for å øke beskyttelsen mot lufttrusler. Forsvarsmateriell (FMA) har formelt bedt USA om tilbud på Patriot-systemet, inkludert priser, leveringstid og detaljer…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5425-1.jpg"

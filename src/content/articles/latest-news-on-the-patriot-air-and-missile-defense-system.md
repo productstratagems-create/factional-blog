@@ -3,7 +3,7 @@ title: "Latest News on the Patriot Air and Missile Defense System"
 date: 2017-01-01
 excerpt: "The Patriot system is currently used by 19 countries, with 240 units delivered worldwide. The demand for air defense missile systems, including Patriot, is expected to grow at an annual rate of 5% between 2025 and 2030.…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_5399.jpg"

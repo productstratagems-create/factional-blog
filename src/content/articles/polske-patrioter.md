@@ -3,7 +3,7 @@ title: "Polske Patrioter"
 date: 2023-02-23
 excerpt: "Samtidig som Sverige i 2017 gikk for Patriot som sitt nye luftvern fra 2020, så besluttet også Polen å kjøpe hele åtte batterier og K2-systemer, og prisen var angitt til drøyt 60 mrd. kroner. Dog var ingen kontrakter…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5836-1.png"

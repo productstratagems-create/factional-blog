@@ -3,7 +3,7 @@ title: "Understanding Long-Range Air Defense: A Norwegian Perspective"
 date: 2024-07-08
 excerpt: "Introduction The public debate surrounding Norway's air defense capabilities and requirements is ongoing. However, it is crucial to clarify the terminology often used in these discussions. Key Questions Should Norway…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/image-5.png"

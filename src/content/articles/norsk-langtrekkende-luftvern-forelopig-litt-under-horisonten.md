@@ -3,7 +3,7 @@ title: "Norsk langtrekkende luftvern: foreløpig litt under horisonten?"
 date: 2017-11-07
 excerpt: "En rekke land i Europa ønsker langtrekkende luftvern. Så også Norge, men detaljene er foreløpig få, og usikkerheten stor. Det synes som at veien fram til moderne langtrekkende luftvern i Europa både er lang og kronglete,…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5402.jpg"

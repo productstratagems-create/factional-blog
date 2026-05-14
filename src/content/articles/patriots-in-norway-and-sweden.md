@@ -3,7 +3,7 @@ title: "Patriots in Norway and Sweden"
 date: 2024-04-22
 excerpt: "In 1988, one could read in Stortingsmelding 58, approved on 3 June, that there was only one western missile system that could fully replace the area-wide NIKE system in terms of altitude coverage and range. The Patriot…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8040-1.jpg"

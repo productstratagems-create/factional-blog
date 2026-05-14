@@ -3,7 +3,7 @@ title: "En samtale om luftvern"
 date: 2023-04-25
 excerpt: "Det følgende er en «samtale» med ChatGPT versjon mars 2023. Minner også om at ChatGPT på dette tidspunktet har begrenset kunnskap/kjennskap om Verden og hendelser etter 2021. Norsk luftvern: Hvordan ville du innledet en…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5838.jpg"

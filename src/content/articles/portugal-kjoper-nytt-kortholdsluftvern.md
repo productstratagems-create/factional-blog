@@ -3,7 +3,7 @@ title: "Portugal kjøper nytt kortholdsluftvern"
 date: 2017-06-22
 excerpt: "Det er ikke spesifisert hvilket våpensystem det er tale om, men kontrakten omfatter åtte mobile utskytningsramper, åtte våpenterminaler og to 3D overvåkingsradarer. Ekstern…"
 category: anskaffelse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

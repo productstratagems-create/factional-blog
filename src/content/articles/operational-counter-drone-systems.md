@@ -3,7 +3,7 @@ title: "Operational Counter-Drone Systems"
 date: 2025-03-31
 excerpt: "U.S. Systems - Coyote Block 2(http://norskluftvern.com/coyote-block-2-counter-drone-system-us) (Raytheon) – A kinetic interceptor designed to shoot down drones. - Epirus’…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8280-1.png"

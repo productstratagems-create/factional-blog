@@ -3,7 +3,7 @@ title: "New Patriot Air and Missile Defense System Ready by 2028"
 date: 2025-04-10
 excerpt: "The Patriot system has long served as a cornerstone of U.S. air defense, intercepting aircraft, cruise missiles, and ballistic missiles. However, with adversaries developing faster and more sophisticated threats, the…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_7270-1.jpg"

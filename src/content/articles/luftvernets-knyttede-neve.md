@@ -3,7 +3,7 @@ title: "Luftvernets knyttede neve og de 10 bud"
 date: 2017-06-01
 excerpt: "Leser du åpne amerikanske feltmanualer, så skjønner du fort at det ikke er tilfeldig hvordan skytset i en luftvernavdeling grupperes ut. Du innser også at det ikke er opp til den lokale sjef i isolasjon å bestemme hvor…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5989.jpg"

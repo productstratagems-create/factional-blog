@@ -3,7 +3,7 @@ title: "Luftvern på et nytt nivå i norsk sammenheng?"
 date: 2017-01-01
 excerpt: "I møte med nye trusler og et skjerpet sikkerhetspolitisk landskap arbeider Norge med å utvikle et helhetlig luftvernsystem. I debatten brukes begreper som «lagdelt luftvern» og «fullspektrum-luftvern» – men hva betyr det…"
 category: nato
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/futuristic-air-defense-console.png"

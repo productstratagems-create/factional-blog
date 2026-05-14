@@ -3,7 +3,7 @@ title: "360 graders direkte treff"
 date: 2017-05-23
 excerpt: "Innenfor utviklingen av langtrekkende luftvern i USA og Europa satses det på 360° skuddsektor, stor ildkraft, men relativt få komponenter, og ikke minst såkallt \"hit-to-kill\" missiler. De seneste variantene av PAC-3…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

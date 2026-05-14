@@ -3,7 +3,7 @@ title: "Patriots for Norway?"
 date: 2024-12-07
 excerpt: "Norway has formally requested a proposal for the Patriot missile defense system from the United States. Norway has formally requested a proposal for the Patriot missile defense system from the United States. The…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 ---

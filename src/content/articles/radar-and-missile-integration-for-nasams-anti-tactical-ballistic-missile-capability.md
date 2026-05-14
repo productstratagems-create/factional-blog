@@ -3,7 +3,7 @@ title: "Radar and Missile Integration for NASAMS Anti-Tactical Ballistic Missile
 date: 2017-01-01
 excerpt: "The proliferation of tactical ballistic missiles (TBMs) on the modern battlefield presents a rapidly evolving threat that challenges many of the world's most established air defense systems. The highly effective…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 ---

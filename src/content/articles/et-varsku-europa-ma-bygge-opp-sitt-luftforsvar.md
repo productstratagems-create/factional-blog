@@ -3,7 +3,7 @@ title: "Et varsku: Europa må bygge opp sitt luftforsvar"
 date: 2025-04-07
 excerpt: "I kjølvannet av nylige uttalelser fra USA som har sådd tvil om landets fortsatte engasjement i europeisk sikkerhet, har flere europeiske nasjoner den siste tiden kommet med en rekke kunngjøringer knyttet til eget…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

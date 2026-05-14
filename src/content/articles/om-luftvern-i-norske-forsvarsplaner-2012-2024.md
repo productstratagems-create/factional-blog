@@ -3,7 +3,7 @@ title: "Luftvern i norske forsvarsplaner 2012-2024"
 date: 2025-12-02
 excerpt: "Sammendrag Denne studien dokumenterer hvordan lufttrusselen har blitt vurdert i norske forsvarsplaner fra 2012 til 2024, hvilke luftvernplaner som er vedtatt, og - kritisk viktig - hvilke tiltak som faktisk er…"
 category: nato
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_2988.jpg"

@@ -3,7 +3,7 @@ title: "Europas Patriot: SAMP/T"
 date: 2017-07-07
 excerpt: "Rimelig bra system, eller gårsdagens teknologi med vekstpotensial? SAMP/T (Sol-Air Moyenne Portée/Terrestre: bakke-luft middels rekkevidde/land) er et landbasert luftvernsystem produsert av Eurosam (MBDA og Thales).…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_3013.jpg"

@@ -3,7 +3,7 @@ title: "NOMADS Air Defence System"
 date: 2024-07-03
 excerpt: "National Maneuverable Air Defense System Introduction NOMADS (National Maneuverable Air Defense System) is a tailored air defense system designed to protect forces and maneuver axes during a dynamic and contested land…"
 category: teknologi
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 ---

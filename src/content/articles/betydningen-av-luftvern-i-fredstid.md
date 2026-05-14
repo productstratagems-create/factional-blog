@@ -3,7 +3,7 @@ title: "Betydningen av luftvern i fredstid"
 date: 2017-09-25
 excerpt: "I denne artikkelen får vi et innblikk i hvordan US Air Force etterhvert begynner å tenke annerledes innenfor styrkeutvikling av operative støtteelementer som bl.a transportfly og tankfly. Den relativt store flyflåten…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/pexels-photo-24780251.jpg"

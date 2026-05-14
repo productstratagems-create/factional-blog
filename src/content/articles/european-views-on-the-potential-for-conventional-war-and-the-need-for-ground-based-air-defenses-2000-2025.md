@@ -3,7 +3,7 @@ title: "European views on the Potential for Conventional War and the Need for Gr
 date: 2025-06-11
 excerpt: "Eastern European allies were right about Russia all along. Western Europeans only woke up in 2014, and many not until 2022. Summary: Eastern European countries saw the Russian threat coming and consistently documented…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8194-1.png"

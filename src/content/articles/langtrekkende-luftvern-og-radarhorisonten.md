@@ -3,7 +3,7 @@ title: "Langtrekkende luftvern på horisonten"
 date: 2017-05-22
 excerpt: "Det er 18 nasjoner verden over som har eller er i ferd med å anskaffe Patriot i dag, og antall brukerland i Europa har doblet seg på 5-6 år. Hva er fordelene med langtrekkende luftvern? Og hva er det land, som bruker…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5452-1.jpg"

@@ -3,7 +3,7 @@ title: "Norway’s Long-Range Air Defense Evolution: From Cold War Gaps to Moder
 date: 2017-01-01
 excerpt: "Norway faces its most significant air defense capability gap in decades, having operated no long-range ground-based air defense systems exceeding 100 kilometers since decommissioning its NIKE Hercules batteries in 1991.…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 ---

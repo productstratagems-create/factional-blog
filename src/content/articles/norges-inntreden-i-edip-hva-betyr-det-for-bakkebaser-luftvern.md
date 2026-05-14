@@ -3,7 +3,7 @@ title: "Norges inntreden i EDIP – hva betyr det for bakkebasert luftvern?"
 date: 2026-05-12
 excerpt: "Nyheten er fersk: regjeringen setter av 29 millioner euro – rundt 315 millioner kroner hentet fra Nansen-programmet – som norsk medlemskontingent i EDIP for perioden 2026–2028. Det er første gang regjeringen setter av…"
 category: anskaffelse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

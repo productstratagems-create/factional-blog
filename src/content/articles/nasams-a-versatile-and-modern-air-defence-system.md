@@ -3,7 +3,7 @@ title: "NASAMS Air Defence System"
 date: 2025-02-08
 excerpt: "A Versatile and Modern Air Defence System The Norwegian Advanced Surface-to-Air Missile System (NASAMS) is a highly adaptable, medium-range air defence system developed in collaboration between Kongsberg Defence &…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8044-1.jpg"

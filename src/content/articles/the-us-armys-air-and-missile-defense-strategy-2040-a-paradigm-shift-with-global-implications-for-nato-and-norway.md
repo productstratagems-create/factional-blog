@@ -3,7 +3,7 @@ title: "The US Army’s Air and Missile Defense Strategy 2040: A Paradigm Shift 
 date: 2025-08-10
 excerpt: "In February 2025, the Norwegian Armed Forces announced that NASAMS air defense systems had achieved a remarkable 94% success rate, intercepting 900 missiles and drones over Ukraine. This battlefield validation of…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8339.jpg"

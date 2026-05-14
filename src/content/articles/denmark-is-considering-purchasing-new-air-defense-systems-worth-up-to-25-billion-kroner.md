@@ -3,7 +3,7 @@ title: "Denmark is considering purchasing new air defense systems worth up to 25
 date: 2024-12-01
 excerpt: "The Danish Ministry of Defence is evaluating bids from 12 companies across nine countries to supply the Danish armed forces with new air defense systems. This procurement is one of the largest in Danish history. Key…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_3071.jpg"

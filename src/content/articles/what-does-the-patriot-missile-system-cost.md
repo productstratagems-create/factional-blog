@@ -3,7 +3,7 @@ title: "What does the Patriot Air and Missile Defense System cost?"
 date: 2024-04-06
 excerpt: "What does Patriot cost in Europe and globally? Patriot is currently sold to, or in use by, a total of 18 countries worldwide. In Europe, the users are the Netherlands (1987), Germany (1989), Greece (1999), Spain (2004),…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_5412.jpg"

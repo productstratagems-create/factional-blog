@@ -3,7 +3,7 @@ title: "Air Defense Incidents Almanac: 1983-2025"
 date: 2025-07-05
 excerpt: "Executive Summary This comprehensive almanac documents verified air defense incidents from 1983 to present, representing one of the most tragic aspects of modern military aviation. The research reveals 47 major verified…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8083-1.jpg"

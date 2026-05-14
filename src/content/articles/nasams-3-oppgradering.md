@@ -12,7 +12,7 @@ heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/NASAMS_3.j
 heroImageAlt: "NASAMS 3 launcher under øvelse på Rena"
 lang: no
 featured: false
-author: "Redaksjonen"
+author: "Norsk luftvern"
 draft: false
 ---
 

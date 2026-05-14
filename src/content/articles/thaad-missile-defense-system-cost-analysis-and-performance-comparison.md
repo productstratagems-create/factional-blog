@@ -3,7 +3,7 @@ title: "THAAD Missile Defense System: Cost Analysis and Performance Comparison"
 date: 2025-07-18
 excerpt: "Strategic Defense at Premium Pricing THAAD (Terminal High Altitude Area Defense) commands $12.7 million per interceptor in 2024-2025, positioning it as a mid-tier option between the ultra-premium SM-3 Block IIA and more…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8023-1.jpg"

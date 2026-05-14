@@ -3,7 +3,7 @@ title: "Hvordan Europa prioriterer bakkebasert luftforsvar"
 date: 2025-03-10
 excerpt: "Det europeiske luftforsvarslandskapet har gjennomgått betydelige endringer de siste årene, der ledende europeiske nasjoner har tilpasset sine prioriteringer og investeringer for å møte nye sikkerhetsmessige utfordringer.…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_3173.jpg"

@@ -3,7 +3,7 @@ title: "Air Defence as a Fluid and Networked Joint Endeavor"
 date: 2025-03-29
 excerpt: "Since the full-scale conflict in Ukraine began in 2022, Ukraine’s military has been operating in an environment defined by sophisticated missile threats and electronic warfare countermeasures. Ukraine’s operational…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8290-1.jpg"

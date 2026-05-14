@@ -3,7 +3,7 @@ title: "Davids slynge"
 date: 2024-04-10
 excerpt: "Finland har besluttet å anskaffe David’s Sling langtrekkende luftvern produsert av Israel (Rafael) og USA (Raytheon). Kostnad satt til minst 316 millioner euro. Med opsjon på en dobling. David's Sling luftvernsystem er…"
 category: teknologi
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

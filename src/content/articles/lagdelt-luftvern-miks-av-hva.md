@@ -3,7 +3,7 @@ title: "Lagdelt luftvern: miks av hva?"
 date: 2017-06-28
 excerpt: "Teorien tilsier at et lagdelt forsvar med en sammensetning av ulike systemtyper øker effekten av luftvernet. Hva er så den beste sammensetningen? Artikkelen America needs an air and missile defense…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/create-a-highly-detailed-high-resolution-image-showcasing-a-modern-nordic-2.png"

@@ -3,7 +3,7 @@ title: "Air Defense Systems: Combat Performance vs. Economic Reality"
 date: 2025-06-25
 excerpt: "Air defense systems face unsustainable cost asymmetries that favor attackers 10-100:1, but recent combat data reveals significant performance variations that inform strategic investment decisions. IRIS-T SL delivers the…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_9424.jpg"

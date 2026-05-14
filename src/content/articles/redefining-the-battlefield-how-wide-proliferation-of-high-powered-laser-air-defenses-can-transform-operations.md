@@ -3,7 +3,7 @@ title: "Redefining the Battlefield: How Wide Proliferation of High Powered Laser
 date: 2025-04-12
 excerpt: "As high powered laser weapon systems mature and become widely deployed, the very nature of the battlefield is set to change dramatically. The adoption of directed-energy systems such as the U.S. Army’s DE M-SHORAD,…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8282-1.png"

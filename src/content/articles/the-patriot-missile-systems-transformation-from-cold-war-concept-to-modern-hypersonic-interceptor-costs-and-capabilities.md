@@ -3,7 +3,7 @@ title: "The Patriot missile system’s transformation from Cold War concept to m
 date: 2025-08-06
 excerpt: "The MIM-104 Patriot missile system represents one of the most successful examples of adaptive military technology in modern history, evolving from a 1961 Cold War concept into today’s premier air and missile defense…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/sam-d_launcher.jpg"

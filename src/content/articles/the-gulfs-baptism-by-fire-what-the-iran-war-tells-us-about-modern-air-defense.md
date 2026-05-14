@@ -3,7 +3,7 @@ title: "The Gulf’s Baptism by Fire: What the Iran War Tells Us About Modern Ai
 date: 2026-03-02
 excerpt: "For decades, the Gulf Cooperation Council states spent lavishly on air and missile defense. They bought Patriot batteries, then upgraded to PAC-3 and PAC-3 MSE. The UAE acquired THAAD. Saudi Arabia built one of the most…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8190-1.jpg"

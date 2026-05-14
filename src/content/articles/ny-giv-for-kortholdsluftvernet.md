@@ -3,7 +3,7 @@ title: "Ny giv for kortholdsluftvernet"
 date: 2017-05-24
 excerpt: "US Army ønsker å forsterke og revitalisere manøveravdelingene med moderne mobilt kortholdsluftvern. Industrien er derfor invitert til å demonstrere systemer som er tilgjengelige på kort sikt. US Army ønsker å forsterke…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_8045-1.jpg"

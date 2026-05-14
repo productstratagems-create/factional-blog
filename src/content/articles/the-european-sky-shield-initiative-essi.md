@@ -3,7 +3,7 @@ title: "The European Sky Shield Initiative (ESSI)"
 date: 2025-07-20
 excerpt: "A United Front or A Divisive Industrial Policy? In the wake of the full-scale invasion of Ukraine, the vulnerability of European skies to modern aerial threats—from cruise missiles and ballistic missiles to swarms of…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_7358-1.jpg"

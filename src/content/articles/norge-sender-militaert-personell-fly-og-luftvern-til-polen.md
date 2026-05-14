@@ -3,7 +3,7 @@ title: "Norge sender militært personell, fly og luftvern til Polen"
 date: 2024-12-02
 excerpt: "Norge sender militært personell, fly og luftvern til Polen for å beskytte et sentralt knutepunkt for transport av hjelp til Ukraina. Denne flyplassen er avgjørende for å få frem både humanitær hjelp og militært utstyr…"
 category: nato
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

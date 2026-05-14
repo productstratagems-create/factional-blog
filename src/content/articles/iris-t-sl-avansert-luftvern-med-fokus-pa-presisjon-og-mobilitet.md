@@ -3,7 +3,7 @@ title: "IRIS-T SL luftvernsystem"
 date: 2025-02-08
 excerpt: "Avansert luftvern med fokus på presisjon og mobilitet IRIS-T SL (Infra Red Imaging System Tail/Thrust Vector Controlled - Surface Launched) representerer et av de mest moderne og kapable kort- til mellomdistanse…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_7271-1.jpg"

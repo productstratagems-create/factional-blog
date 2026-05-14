@@ -3,7 +3,7 @@ title: "Sivil Beredskap og Luftvern: To sider av samme sak"
 date: 2025-04-01
 excerpt: "Sivil beredskap og luftvern er to essensielle, men forskjellige, pilarer i Norges nasjonale sikkerhet. De er tett sammenvevd, spesielt innenfor rammen av Totalforsvaret. Totalforsvarskonseptet innebærer at hele…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

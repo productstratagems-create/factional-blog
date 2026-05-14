@@ -3,7 +3,7 @@ title: "Tsjekkia anskaffer nytt luftvern"
 date: 2024-09-03
 excerpt: "Tsjekkia skal anskaffe fire batterier med middelsrekkende luftvern til snaut $470 mill. (drøyt 4 mrd kr.) Det er foreløpig ikke avklart hvem som får kontrakten, men tsjekkisk forsvarsindustri skal uansett stå for en…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

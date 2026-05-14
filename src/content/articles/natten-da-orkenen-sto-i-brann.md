@@ -3,7 +3,7 @@ title: "Natten da ørkenen sto i brann"
 date: 2025-06-27
 excerpt: "Mandag kveld var Al Udeid-basen i Qatar uvanlig stille. De fleste soldatene var allerede sendt bort. Flyene var fløyet ut. Bare noen få var igjen – 44 unge amerikanere og to luftvernstillinger med Patriot-raketter.…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

@@ -3,7 +3,7 @@ title: "Battle-Tested Air Defense: What Ukraine Teaches Us"
 date: 2025-07-16
 excerpt: "The war in Ukraine has provided the first comprehensive test of modern Western air defense systems under actual combat conditions. The results are changing how we think about air defense. When Colonel Per Steinar Trøite…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_7864-1.jpg"

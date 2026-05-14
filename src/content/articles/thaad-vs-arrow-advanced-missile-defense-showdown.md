@@ -3,7 +3,7 @@ title: "THAAD vs. Arrow: Advanced Missile Defense Showdown"
 date: 2025-06-16
 excerpt: "Two cutting-edge missile defense systems demonstrate complementary approaches to countering ballistic missile threats, with THAAD excelling in mobile deployment and Arrow leading in layered integration and combat…"
 category: teknologi
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8841.jpg"

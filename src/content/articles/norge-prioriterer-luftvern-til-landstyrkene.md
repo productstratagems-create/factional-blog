@@ -3,7 +3,7 @@ title: "Norge prioriterer luftvern til landstyrkene"
 date: 2017-10-13
 excerpt: "Landmaktsproposisjonen prioriterer luftvern, sammen med artilleri, stridsvogn og langtrekkende våpensystemer, fremfor helikoptre til Hæren. Første anskaffelse i 2020-21, med kjøretøybasert luftvern, dernest bærbart…"
 category: anskaffelse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

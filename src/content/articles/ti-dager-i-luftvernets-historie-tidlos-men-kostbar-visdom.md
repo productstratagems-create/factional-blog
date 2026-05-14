@@ -3,7 +3,7 @@ title: "Ti dager i luftvernets historie - tidløs, kostbar visdom"
 date: 2017-11-18
 excerpt: "I løpet av drøyt ti dager i mars-april under Gulfkrigen i 2003, så ble to av koalisjonens kampfly skutt ned av luftvern. Og et tredje fly avfyrte antiradarmissil som respons på en oppfattet SA-2 luftverntrussel. Disse…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_2980.jpg"

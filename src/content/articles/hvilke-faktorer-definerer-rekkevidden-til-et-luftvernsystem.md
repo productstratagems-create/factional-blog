@@ -3,7 +3,7 @@ title: "Hvilke faktorer definerer rekkevidden til et luftvernsystem?"
 date: 2023-03-24
 excerpt: "Denne teksten omhandler faktorene som bestemmer hva som utgjør et luftvernsystems sone for effektiv ildgivning - selve nedskytingssonen der luftvernvåpenet treffer målet sitt. Nedskytingssone Nedskytingssonen, eller…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5444-1.jpg"

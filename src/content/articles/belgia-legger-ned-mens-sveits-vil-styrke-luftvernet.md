@@ -3,7 +3,7 @@ title: "Belgia legger ned, mens Sveits vil styrke luftvernet"
 date: 2017-06-22
 excerpt: "Belgia, som siden 1993 har hatt landbasert Mistral kjøretøysmontert kortholdsluftvern, markerer nedleggelsen av luftvernet med en siste skarpskyting. Enheten skal konverteres til artilleri, skal vi tro på det Jane's…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

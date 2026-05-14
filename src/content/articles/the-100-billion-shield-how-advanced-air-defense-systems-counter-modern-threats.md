@@ -3,7 +3,7 @@ title: "The $100 Billion Shield: How Advanced Air Defense Systems Counter Modern
 date: 2025-06-01
 excerpt: "Executive Summary Western nations have invested over $100 billion in advanced air defense systems that can intercept threats at ranges exceeding 200 kilometers. These systems, including the combat-proven Patriot, THAAD,…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8836.jpg"

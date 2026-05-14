@@ -3,7 +3,7 @@ title: "Neste generasjon SAMP/T markedsføres i Midtøsten"
 date: 2025-02-24
 excerpt: "Selskapet Eurosam – et samarbeid mellom det franske selskapet MBDA og den franske sensorprodusenten Thales – presenterte nylig sin nyeste luftvernløsning, kalt SAMP/T NG ved International Defence Exhibition (IDEX 2025) i…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5466-1.jpg"

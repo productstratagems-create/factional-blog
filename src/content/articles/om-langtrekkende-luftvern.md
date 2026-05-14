@@ -3,7 +3,7 @@ title: "Om langtrekkende luftvern"
 date: 2024-06-19
 excerpt: "Den offentlige debatten om hvor mye luftvern, med hvilke kvaliteter, Norge egentlig trenger pågår. Det er imidlertid nødvendig å kvalifisere størrelsene som ofte går igjen i diskusjonene. Skal Norge ha langtrekkende…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5487-1.jpg"

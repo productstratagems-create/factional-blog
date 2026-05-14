@@ -3,7 +3,7 @@ title: "Sky Sabre Air Defense System"
 date: 2025-06-19
 excerpt: "Britain’s Next-Generation Air Defense Shield Britain’s Sky Sabre air defense system represents a quantum leap in protecting airspace against modern threats, replacing Cold War-era technology with a sophisticated network…"
 category: nato
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/create-a-high-resolution-highly-detailed-featured-image-for-a-blog.png"

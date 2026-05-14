@@ -3,7 +3,7 @@ title: "Tiden moden for MEADS?"
 date: 2017-07-04
 excerpt: "MEADS fremstår i offentligheten som et nokså modent system, men med få eller ingen kjøpere - så langt. Mens MEADS som system har noe å fare med, så velger US Army å vente til 2028 på \"nye Patriot\", mens Tyskland har…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_3025.jpg"

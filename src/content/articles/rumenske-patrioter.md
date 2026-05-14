@@ -3,7 +3,7 @@ title: "Rumenske Patrioter"
 date: 2023-02-23
 excerpt: "I juli 2017 godkjente amerikanske myndigheter et mulig salg av sju Patriot-batterier til Romania for 3,9 mrd. amerikanske dollar. Året etter ble det inngått en tilleggsavtale mellom produsenten og Romania om kjøp av…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_3023.jpg"

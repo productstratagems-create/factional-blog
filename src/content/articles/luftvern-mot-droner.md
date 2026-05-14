@@ -3,7 +3,7 @@ title: "Luftvern mot droner"
 date: 2017-05-26
 excerpt: "Vi har sett at klassisk men sofistikert, tungt og kostbart luftvern er benyttet mot relativt simple og billige ubemannede luftfarkoster, eksempelvis Patriot versus helikopterdroner med kamera. Ekstern…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_8279-1.png"

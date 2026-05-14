@@ -3,7 +3,7 @@ title: "Public interest in air defense — a canary in the coal mine?"
 date: 2026-03-11
 excerpt: "Web traffic data from the past few weeks tells an interesting story. In the days around March 1–3, traffic on this site spiked sharply. Readership reached several multiples of the baseline — a peak not driven by a major…"
 category: anskaffelse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_9371.jpg"

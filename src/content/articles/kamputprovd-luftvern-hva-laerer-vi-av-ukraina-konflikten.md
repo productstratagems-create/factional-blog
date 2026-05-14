@@ -3,7 +3,7 @@ title: "Kamputprøvd luftvern: Hva lærer vi av Ukraina-konflikten?"
 date: 2025-07-16
 excerpt: "Ukraina-krigen har gitt oss den første omfattende testen av moderne vestlige luftvernssystemer under reelle kampforhold. Resultatene endrer spillereglene for hvordan vi tenker om luftforsvar. Når oberst Per Steinar…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_7909-1.jpg"

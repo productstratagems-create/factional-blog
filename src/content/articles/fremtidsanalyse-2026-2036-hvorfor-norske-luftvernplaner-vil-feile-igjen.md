@@ -3,7 +3,7 @@ title: "Fremtidsanalyse 2026-2036: Hvorfor norske luftvernplaner vil feile igjen
 date: 2025-12-03
 excerpt: "Introduksjon: Forutsigbar gjentakelse Norge er mer enn ett år inn i sin mest ambisiøse forsvarsplan noensinne. Langtidsplan 2024-2036 lover historiske investeringer på 600 milliarder kroner, med luftvern som en av de…"
 category: history
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5442-1.jpg"

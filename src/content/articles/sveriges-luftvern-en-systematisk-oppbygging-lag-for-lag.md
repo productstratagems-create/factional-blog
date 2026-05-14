@@ -3,7 +3,7 @@ title: "Sveriges luftvern: En systematisk oppbygging lag for lag"
 date: 2026-04-16
 excerpt: "Denne analysen dokumenterer den svenske luftvernoppbyggingen fra 2021 til i dag, med utgangspunkt i offentlig tilgjengelig materiale fra Försvarsmakten, FMV og den svenske regjering. Formålet er å kartlegge hva Sverige…"
 category: anskaffelse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

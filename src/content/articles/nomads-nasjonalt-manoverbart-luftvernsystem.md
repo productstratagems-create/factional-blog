@@ -3,7 +3,7 @@ title: "NOMADS luftvernsystem"
 date: 2024-07-03
 excerpt: "Norsk manøverbart luftvern Introduksjon NOMADS (Norsk manøverbart luftvernsystem) er et skreddersydd luftvernssystem designet for å beskytte styrker og fremrykningsakser underveis i et dynamisk og omstridt…"
 category: teknologi
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

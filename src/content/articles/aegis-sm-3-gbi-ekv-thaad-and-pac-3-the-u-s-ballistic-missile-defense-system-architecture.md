@@ -3,7 +3,7 @@ title: "AEGIS, SM-3, GBI, EKV, THAAD and PAC-3: The U.S. Ballistic Missile Defen
 date: 2025-06-26
 excerpt: "The United States operates the world’s most sophisticated ballistic missile defense system, integrating multiple layers of sensors, interceptors, and command networks to counter threats across all phases of ballistic…"
 category: teknologi
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8028-1.jpg"

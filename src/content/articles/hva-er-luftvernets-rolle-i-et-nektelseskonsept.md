@@ -3,7 +3,7 @@ title: "Hva er luftvernets rolle i et nektelseskonsept?"
 date: 2023-04-08
 excerpt: "Det pågår en diskusjon i USA om hvordan den amerikanske luftmaktsdoktrinen skal videreutvikles eller kanskje endres fra det bestående, som i lang tid i stor grad har basert seg på bruk av offensiv luftmakt for å få…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_3402.jpg"

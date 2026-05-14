@@ -3,7 +3,7 @@ title: "Tsjekkia satser på mer luftvern"
 date: 2017-07-10
 excerpt: "I tillegg til å planlegge kjøp av middelsrekkende luftvern til drøyt 4 mrd. kr, nærmer det seg en løsning for nytt luftvern til landstyrkene. Fra før vet vi at Tsjekkia skal anskaffe fire batterier med middelsrekkende…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5423-1.jpg"

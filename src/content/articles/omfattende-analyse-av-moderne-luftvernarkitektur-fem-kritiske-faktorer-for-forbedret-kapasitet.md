@@ -3,7 +3,7 @@ title: "Omfattende analyse av moderne luftvernarkitektur: Fem kritiske faktorer 
 date: 2025-06-01
 excerpt: "Sammendrag Moderne luftvern krever integrering av fem kritiske faktorer: distribuerte sensornettverk, lagdelte kinetiske effektorer, rettede høyenergi-våpen, integrerte kommandosystemer og passive forsvarstiltak. Denne…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_3687.jpg"

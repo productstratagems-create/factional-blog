@@ -3,7 +3,7 @@ title: "MEADS; hva skjedde?"
 date: 2024-04-23
 excerpt: "MEADS skulle være en erstatning for Patriot med PAC-3 MSE-missilet som det primære (selv om det ble lagt planer for flere missiltyper også). MEADS, var et felles prosjekt mellom europeiske MBDA (eid av Airbus Group, BAE…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/image-11.png"

@@ -3,7 +3,7 @@ title: "Kampkraft og bærekraft — Langtidsplan for forsvarssektoren"
 date: 2017-05-22
 excerpt: "Regjeringen vil styrke beskyttelsen av Luftforsvarets baser, mottaksområder for alliert støtte og annen viktig infrastruktur. Det er helt avgjørende for utnyttelsen av F-35 og andre flysystemer at basene flyene opererer…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

@@ -3,7 +3,7 @@ title: "European Developments in Laser Directed Energy Weapons: Projects, Protot
 date: 2025-03-12
 excerpt: "European nations are making significant strides in the development of laser-directed energy weapons (LDEWs) as part of their broader efforts to modernize defense capabilities. These systems, designed to counter emerging…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8282-1.png"

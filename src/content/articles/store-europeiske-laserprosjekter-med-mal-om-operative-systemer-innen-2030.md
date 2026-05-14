@@ -3,7 +3,7 @@ title: "Store europeiske laserprosjekter med mål om operative systemer innen 20
 date: 2025-03-12
 excerpt: "Denne oversikten dekker de viktigste aspektene av artikkelen og gir innsikt i Europas fremgang innen høyenergi laservåpen. TALOS-TWO (Tactical Advanced Laser Optical Systems-TWO): Mål: Utvikle laser våpen med en effekt…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5833-1.jpg"

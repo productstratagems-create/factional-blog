@@ -3,7 +3,7 @@ title: "The Nordic Norm of Ground-Based Air Defenses: Mass, Mix, Maneuver, and I
 date: 2025-06-25
 excerpt: "The Nordic region—Sweden, Finland, Norway, and Denmark—has rapidly modernized and expanded its ground-based air defense (GBAD) capabilities in response to heightened security concerns, especially following Russia’s…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8026-1.png"

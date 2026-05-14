@@ -3,7 +3,7 @@ title: "Sveitsisk Patriot"
 date: 2023-02-21
 excerpt: "I juni 2021 besluttet Sveits å gå til anskaffelse av 36 F-35 kampfly og fem batterier med Patriot langtrekkende luftvern. Dette i konkurranse mot flytypene Eurofighter Typhoon, F/A-18 Super Hornet, Rafale og…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_2982.jpg"
