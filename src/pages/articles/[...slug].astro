@@ -14,21 +14,28 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
-// Related: prefer relatedSlugs, else same category
-const allEntries = await getCollection('articles', (e) => !e.data.draft && e.id !== entry.id);
+const allEntries = await getCollection('articles', (e) => !e.data.draft);
 
-let related = allEntries.filter(
+// Sorted descending by date for prev/next
+const sortedAll = [...allEntries].sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const currentIdx = sortedAll.findIndex((e) => e.id === entry.id);
+const nextEntry = currentIdx > 0 ? sortedAll[currentIdx - 1] : null;        // newer
+const prevEntry = currentIdx < sortedAll.length - 1 ? sortedAll[currentIdx + 1] : null; // older
+
+// Related: prefer relatedSlugs, else same category
+const otherEntries = allEntries.filter((e) => e.id !== entry.id);
+let related = otherEntries.filter(
   (e) => entry.data.relatedSlugs?.includes(articleSlug(e.id))
 );
 
 if (related.length === 0) {
-  related = allEntries
+  related = otherEntries
     .filter((e) => e.data.category === entry.data.category)
     .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
     .slice(0, 3);
 }
 ---
 
-<ArticleLayout entry={entry} related={related}>
+<ArticleLayout entry={entry} related={related} prev={prevEntry} next={nextEntry}>
   <Content />
 </ArticleLayout>

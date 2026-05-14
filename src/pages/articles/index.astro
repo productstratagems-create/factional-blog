@@ -1,0 +1,119 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleGrid from '../../components/ArticleGrid.astro';
+import Divider from '../../components/Divider.astro';
+
+const PAGE_SIZE = 18;
+
+const allArticles = await getCollection('articles', (e) => !e.data.draft);
+const sorted = allArticles.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const pageArticles = sorted.slice(0, PAGE_SIZE);
+const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
+---
+
+<BaseLayout
+  title="Alle artikler | Norsk Luftvern"
+  description="Alle artikler om norsk luftvern og missilforsvar."
+>
+  <div class="articles-page container">
+    <header class="page-header">
+      <p class="page-super">Arkiv</p>
+      <h1 class="page-title">Alle artikler</h1>
+      <p class="article-count">{sorted.length} artikler totalt</p>
+    </header>
+
+    <Divider spacing="md" />
+
+    <div class="articles-wrapper">
+      <ArticleGrid articles={pageArticles} columns={3} />
+    </div>
+
+    {totalPages > 1 && (
+      <nav class="pagination" aria-label="Sidenavigasjon">
+        <span class="pagination-btn pagination-btn--disabled">← Forrige</span>
+        <span class="pagination-info">Side 1 av {totalPages}</span>
+        <a class="pagination-btn" href="/articles/page/2">Neste →</a>
+      </nav>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .articles-page { padding-bottom: var(--spacing-3xl); }
+
+  .page-header {
+    padding-block: var(--spacing-2xl) var(--spacing-xl);
+  }
+
+  .page-super {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-teal);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-heading);
+    line-height: 1;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .article-count {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--color-muted);
+    margin: 0;
+  }
+
+  .articles-wrapper { padding-block: var(--spacing-xl); }
+
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    padding-block: var(--spacing-xl) var(--spacing-2xl);
+  }
+
+  .pagination-btn {
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.5em 1.2em;
+    border: 2px solid var(--color-navy);
+    color: var(--color-navy);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+  }
+
+  a.pagination-btn:hover {
+    background: var(--color-navy);
+    color: #fff;
+  }
+
+  .pagination-btn--disabled {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .pagination-info {
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    white-space: nowrap;
+  }
+</style>
