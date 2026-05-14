@@ -1,0 +1,280 @@
+---
+import { getCollection } from 'astro:content';
+import { articleHref } from '../utils/slug';
+
+const articles = await getCollection('articles', ({ data }) => !data.draft);
+const searchIndex = articles
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .map(entry => ({
+    title: entry.data.title,
+    href: articleHref(entry.id),
+    category: entry.data.category,
+    excerpt: (entry.data.excerpt ?? '').slice(0, 140),
+    lang: entry.data.lang ?? 'no',
+  }));
+---
+
+<div class="search-modal" id="search-modal" role="dialog" aria-modal="true" aria-label="Søk">
+  <div class="search-backdrop" id="search-backdrop"></div>
+  <div class="search-box">
+    <div class="search-input-wrap">
+      <svg class="search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <circle cx="8.5" cy="8.5" r="5.25"/>
+        <line x1="12.5" y1="12.5" x2="17" y2="17"/>
+      </svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input"
+        placeholder="Søk i artikler…"
+        autocomplete="off"
+        spellcheck="false"
+        aria-label="Søk i artikler"
+      />
+      <button class="search-close" id="search-close" aria-label="Lukk søk">Esc</button>
+    </div>
+    <ul class="search-results" id="search-results" role="listbox" aria-label="Søkeresultater"></ul>
+    <p class="search-hint" id="search-hint">Søk blant {searchIndex.length} artikler&ensp;·&ensp;<kbd>⌘K</kbd> for å åpne</p>
+  </div>
+</div>
+
+<script define:vars={{ searchIndex }}>
+  const modal    = document.getElementById('search-modal');
+  const input    = document.getElementById('search-input');
+  const results  = document.getElementById('search-results');
+  const hint     = document.getElementById('search-hint');
+  const backdrop = document.getElementById('search-backdrop');
+  const closeBtn = document.getElementById('search-close');
+
+  function openSearch() {
+    document.body.classList.add('search-open');
+    requestAnimationFrame(() => input?.focus());
+  }
+
+  function closeSearch() {
+    document.body.classList.remove('search-open');
+    if (input) input.value = '';
+    renderResults('');
+  }
+
+  function esc(s) {
+    return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  function highlight(text, q) {
+    if (!q) return text;
+    return text.replace(new RegExp(`(${esc(q)})`, 'gi'), '<mark>$1</mark>');
+  }
+
+  function renderResults(query) {
+    const q = query.trim().toLowerCase();
+    if (!q) {
+      results.innerHTML = '';
+      hint.hidden = false;
+      return;
+    }
+    hint.hidden = true;
+    const matches = searchIndex
+      .filter(a => a.title.toLowerCase().includes(q) || a.excerpt.toLowerCase().includes(q))
+      .slice(0, 12);
+
+    if (matches.length === 0) {
+      results.innerHTML = '<li class="search-no-results">Ingen resultater</li>';
+      return;
+    }
+
+    results.innerHTML = matches.map(a => `
+      <li>
+        <a href="${a.href}" class="search-result-link">
+          <span class="sr-category">${a.category}</span>
+          <span class="sr-title">${highlight(a.title, query.trim())}</span>
+          <span class="sr-excerpt">${highlight(a.excerpt, query.trim())}</span>
+        </a>
+      </li>
+    `).join('');
+  }
+
+  // Wire up all search buttons in the page
+  document.querySelectorAll('.search-btn').forEach(btn => {
+    btn.addEventListener('click', openSearch);
+  });
+
+  backdrop?.addEventListener('click', closeSearch);
+  closeBtn?.addEventListener('click', closeSearch);
+  input?.addEventListener('input', e => renderResults(e.target.value));
+
+  // Close on result click
+  results?.addEventListener('click', closeSearch);
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeSearch();
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      openSearch();
+    }
+  });
+</script>
+
+<style>
+  .search-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+    padding: 10vh 1rem 1rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  :global(body.search-open) .search-modal { display: flex; }
+
+  .search-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 3, 3, 0.55);
+    backdrop-filter: blur(2px);
+  }
+
+  .search-box {
+    position: relative;
+    z-index: 1;
+    width: min(640px, 100%);
+    background: var(--color-bg);
+    border-radius: var(--radius-md);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    max-height: 78vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    flex-shrink: 0;
+  }
+
+  .search-icon {
+    width: 18px;
+    height: 18px;
+    color: var(--color-muted);
+    flex-shrink: 0;
+  }
+
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: var(--font-ui);
+    font-size: 1rem;
+    color: var(--color-text);
+    background: transparent;
+    min-width: 0;
+  }
+
+  .search-input::placeholder { color: var(--color-muted); }
+
+  /* Remove browser default search cancel button */
+  .search-input::-webkit-search-cancel-button { display: none; }
+
+  .search-close {
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    cursor: pointer;
+    color: var(--color-muted);
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 4px;
+    flex-shrink: 0;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .search-close:hover { color: var(--color-heading); background: var(--color-border); }
+
+  .search-results {
+    list-style: none;
+    margin: 0;
+    padding: 0.4rem 0;
+    overflow-y: auto;
+    flex: 1;
+  }
+
+  .search-no-results {
+    padding: 1rem 1.25rem;
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--color-muted);
+  }
+
+  .search-result-link {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 0.55rem 1.25rem;
+    text-decoration: none;
+    transition: background 0.1s;
+  }
+
+  .search-result-link:hover,
+  .search-result-link:focus { background: var(--color-surface); outline: none; }
+
+  .sr-category {
+    font-family: var(--font-ui);
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-teal);
+  }
+
+  .sr-title {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--color-heading);
+    line-height: 1.2;
+  }
+
+  .sr-excerpt {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    color: var(--color-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4;
+  }
+
+  .search-result-link :global(mark) {
+    background: rgba(91, 191, 181, 0.35);
+    color: inherit;
+    border-radius: 2px;
+    padding: 0 1px;
+  }
+
+  .search-hint {
+    padding: 0.6rem 1.25rem;
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    color: var(--color-muted);
+    margin: 0;
+    border-top: 1px solid var(--color-border);
+    flex-shrink: 0;
+  }
+
+  .search-hint kbd {
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    padding: 1px 4px;
+    background: var(--color-surface);
+  }
+</style>
