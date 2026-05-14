@@ -191,7 +191,7 @@ const searchIndex = articles
     return `
       <li id="search-result-${i}" role="option" aria-selected="false" class="search-item">
         <a href="${a.href}" class="search-item-link">
-          <span class="si-title">${highlight(a.title, q)}</span>
+          <span class="si-title">${a.title}</span>
           <span class="si-date">${a.date}</span>
         </a>
       </li>`;
