@@ -2,7 +2,7 @@
 title: "Counter-Drone Defense Economics: Why Europe Needs a New Approach to C-UAS"
 date: 2026-01-03
 excerpt: "The proliferation of cheap drones has broken the traditional air defense cost model. Europe’s response so far has been fragmented and inadequate. This analysis examines the C-UAS challenge, surveys available solutions,…"
-category: missilforsvar
+category: luftvern
 author: "Redaksjonen"
 lang: en
 draft: false

@@ -2,7 +2,7 @@
 title: "The Missile Age Has Arrived: What the Middle East Crucible Means for Air Defense Everywhere"
 date: 2026-02-28
 excerpt: "The Middle East conflicts of 2024-2026 have produced the most consequential operational data on integrated air and missile defense in a generation. The findings challenge foundational assumptions across procurement,…"
-category: analyse
+category: luftvern
 author: "Redaksjonen"
 lang: en
 draft: false

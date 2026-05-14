@@ -2,7 +2,7 @@
 title: "Redefining the Battlefield: How Wide Proliferation of High Powered Laser Air Defenses can Transform Operations"
 date: 2025-04-12
 excerpt: "As high powered laser weapon systems mature and become widely deployed, the very nature of the battlefield is set to change dramatically. The adoption of directed-energy systems such as the U.S. Army’s DE M-SHORAD,…"
-category: missilforsvar
+category: luftvern
 author: "Redaksjonen"
 lang: en
 draft: false

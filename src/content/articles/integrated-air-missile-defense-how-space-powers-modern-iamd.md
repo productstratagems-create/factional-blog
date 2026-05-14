@@ -2,7 +2,7 @@
 title: "Integrated Air &amp; Missile Defense: How Space Powers Modern IAMD"
 date: 2025-07-22
 excerpt: "Integrated Air & Missile Defense (IAMD) unites protection against air-breathing threats—such as aircraft, drones, and cruise missiles—with defense against ballistic and hypersonic missile threats. In today’s…"
-category: teknologi
+category: luftvern
 author: "Redaksjonen"
 lang: en
 draft: false

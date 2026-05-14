@@ -2,7 +2,7 @@
 title: "Lysende fremtid for laserluftvern"
 date: 2017-10-02
 excerpt: "Operativt utplassert mobilt luftvern med laser i lavforsvar mot missiler, raketter, artilleri og bombekaster ligger muligens noe nærmere i tid enn mange tenker seg. I 2022 skal amerikanerne etter planen teste en 100…"
-category: missilforsvar
+category: luftvern
 author: "Redaksjonen"
 lang: no
 draft: false

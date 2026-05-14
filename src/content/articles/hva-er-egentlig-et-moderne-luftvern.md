@@ -2,7 +2,7 @@
 title: "Hva er egentlig et moderne luftvern?"
 date: 2017-01-01
 excerpt: "Moderne luftvern er ikke bare én enkeltkanon eller rakett – det er et hele-system som beskytter mot trusler på ulike avstander og høyder. Luftvernsystemer samvirker for å oppdage, spore og skyte ned fly, helikoptre,…"
-category: missilforsvar
+category: luftvern
 author: "Redaksjonen"
 lang: no
 draft: false

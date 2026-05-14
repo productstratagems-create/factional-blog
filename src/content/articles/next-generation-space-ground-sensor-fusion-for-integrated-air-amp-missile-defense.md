@@ -2,7 +2,7 @@
 title: "Next-Generation Space-Ground Sensor Fusion for Integrated Air &amp; Missile Defense"
 date: 2017-01-01
 excerpt: "Modern integrated air and missile defense (IAMD) systems have evolved into sophisticated multi-domain architectures that seamlessly fuse space-based and ground-based sensors to defend against advanced threats including…"
-category: teknologi
+category: luftvern
 author: "Redaksjonen"
 lang: en
 draft: false

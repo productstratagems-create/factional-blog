@@ -2,7 +2,7 @@
 title: "ChatGPT on Ground Based Air Defense Employment Principles"
 date: 2024-01-04
 excerpt: "Introduction to Air Defense Employment Principles In the ever-evolving landscape of modern warfare, the protection of airspace has become a critical imperative for military forces across the globe. As technology advances…"
-category: analyse
+category: luftvern
 author: "Redaksjonen"
 lang: en
 draft: false

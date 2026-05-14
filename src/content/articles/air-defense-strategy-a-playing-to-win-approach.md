@@ -2,7 +2,7 @@
 title: "Air Defense Strategy: A \"Playing to Win\" Approach"
 date: 2025-03-16
 excerpt: "The safeguarding of friendly forces and assets from aerial threats remains a paramount concern in modern warfare. Air defense, as a direct counter to aerial warfare, encompasses a wide array of weapon systems, sensor…"
-category: teknologi
+category: luftvern
 author: "Redaksjonen"
 lang: en
 draft: false

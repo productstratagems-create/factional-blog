@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import { articleHref, assetSrc } from '../utils/slug';
 
 const CATEGORY_LABELS: Record<string, string> = {
+  luftvern:        'Luftvern',
   missilforsvar:   'Missilforsvar',
   'missile-systems': 'Missilsystemer',
   procurement:     'Anskaffelser',
@@ -83,6 +84,7 @@ const searchIndex = articles
       none:    (q) => `Ingen artikler matcher «${q}»`,
       tryOther:'Prøv et annet søkeord.',
       cats: {
+        luftvern:        'Luftvern',
         missilforsvar:   'Missilforsvar',
         'missile-systems': 'Missilsystemer',
         anskaffelse:     'Anskaffelse',
@@ -103,6 +105,7 @@ const searchIndex = articles
       none:    (q) => `No articles match «${q}»`,
       tryOther:'Try a different search term.',
       cats: {
+        luftvern:        'Air Defense',
         missilforsvar:   'Missile Defense',
         'missile-systems': 'Missile Defense',
         anskaffelse:     'Procurement',
