@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@theme inline {
+  /* Colors */
+  --color-heading:  oklch(17% 0.06 15);
+  --color-navy:     oklch(30% 0.10 255);
+  --color-teal:     oklch(72% 0.09 185);
+  --color-red:      oklch(42% 0.15 25);
+  --color-muted:    oklch(52% 0.02 260);
+  --color-surface:  oklch(97% 0 0);
+  --color-border:   oklch(91% 0 0);
+
+  /* Fonts */
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body:    'Lora', Georgia, serif;
+  --font-ui:      'Inter', system-ui, sans-serif;
+
+  /* Layout */
+  --width-content: 75rem;
+  --width-prose:   45rem;
+}
