@@ -27,11 +27,10 @@ const {
   author = 'Redaksjonen',
   readingTime,
   lang = 'no',
-  featured = false,
 } = Astro.props;
 ---
 
-<article class:list={['article-card', { 'article-card--featured': featured }]}>
+<article class="article-card">
   <a href={href} class="card-image-link" tabindex="-1" aria-hidden="true">
     {heroImage ? (
       <img
@@ -72,16 +71,13 @@ const {
     display: flex;
     flex-direction: column;
     background: var(--color-bg);
-    border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     overflow: hidden;
-    box-shadow: var(--shadow-card);
-    transition: box-shadow 0.2s, transform 0.2s;
+    transition: box-shadow 0.2s;
   }
 
   .article-card:hover {
-    box-shadow: 0 6px 20px rgba(28, 8, 8, 0.12);
-    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(28, 8, 8, 0.10);
   }
 
   /* ── Image ── */
@@ -126,7 +122,7 @@ const {
 
   /* ── Body ── */
   .card-body {
-    padding: var(--spacing-md) var(--spacing-lg) var(--spacing-lg);
+    padding: var(--spacing-sm) var(--spacing-md) var(--spacing-md);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
@@ -135,7 +131,7 @@ const {
 
   .card-title {
     font-family: var(--font-display);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 800;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -159,11 +155,8 @@ const {
     color: var(--color-muted);
     margin: 0;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-
-  /* ── Featured variant ── */
-  .article-card--featured .card-title { font-size: 1.3rem; }
 </style>
