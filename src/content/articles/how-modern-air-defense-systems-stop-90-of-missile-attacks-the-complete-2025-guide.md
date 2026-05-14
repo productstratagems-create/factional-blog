@@ -2,7 +2,7 @@
 title: "How Modern Air Defense Systems Stop 90% of Missile Attacks: The Complete 2025 Guide"
 date: 2025-07-04
 excerpt: "World-class IAMD systems succeed through five fundamental criteria: comprehensive multi-layered defense architectures, seamless sensor-to-shooter integration, adaptive threat response capabilities, sustainable…"
-category: nato
+category: luftvern
 author: "Redaksjonen"
 lang: en
 draft: false

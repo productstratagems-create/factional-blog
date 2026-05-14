@@ -2,7 +2,7 @@
 title: "Hva innebærer et styrket luftvern i Norge?"
 date: 2023-04-03
 excerpt: "Her er noen punkter som kan være nyttige dersom noen lurer på hva som kan/bør omfattes av et styrket luftvern. Del dem til de det angår. Fem faktorer for et sterkt luftvern 1) Et distribuert nettverk av mobile og faste…"
-category: missilforsvar
+category: luftvern
 author: "Redaksjonen"
 lang: no
 draft: false

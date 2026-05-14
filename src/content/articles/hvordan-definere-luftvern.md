@@ -2,7 +2,7 @@
 title: "Hvordan definere luftvern?"
 date: 2025-03-03
 excerpt: "Luftvernsystemer kan settes inn for å beskytte nasjonal suverenitet, kritisk infrastruktur og deployerte militære styrker mot et bredt spekter av lufttrusler. En helhetlig definisjon av luftvernsystemer krever imidlertid…"
-category: teknologi
+category: luftvern
 author: "Redaksjonen"
 lang: no
 draft: false

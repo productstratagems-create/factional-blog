@@ -2,7 +2,7 @@
 title: "The Optimal Western Air and Missile Defense Architecture"
 date: 2026-03-21
 excerpt: "What the best layered IAMD system money can buy would actually look like — and why no one has built it This is the kind of question that defense planners spend entire careers wrestling with — and the honest answer is…"
-category: analyse
+category: luftvern
 author: "Redaksjonen"
 lang: en
 draft: false

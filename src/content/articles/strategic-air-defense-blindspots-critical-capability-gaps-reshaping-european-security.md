@@ -2,7 +2,7 @@
 title: "Strategic Air Defense Blindspots: Critical Capability Gaps Reshaping European Security"
 date: 2025-08-14
 excerpt: "The convergence of emerging threats and defensive vulnerabilities is creating a strategic inflection point that most mainstream defense analysis significantly underestimates. While European defense establishments focus…"
-category: analyse
+category: luftvern
 author: "Redaksjonen"
 lang: en
 draft: false

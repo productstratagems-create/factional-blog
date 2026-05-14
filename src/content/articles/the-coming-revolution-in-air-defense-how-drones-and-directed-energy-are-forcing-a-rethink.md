@@ -2,7 +2,7 @@
 title: "The Coming Revolution in Air Defense: How Drones and Directed Energy Are Forcing a Rethink"
 date: 2025-07-20
 excerpt: "In recent years, the world of air defense has undergone a seismic shift. While traditional air defense systems remain crucial, a far more profound transformation is now underway—one propelled by the explosive growth of…"
-category: analyse
+category: luftvern
 author: "Redaksjonen"
 lang: en
 draft: false

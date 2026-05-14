@@ -2,7 +2,7 @@
 title: "The Ground Wins: 21st-Century Aircraft Attrition and the Empirical Case for Ground-Based Air Defence"
 date: 2026-03-24
 excerpt: "What four years of high-intensity air warfare reveal about how aircraft actually die — and why Norway’s unfulfilled ballistic missile defence requirement matters more than ever Introduction A Hush-Kit analysis published…"
-category: analyse
+category: luftvern
 author: "Redaksjonen"
 lang: en
 draft: false

@@ -2,7 +2,7 @@
 title: "Beyond Hypersonic Missile Defense: Confronting the Full Range of Air and Missile Defense Challenges"
 date: 2025-08-10
 excerpt: "Hypersonic glide vehicles have quickly become the new buzzword in missile defense debates. They capture headlines with their blistering speeds and unpredictable flight paths. Russia, China, and the United States are all…"
-category: analyse
+category: luftvern
 author: "Redaksjonen"
 lang: en
 draft: false

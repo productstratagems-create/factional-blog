@@ -2,7 +2,7 @@
 title: "En helhetlig tilnærming til luftvern og missilforsvar"
 date: 2020-07-12
 excerpt: "I en artikkel(https://www.defensenews.com/opinion/commentary/2020/06/26/its-time-to-rethink-japans-missile-defenses/) leser vi om Japans beslutning om å kansellere det planlagte kjøpet av to landbaserte ballistiske…"
-category: missilforsvar
+category: luftvern
 author: "Redaksjonen"
 lang: no
 draft: false

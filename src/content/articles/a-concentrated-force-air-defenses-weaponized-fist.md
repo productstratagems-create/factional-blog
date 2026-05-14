@@ -2,7 +2,7 @@
 title: "A Concentrated Force: Air Defense's Weaponized Fist"
 date: 2024-07-04
 excerpt: "Cracking open American field manuals reveals a crucial truth: air defense deployment isn't random. Local commanders don't just wing it. Instead, it resembles a wolf pack – a coordinated unit where positioning, spacing,…"
-category: analyse
+category: luftvern
 author: "Redaksjonen"
 lang: en
 draft: false
