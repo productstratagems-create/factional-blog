@@ -9,8 +9,8 @@ tags:
   - Mamba
   - langtrekkende luftvern
   - sammenligning
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Patriot_missile_battery_imgp1356.jpg/1280px-Patriot_missile_battery_imgp1356.jpg"
-heroImageAlt: "Patriot missilbatteri under øvelse"
+heroImage: "/images/img_8855.png"
+heroImageAlt: "Patriot og SAMP/T luftvernsystemer side om side under øvelse"
 lang: no
 featured: true
 author: "Redaksjonen"
