@@ -60,6 +60,11 @@ const fullTitle = title === 'Norsk Luftvern' ? title : `${title} | Norsk Luftver
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+
+    <!-- Apply lang filter before paint to avoid flash -->
+    <script is:inline>
+      (function(){var l=localStorage.getItem('site-lang')||'all';document.documentElement.setAttribute('data-lang-filter',l);})();
+    </script>
   </head>
 
   <body>
@@ -103,4 +108,7 @@ const fullTitle = title === 'Norsk Luftvern' ? title : `${title} | Norsk Luftver
     transition: width 80ms linear;
     pointer-events: none;
   }
+
+  html[data-lang-filter="en"] [data-article-lang="no"] { display: none; }
+  html[data-lang-filter="no"] [data-article-lang="en"] { display: none; }
 </style>

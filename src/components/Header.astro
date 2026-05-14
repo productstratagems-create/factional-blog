@@ -1,6 +1,7 @@
 ---
 import Logo from './Logo.astro';
 import Divider from './Divider.astro';
+import LangToggle from './LangToggle.astro';
 import { siteHref } from '../utils/slug';
 
 interface Props {
@@ -45,7 +46,7 @@ function isActive(href: string) {
       <Logo size="md" />
     </div>
 
-    <!-- Right: desktop nav + mobile hamburger -->
+    <!-- Right: desktop nav + lang toggle + mobile hamburger -->
     <div class="header-right">
       <nav class="site-nav" aria-label="Navigasjon">
         <ul role="list">
@@ -63,6 +64,8 @@ function isActive(href: string) {
         </ul>
       </nav>
 
+      <LangToggle />
+
       <label for="nav-toggle" class="nav-hamburger" aria-label="Åpne meny">
         <span></span><span></span><span></span>
       </label>
@@ -71,6 +74,9 @@ function isActive(href: string) {
 
   <!-- Mobile dropdown -->
   <div class="mobile-nav-wrap">
+    <div class="mobile-lang-wrap">
+      <LangToggle />
+    </div>
     <nav aria-label="Mobilnavigasjon">
       <ul role="list">
         {nav.map(({ href, label }) => (
@@ -212,8 +218,12 @@ function isActive(href: string) {
   .nav-toggle-input:checked ~ .mobile-nav-wrap { display: block; }
 
   /* ── Desktop ── */
+  .mobile-lang-wrap {
+    padding: var(--spacing-sm) var(--spacing-lg) 0;
+  }
+
   @media (min-width: 769px) {
-    .header-inner { grid-template-columns: 120px 1fr 120px; }
+    .header-inner { grid-template-columns: 120px 1fr 180px; }
 
     .site-nav {
       display: block;
