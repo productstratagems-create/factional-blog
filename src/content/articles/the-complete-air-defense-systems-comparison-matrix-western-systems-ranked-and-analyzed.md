@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: en
 draft: false
+featured: true
 heroImage: "/images/image-15.png"
 heroImageAlt: "Mobil launcher avfyrer missiler ved solnedgang"
 ---

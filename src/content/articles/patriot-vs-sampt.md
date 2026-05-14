@@ -12,7 +12,7 @@ tags:
 heroImage: "/images/img_8855.png"
 heroImageAlt: "Patriot og SAMP/T luftvernsystemer side om side under øvelse"
 lang: no
-featured: true
+featured: false
 author: "Redaksjonen"
 draft: false
 ---
