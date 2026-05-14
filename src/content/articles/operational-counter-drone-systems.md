@@ -1,0 +1,25 @@
+---
+title: "Operational Counter-Drone Systems"
+date: 2025-03-31
+excerpt: "U.S. Systems - Coyote Block 2(http://norskluftvern.com/coyote-block-2-counter-drone-system-us) (Raytheon) – A kinetic interceptor designed to shoot down drones. - Epirus’…"
+category: missilforsvar
+author: "Redaksjonen"
+lang: no
+draft: false
+---
+
+**U.S. Systems**
+
+- **[Coyote Block 2](http://norskluftvern.com/coyote-block-2-counter-drone-system-us) **(Raytheon) – A kinetic interceptor designed to shoot down drones.
+
+- **[Epirus’ Leonidas](http://norskluftvern.com/epirus-leonidas-counter-drone-system-us)** (Epirus Inc.) – A high-power microwave system capable of disabling swarms.
+
+- **[DroneDefender](http://norskluftvern.com/dronedefender-counter-drone-system-us) **(Dedrone) – A handheld RF jammer used by military and law enforcement.
+
+- **[Stryker M-SHORAD](http://norskluftvern.com/stryker-m-shorad-counter-drone-system-us)** (Leonardo DRS) – Mounted on an armored vehicle, this system combines a laser, missiles, and a 30mm cannon.
+
+#### **European Systems**
+
+- **[SkyWall 100 & 300](http://norskluftvern.com/skywall-100-skywall-300-counter-drone-system-uk) **(OpenWorks Engineering, UK) – Net-based capture systems.
+
+- **[Drone Dome](http://norskluftvern.com/drone-dome-counter-drone-system-israel) **(Rafael, Israel) – Jams and destroys drones using high-energy lasers.
