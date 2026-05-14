@@ -20,12 +20,15 @@ const labels: Record<string, string> = {
   'nato':               'NATO',
 };
 
-const label = labels[category.toLowerCase()] ?? category;
+const slug = category.toLowerCase();
+const label = labels[slug] ?? category;
+const i18nKey = `cat.name.${slug}`;
 const Tag = href ? 'a' : 'span';
 ---
 
 <Tag
   class="category-badge"
+  data-i18n={i18nKey}
   {...href ? { href } : {}}
 >
   {label}

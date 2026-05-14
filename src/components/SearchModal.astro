@@ -22,7 +22,7 @@ const searchIndex = articles
   .map(entry => ({
     title:         entry.data.title,
     href:          articleHref(entry.id),
-    category:      CATEGORY_LABELS[entry.data.category?.toLowerCase()] ?? entry.data.category ?? '',
+    categorySlug:  entry.data.category?.toLowerCase() ?? '',
     excerpt:       entry.data.excerpt ?? '',
     lang:          entry.data.lang ?? 'no',
     date:          entry.data.date.toLocaleDateString('nb-NO', { day: 'numeric', month: 'short', year: 'numeric' }),
@@ -82,6 +82,19 @@ const searchIndex = articles
       result:  (n) => n === 1 ? `${n} resultat` : `${n} resultater`,
       none:    (q) => `Ingen artikler matcher «${q}»`,
       tryOther:'Prøv et annet søkeord.',
+      cats: {
+        missilforsvar:   'Missilforsvar',
+        'missile-systems': 'Missilsystemer',
+        anskaffelse:     'Anskaffelse',
+        procurement:     'Anskaffelser',
+        policy:          'Forsvarspolitikk',
+        exercises:       'Øvelser',
+        history:         'Historie',
+        analyse:         'Analyse',
+        analysis:        'Analyse',
+        teknologi:       'Teknologi',
+        nato:            'NATO',
+      },
     },
     en: {
       recent:  'Recent articles',
@@ -89,6 +102,19 @@ const searchIndex = articles
       result:  (n) => n === 1 ? `${n} result` : `${n} results`,
       none:    (q) => `No articles match «${q}»`,
       tryOther:'Try a different search term.',
+      cats: {
+        missilforsvar:   'Missile Systems',
+        'missile-systems': 'Missile Systems',
+        anskaffelse:     'Procurement',
+        procurement:     'Procurement',
+        policy:          'Defense Policy',
+        exercises:       'Exercises',
+        history:         'History',
+        analyse:         'Analysis',
+        analysis:        'Analysis',
+        teknologi:       'Technology',
+        nato:            'NATO',
+      },
     },
   };
 
@@ -197,6 +223,8 @@ const searchIndex = articles
   }
 
   function resultHTML(a, i, q) {
+    const t = SEARCH_T[sl()];
+    const catLabel = (a.categorySlug && t.cats[a.categorySlug]) || a.categorySlug || '';
     const thumb = a.thumb
       ? `<img class="si-thumb" src="${a.thumb}" alt="" loading="lazy" decoding="async">`
       : `<div class="si-thumb si-thumb-empty"><span>NL</span></div>`;
@@ -207,7 +235,7 @@ const searchIndex = articles
         <a href="${a.href}" class="search-item-link">
           ${thumb}
           <div class="si-body">
-            <span class="si-meta">${a.category}${a.category && a.date ? ' · ' : ''}${a.date}</span>
+            <span class="si-meta">${catLabel}${catLabel && a.date ? ' · ' : ''}${a.date}</span>
             <span class="si-title">${titleHTML}</span>
             ${excerptHTML ? `<span class="si-excerpt">${excerptHTML}</span>` : ''}
           </div>
