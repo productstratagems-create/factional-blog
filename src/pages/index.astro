@@ -45,9 +45,6 @@ const featuredReadingTime = featured?.data.readingTimeMinutes ?? Math.max(1, Mat
     <Divider />
 
     <section class="articles-section container">
-      <div class="section-header">
-        <h2 class="section-title">Siste artikler</h2>
-      </div>
       <ArticleGrid articles={rest} columns={3} />
 
       {allArticles.length > 13 && (
@@ -65,27 +62,12 @@ const featuredReadingTime = featured?.data.readingTimeMinutes ?? Math.max(1, Mat
   }
 
   .hero-section {
-    padding-block: var(--spacing-2xl);
+    padding-block: var(--spacing-lg);
   }
 
   .articles-section {
-    padding-block: var(--spacing-2xl);
-  }
-
-  .section-header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: var(--spacing-xl);
-  }
-
-  .section-title {
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--color-heading);
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-2xl);
   }
 
   .load-more {

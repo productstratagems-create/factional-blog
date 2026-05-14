@@ -9,11 +9,11 @@ interface Props {
 const { currentPath = '/' } = Astro.props;
 
 const nav = [
-  { href: '/',                    label: 'Forsiden' },
+  { href: '/',                         label: 'Forsiden' },
   { href: '/categories/missilforsvar', label: 'Missilsystemer' },
   { href: '/categories/anskaffelse',   label: 'Anskaffelser' },
   { href: '/categories/analyse',       label: 'Analyse' },
-  { href: '/about',               label: 'Om oss' },
+  { href: '/about',                    label: 'Om oss' },
 ];
 
 function isActive(href: string) {
@@ -23,13 +23,52 @@ function isActive(href: string) {
 ---
 
 <header class="site-header">
+  <!-- Hidden checkbox controls mobile dropdown -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true" />
+
   <div class="header-inner container">
-    <!-- Mobile menu toggle -->
-    <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true" />
+    <!-- Left: search button -->
+    <div class="header-left">
+      <button class="search-btn" aria-label="Søk">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="8.5" cy="8.5" r="5.25"/>
+          <line x1="12.5" y1="12.5" x2="17" y2="17"/>
+        </svg>
+      </button>
+    </div>
 
-    <Logo size="md" />
+    <!-- Center: logo -->
+    <div class="header-center">
+      <Logo size="md" />
+    </div>
 
-    <nav class="site-nav" aria-label="Navigasjon">
+    <!-- Right: desktop nav + mobile hamburger -->
+    <div class="header-right">
+      <nav class="site-nav" aria-label="Navigasjon">
+        <ul role="list">
+          {nav.map(({ href, label }) => (
+            <li>
+              <a
+                href={href}
+                class:list={['nav-link', { active: isActive(href) }]}
+                {...isActive(href) ? { 'aria-current': 'page' } : {}}
+              >
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <label for="nav-toggle" class="nav-hamburger" aria-label="Åpne meny">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Mobile dropdown -->
+  <div class="mobile-nav-wrap">
+    <nav aria-label="Mobilnavigasjon">
       <ul role="list">
         {nav.map(({ href, label }) => (
           <li>
@@ -44,11 +83,8 @@ function isActive(href: string) {
         ))}
       </ul>
     </nav>
-
-    <label for="nav-toggle" class="nav-hamburger" aria-label="Åpne meny">
-      <span></span><span></span><span></span>
-    </label>
   </div>
+
   <Divider />
 </header>
 
@@ -61,26 +97,47 @@ function isActive(href: string) {
     box-shadow: 0 1px 0 var(--color-border);
   }
 
+  /* 3-col grid keeps logo perfectly centered regardless of side content width */
   .header-inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: 36px 1fr 36px;
     align-items: center;
-    justify-content: space-between;
-    gap: var(--spacing-lg);
-    padding-block: var(--spacing-md);
+    gap: var(--spacing-md);
+    padding-block: 0.6rem;
   }
 
-  /* ── Nav ── */
-  .site-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  .header-left  { display: flex; align-items: center; }
+  .header-center { display: flex; justify-content: center; }
+  .header-right { display: flex; align-items: center; justify-content: flex-end; }
+
+  /* ── Search button ── */
+  .search-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color-border);
+    background: transparent;
+    cursor: pointer;
     display: flex;
-    gap: var(--spacing-lg);
+    align-items: center;
+    justify-content: center;
+    color: var(--color-heading);
+    padding: 0;
+    transition: border-color 0.15s, color 0.15s;
+    flex-shrink: 0;
   }
+
+  .search-btn svg { width: 16px; height: 16px; }
+  .search-btn:hover { border-color: var(--color-navy); color: var(--color-navy); }
+
+  /* ── Nav ── */
+  .nav-toggle-input { display: none; }
+
+  .site-nav { display: none; }
 
   .nav-link {
     font-family: var(--font-ui);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -89,6 +146,7 @@ function isActive(href: string) {
     padding-bottom: 2px;
     border-bottom: 2px solid transparent;
     transition: color 0.15s, border-color 0.15s;
+    white-space: nowrap;
   }
 
   .nav-link:hover,
@@ -98,14 +156,15 @@ function isActive(href: string) {
   }
 
   /* ── Hamburger ── */
-  .nav-toggle-input { display: none; }
-
   .nav-hamburger {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    padding: 4px;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-hamburger span {
@@ -117,37 +176,56 @@ function isActive(href: string) {
     transition: transform 0.2s, opacity 0.2s;
   }
 
-  /* ── Mobile ── */
-  @media (max-width: 768px) {
-    .nav-hamburger { display: flex; }
+  /* Hamburger → X when checked */
+  .nav-toggle-input:checked + .header-inner .nav-hamburger span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .nav-toggle-input:checked + .header-inner .nav-hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-toggle-input:checked + .header-inner .nav-hamburger span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* ── Mobile dropdown ── */
+  .mobile-nav-wrap {
+    display: none;
+    border-top: 1px solid var(--color-border);
+    background: var(--color-bg);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  .mobile-nav-wrap ul {
+    list-style: none;
+    margin: 0;
+    padding: var(--spacing-md) var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .mobile-nav-wrap .nav-link { font-size: 0.95rem; padding-block: 0.4em; }
+
+  .nav-toggle-input:checked ~ .mobile-nav-wrap { display: block; }
+
+  /* ── Desktop ── */
+  @media (min-width: 769px) {
+    .header-inner { grid-template-columns: 120px 1fr 120px; }
 
     .site-nav {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background: var(--color-bg);
-      border-top: 1px solid var(--color-border);
-      padding: var(--spacing-md) var(--spacing-lg);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: block;
     }
 
-    .nav-toggle-input:checked ~ nav.site-nav { display: block; }
-
-    .site-nav ul { flex-direction: column; gap: var(--spacing-sm); }
-
-    .nav-link { font-size: 0.95rem; padding-block: 0.4em; }
-
-    /* Animate hamburger when open */
-    .nav-toggle-input:checked ~ label.nav-hamburger span:nth-child(1) {
-      transform: translateY(7px) rotate(45deg);
+    .site-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: var(--spacing-lg);
+      justify-content: flex-end;
     }
-    .nav-toggle-input:checked ~ label.nav-hamburger span:nth-child(2) {
-      opacity: 0;
-    }
-    .nav-toggle-input:checked ~ label.nav-hamburger span:nth-child(3) {
-      transform: translateY(-7px) rotate(-45deg);
-    }
+
+    .nav-hamburger { display: none; }
+    .mobile-nav-wrap { display: none !important; }
   }
 </style>
