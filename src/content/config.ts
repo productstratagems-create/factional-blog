@@ -13,6 +13,9 @@ const articles = defineCollection({
     lang: z.enum(['no', 'sv', 'en']).default('no'),
     featured: z.boolean().default(false),
     author: z.string().default('Redaksjonen'),
+    draft: z.boolean().default(false),
+    readingTimeMinutes: z.number().int().positive().optional(),
+    relatedSlugs: z.array(z.string()).default([]),
   }),
 });
 

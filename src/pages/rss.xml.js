@@ -1,5 +1,6 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import { articleSlug } from '../utils/slug.ts';
 
 export async function GET(context) {
   const articles = await getCollection('articles', (e) => !e.data.draft);
@@ -15,7 +16,7 @@ export async function GET(context) {
       title: entry.data.title,
       pubDate: entry.data.date,
       description: entry.data.excerpt,
-      link: `/articles/${entry.id}/`,
+      link: `/articles/${articleSlug(entry.id)}/`,
       categories: [entry.data.category, ...(entry.data.tags ?? [])],
       author: entry.data.author ?? 'Redaksjonen',
     })),
