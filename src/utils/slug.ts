@@ -12,3 +12,10 @@ export function siteHref(path: string): string {
   if (path === '/') return import.meta.env.BASE_URL;
   return base + path;
 }
+
+// Prefix local image paths (starting with /) with the base URL.
+// External URLs (https://) are returned unchanged.
+export function assetSrc(src: string): string {
+  if (src.startsWith('/') && !src.startsWith('//')) return base + src;
+  return src;
+}

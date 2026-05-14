@@ -1,5 +1,6 @@
 ---
 import ArticleMeta from './ArticleMeta.astro';
+import { assetSrc } from '../utils/slug';
 
 interface Props {
   title: string;
@@ -31,7 +32,7 @@ const {
   <a href={href} class="hero-card" aria-label={title}>
     {heroImage ? (
       <img
-        src={heroImage}
+        src={assetSrc(heroImage)}
         alt={heroImageAlt}
         class="hero-image"
         loading="eager"
