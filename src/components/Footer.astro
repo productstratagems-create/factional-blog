@@ -1,14 +1,15 @@
 ---
 import Logo from './Logo.astro';
+import { siteHref } from '../utils/slug';
 
 const year = new Date().getFullYear();
 
 const categories = [
-  { href: '/categories/missilforsvar', label: 'Missilsystemer' },
-  { href: '/categories/teknologi',     label: 'Teknologi' },
-  { href: '/categories/anskaffelse',   label: 'Anskaffelser' },
-  { href: '/categories/analyse',       label: 'Analyse' },
-  { href: '/categories/history',       label: 'Historie' },
+  { href: siteHref('/categories/missilforsvar'), label: 'Missilsystemer' },
+  { href: siteHref('/categories/teknologi'),     label: 'Teknologi' },
+  { href: siteHref('/categories/anskaffelse'),   label: 'Anskaffelser' },
+  { href: siteHref('/categories/analyse'),       label: 'Analyse' },
+  { href: siteHref('/categories/history'),       label: 'Historie' },
 ];
 ---
 
@@ -22,9 +23,9 @@ const categories = [
     <nav class="footer-nav" aria-label="Snarveier">
       <h3>Navigasjon</h3>
       <ul role="list">
-        <li><a href="/">Forsiden</a></li>
-        <li><a href="/about">Om oss</a></li>
-        <li><a href="/rss.xml">RSS-feed</a></li>
+        <li><a href={siteHref('/')}>Forsiden</a></li>
+        <li><a href={siteHref('/about')}>Om oss</a></li>
+        <li><a href={siteHref('/rss.xml')}>RSS-feed</a></li>
       </ul>
     </nav>
 
@@ -41,7 +42,7 @@ const categories = [
   <div class="footer-bottom">
     <div class="container">
       <p>&copy; {year} Norsk Luftvern. Alle rettigheter forbeholdt.</p>
-      <a href="/rss.xml" class="rss-link" aria-label="RSS-feed">
+      <a href={siteHref('/rss.xml')} class="rss-link" aria-label="RSS-feed">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
           <circle cx="2.5" cy="13.5" r="1.5"/>
           <path d="M1 7.5A6.5 6.5 0 0 1 7.5 14H9A7.5 7.5 0 0 0 1 6.5v1z"/>

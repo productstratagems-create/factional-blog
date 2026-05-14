@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ArticleGrid from '../../../components/ArticleGrid.astro';
 import Divider from '../../../components/Divider.astro';
+import { siteHref } from '../../../utils/slug';
 
 export async function getStaticPaths() {
   const PAGE_SIZE = 18;
@@ -25,8 +26,8 @@ export async function getStaticPaths() {
 }
 
 const { articles, pageNum, totalPages, total } = Astro.props;
-const prevHref = pageNum === 2 ? '/articles' : `/articles/page/${pageNum - 1}`;
-const nextHref = pageNum < totalPages ? `/articles/page/${pageNum + 1}` : null;
+const prevHref = siteHref(pageNum === 2 ? '/articles' : `/articles/page/${pageNum - 1}`);
+const nextHref = pageNum < totalPages ? siteHref(`/articles/page/${pageNum + 1}`) : null;
 ---
 
 <BaseLayout

@@ -1,24 +1,26 @@
 ---
 import Logo from './Logo.astro';
 import Divider from './Divider.astro';
+import { siteHref } from '../utils/slug';
 
 interface Props {
   currentPath?: string;
 }
 
-const { currentPath = '/' } = Astro.props;
+const { currentPath = import.meta.env.BASE_URL } = Astro.props;
 
+const HOME = siteHref('/');
 const nav = [
-  { href: '/',                         label: 'Forsiden' },
-  { href: '/categories/missilforsvar', label: 'Missilsystemer' },
-  { href: '/categories/teknologi',     label: 'Teknologi' },
-  { href: '/categories/anskaffelse',   label: 'Anskaffelser' },
-  { href: '/categories/analyse',       label: 'Analyse' },
-  { href: '/about',                    label: 'Om oss' },
+  { href: HOME,                                   label: 'Forsiden' },
+  { href: siteHref('/categories/missilforsvar'),  label: 'Missilsystemer' },
+  { href: siteHref('/categories/teknologi'),      label: 'Teknologi' },
+  { href: siteHref('/categories/anskaffelse'),    label: 'Anskaffelser' },
+  { href: siteHref('/categories/analyse'),        label: 'Analyse' },
+  { href: siteHref('/about'),                     label: 'Om oss' },
 ];
 
 function isActive(href: string) {
-  if (href === '/') return currentPath === '/';
+  if (href === HOME) return currentPath === HOME || currentPath + '/' === HOME;
   return currentPath.startsWith(href);
 }
 ---
