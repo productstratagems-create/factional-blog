@@ -191,9 +191,6 @@ const searchIndex = articles
       <li id="search-result-${i}" role="option" aria-selected="false" class="search-item">
         <a href="${a.href}" class="search-item-link">
           <span class="si-title">${highlight(a.title, q)}</span>
-          <svg class="si-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
-            <path d="M5 8h6M8 5l3 3-3 3"/>
-          </svg>
         </a>
       </li>`;
   }
@@ -401,20 +398,6 @@ const searchIndex = articles
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-
-  .si-arrow {
-    flex-shrink: 0;
-    width: 16px;
-    height: 16px;
-    color: var(--color-border);
-    transition: color 0.1s, transform 0.1s;
-  }
-
-  .search-item-link:hover .si-arrow,
-  .search-item.is-active .si-arrow {
-    color: var(--color-teal);
-    transform: translateX(2px);
   }
 
   /* Highlight marks */
