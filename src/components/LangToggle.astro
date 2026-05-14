@@ -1,4 +1,4 @@
-<div class="lang-toggle" id="lang-toggle" role="group" aria-label="Språkfilter">
+<div class="lang-toggle" role="group" aria-label="Språkfilter">
   <button class="lt-btn" data-lang="no">NO</button>
   <button class="lt-btn" data-lang="all">ALL</button>
   <button class="lt-btn" data-lang="en">EN</button>
@@ -17,7 +17,8 @@
 
   applyLang(localStorage.getItem(KEY) || 'all');
 
-  document.getElementById('lang-toggle')?.addEventListener('click', (e) => {
+  // Delegate from document so all instances (desktop + mobile dropdown) respond
+  document.addEventListener('click', (e) => {
     const btn = (e.target as HTMLElement).closest<HTMLElement>('.lt-btn');
     if (btn?.dataset.lang) applyLang(btn.dataset.lang);
   });
