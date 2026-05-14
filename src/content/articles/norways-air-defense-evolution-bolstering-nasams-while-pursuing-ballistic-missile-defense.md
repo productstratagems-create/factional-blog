@@ -4,7 +4,7 @@ date: 2025-07-30
 excerpt: "Introduction: A Dual-Track Strategy for a New Era Norway is undertaking a historic modernization of its air defense capabilities, guided by a clear and ambitious strategy. The 2025-2036 Long-Term Defence Plan…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/image-4.png"
 heroImageAlt: "Air defense systems firing in a Nordic landscape at sunset"

@@ -4,7 +4,7 @@ date: 2025-03-30
 excerpt: "Epirus Leonidas, a cutting-edge counter-drone system developed by Epirus Inc. Utilizing high-power microwave (HPM) technology, Leonidas offers a non-kinetic solution for neutralizing unmanned aerial systems, particularly…"
 category: teknologi
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 ---
 

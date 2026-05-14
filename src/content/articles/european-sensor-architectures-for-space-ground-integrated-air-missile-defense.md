@@ -4,7 +4,7 @@ date: 2025-07-22
 excerpt: "Europe has emerged as a notable force in integrated air and missile defense (IAMD) sensor technologies, driven by €326 billion in defense spending in 2024 and unprecedented threats from hypersonic weapons and complex air…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8195-1.png"
 heroImageAlt: "Satellite orbital periods and altitudes: GPS, Galileo, GLONASS and others"

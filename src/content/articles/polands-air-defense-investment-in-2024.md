@@ -4,7 +4,7 @@ date: 2024-06-22
 excerpt: "In September 2023, Poland signed contracts with European and American companies to strengthen the country's air defense. The country plans to spend 137 billion zloty (US$32.9 billion) in 2024, equivalent to 4% of GDP.…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_3070.jpg"
 heroImageAlt: "Polsk offisielt arrangement for nytt luftvernmateriell"

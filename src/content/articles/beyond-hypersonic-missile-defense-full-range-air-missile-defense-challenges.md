@@ -4,7 +4,7 @@ date: 2025-08-10
 excerpt: "Hypersonic glide vehicles have quickly become the new buzzword in missile defense debates. They capture headlines with their blistering speeds and unpredictable flight paths. Russia, China, and the United States are all…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8338.png"
 heroImageAlt: "Beyond Hypersonic Missile Defense: NATO's full air defense challenge infographic"

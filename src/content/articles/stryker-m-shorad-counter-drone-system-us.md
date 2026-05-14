@@ -4,7 +4,7 @@ date: 2025-03-30
 excerpt: "The Stryker M-SHORAD (Maneuver-Short Range Air Defense) system, a mobile and multi-layered air defense platform developed by a consortium including Leonardo DRS, General Dynamics Land Systems, and Raytheon Technologies.…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_7267-1.jpg"
 heroImageAlt: "Stryker armored personnel carrier with mounted air defense weapons"

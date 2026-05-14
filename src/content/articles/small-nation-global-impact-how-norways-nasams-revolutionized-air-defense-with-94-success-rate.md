@@ -4,7 +4,7 @@ date: 2025-07-16
 excerpt: "In an era where aerial threats have evolved from traditional aircraft to sophisticated cruise missiles, hypersonic weapons, and drone swarms, the need for adaptive, effective air defense systems has never been more…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8301.jpg"
 heroImageAlt: "NASAMS missile launcher firing in a Nordic landscape"

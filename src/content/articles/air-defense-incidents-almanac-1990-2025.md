@@ -4,7 +4,7 @@ date: 2025-07-05
 excerpt: "Executive Summary This comprehensive almanac documents verified air defense incidents from 1983 to present, representing one of the most tragic aspects of modern military aviation. The research reveals 47 major verified…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8083-1.jpg"
 heroImageAlt: "Air defense incidents analysis infographic 1990–2025"

@@ -4,7 +4,7 @@ date: 2025-03-30
 excerpt: "The Drone Dome, a comprehensive counter-drone system developed by Rafael Advanced Defense Systems. Designed to protect against a wide range of unmanned aerial threats, Drone Dome employs a multi-layered approach,…"
 category: teknologi
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/image-31.png"
 heroImageAlt: "Militær drone svever over ørkenkjøretøy ved solnedgang"

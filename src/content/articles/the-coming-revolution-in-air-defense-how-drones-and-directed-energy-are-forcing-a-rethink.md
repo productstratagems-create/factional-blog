@@ -4,7 +4,7 @@ date: 2025-07-20
 excerpt: "In recent years, the world of air defense has undergone a seismic shift. While traditional air defense systems remain crucial, a far more profound transformation is now underway—one propelled by the explosive growth of…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8031-1.png"
 heroImageAlt: "Futuristic drones and defense systems over a ruined cityscape"

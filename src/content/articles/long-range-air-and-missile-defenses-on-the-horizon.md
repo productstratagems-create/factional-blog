@@ -4,7 +4,7 @@ date: 2024-04-28
 excerpt: "There are 18 nations worldwide that have or are in the process of acquiring Patriot today, and the number of user countries in Europe has doubled in 5-6 years. I addition, in Europe both France and Italy have deployed…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8061-1.jpg"
 heroImageAlt: "Patriot air defense system radar and launcher silhouetted at dusk"

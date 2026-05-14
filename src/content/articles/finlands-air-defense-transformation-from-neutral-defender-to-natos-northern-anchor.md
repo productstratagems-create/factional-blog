@@ -4,7 +4,7 @@ date: 2025-11-25
 excerpt: "Finland has executed one of the most dramatic military pivots in modern European history, transforming from seven decades of carefully maintained neutrality into a frontline NATO state with rapidly expanding air and…"
 category: nato
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8026-1.png"
 heroImageAlt: "Map of Nordic NATO countries: Norway, Sweden, Finland, Denmark and Iceland"

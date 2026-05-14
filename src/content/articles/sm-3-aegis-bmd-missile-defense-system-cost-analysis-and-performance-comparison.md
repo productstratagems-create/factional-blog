@@ -4,7 +4,7 @@ date: 2025-07-19
 excerpt: "Ultra-Premium Missile Defense at Strategic Scale SM-3 interceptors command $27.9 million per unit for Block IIA variants in 2025, positioning them as the world’s most expensive ballistic missile interceptor. This…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8271-1.jpg"
 heroImageAlt: "Aegis BMD SM-3 evolution plan showing missile development blocks"

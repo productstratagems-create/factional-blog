@@ -4,7 +4,7 @@ date: 2025-03-17
 excerpt: "This article presents a technical comparison of the combat performance of the U.S. Patriot and the European SAMP/T air defense systems for the period 2020–2025. The review focuses on measurable performance criteria…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_7246-1.jpg"
 heroImageAlt: "Infographic comparing Patriot and SAMP/T air defense systems"

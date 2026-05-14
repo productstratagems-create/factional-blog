@@ -4,7 +4,7 @@ date: 2025-07-28
 excerpt: "American missile defense interceptors command substantially higher unit acquisition costs than European alternatives, with strategic systems costing $70-90 million per unit compared to European tactical interceptors at…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/9ac39c69-f8b7-4085-8794-dd5cffb8e1b8-51917-00000e9ff635266b_file.jpg"
 heroImageAlt: "Interceptor unit cost comparison chart: IRIS-T, Aster 30 B1NT and PAC-3 MSE"

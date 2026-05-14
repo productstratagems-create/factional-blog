@@ -4,7 +4,7 @@ date: 2026-03-18
 excerpt: "The definitive guide to Norskluftvern.com A structured reading guide to everything published on norskluftvern.com — from individual system deep-dives to strategic synthesis, organized by layer, theme, and the questions…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 ---
 

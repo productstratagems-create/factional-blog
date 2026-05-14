@@ -4,7 +4,7 @@ date: 2025-08-01
 excerpt: "Overview of the System The IRIS-T SL (Surface Launched)(https://norskluftvern.com/2025/02/09/iris-t-sl/) air defense system, a product of Diehl Defence, is designed as a modular, mobile solution for short- to…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_7346-1.jpg"
 heroImageAlt: "IRIS-T SLS short-range air defense system infographic"

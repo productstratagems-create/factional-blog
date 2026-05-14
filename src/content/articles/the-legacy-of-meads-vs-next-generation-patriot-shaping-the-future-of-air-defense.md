@@ -4,7 +4,7 @@ date: 2025-07-31
 excerpt: "In the world of modern air and missile defense, few projects were as ambitious—or as consequential—as the Medium Extended Air Defense System (MEADS). Conceived as a collaborative effort between the United States,…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/sam-d_launcher.jpg"
 heroImageAlt: "Historical SAM-D (early Patriot) test launch in snowy terrain"

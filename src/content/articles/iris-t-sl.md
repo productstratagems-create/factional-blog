@@ -4,7 +4,7 @@ date: 2025-02-09
 excerpt: "Advanced Air Defence with a Focus on Precision and Mobility The IRIS-T SL (Infra Red Imaging System Tail/Thrust Vector Controlled – Surface Launched) represents one of the most modern and capable short- to medium-range…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_7352-1.jpg"
 heroImageAlt: "IRIS-T air defense system fire control console with two operator stations"

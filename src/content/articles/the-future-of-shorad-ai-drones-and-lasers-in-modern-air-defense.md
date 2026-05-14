@@ -4,7 +4,7 @@ date: 2025-07-28
 excerpt: "From Fulda Gap to the Drone Swarm: The Rebirth of Brigade Air Defense The evolution of brigade-level air defense represents one of the most critical shifts in modern warfare, driven by the urgent need to counter new…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_9410.jpg"
 heroImageAlt: "Comparison table for Stinger, Mistral 3, Piorun and RBS 70 NG MANPADS"

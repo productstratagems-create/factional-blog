@@ -4,7 +4,7 @@ date: 2025-07-18
 excerpt: "Cost-Effective Excellence in Medium-Range Defense David’s Sling interceptors cost $1 million each, delivering 14-86% cost savings compared to Patriot PAC-3 MSE while providing superior range and proven combat…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/image-35.png"
 heroImageAlt: "Militært launcherkjøretøy avfyrer med eksplosjon"

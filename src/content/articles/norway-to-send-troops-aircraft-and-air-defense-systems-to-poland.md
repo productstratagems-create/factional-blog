@@ -4,7 +4,7 @@ date: 2024-12-04
 excerpt: "The situation in Ukraine is critical, and much of the material support for the country is being transported through Poland. In a few days, Norway will be sending a contribution consisting of soldiers, aircraft, and air…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 ---
 

@@ -4,7 +4,7 @@ date: 2026-03-03
 excerpt: "Three U.S. F-15E Strike Eagles destroyed by a coalition partner's air defences over Kuwait on March 2, 2026. The incident is the most consequential fratricide event in a major U.S.-led air campaign since Iraq in 2003 —…"
 category: nato
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8128-1.jpg"
 heroImageAlt: "MH17 fuselage wreckage — a reminder of the cost of misidentification"

@@ -4,7 +4,7 @@ date: 2025-04-15
 excerpt: "The NASAMS(https://norskluftvern.com/2025/02/08/nasams-norwegian-advanced-surface-to-air-missile-system-mobilt-og-modulaert-middelsrekkende-luftvernsystem/) and the IRIS-T…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_7350.jpg"
 heroImageAlt: "IRIS-T SLM and SLS air defense systems comparison infographic"

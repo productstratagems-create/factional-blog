@@ -4,7 +4,7 @@ date: 2025-08-14
 excerpt: "The convergence of emerging threats and defensive vulnerabilities is creating a strategic inflection point that most mainstream defense analysis significantly underestimates. While European defense establishments focus…"
 category: analyse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/image-6.png"
 heroImageAlt: "Strategic air defense blindspots map visualization"

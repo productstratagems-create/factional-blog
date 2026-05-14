@@ -4,7 +4,7 @@ date: 2025-02-14
 excerpt: "Since Russia’s full-scale invasion of Ukraine in 2022, air defense has become a cornerstone of Ukraine’s survival and resistance. Faced with relentless missile barrages, drone attacks, and aerial threats, Ukraine has…"
 category: nato
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_8189-1.jpg"
 heroImageAlt: "Ballistic missile launch from the ground with aircraft in the background"

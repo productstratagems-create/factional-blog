@@ -4,7 +4,7 @@ date: 2026-01-02
 excerpt: "Updated version March 2026(https://norskluftvern.com/2026/03/06/air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs-editors-update-march-2026/) The most comprehensive open-source reference for…"
 category: anskaffelse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_9125.png"
 heroImageAlt: "Air Defense Systems Cost Database - anskaffelse, interceptor og livssykluskostnader"

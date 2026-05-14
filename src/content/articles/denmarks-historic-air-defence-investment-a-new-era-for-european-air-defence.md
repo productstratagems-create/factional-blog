@@ -4,7 +4,7 @@ date: 2025-09-12
 excerpt: "Executive Summary On 12 September 2025, the Danish Ministry of Defence announced the largest weapons procurement in the country’s history - an investment of 58 billion Danish kroner (approximately £6.6 billion) in…"
 category: missilforsvar
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 ---
 

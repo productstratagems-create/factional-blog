@@ -4,7 +4,7 @@ date: 2026-03-23
 excerpt: "Electronic Warfare, Interceptor Drones, High-Power Microwaves, and the Invisible Layer of Counter-UAS Guns shoot drones down. Missiles blow them up. Lasers burn through them. These are the counter-drone effectors that…"
 category: anskaffelse
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_5453-1.jpg"
 heroImageAlt: "Stor oppblåsbar aerostatovervåkningsballong"

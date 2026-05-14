@@ -4,7 +4,7 @@ date: 2025-03-14
 excerpt: "The Resurgence and Revenge of the Gun The landscape of gun-based air defense artillery systems has undergone significant transformation throughout military history, with recent developments indicating a renaissance for…"
 category: history
 author: "Redaksjonen"
-lang: no
+lang: en
 draft: false
 heroImage: "/images/img_7244-1.jpg"
 heroImageAlt: "Mobile Vulcan-style gun air defense system in the field"
