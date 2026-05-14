@@ -1,0 +1,61 @@
+---
+import ArticleCard from './ArticleCard.astro';
+import type { CollectionEntry } from 'astro:content';
+import { articleHref } from '../utils/slug';
+
+interface Props {
+  articles: CollectionEntry<'articles'>[];
+  columns?: 2 | 3;
+}
+
+const { articles, columns = 3 } = Astro.props;
+---
+
+{articles.length === 0 ? (
+  <p class="no-articles">Ingen artikler funnet.</p>
+) : (
+  <div class:list={['article-grid', `article-grid--${columns}col`]}>
+    {articles.map((article) => {
+      const wordCount = article.body?.split(/\s+/).length ?? 0;
+      const readingTime = article.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordCount / 200));
+
+      return (
+        <ArticleCard
+          title={article.data.title}
+          excerpt={article.data.excerpt}
+          href={articleHref(article.id)}
+          heroImage={article.data.heroImage}
+          heroImageAlt={article.data.heroImageAlt}
+          category={article.data.category}
+          pubDate={article.data.date}
+          author={article.data.author}
+          readingTime={readingTime}
+          lang={article.data.lang}
+          featured={article.data.featured}
+        />
+      );
+    })}
+  </div>
+)}
+
+<style>
+  .article-grid {
+    display: grid;
+    gap: var(--spacing-xl);
+  }
+
+  .article-grid--2col {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 28rem), 1fr));
+  }
+
+  .article-grid--3col {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  }
+
+  .no-articles {
+    font-family: var(--font-ui);
+    color: var(--color-muted);
+    text-align: center;
+    padding: var(--spacing-3xl) 0;
+  }
+</style>

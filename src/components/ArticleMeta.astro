@@ -1,0 +1,56 @@
+---
+interface Props {
+  pubDate: Date;
+  updatedDate?: Date;
+  author?: string;
+  readingTime?: number;
+  lang?: string;
+}
+
+const {
+  pubDate,
+  updatedDate,
+  author = 'Redaksjonen',
+  readingTime,
+  lang = 'no',
+} = Astro.props;
+
+const locale = lang === 'en' ? 'en-GB' : lang === 'sv' ? 'sv-SE' : 'no-NO';
+
+function formatDate(d: Date) {
+  return new Intl.DateTimeFormat(locale, { year: 'numeric', month: 'long', day: 'numeric' }).format(d);
+}
+---
+
+<div class="article-meta">
+  <time datetime={pubDate.toISOString()}>{formatDate(pubDate)}</time>
+  {updatedDate && (
+    <span class="updated">
+      · Oppdatert <time datetime={updatedDate.toISOString()}>{formatDate(updatedDate)}</time>
+    </span>
+  )}
+  <span class="sep">·</span>
+  <span class="author">{author}</span>
+  {readingTime && (
+    <>
+      <span class="sep">·</span>
+      <span class="reading-time">{readingTime} min lesing</span>
+    </>
+  )}
+</div>
+
+<style>
+  .article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.2em;
+    font-family: var(--font-ui);
+    font-size: var(--text-sm, 0.875rem);
+    color: var(--color-muted);
+    line-height: 1.4;
+  }
+
+  .sep { opacity: 0.5; }
+  .updated { font-style: italic; }
+</style>

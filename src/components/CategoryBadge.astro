@@ -1,0 +1,53 @@
+---
+interface Props {
+  category: string;
+  href?: string;
+}
+
+const { category, href } = Astro.props;
+
+const labels: Record<string, string> = {
+  'missilforsvar':      'Missilforsvar',
+  'missile-systems':    'Missilsystemer',
+  'procurement':        'Anskaffelser',
+  'anskaffelse':        'Anskaffelse',
+  'policy':             'Forsvarspolitikk',
+  'exercises':          'Øvelser',
+  'history':            'Historie',
+  'analyse':            'Analyse',
+  'analysis':           'Analyse',
+};
+
+const label = labels[category.toLowerCase()] ?? category;
+const Tag = href ? 'a' : 'span';
+---
+
+<Tag
+  class="category-badge"
+  {...href ? { href } : {}}
+>
+  {label}
+</Tag>
+
+<style>
+  .category-badge {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    padding: 0.2em 0.6em;
+    background: var(--color-teal);
+    color: #fff;
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 1.6;
+  }
+
+  a.category-badge:hover {
+    background: var(--color-navy);
+    color: #fff;
+  }
+</style>

@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Divider from '../components/Divider.astro';
+---
+
+<BaseLayout
+  title="Om Norsk Luftvern"
+  description="Norsk Luftvern er en uavhengig nettside dedikert til nyheter, analyser og historikk om norsk luftvern og missilforsvar."
+>
+  <div class="about-page">
+    <div class="about-hero">
+      <div class="container">
+        <p class="page-super">Om oss</p>
+        <h1 class="page-title">Norsk Luftvern</h1>
+        <p class="page-tagline">Uavhengig dekning av norsk luftvern og missilforsvar</p>
+      </div>
+    </div>
+
+    <Divider />
+
+    <div class="container">
+      <div class="about-content">
+        <section class="about-section">
+          <h2>Hva er Norsk Luftvern?</h2>
+          <p>
+            Norsk Luftvern er en uavhengig nettside dedikert til nyheter, analyser og
+            historikk om norsk luftvern og missilforsvar. Vi dekker alt fra tekniske
+            systemdetaljer og anskaffelsesprosesser til øvelser, operativ status og
+            forsvarspolitikk.
+          </p>
+          <p>
+            Siden 2020 har vi vært den ledende norske kilden for dybdeartikler om
+            luftvernsystemer som NASAMS, IRIS-T SLM, Patriot og SAMP/T, samt Forsvarets
+            pågående moderniseringsplaner.
+          </p>
+        </section>
+
+        <Divider spacing="lg" />
+
+        <section class="about-section">
+          <h2>Redaksjonell linje</h2>
+          <p>
+            Vi er ikke tilknyttet Forsvaret, Forsvarsdepartementet eller noen
+            forsvarsindustribedrift. Alt innhold er basert på åpne kilder, offentlige
+            dokumenter, pressemeldinger og egne analyser.
+          </p>
+          <p>
+            Vi tilstreber høy faktanøyaktighet og kildekritikk. Feil og upresisheter
+            rettes så snart vi blir gjort oppmerksomme på dem.
+          </p>
+        </section>
+
+        <Divider spacing="lg" />
+
+        <section class="about-section">
+          <h2>Kontakt</h2>
+          <p>
+            Har du tips, rettelser eller ønsker å bidra med innhold?
+            Ta kontakt på <a href="mailto:redaksjon@norskluftvern.com">redaksjon@norskluftvern.com</a>.
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-page { padding-bottom: var(--spacing-3xl); }
+
+  .about-hero {
+    background: var(--color-surface);
+    padding-block: var(--spacing-2xl) var(--spacing-xl);
+  }
+
+  .page-super {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-teal);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-heading);
+    line-height: 1;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .page-tagline {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--color-muted);
+    margin: 0;
+  }
+
+  .about-content {
+    max-width: var(--article-width, 720px);
+    margin-inline: auto;
+    padding-block: var(--spacing-2xl);
+  }
+
+  .about-section h2 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-heading);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .about-section p {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: 1em;
+  }
+
+  .about-section a {
+    color: var(--color-navy);
+    text-decoration-color: var(--color-teal);
+    text-underline-offset: 3px;
+  }
+</style>

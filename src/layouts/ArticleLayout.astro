@@ -1,0 +1,265 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import CategoryBadge from '../components/CategoryBadge.astro';
+import ArticleMeta from '../components/ArticleMeta.astro';
+import Divider from '../components/Divider.astro';
+import ArticleGrid from '../components/ArticleGrid.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  entry: CollectionEntry<'articles'>;
+  related: CollectionEntry<'articles'>[];
+}
+
+const { entry, related } = Astro.props;
+const { title, excerpt, date, category, author, heroImage, heroImageAlt, lang = 'no' } = entry.data;
+
+const wordCount = entry.body?.split(/\s+/).length ?? 0;
+const readingTime = entry.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordCount / 200));
+---
+
+<BaseLayout
+  title={title}
+  description={excerpt}
+  ogType="article"
+  pubDate={date}
+  lang={lang}
+  showProgress={true}
+  ogImage={heroImage}
+>
+  <article class="article-page">
+    <!-- Full-bleed hero -->
+    <div class="article-hero">
+      {heroImage ? (
+        <img
+          src={heroImage}
+          alt={heroImageAlt ?? ''}
+          class="article-hero-image"
+          loading="eager"
+          decoding="async"
+          width="1200"
+          height="600"
+        />
+      ) : (
+        <div class="article-hero-placeholder"></div>
+      )}
+      <div class="article-hero-overlay" aria-hidden="true"></div>
+      <div class="article-hero-content container">
+        <div class="hero-badges">
+          <CategoryBadge category={category} href={`/categories/${category}`} />
+        </div>
+        <h1 class="article-title">{title}</h1>
+        <ArticleMeta pubDate={date} author={author} readingTime={readingTime} lang={lang} />
+      </div>
+    </div>
+
+    <!-- Prose body -->
+    <div class="article-container container">
+      <div class="prose" id="article-body">
+        <slot />
+      </div>
+
+      <Divider spacing="lg" />
+
+      {related.length > 0 && (
+        <section class="related-section">
+          <h2 class="related-heading">Les også</h2>
+          <ArticleGrid articles={related} columns={2} />
+        </section>
+      )}
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  /* ── Hero ── */
+  .article-hero {
+    position: relative;
+    width: 100%;
+    min-height: clamp(300px, 45vw, 560px);
+    overflow: hidden;
+  }
+
+  .article-hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .article-hero-placeholder {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--color-heading) 0%, #1B3A7A 100%);
+  }
+
+  .article-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(10, 3, 3, 0.9) 0%,
+      rgba(10, 3, 3, 0.45) 60%,
+      rgba(10, 3, 3, 0.05) 100%
+    );
+  }
+
+  .article-hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: inherit;
+    padding-bottom: var(--spacing-2xl);
+    gap: var(--spacing-sm);
+  }
+
+  .hero-badges { margin-bottom: var(--spacing-sm); }
+
+  .article-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 4vw, 3rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+    color: #fff;
+    max-width: 22em;
+    margin: 0;
+  }
+
+  .article-hero-content :global(.article-meta) {
+    color: rgba(255, 255, 255, 0.65);
+    margin-top: var(--spacing-sm);
+  }
+
+  /* ── Article body ── */
+  .article-container {
+    padding-block: var(--spacing-2xl) var(--spacing-3xl);
+  }
+
+  /* ── Prose typography ── */
+  .prose {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    line-height: 1.8;
+    color: var(--color-text);
+    max-width: var(--article-width, 720px);
+    margin-inline: auto;
+  }
+
+  .prose :global(h2),
+  .prose :global(h3),
+  .prose :global(h4) {
+    font-family: var(--font-display);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-heading);
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    line-height: 1.15;
+  }
+
+  .prose :global(h2) { font-size: 1.5rem; }
+  .prose :global(h3) { font-size: 1.2rem; }
+
+  .prose :global(p) { margin-bottom: 1.4em; }
+
+  .prose :global(a) {
+    color: var(--color-navy);
+    text-decoration-color: var(--color-teal);
+    text-underline-offset: 3px;
+  }
+
+  .prose :global(blockquote) {
+    border-left: 4px solid var(--color-teal);
+    margin-inline: 0;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--color-surface);
+    font-style: italic;
+    color: var(--color-muted);
+  }
+
+  .prose :global(blockquote p:last-child) { margin-bottom: 0; }
+
+  .prose :global(ul),
+  .prose :global(ol) {
+    padding-left: 1.5em;
+    margin-bottom: 1.4em;
+  }
+
+  .prose :global(li) { margin-bottom: 0.4em; }
+
+  .prose :global(img) {
+    width: 100%;
+    border-radius: var(--radius-md);
+    margin-block: var(--spacing-xl);
+  }
+
+  .prose :global(figure) { margin-block: var(--spacing-xl); }
+
+  .prose :global(figcaption) {
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    text-align: center;
+    margin-top: var(--spacing-sm);
+  }
+
+  .prose :global(hr) {
+    border: none;
+    border-top: 2px solid var(--color-teal);
+    width: 3rem;
+    margin: var(--spacing-2xl) auto;
+  }
+
+  .prose :global(code) {
+    font-family: monospace;
+    font-size: 0.875em;
+    background: var(--color-surface);
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+  }
+
+  .prose :global(pre) {
+    background: #1a1917;
+    color: #e8e5e0;
+    padding: var(--spacing-lg);
+    overflow-x: auto;
+    border-radius: var(--radius-md);
+    margin-bottom: 1.4em;
+  }
+
+  .prose :global(pre code) {
+    background: none;
+    padding: 0;
+    font-size: 0.875rem;
+  }
+
+  /* Drop cap */
+  .prose :global(> p:first-of-type::first-letter) {
+    font-family: var(--font-display);
+    font-size: 3.5em;
+    font-weight: 800;
+    color: var(--color-heading);
+    float: left;
+    line-height: 0.82;
+    margin: 0.06em 0.08em 0 0;
+  }
+
+  /* ── Related ── */
+  .related-section { margin-top: var(--spacing-2xl); }
+
+  .related-heading {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-heading);
+    margin-bottom: var(--spacing-lg);
+  }
+</style>

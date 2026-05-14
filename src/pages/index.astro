@@ -1,0 +1,115 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroArticle from '../components/HeroArticle.astro';
+import ArticleGrid from '../components/ArticleGrid.astro';
+import Divider from '../components/Divider.astro';
+import { articleHref } from '../utils/slug';
+
+const allArticles = await getCollection('articles', (e) => !e.data.draft);
+const sorted = allArticles.sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+
+const featured = sorted.find((a) => a.data.featured) ?? sorted[0];
+const rest = featured
+  ? sorted.filter((a) => a.id !== featured.id).slice(0, 12)
+  : sorted.slice(1, 13);
+
+const featuredWordCount = featured?.body?.split(/\s+/).length ?? 0;
+const featuredReadingTime = featured?.data.readingTimeMinutes ?? Math.max(1, Math.ceil(featuredWordCount / 200));
+---
+
+<BaseLayout
+  title="Norsk Luftvern"
+  description="Nyheter, analyser og dybdeartikler om norsk luftvern og missilforsvar."
+>
+  <div class="home-page">
+    {featured && (
+      <section class="hero-section container">
+        <HeroArticle
+          title={featured.data.title}
+          excerpt={featured.data.excerpt}
+          href={articleHref(featured.id)}
+          heroImage={featured.data.heroImage}
+          heroImageAlt={featured.data.heroImageAlt}
+          category={featured.data.category}
+          pubDate={featured.data.date}
+          author={featured.data.author}
+          readingTime={featuredReadingTime}
+          lang={featured.data.lang}
+        />
+      </section>
+    )}
+
+    <Divider />
+
+    <section class="articles-section container">
+      <div class="section-header">
+        <h2 class="section-title">Siste artikler</h2>
+      </div>
+      <ArticleGrid articles={rest} columns={3} />
+
+      {allArticles.length > 13 && (
+        <div class="load-more">
+          <a href="/articles" class="btn-outline">Vis alle artikler</a>
+        </div>
+      )}
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .home-page {
+    padding-bottom: var(--spacing-3xl);
+  }
+
+  .hero-section {
+    padding-block: var(--spacing-2xl);
+  }
+
+  .articles-section {
+    padding-block: var(--spacing-2xl);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-heading);
+  }
+
+  .load-more {
+    text-align: center;
+    margin-top: var(--spacing-2xl);
+  }
+
+  .btn-outline {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.6em 1.6em;
+    color: var(--color-navy);
+    border: 2px solid var(--color-navy);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .btn-outline:hover {
+    background: var(--color-navy);
+    color: #fff;
+  }
+</style>
