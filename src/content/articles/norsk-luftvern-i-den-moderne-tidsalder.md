@@ -6,6 +6,8 @@ category: anskaffelse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/create-a-highly-detailed-high-resolution-image-showcasing-a-modern-nordic-1.png"
+heroImageAlt: "Air defense radar system targeting aircraft in a Nordic landscape"
 ---
 
 ## Det strategiske grunnlaget for norsk luftvern

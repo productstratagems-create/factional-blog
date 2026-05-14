@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8291.jpg"
+heroImageAlt: "Compact multi-mission radar system on a truck"
 ---
 
 GhostEye MR-radaren er en avansert luft- og missilforsvarsradar med middels rekkevidde og 360° dekning, utviklet for å oppdage, følge og identifisere et bredt utvalg av trusler som kryssermissiler, droner, fly og helikoptre.

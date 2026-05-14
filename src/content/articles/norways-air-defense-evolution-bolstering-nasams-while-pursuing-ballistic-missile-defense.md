@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-4.png"
+heroImageAlt: "Air defense systems firing in a Nordic landscape at sunset"
 ---
 
 ## Introduction: A Dual-Track Strategy for a New Era

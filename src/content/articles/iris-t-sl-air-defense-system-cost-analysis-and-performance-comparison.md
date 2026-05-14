@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7348-1.jpg"
+heroImageAlt: "IRIS-T SLX extended-range air defense system infographic"
 ---
 
 ## Europe’s Combat-Proven Air Defense at Competitive Pricing

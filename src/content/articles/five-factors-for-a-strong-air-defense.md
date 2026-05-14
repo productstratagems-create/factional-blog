@@ -6,6 +6,8 @@ category: teknologi
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8127-1.jpg"
+heroImageAlt: "Integrated air defense system display during a field exercise"
 ---
 
 Here are some points that may be useful if someone is wondering what can/should be included in a strengthened air defense. Share them with those concerned.

@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7243-1.jpg"
+heroImageAlt: "Integrated air defense system infographic with friend/foe/neutral designations"
 ---
 
 Et av de fire prinsippene for bruk av luftvern dreier seg om integrasjon mellom våpensystemer og integrasjon mellom systemer og beslutningstakere. Hvordan er dette løst i det amerikanske luftvernet?

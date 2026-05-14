@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7346-1.jpg"
+heroImageAlt: "IRIS-T SLS short-range air defense system infographic"
 ---
 
 ## Overview of the System

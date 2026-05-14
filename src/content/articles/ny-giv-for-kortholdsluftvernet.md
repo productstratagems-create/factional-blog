@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8045-1.jpg"
+heroImageAlt: "Soldiers operating a man-portable air defense launcher"
 ---
 
 US Army ønsker å forsterke og revitalisere manøveravdelingene med moderne mobilt kortholdsluftvern. Industrien er derfor invitert til å demonstrere systemer som er tilgjengelige på kort sikt.

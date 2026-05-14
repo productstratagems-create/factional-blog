@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_9375.jpg"
+heroImageAlt: "Comparison table for Patriot PAC-3 MSE, IRIS-T SLM/X and SAMP/T NG"
 ---
 
 COMPARATIVE ANALYSIS 

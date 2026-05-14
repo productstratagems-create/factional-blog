@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/create-a-highly-detailed-high-resolution-image-showcasing-a-modern-nordic-2.png"
+heroImageAlt: "Air defense systems firing missiles over a Nordic landscape"
 ---
 
 Teorien tilsier at et lagdelt forsvar med en sammensetning av ulike systemtyper øker effekten av luftvernet. Hva er så den beste sammensetningen?

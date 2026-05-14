@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8083-1.jpg"
+heroImageAlt: "Air defense incidents analysis infographic 1990–2025"
 ---
 
 ## Executive Summary

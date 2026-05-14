@@ -13,6 +13,8 @@ lang: no
 featured: false
 author: "Redaksjonen"
 draft: false
+heroImage: "/images/cropped-img_7371.jpeg"
+heroImageAlt: "Snow-covered mountainous Norwegian terrain with forests and valleys"
 ---
 
 Norsk luftvern har en rik og variert historie som strekker seg tilbake til de første etterkrigsårene. Fra de imponerende, men statiske Nike-batteriene langs kysten til dagens mobile og nettverksintegrerte NASAMS-system — historien speiler både den teknologiske utviklingen og de skiftende trusselvurderingene i en verden i kontinuerlig endring.

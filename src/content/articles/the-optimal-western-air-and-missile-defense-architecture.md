@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-7.png"
+heroImageAlt: "Radar and targeting system with concentric circles over a cityscape"
 ---
 
 *What the best layered IAMD system money can buy would actually look like — and why no one has built it*

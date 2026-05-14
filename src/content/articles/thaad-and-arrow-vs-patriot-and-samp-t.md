@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8317-1.jpg"
+heroImageAlt: "THAAD missile museum display and launch composite"
 ---
 
 ## How Four Nations Built the World’s Most Advanced Shield - And What It Reveals About Modern Alliance Strategy

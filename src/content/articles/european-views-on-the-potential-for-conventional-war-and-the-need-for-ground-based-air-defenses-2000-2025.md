@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8194-1.png"
+heroImageAlt: "Map of Europe highlighting NATO member states"
 ---
 
 *Eastern European allies were right about Russia all along. Western Europeans only woke up in 2014, and many not until 2022.*

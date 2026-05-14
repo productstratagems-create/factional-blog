@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8040-1.jpg"
+heroImageAlt: "Patriot air defense system firing in coastal Nordic terrain"
 ---
 
 In 1988, one could read in Stortingsmelding 58, approved on 3 June, that there was only one western missile system that could fully replace the area-wide NIKE system in terms of altitude coverage and range. The Patriot system. But that this would entail costs far in excess of what would be covered within the investment framework in question. No systems were thus acquired. 

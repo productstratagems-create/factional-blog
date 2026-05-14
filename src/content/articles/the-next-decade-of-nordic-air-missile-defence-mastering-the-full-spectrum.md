@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/create-a-highly-detailed-high-resolution-image-showcasing-a-modern-nordic.png"
+heroImageAlt: "Modern Nordic air defense deployment with UAVs and radar systems"
 ---
 
 ## **Defending the Nordic region today means mastering complexit**y

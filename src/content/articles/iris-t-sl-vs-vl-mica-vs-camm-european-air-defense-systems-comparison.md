@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7360-1.jpg"
+heroImageAlt: "IRIS-T SLM air defense system launcher in operational display"
 ---
 
 The selection of advanced air defense systems has become a defining strategic decision for European defense organizations navigating the complex intersection of technological sovereignty, alliance interoperability, and operational effectiveness. Three systems – Germany’s IRIS-T SL, France’s VL MICA, and Britain’s CAMM – represent distinct national approaches to medium-range air defense while embodying broader tensions between European strategic autonomy and NATO integration. Each system has demonstrated operational capabilities, yet their adoption patterns reveal fundamental differences in European defense philosophy and industrial strategy.

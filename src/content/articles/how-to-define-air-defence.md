@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-3.png"
+heroImageAlt: "Military command center with aircraft tracking displays"
 ---
 
 Air defence systems can be deployed to protect national sovereignty, critical infrastructure, and deployed military forces against a broad spectrum of aerial threats.

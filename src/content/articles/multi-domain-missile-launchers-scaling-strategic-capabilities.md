@@ -6,6 +6,8 @@ category: nato
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7960-1.jpg"
+heroImageAlt: "HIMARS high-mobility artillery rocket system launching a missile"
 ---
 
 Multi-domain missile launcher concepts like the U.S. Army’s CAML program can be successfully adapted across all force classes through modular designs, tiered partnership models, and scalable automation approaches. **The key finding is that successful adaptation requires matching system complexity and cost to force capabilities rather than pursuing one-size-fits-all solutions.** Small forces benefit most from simplified, interoperable systems with allied support, medium forces excel with selective multi-domain capabilities and partnership arrangements, while large forces can afford comprehensive integration across all domains.

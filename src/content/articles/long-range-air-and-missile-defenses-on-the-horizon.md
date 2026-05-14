@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8061-1.jpg"
+heroImageAlt: "Patriot air defense system radar and launcher silhouetted at dusk"
 ---
 
 There are 18 nations worldwide that have or are in the process of acquiring Patriot today, and the number of user countries in Europe has doubled in 5-6 years. I addition, in Europe both France and Italy have deployed the European counterpart to Patriot; the SAMP/T system. In the Nordics Finland is acquiring the Israeli/US made David’s Sling system, while Sweden is among the many Patriot-user countries, and Norway is still only considering this class of weapon system.

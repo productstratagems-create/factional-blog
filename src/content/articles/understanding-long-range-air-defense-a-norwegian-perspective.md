@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-5.png"
+heroImageAlt: "Air defense radar targeting aircraft in Nordic terrain"
 ---
 
 **Introduction**

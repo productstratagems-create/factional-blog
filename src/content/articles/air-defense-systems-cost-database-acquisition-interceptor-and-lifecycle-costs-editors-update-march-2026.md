@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_9331.jpg"
+heroImageAlt: "Air defense systems cost database infographic January 2026"
 ---
 
 This [database](https://norskluftvern.com/2026/01/03/air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs/) was published in January 2026. In the six weeks since, two sequential real-world stress tests have fundamentally changed the context in which these cost figures should be read — and in some cases changed the figures themselves. 
