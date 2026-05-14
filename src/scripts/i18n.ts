@@ -1,0 +1,114 @@
+export const T = {
+  no: {
+    'nav.home':        'Forsiden',
+    'nav.missile':     'Missilsystemer',
+    'nav.tech':        'Teknologi',
+    'nav.procurement': 'Anskaffelser',
+    'nav.analysis':    'Analyse',
+    'nav.about':       'Om oss',
+    'nav.aria':        'Navigasjon',
+    'nav.mobile-aria': 'Mobilnavigasjon',
+    'nav.menu-open':   'Åpne meny',
+    'footer.nav-heading':  'Navigasjon',
+    'footer.cats-heading': 'Kategorier',
+    'footer.home':     'Forsiden',
+    'footer.about':    'Om oss',
+    'footer.rss':      'RSS-feed',
+    'footer.tagline':  'Norges ledende kilde om luftvern og missilforsvar.',
+    'footer.copy':     'Alle rettigheter forbeholdt.',
+    'footer.cat.missilforsvar': 'Missilsystemer',
+    'footer.cat.teknologi':     'Teknologi',
+    'footer.cat.anskaffelse':   'Anskaffelser',
+    'footer.cat.analyse':       'Analyse',
+    'footer.cat.history':       'Historie',
+    'hero.read-more':  'Les mer →',
+    'meta.updated':    'Oppdatert',
+    'meta.reading':    'min lesing',
+    'article.related': 'Les også',
+    'article.nav-aria':'Artikkelnavigasjon',
+    'article.newer':   '← Nyere',
+    'article.older':   'Eldre →',
+    'archive.super':   'Arkiv',
+    'archive.title':   'Alle artikler',
+    'archive.total':   'artikler totalt',
+    'cat.label':       'Kategori',
+    'cat.article':     'artikkel',
+    'cat.articles':    'artikler',
+    'page.prev':       '← Forrige',
+    'page.next':       'Neste →',
+    'page.page':       'Side',
+    'page.of':         'av',
+    'search.placeholder': 'Søk i artikler…',
+    'search.navigate': 'naviger',
+    'search.open-key': 'åpne',
+    'search.close-key':'lukk',
+  },
+  en: {
+    'nav.home':        'Home',
+    'nav.missile':     'Missile Systems',
+    'nav.tech':        'Technology',
+    'nav.procurement': 'Procurement',
+    'nav.analysis':    'Analysis',
+    'nav.about':       'About',
+    'nav.aria':        'Navigation',
+    'nav.mobile-aria': 'Mobile navigation',
+    'nav.menu-open':   'Open menu',
+    'footer.nav-heading':  'Navigation',
+    'footer.cats-heading': 'Categories',
+    'footer.home':     'Home',
+    'footer.about':    'About',
+    'footer.rss':      'RSS feed',
+    'footer.tagline':  "Norway's leading source on air defense and missile defense.",
+    'footer.copy':     'All rights reserved.',
+    'footer.cat.missilforsvar': 'Missile Systems',
+    'footer.cat.teknologi':     'Technology',
+    'footer.cat.anskaffelse':   'Procurement',
+    'footer.cat.analyse':       'Analysis',
+    'footer.cat.history':       'History',
+    'hero.read-more':  'Read more →',
+    'meta.updated':    'Updated',
+    'meta.reading':    'min read',
+    'article.related': 'Read also',
+    'article.nav-aria':'Article navigation',
+    'article.newer':   '← Newer',
+    'article.older':   'Older →',
+    'archive.super':   'Archive',
+    'archive.title':   'All articles',
+    'archive.total':   'articles total',
+    'cat.label':       'Category',
+    'cat.article':     'article',
+    'cat.articles':    'articles',
+    'page.prev':       '← Previous',
+    'page.next':       'Next →',
+    'page.page':       'Page',
+    'page.of':         'of',
+    'search.placeholder': 'Search articles…',
+    'search.navigate': 'navigate',
+    'search.open-key': 'open',
+    'search.close-key':'close',
+  },
+} as const;
+
+export type Lang = 'no' | 'en' | 'all';
+export type Key = keyof typeof T.no;
+
+function uiLang(lang: string): 'no' | 'en' {
+  return lang === 'en' ? 'en' : 'no';
+}
+
+export function apply(lang: string) {
+  const l = uiLang(lang);
+  document.querySelectorAll<HTMLElement>('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n as Key;
+    if (T[l][key] !== undefined) el.textContent = T[l][key];
+  });
+  document.querySelectorAll<HTMLInputElement>('[data-i18n-placeholder]').forEach(el => {
+    const key = el.dataset.i18nPlaceholder as Key;
+    if (T[l][key] !== undefined) el.placeholder = T[l][key];
+  });
+  document.querySelectorAll<HTMLElement>('[data-i18n-aria]').forEach(el => {
+    const key = el.dataset.i18nAria as Key;
+    if (T[l][key] !== undefined) el.setAttribute('aria-label', T[l][key]);
+  });
+  document.dispatchEvent(new CustomEvent('i18n:change', { detail: l }));
+}

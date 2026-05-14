@@ -12,12 +12,12 @@ const { currentPath = import.meta.env.BASE_URL } = Astro.props;
 
 const HOME = siteHref('/');
 const nav = [
-  { href: HOME,                                   label: 'Forsiden' },
-  { href: siteHref('/categories/missilforsvar'),  label: 'Missilsystemer' },
-  { href: siteHref('/categories/teknologi'),      label: 'Teknologi' },
-  { href: siteHref('/categories/anskaffelse'),    label: 'Anskaffelser' },
-  { href: siteHref('/categories/analyse'),        label: 'Analyse' },
-  { href: siteHref('/about'),                     label: 'Om oss' },
+  { href: HOME,                                   label: 'Forsiden',    i18n: 'nav.home'        },
+  { href: siteHref('/categories/missilforsvar'),  label: 'Missilsystemer', i18n: 'nav.missile'  },
+  { href: siteHref('/categories/teknologi'),      label: 'Teknologi',   i18n: 'nav.tech'        },
+  { href: siteHref('/categories/anskaffelse'),    label: 'Anskaffelser',i18n: 'nav.procurement' },
+  { href: siteHref('/categories/analyse'),        label: 'Analyse',     i18n: 'nav.analysis'    },
+  { href: siteHref('/about'),                     label: 'Om oss',      i18n: 'nav.about'       },
 ];
 
 function isActive(href: string) {
@@ -48,13 +48,14 @@ function isActive(href: string) {
 
     <!-- Right: desktop nav + lang toggle + mobile hamburger -->
     <div class="header-right">
-      <nav class="site-nav" aria-label="Navigasjon">
+      <nav class="site-nav" aria-label="Navigasjon" data-i18n-aria="nav.aria">
         <ul role="list">
-          {nav.map(({ href, label }) => (
+          {nav.map(({ href, label, i18n }) => (
             <li>
               <a
                 href={href}
                 class:list={['nav-link', { active: isActive(href) }]}
+                data-i18n={i18n}
                 {...isActive(href) ? { 'aria-current': 'page' } : {}}
               >
                 {label}
@@ -68,7 +69,7 @@ function isActive(href: string) {
         <LangToggle />
       </div>
 
-      <label for="nav-toggle" class="nav-hamburger" aria-label="Åpne meny">
+      <label for="nav-toggle" class="nav-hamburger" aria-label="Åpne meny" data-i18n-aria="nav.menu-open">
         <span></span><span></span><span></span>
       </label>
     </div>
@@ -79,13 +80,14 @@ function isActive(href: string) {
     <div class="mobile-lang-wrap">
       <LangToggle />
     </div>
-    <nav aria-label="Mobilnavigasjon">
+    <nav aria-label="Mobilnavigasjon" data-i18n-aria="nav.mobile-aria">
       <ul role="list">
-        {nav.map(({ href, label }) => (
+        {nav.map(({ href, label, i18n }) => (
           <li>
             <a
               href={href}
               class:list={['nav-link', { active: isActive(href) }]}
+              data-i18n={i18n}
               {...isActive(href) ? { 'aria-current': 'page' } : {}}
             >
               {label}

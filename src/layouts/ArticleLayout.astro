@@ -66,23 +66,23 @@ const readingTime = entry.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordC
 
       {related.length > 0 && (
         <section class="related-section">
-          <h2 class="related-heading">Les også</h2>
+          <h2 class="related-heading" data-i18n="article.related">Les også</h2>
           <ArticleGrid articles={related} columns={2} />
         </section>
       )}
 
       {(prev || next) && (
-        <nav class="article-nav" aria-label="Artikkelnavigasjon">
+        <nav class="article-nav" aria-label="Artikkelnavigasjon" data-i18n-aria="article.nav-aria">
           <div class="article-nav-inner">
             {next ? (
               <a class="article-nav-link article-nav-link--next" href={articleHref(next.id)}>
-                <span class="article-nav-label">← Nyere</span>
+                <span class="article-nav-label" data-i18n="article.newer">← Nyere</span>
                 <span class="article-nav-title">{next.data.title}</span>
               </a>
             ) : <span />}
             {prev ? (
               <a class="article-nav-link article-nav-link--prev" href={articleHref(prev.id)}>
-                <span class="article-nav-label">Eldre →</span>
+                <span class="article-nav-label" data-i18n="article.older">Eldre →</span>
                 <span class="article-nav-title">{prev.data.title}</span>
               </a>
             ) : <span />}

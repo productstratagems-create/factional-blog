@@ -44,6 +44,7 @@ const searchIndex = articles
         type="search"
         class="search-input"
         placeholder="Søk i artikler…"
+        data-i18n-placeholder="search.placeholder"
         autocomplete="off"
         spellcheck="false"
         aria-label="Søk"
@@ -63,7 +64,9 @@ const searchIndex = articles
         Søk blant {searchIndex.length} artikler
       </span>
       <span class="search-keys" aria-hidden="true">
-        <kbd>↑</kbd><kbd>↓</kbd> naviger &ensp; <kbd>↵</kbd> åpne &ensp; <kbd>Esc</kbd> lukk
+        <kbd>↑</kbd><kbd>↓</kbd> <span data-i18n="search.navigate">naviger</span> &ensp;
+        <kbd>↵</kbd> <span data-i18n="search.open-key">åpne</span> &ensp;
+        <kbd>Esc</kbd> <span data-i18n="search.close-key">lukk</span>
       </span>
     </div>
 
@@ -71,6 +74,28 @@ const searchIndex = articles
 </dialog>
 
 <script define:vars={{ searchIndex }}>
+  // Inline translations for dynamically-generated strings
+  const SEARCH_T = {
+    no: {
+      recent:  'Siste artikler',
+      among:   (n) => `Søk blant ${n} artikler`,
+      result:  (n) => n === 1 ? `${n} resultat` : `${n} resultater`,
+      none:    (q) => `Ingen artikler matcher «${q}»`,
+      tryOther:'Prøv et annet søkeord.',
+    },
+    en: {
+      recent:  'Recent articles',
+      among:   (n) => `Search among ${n} articles`,
+      result:  (n) => n === 1 ? `${n} result` : `${n} results`,
+      none:    (q) => `No articles match «${q}»`,
+      tryOther:'Try a different search term.',
+    },
+  };
+
+  function sl() {
+    return document.documentElement.getAttribute('data-lang-filter') === 'en' ? 'en' : 'no';
+  }
+
   const dialog   = document.getElementById('search-dialog');
   const input    = document.getElementById('search-input');
   const listbox  = document.getElementById('search-listbox');
@@ -200,16 +225,18 @@ const searchIndex = articles
   // ── Render ───────────────────────────────────────────────────
 
   function renderEmpty() {
+    const t = SEARCH_T[sl()];
     const recent = searchIndex.slice(0, 6);
-    status.textContent = `Søk blant ${searchIndex.length} artikler`;
+    status.textContent = t.among(searchIndex.length);
     input.removeAttribute('aria-activedescendant');
     listbox.innerHTML = `
-      <li class="search-section-label" aria-hidden="true">Siste artikler</li>
+      <li class="search-section-label" aria-hidden="true">${t.recent}</li>
       ${recent.map((a, i) => resultHTML(a, i, '')).join('')}`;
     attachResultListeners();
   }
 
   function renderResults(query) {
+    const t  = SEARCH_T[sl()];
     const q  = query.trim();
     const ql = q.toLowerCase();
     if (!q) { renderEmpty(); return; }
@@ -220,17 +247,23 @@ const searchIndex = articles
 
     const total = matches.length;
     status.textContent = total
-      ? `${total} resultat${total === 1 ? '' : 'er'}`
-      : `Ingen resultater for «${q}»`;
+      ? t.result(total)
+      : t.none(q);
 
     if (!total) {
-      listbox.innerHTML = `<li class="no-results">Ingen artikler matcher <strong>«${q}»</strong>. Prøv et annet søkeord.</li>`;
+      listbox.innerHTML = `<li class="no-results">${t.none('<strong>' + q + '</strong>')} ${t.tryOther}</li>`;
       return;
     }
 
     listbox.innerHTML = matches.slice(0, 12).map((a, i) => resultHTML(a, i, q)).join('');
     attachResultListeners();
   }
+
+  // Re-render when lang changes while modal is open
+  document.addEventListener('i18n:change', () => {
+    if (!dialog.open) return;
+    input.value.trim() ? renderResults(input.value) : renderEmpty();
+  });
 </script>
 
 <style>

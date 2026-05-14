@@ -66,6 +66,11 @@ const fullTitle = title === 'Norsk Luftvern' ? title : `${title} | Norsk Luftver
     <script is:inline>
       (function(){var l=localStorage.getItem('site-lang')||'all';document.documentElement.setAttribute('data-lang-filter',l);})();
     </script>
+    <!-- Apply UI translations on load -->
+    <script>
+      import { apply } from '../scripts/i18n';
+      apply(localStorage.getItem('site-lang') || 'all');
+    </script>
   </head>
 
   <body>
