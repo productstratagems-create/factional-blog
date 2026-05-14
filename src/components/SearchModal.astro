@@ -191,8 +191,8 @@ const searchIndex = articles
     return `
       <li id="search-result-${i}" role="option" aria-selected="false" class="search-item">
         <a href="${a.href}" class="search-item-link">
-          <span class="si-title">${highlight(a.title, q)}</span>
-          <span class="si-date">${a.date}</span>
+          <span class="si-title" style="flex:1;min-width:0;font-family:var(--font-ui);font-size:0.875rem;font-weight:500;color:var(--color-heading);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${highlight(a.title, q)}</span>
+          <span class="si-date" style="flex-shrink:0;font-family:var(--font-ui);font-size:0.72rem;color:#9CA3AF;white-space:nowrap">${a.date}</span>
         </a>
       </li>`;
   }
