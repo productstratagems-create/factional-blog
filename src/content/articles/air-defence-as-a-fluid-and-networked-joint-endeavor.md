@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8290-1.jpg"
+heroImageAlt: "Sensors, BMC4I situational awareness and shooters in an integrated air defense network"
 ---
 
 Since the full-scale conflict in Ukraine began in 2022, Ukraine’s military has been operating in an environment defined by sophisticated missile threats and electronic warfare countermeasures.

@@ -6,6 +6,8 @@ category: nato
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8189-1.jpg"
+heroImageAlt: "Ballistic missile launch from the ground with aircraft in the background"
 ---
 
 Since Russia’s full-scale invasion of Ukraine in 2022, air defense has become a cornerstone of Ukraine’s survival and resistance. Faced with relentless missile barrages, drone attacks, and aerial threats, Ukraine has relied on both its existing Soviet-era systems and modern Western technology to protect its cities, military infrastructure, and civilian population. The influx of advanced air defense systems from NATO allies has not only helped Ukraine intercept a significant portion of incoming threats but has also prevented Russia from achieving air superiority.

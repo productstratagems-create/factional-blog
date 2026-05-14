@@ -6,6 +6,8 @@ category: history
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7119-1.jpg"
+heroImageAlt: "Hawk air defense system on a truck chassis with missiles and radar antenna"
 ---
 
 Arbeidet med å bygge opp luftvernet i Norge etter krigen, startet i oktober 1945, med oberstløytnant Leif Husjord som nylig utnevnt Generalinspektør og sjef for Luftvernartilleriet. Drøyt åtte år senere, i 1953, hadde Luftvernartilleriet etablert seg som den nest største troppearten i Forsvaret. Og planen for krigsoppsetting var i en periode på over 20 000 befal og soldater, for bemanning av 45 tunge og 39 lette batterier fordelt på 21 bataljoner. Utstyret var en blanding av amerikansk og britisk materiell, samt tysk materiell overtatt etter krigen. I tillegg kunne Luftvernheimevernet og Hæren for øvrig sette opp ytterligere 29 kanonbatterier. I 1955 rådet Boyesen-utvalget at luftvernet, som var blitt underlagt Hæren i 1952, skulle tilbake til Flyvåpenet. Denne overføringen skjedde gradvis frem mot 1960, med en nedskalering av luftvernstrukturen, der de gjenværende bataljonene ble overført til militære flyplasser. Flyvåpenet skiftet så navn tilbake til *Luftforsvaret*. Samtidig med dette aksepterte Stortinget i 1957 et tilbud fra USA om å motta luftvernrakettsystemet NIKE. Med dekning i alle høyder og rekkevidde på mer enn 150 km fra fire steder rundt Oslo, så hadde landet for første gang et områdeluftvern for Østlandet. NIKE var operativt fra 1960 frem til den offisielle nedleggelsen 9. januar 1991.

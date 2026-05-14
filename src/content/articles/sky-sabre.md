@@ -6,6 +6,8 @@ category: nato
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/create-a-high-resolution-highly-detailed-featured-image-for-a-blog.png"
+heroImageAlt: "Fighter aircraft at sunset"
 ---
 
 # **Britain’s Next-Generation Air Defense Shield**

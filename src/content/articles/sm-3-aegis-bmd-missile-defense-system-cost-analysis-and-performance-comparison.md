@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8271-1.jpg"
+heroImageAlt: "Aegis BMD SM-3 evolution plan showing missile development blocks"
 ---
 
 ## **Ultra-Premium Missile Defense at Strategic Scale**

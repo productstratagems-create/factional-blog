@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8842.jpg"
+heroImageAlt: "SM-6 missile launching from a destroyer at dusk"
 ---
 
 ## America’s Combat-Proven Naval Multi-Mission Shield

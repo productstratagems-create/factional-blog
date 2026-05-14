@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8138.jpg"
+heroImageAlt: "Military laser weapon system engaging aerial targets with an energy beam"
 ---
 
 The modern battlefield is witnessing a rapid evolution in threats—from inexpensive rockets and mortars to agile unmanned aerial systems (UAVs) and loitering munitions. In response, Israel’s defense industry has pioneered directed energy solutions, among which the Iron Beam system stands out as a revolutionary laser-based air defense tool. Developed by Rafael Advanced Defense Systems, Iron Beam promises an efficient, low-cost method of neutralizing short-range airborne threats almost instantaneously.

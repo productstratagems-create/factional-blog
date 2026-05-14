@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8282-1.png"
+heroImageAlt: "Air defense systems firing over a destroyed urban landscape"
 ---
 
 As high powered laser weapon systems mature and become widely deployed, the very nature of the battlefield is set to change dramatically. The adoption of directed-energy systems such as the U.S. Army’s DE M-SHORAD, Israel’s Iron Beam, and the U.K.’s DragonFire offers not only a revolutionary method for countering short-range air threats but also paves the way for systemic changes across doctrine, logistics, and tactical operations. In a landscape where Ukraine’s recent success in shooting down thousands of hostile aerial vehicles highlights the importance of advanced air defense, laser air defenses represents a potential game changer for both national defense and global exports. Laser air defenses when deployed in large numbers, have the potential to fundamentally reshape both defensive and offensive operations in the battlefields of the not so distant future.  

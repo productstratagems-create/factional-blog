@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7358-1.jpg"
+heroImageAlt: "Falcon air defense system with Giraffe 4A radar, SkyKeeper and IRIS-T SLM"
 ---
 
 **A United Front or A Divisive Industrial Policy?**

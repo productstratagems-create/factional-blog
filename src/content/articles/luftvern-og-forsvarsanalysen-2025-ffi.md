@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7236-1.png"
+heroImageAlt: "FFI Forsvarsanalysen 2025 report cover page"
 ---
 
 **Innledning**

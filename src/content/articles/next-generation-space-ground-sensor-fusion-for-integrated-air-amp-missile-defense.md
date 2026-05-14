@@ -6,6 +6,8 @@ category: teknologi
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8203-1.jpg"
+heroImageAlt: "Space station with solar panels near Earth's curvature"
 ---
 
 Modern integrated air and missile defense (IAMD) systems have evolved into sophisticated multi-domain architectures that seamlessly fuse space-based and ground-based sensors to defend against advanced threats including hypersonic glide vehicles, ballistic missiles, and stealth aircraft. **The current paradigm represents a fundamental shift from stove-piped systems to truly integrated multi-orbit, multi-service sensor networks** that provide birth-to-death tracking of the most challenging threats. This integration is enabled by revolutionary data fusion architectures, real-time processing capabilities, and advanced communication networks that create an unprecedented defensive capability against modern missile threats.

@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7352-1.jpg"
+heroImageAlt: "IRIS-T air defense system fire control console with two operator stations"
 ---
 
 ## **Advanced Air Defence with a Focus on Precision and Mobility**

@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_9411.jpg"
+heroImageAlt: "Cost per engagement table for SHORAD weapons against drones"
 ---
 
 The fundamental economics of drone warfare have created an unsustainable cost asymmetry that threatens traditional air defense models. Ukraine’s combat data reveals that drones account for 70% of combat casualties, while mass-produced attack drones cost as little as $20,000-38,000 each. Meanwhile, defenders face the reality of using interceptors costing 100 to 3,000 times more than the threats they engage. This economic warfare dynamic is driving revolutionary changes in air defense strategy, from AI-enabled autonomous systems to directed energy weapons that promise near-zero cost per engagement.

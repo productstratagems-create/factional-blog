@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8834.jpg"
+heroImageAlt: "Ballistic missile launching from a mobile platform at twilight"
 ---
 
 Hva menes med missilforsvar? Er det abstrakt som et begrep, en funksjon eller en oppgave eller noe håndfast som et våpensystem?

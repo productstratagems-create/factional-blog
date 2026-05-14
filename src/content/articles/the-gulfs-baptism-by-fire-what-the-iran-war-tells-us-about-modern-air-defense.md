@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8190-1.jpg"
+heroImageAlt: "Ballistic missile launch near a building — Middle East theater"
 ---
 
 For decades, the Gulf Cooperation Council states spent lavishly on air and missile defense. They bought Patriot batteries, then upgraded to PAC-3 and PAC-3 MSE. The UAE acquired THAAD. Saudi Arabia built one of the most expensive layered defense architectures in the world. Qatar, Kuwait, and Bahrain integrated into the US security umbrella. They trained, exercised, and waited.

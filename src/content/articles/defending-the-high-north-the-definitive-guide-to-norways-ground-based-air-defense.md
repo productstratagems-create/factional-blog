@@ -6,6 +6,8 @@ category: nato
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7191-1.jpg"
+heroImageAlt: "Integrated air defense systems in a mountainous Nordic valley"
 ---
 
 ### **Introduction**

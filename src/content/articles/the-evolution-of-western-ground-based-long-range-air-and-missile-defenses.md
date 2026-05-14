@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-1.png"
+heroImageAlt: "Supersonic missile in flight at sunset"
 ---
 
 ## **From Early Air Defense Systems to Defense against Ballistic and Hypersonic Threats**

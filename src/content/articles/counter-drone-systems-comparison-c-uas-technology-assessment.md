@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_9422.jpg"
+heroImageAlt: "C-UAS systems overview including Leonidas, Coyote and DroneHunter"
 ---
 
 The proliferation of unmanned aerial systems across contemporary battlefields has fundamentally altered the threat landscape, demanding comprehensive counter-drone solutions that can address everything from commercial quadcopters to sophisticated military UAVs. Ukraine produced at least 1 million drones last year, and has plans to make 2.5 million in 2025, while by early 2025, drones were accounting for 60% to 70% of the damage and destruction caused to Russian equipment in the war. This unprecedented scale of drone deployment has created an urgent demand for effective C-UAS technologies.

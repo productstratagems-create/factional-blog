@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8295-1.jpg"
+heroImageAlt: "Five variants of mobile radar system configurations"
 ---
 
 The proliferation of tactical ballistic missiles (TBMs) on the modern battlefield presents a rapidly evolving threat that challenges many of the world's most established air defense systems. The highly effective Norwegian-American NASAMS, a stalwart in defending against aircraft, drones, and cruise missiles, was not originally conceived to counter the unique high-speed, high-altitude trajectory of ballistic threats. Addressing this capability gap is critical for ensuring the system's relevance and effectiveness in future conflicts.

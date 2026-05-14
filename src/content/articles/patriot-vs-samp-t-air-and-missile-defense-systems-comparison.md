@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7246-1.jpg"
+heroImageAlt: "Infographic comparing Patriot and SAMP/T air defense systems"
 ---
 
 This article presents a technical comparison of the combat performance of the U.S. Patriot and the European SAMP/T air defense systems for the period 2020–2025. The review focuses on measurable performance criteria including engagement ranges, radar enhancements, deployment capabilities, and interceptor configurations, with all data sourced from recent publicly available defense acceptance documents, manufacturer specifications and news reports.

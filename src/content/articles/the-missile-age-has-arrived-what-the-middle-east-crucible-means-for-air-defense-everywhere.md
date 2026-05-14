@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8039-1.jpg"
+heroImageAlt: "Houthi Burkan ballistic missile launch"
 ---
 
 **The Middle East conflicts of 2024-2026 have produced the most consequential operational data on integrated air and missile defense in a generation. The findings challenge foundational assumptions across procurement, doctrine, and industrial policy. Readers pressed for time should understand these eight points before anything else.**

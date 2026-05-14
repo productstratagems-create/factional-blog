@@ -6,6 +6,8 @@ category: nato
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8026-1.png"
+heroImageAlt: "Map of Nordic NATO countries: Norway, Sweden, Finland, Denmark and Iceland"
 ---
 
 Finland has executed one of the most dramatic military pivots in modern European history, transforming from seven decades of carefully maintained neutrality into a frontline NATO state with rapidly expanding air and missile defense capabilities. The €317 million acquisition of Israel’s David’s Sling system, the first export sale of this advanced weapon, marks the centerpiece of an ambitious layered defense architecture now protecting 1,340 kilometers of NATO’s newest border with Russia.

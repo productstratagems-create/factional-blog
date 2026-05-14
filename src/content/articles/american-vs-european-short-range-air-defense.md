@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_9409.jpg"
+heroImageAlt: "Comparison table for M-SHORAD and Skyranger 30 short-range air defense systems"
 ---
 
 *Critical Cost Analysis of* U.S. and European SHORAD systems.

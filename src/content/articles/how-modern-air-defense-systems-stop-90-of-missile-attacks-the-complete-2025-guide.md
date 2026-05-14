@@ -6,6 +6,8 @@ category: nato
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8078-1.jpg"
+heroImageAlt: "Multiple missile interception trajectories glowing in the night sky over a city"
 ---
 
 **World-class IAMD systems succeed through five fundamental criteria: comprehensive multi-layered defense architectures, seamless sensor-to-shooter integration, adaptive threat response capabilities, sustainable cost-effectiveness, and robust international interoperability.** The most successful Western implementations—from Israel’s Iron Dome to NATO’s integrated networks—demonstrate that technical excellence must be matched by operational flexibility, strategic deterrence value, and the ability to evolve with emerging threats. Modern IAMD systems achieve success rates of 85-95% against diverse threats while maintaining operational costs of $40,000-$15 million per intercept, depending on system type and threat complexity.

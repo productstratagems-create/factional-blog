@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7297-1.jpg"
+heroImageAlt: "Military vehicle firing a laser beam at an aerial target"
 ---
 
 The C-UAS HELWS (High Energy Laser Weapon System), a cutting-edge directed energy weapon developed by Raytheon Technologies. Utilizing a high-energy laser, HELWS offers a precise and low-cost-per-shot solution for neutralizing unmanned aerial vehicles and other airborne threats.

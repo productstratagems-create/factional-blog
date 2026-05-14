@@ -6,6 +6,8 @@ category: anskaffelse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_9371.jpg"
+heroImageAlt: "Graph showing traffic spike on Norsk Luftvern in February–March 2026"
 ---
 
 *Web traffic data from the past few weeks tells an interesting story.*

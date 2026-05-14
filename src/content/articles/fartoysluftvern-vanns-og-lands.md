@@ -6,6 +6,8 @@ category: teknologi
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_7214-1.jpg"
+heroImageAlt: "Naval MBDA missile system on a ship deck with Rheinmetall branding"
 ---
 
 Typisk for større marinefartøy i luftvernsammenheng er oppsett med flere ulike våpensystemer og tilhørende sensorer basert på forskjellig teknologi, alt under en felles ledelse. En miks av integrert luftvern, om du vil.

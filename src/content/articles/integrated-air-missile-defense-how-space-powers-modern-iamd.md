@@ -6,6 +6,8 @@ category: teknologi
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_8196-1.jpg"
+heroImageAlt: "Space station module above Earth against the solar limb"
 ---
 
 Integrated Air & Missile Defense (IAMD) unites protection against air-breathing threats—such as aircraft, drones, and cruise missiles—with defense against ballistic and hypersonic missile threats. In today’s interconnected defense environment, space-based systems play a pivotal role across multiple domains. This primer explores how satellite assets enhance every layer of integrated defense—offering persistent intelligence, precision tracking, secure communications, and early warning.
