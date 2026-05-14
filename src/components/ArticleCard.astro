@@ -1,6 +1,7 @@
 ---
 import CategoryBadge from './CategoryBadge.astro';
 import ArticleMeta from './ArticleMeta.astro';
+import { assetSrc } from '../utils/slug';
 
 interface Props {
   title: string;
@@ -34,7 +35,7 @@ const {
   <a href={href} class="card-image-link" tabindex="-1" aria-hidden="true">
     {heroImage ? (
       <img
-        src={heroImage}
+        src={assetSrc(heroImage)}
         alt={heroImageAlt}
         class="card-image"
         loading="lazy"

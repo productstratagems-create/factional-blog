@@ -5,7 +5,7 @@ import ArticleMeta from '../components/ArticleMeta.astro';
 import Divider from '../components/Divider.astro';
 import ArticleGrid from '../components/ArticleGrid.astro';
 import type { CollectionEntry } from 'astro:content';
-import { articleHref, siteHref } from '../utils/slug';
+import { articleHref, siteHref, assetSrc } from '../utils/slug';
 
 interface Props {
   entry: CollectionEntry<'articles'>;
@@ -35,7 +35,7 @@ const readingTime = entry.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordC
     <div class="article-hero">
       {heroImage ? (
         <img
-          src={heroImage}
+          src={assetSrc(heroImage)}
           alt={heroImageAlt ?? ''}
           class="article-hero-image"
           loading="eager"
