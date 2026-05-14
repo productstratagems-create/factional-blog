@@ -1,7 +1,7 @@
 export const T = {
   no: {
     'nav.home':        'Forsiden',
-    'nav.missile':     'Missilsystemer',
+    'nav.missile':     'Missilforsvar',
     'nav.tech':        'Teknologi',
     'nav.procurement': 'Anskaffelser',
     'nav.analysis':    'Analyse',
@@ -16,7 +16,7 @@ export const T = {
     'footer.rss':      'RSS-feed',
     'footer.tagline':  'Norges ledende kilde om luftvern og missilforsvar.',
     'footer.copy':     'Alle rettigheter forbeholdt.',
-    'footer.cat.missilforsvar': 'Missilsystemer',
+    'footer.cat.missilforsvar': 'Missilforsvar',
     'footer.cat.teknologi':     'Teknologi',
     'footer.cat.anskaffelse':   'Anskaffelser',
     'footer.cat.analyse':       'Analyse',
