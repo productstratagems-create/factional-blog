@@ -4,11 +4,11 @@ import { siteHref } from '../utils/slug';
 const year = new Date().getFullYear();
 
 const categories = [
-  { href: siteHref('/categories/missilforsvar'), label: 'Missilsystemer' },
-  { href: siteHref('/categories/teknologi'),     label: 'Teknologi' },
-  { href: siteHref('/categories/anskaffelse'),   label: 'Anskaffelser' },
-  { href: siteHref('/categories/analyse'),       label: 'Analyse' },
-  { href: siteHref('/categories/history'),       label: 'Historie' },
+  { href: siteHref('/categories/missilforsvar'), label: 'Missilsystemer', i18n: 'footer.cat.missilforsvar' },
+  { href: siteHref('/categories/teknologi'),     label: 'Teknologi',      i18n: 'footer.cat.teknologi'     },
+  { href: siteHref('/categories/anskaffelse'),   label: 'Anskaffelser',   i18n: 'footer.cat.anskaffelse'   },
+  { href: siteHref('/categories/analyse'),       label: 'Analyse',        i18n: 'footer.cat.analyse'       },
+  { href: siteHref('/categories/history'),       label: 'Historie',       i18n: 'footer.cat.history'       },
 ];
 ---
 
@@ -16,23 +16,23 @@ const categories = [
   <div class="footer-inner container">
     <div class="footer-brand">
       <a href={siteHref('/')} class="footer-wordmark" aria-label="Norsk Luftvern – forsiden">Norsk Luftvern</a>
-      <p class="tagline">Norges ledende kilde om luftvern<br>og missilforsvar.</p>
+      <p class="tagline" data-i18n="footer.tagline">Norges ledende kilde om luftvern og missilforsvar.</p>
     </div>
 
     <nav class="footer-nav" aria-label="Snarveier">
-      <h3>Navigasjon</h3>
+      <h3 data-i18n="footer.nav-heading">Navigasjon</h3>
       <ul role="list">
-        <li><a href={siteHref('/')}>Forsiden</a></li>
-        <li><a href={siteHref('/about')}>Om oss</a></li>
-        <li><a href={siteHref('/rss.xml')}>RSS-feed</a></li>
+        <li><a href={siteHref('/')} data-i18n="footer.home">Forsiden</a></li>
+        <li><a href={siteHref('/about')} data-i18n="footer.about">Om oss</a></li>
+        <li><a href={siteHref('/rss.xml')} data-i18n="footer.rss">RSS-feed</a></li>
       </ul>
     </nav>
 
     <nav class="footer-nav" aria-label="Kategorier">
-      <h3>Kategorier</h3>
+      <h3 data-i18n="footer.cats-heading">Kategorier</h3>
       <ul role="list">
-        {categories.map(({ href, label }) => (
-          <li><a href={href}>{label}</a></li>
+        {categories.map(({ href, label, i18n }) => (
+          <li><a href={href} data-i18n={i18n}>{label}</a></li>
         ))}
       </ul>
     </nav>
@@ -40,7 +40,7 @@ const categories = [
 
   <div class="footer-bottom">
     <div class="container">
-      <p>&copy; {year} Norsk Luftvern. Alle rettigheter forbeholdt.</p>
+      <p>&copy; {year} Norsk Luftvern. <span data-i18n="footer.copy">Alle rettigheter forbeholdt.</span></p>
       <a href={siteHref('/rss.xml')} class="rss-link" aria-label="RSS-feed">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
           <circle cx="2.5" cy="13.5" r="1.5"/>

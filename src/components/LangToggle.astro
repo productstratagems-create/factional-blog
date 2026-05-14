@@ -5,6 +5,8 @@
 </div>
 
 <script>
+  import { apply } from '../scripts/i18n';
+
   const KEY = 'site-lang';
 
   function applyLang(lang: string) {
@@ -13,6 +15,7 @@
     document.querySelectorAll('.lt-btn').forEach((btn) => {
       btn.classList.toggle('active', (btn as HTMLElement).dataset.lang === lang);
     });
+    apply(lang);
   }
 
   applyLang(localStorage.getItem(KEY) || 'all');

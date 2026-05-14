@@ -19,9 +19,9 @@ const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
 >
   <div class="articles-page container">
     <header class="page-header">
-      <p class="page-super">Arkiv</p>
-      <h1 class="page-title">Alle artikler</h1>
-      <p class="article-count">{sorted.length} artikler totalt</p>
+      <p class="page-super" data-i18n="archive.super">Arkiv</p>
+      <h1 class="page-title" data-i18n="archive.title">Alle artikler</h1>
+      <p class="article-count">{sorted.length} <span data-i18n="archive.total">artikler totalt</span></p>
     </header>
 
     <Divider spacing="md" />
@@ -32,9 +32,9 @@ const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
 
     {totalPages > 1 && (
       <nav class="pagination" aria-label="Sidenavigasjon">
-        <span class="pagination-btn pagination-btn--disabled">← Forrige</span>
-        <span class="pagination-info">Side 1 av {totalPages}</span>
-        <a class="pagination-btn" href={siteHref('/articles/page/2')}>Neste →</a>
+        <span class="pagination-btn pagination-btn--disabled" data-i18n="page.prev">← Forrige</span>
+        <span class="pagination-info"><span data-i18n="page.page">Side</span> 1 <span data-i18n="page.of">av</span> {totalPages}</span>
+        <a class="pagination-btn" href={siteHref('/articles/page/2')} data-i18n="page.next">Neste →</a>
       </nav>
     )}
   </div>
