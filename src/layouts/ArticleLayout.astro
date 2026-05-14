@@ -5,7 +5,7 @@ import ArticleMeta from '../components/ArticleMeta.astro';
 import Divider from '../components/Divider.astro';
 import ArticleGrid from '../components/ArticleGrid.astro';
 import type { CollectionEntry } from 'astro:content';
-import { articleHref } from '../utils/slug';
+import { articleHref, siteHref } from '../utils/slug';
 
 interface Props {
   entry: CollectionEntry<'articles'>;
@@ -49,7 +49,7 @@ const readingTime = entry.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordC
       <div class="article-hero-overlay" aria-hidden="true"></div>
       <div class="article-hero-content container">
         <div class="hero-badges">
-          <CategoryBadge category={category} href={`/categories/${category}`} />
+          <CategoryBadge category={category} href={siteHref(`/categories/${category}`)} />
         </div>
         <h1 class="article-title">{title}</h1>
         <ArticleMeta pubDate={date} author={author} readingTime={readingTime} lang={lang} />

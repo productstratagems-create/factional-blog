@@ -17,7 +17,7 @@ const { fontSize, iconH } = sizes[size];
 const uid = Math.random().toString(36).slice(2, 8);
 ---
 
-<a href="/" class:list={['logo', className]} aria-label="Norsk Luftvern – forsiden" style={`--logo-font-size: ${fontSize}; --logo-icon-h: ${iconH}px`}>
+<a href={import.meta.env.BASE_URL} class:list={['logo', className]} aria-label="Norsk Luftvern – forsiden" style={`--logo-font-size: ${fontSize}; --logo-icon-h: ${iconH}px`}>
   <span class="logo__word" aria-hidden="true">Norsk</span>
 
   <!-- Missile-arc icon -->

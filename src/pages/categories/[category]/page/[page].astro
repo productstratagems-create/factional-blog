@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import ArticleGrid from '../../../../components/ArticleGrid.astro';
 import Divider from '../../../../components/Divider.astro';
+import { siteHref } from '../../../../utils/slug';
 
 export async function getStaticPaths() {
   const PAGE_SIZE = 18;
@@ -60,8 +61,8 @@ const categoryLabels: Record<string, string> = {
 };
 
 const label = categoryLabels[category] ?? category;
-const prevHref = pageNum === 2 ? `/categories/${category}` : `/categories/${category}/page/${pageNum - 1}`;
-const nextHref = pageNum < totalPages ? `/categories/${category}/page/${pageNum + 1}` : null;
+const prevHref = siteHref(pageNum === 2 ? `/categories/${category}` : `/categories/${category}/page/${pageNum - 1}`);
+const nextHref = pageNum < totalPages ? siteHref(`/categories/${category}/page/${pageNum + 1}`) : null;
 ---
 
 <BaseLayout

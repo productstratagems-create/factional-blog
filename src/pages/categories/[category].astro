@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleGrid from '../../components/ArticleGrid.astro';
 import Divider from '../../components/Divider.astro';
+import { siteHref } from '../../utils/slug';
 
 export async function getStaticPaths() {
   const PAGE_SIZE = 18;
@@ -67,7 +68,7 @@ const label = categoryLabels[category] ?? category;
         <nav class="pagination" aria-label="Sidenavigasjon">
           <span class="pagination-btn pagination-btn--disabled">← Forrige</span>
           <span class="pagination-info">Side 1 av {totalPages}</span>
-          <a class="pagination-btn" href={`/categories/${category}/page/2`}>Neste →</a>
+          <a class="pagination-btn" href={siteHref(`/categories/${category}/page/2`)}>Neste →</a>
         </nav>
       )}
     </div>

@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroArticle from '../components/HeroArticle.astro';
 import ArticleGrid from '../components/ArticleGrid.astro';
 import Divider from '../components/Divider.astro';
-import { articleHref } from '../utils/slug';
+import { articleHref, siteHref } from '../utils/slug';
 
 const allArticles = await getCollection('articles', (e) => !e.data.draft);
 const sorted = allArticles.sort(
@@ -49,7 +49,7 @@ const featuredReadingTime = featured?.data.readingTimeMinutes ?? Math.max(1, Mat
 
       {allArticles.length > 13 && (
         <div class="load-more">
-          <a href="/articles" class="btn-outline">Vis alle artikler</a>
+          <a href={siteHref('/articles')} class="btn-outline">Vis alle artikler</a>
         </div>
       )}
     </section>
