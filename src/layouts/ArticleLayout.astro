@@ -5,13 +5,16 @@ import ArticleMeta from '../components/ArticleMeta.astro';
 import Divider from '../components/Divider.astro';
 import ArticleGrid from '../components/ArticleGrid.astro';
 import type { CollectionEntry } from 'astro:content';
+import { articleHref } from '../utils/slug';
 
 interface Props {
   entry: CollectionEntry<'articles'>;
   related: CollectionEntry<'articles'>[];
+  prev?: CollectionEntry<'articles'> | null;
+  next?: CollectionEntry<'articles'> | null;
 }
 
-const { entry, related } = Astro.props;
+const { entry, related, prev = null, next = null } = Astro.props;
 const { title, excerpt, date, category, author, heroImage, heroImageAlt, lang = 'no' } = entry.data;
 
 const wordCount = entry.body?.split(/\s+/).length ?? 0;
@@ -66,6 +69,25 @@ const readingTime = entry.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordC
           <h2 class="related-heading">Les også</h2>
           <ArticleGrid articles={related} columns={2} />
         </section>
+      )}
+
+      {(prev || next) && (
+        <nav class="article-nav" aria-label="Artikkelnavigasjon">
+          <div class="article-nav-inner">
+            {next ? (
+              <a class="article-nav-link article-nav-link--next" href={articleHref(next.id)}>
+                <span class="article-nav-label">← Nyere</span>
+                <span class="article-nav-title">{next.data.title}</span>
+              </a>
+            ) : <span />}
+            {prev ? (
+              <a class="article-nav-link article-nav-link--prev" href={articleHref(prev.id)}>
+                <span class="article-nav-label">Eldre →</span>
+                <span class="article-nav-title">{prev.data.title}</span>
+              </a>
+            ) : <span />}
+          </div>
+        </nav>
       )}
     </div>
   </article>
@@ -261,5 +283,69 @@ const readingTime = entry.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordC
     letter-spacing: 0.1em;
     color: var(--color-heading);
     margin-bottom: var(--spacing-lg);
+  }
+
+  /* ── Prev/Next nav ── */
+  .article-nav {
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-xl);
+    border-top: 2px solid var(--color-border);
+  }
+
+  .article-nav-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .article-nav-link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    text-decoration: none;
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .article-nav-link:hover {
+    border-color: var(--color-navy);
+    background: var(--color-surface);
+  }
+
+  .article-nav-link--prev {
+    text-align: right;
+    grid-column: 2;
+  }
+
+  .article-nav-label {
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-teal);
+  }
+
+  .article-nav-title {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--color-heading);
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @media (max-width: 600px) {
+    .article-nav-inner {
+      grid-template-columns: 1fr;
+    }
+    .article-nav-link--prev { grid-column: 1; text-align: left; }
   }
 </style>

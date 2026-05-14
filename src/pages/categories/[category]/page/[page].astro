@@ -1,32 +1,49 @@
 ---
 import { getCollection } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import ArticleGrid from '../../components/ArticleGrid.astro';
-import Divider from '../../components/Divider.astro';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import ArticleGrid from '../../../../components/ArticleGrid.astro';
+import Divider from '../../../../components/Divider.astro';
 
 export async function getStaticPaths() {
   const PAGE_SIZE = 18;
   const allArticles = await getCollection('articles', (e) => !e.data.draft);
   const categories = [...new Set(allArticles.map((a) => a.data.category))];
 
-  return categories.map((category) => {
+  const paths: {
+    params: { category: string; page: string };
+    props: {
+      articles: typeof allArticles;
+      category: string;
+      pageNum: number;
+      totalPages: number;
+      total: number;
+    };
+  }[] = [];
+
+  for (const category of categories) {
     const catArticles = allArticles
       .filter((a) => a.data.category === category)
       .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
     const totalPages = Math.ceil(catArticles.length / PAGE_SIZE);
-    return {
-      params: { category },
-      props: {
-        articles: catArticles.slice(0, PAGE_SIZE),
-        category,
-        total: catArticles.length,
-        totalPages,
-      },
-    };
-  });
+
+    for (let pageNum = 2; pageNum <= totalPages; pageNum++) {
+      paths.push({
+        params: { category, page: String(pageNum) },
+        props: {
+          articles: catArticles.slice((pageNum - 1) * PAGE_SIZE, pageNum * PAGE_SIZE),
+          category,
+          pageNum,
+          totalPages,
+          total: catArticles.length,
+        },
+      });
+    }
+  }
+
+  return paths;
 }
 
-const { articles, category, total, totalPages } = Astro.props;
+const { articles, category, pageNum, totalPages, total } = Astro.props;
 
 const categoryLabels: Record<string, string> = {
   'missilforsvar':   'Missilforsvar',
@@ -43,11 +60,13 @@ const categoryLabels: Record<string, string> = {
 };
 
 const label = categoryLabels[category] ?? category;
+const prevHref = pageNum === 2 ? `/categories/${category}` : `/categories/${category}/page/${pageNum - 1}`;
+const nextHref = pageNum < totalPages ? `/categories/${category}/page/${pageNum + 1}` : null;
 ---
 
 <BaseLayout
-  title={label}
-  description={`Alle artikler om ${label.toLowerCase()} på Norsk Luftvern.`}
+  title={`${label} — side ${pageNum} | Norsk Luftvern`}
+  description={`Artikler om ${label.toLowerCase()} på Norsk Luftvern, side ${pageNum}.`}
 >
   <div class="category-page">
     <div class="container">
@@ -63,13 +82,14 @@ const label = categoryLabels[category] ?? category;
         <ArticleGrid articles={articles} columns={3} />
       </div>
 
-      {totalPages > 1 && (
-        <nav class="pagination" aria-label="Sidenavigasjon">
-          <span class="pagination-btn pagination-btn--disabled">← Forrige</span>
-          <span class="pagination-info">Side 1 av {totalPages}</span>
-          <a class="pagination-btn" href={`/categories/${category}/page/2`}>Neste →</a>
-        </nav>
-      )}
+      <nav class="pagination" aria-label="Sidenavigasjon">
+        <a class="pagination-btn" href={prevHref}>← Forrige</a>
+        <span class="pagination-info">Side {pageNum} av {totalPages}</span>
+        {nextHref
+          ? <a class="pagination-btn" href={nextHref}>Neste →</a>
+          : <span class="pagination-btn pagination-btn--disabled">Neste →</span>
+        }
+      </nav>
     </div>
   </div>
 </BaseLayout>
@@ -111,7 +131,6 @@ const label = categoryLabels[category] ?? category;
 
   .articles-wrapper { padding-block: var(--spacing-xl); }
 
-  /* ── Pagination ── */
   .pagination {
     display: flex;
     align-items: center;
