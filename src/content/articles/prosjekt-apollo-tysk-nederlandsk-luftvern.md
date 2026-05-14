@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5403.jpg"
+heroImageAlt: "Tysk luftvernsystem demonstrasjon av militærpersonell"
 ---
 
 En felles tysk-nederlandsk deployerbar innsatsstyrke kan snart stå klar til tjeneste for NATO. Kun de siste forberedelsene gjenstår. Men samarbeidet er mer omfattende enn kun et styrkebidrag til forsvarsalliansen.

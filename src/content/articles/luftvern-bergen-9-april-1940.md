@@ -6,6 +6,8 @@ category: teknologi
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_3131.jpg"
+heroImageAlt: "NIKE-dekkningskart sentrert rundt Oslo"
 ---
 
 > Neste gang det kommer ukjente fly, skyter jeg på ny hvis ikke instruksen blir forandret. Jeg hørte ikke mer.

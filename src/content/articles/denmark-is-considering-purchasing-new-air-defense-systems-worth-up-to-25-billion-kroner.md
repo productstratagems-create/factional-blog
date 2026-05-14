@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_3071.jpg"
+heroImageAlt: "Wisla-luftvernsystemdiagram for Polen"
 ---
 
 The Danish Ministry of Defence is evaluating bids from 12 companies across nine countries to supply the Danish armed forces with new air defense systems. This procurement is one of the largest in Danish history. 

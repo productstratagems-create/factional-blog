@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_3025.jpg"
+heroImageAlt: "SAMP/T-systemkomponenter på militære kjøretøy"
 ---
 
 MEADS fremstår i offentligheten som et nokså modent system, men med få eller ingen kjøpere - så langt. Mens MEADS som system har noe å fare med, så velger US Army å vente til 2028 på "nye Patriot", mens Tyskland har beslutningsvegring og Italia, tja hvem vet?

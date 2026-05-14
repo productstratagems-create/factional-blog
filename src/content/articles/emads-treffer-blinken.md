@@ -6,6 +6,8 @@ category: teknologi
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_3061.jpg"
+heroImageAlt: "Militærradar med flere antennearrayer i kupert terreng"
 ---
 
 Systemet EMADS, ikke et klassisk "fiks ferdig hyllevaresystem" med alt du trenger i en eske, men heller en idé, der utskytningsplattform med missiler er eneste tydelige fellesnevner, og resten synes å være opp til kjøper å spesifisere - og for MBDA å integrere.

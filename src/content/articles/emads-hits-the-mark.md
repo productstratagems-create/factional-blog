@@ -6,6 +6,8 @@ category: nato
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_3065.jpg"
+heroImageAlt: "Overvåkningsradar i ørkenmiljø"
 ---
 
 The EMADS system, not a classic "off-the-shelf system" with everything you need in a box, but rather an idea, where the launch platform with missiles is the only clear common denominator, and the rest seems to be up to the buyer to specify - and for MBDA to integrate.

@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5836-1.png"
+heroImageAlt: "Polsk luftvern: PAC-3, NAREW og Wisla komponenter infografikk"
 ---
 
 Samtidig som Sverige i 2017 gikk for Patriot som sitt nye luftvern fra 2020, så besluttet også Polen å kjøpe hele åtte batterier og K2-systemer, og prisen var angitt til drøyt 60 mrd. kroner. Dog var ingen kontrakter signert, og det gjensto fortsatt forhandlinger om en rekke forhold. 

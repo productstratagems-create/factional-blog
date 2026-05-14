@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5404-1.jpg"
+heroImageAlt: "SAMP/Aster lastebilmontert enhet på visning"
 ---
 
 The SAMP/T air defense system has emerged as Europe’s flagship alternative to the U.S.-made Patriot, offering advanced capabilities while reinforcing continental defense sovereignty. Developed through Franco-Italian collaboration and continuously modernized, this system addresses evolving threats through cutting-edge technology and strategic interoperability.

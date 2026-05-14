@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5465-1.jpg"
+heroImageAlt: "SAMP/TNG system med dekkningssoner diagram"
 ---
 
 **Denmark’s September 2025 selection of SAMP/T NG over Patriot possibly sent shockwaves through European defense circles, signaling that delivery timelines and European sovereignty now rival raw combat performance in procurement decisions.** For Norway, which is still weighing its long-range air defense options, this Franco-Italian versus American rivalry has become the defining strategic choice of the decade. The systems represent fundamentally different visions: Patriot offers battle-proven performance and deep NATO integration, while SAMP/T NG promises European industrial autonomy and freedom from ITAR restrictions. With wait times for new Patriot batteries stretching to **seven years** and SAMP/T production ramping up dramatically, the calculus is shifting.

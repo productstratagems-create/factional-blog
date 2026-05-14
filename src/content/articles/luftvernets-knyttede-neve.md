@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5989.jpg"
+heroImageAlt: "Forward Area Defense engasjementsdiagram"
 ---
 
 Leser du åpne amerikanske feltmanualer, så skjønner du fort at det ikke er tilfeldig hvordan skytset i en luftvernavdeling grupperes ut. Du innser også at det ikke er opp til den lokale sjef i isolasjon å bestemme hvor vogna hans bør stå, og du forstår at utgruppering har mer til felles med ulver i flokk der hvem av dem som ligger først og sist, likeså avstanden mellom dem og i hvilke retninger de observerer, ikke er tilfeldig. På samme måte som fiolinisten og hans orkester spiller, etter noter men ledet av dirigenten. For dyrene er dette instinkter kombinert med lederhierarki, mens for fiolinisten handler det om trening, samøving og ekstreme prestasjoner. For artilleristen er det profesjonell utøvelse, igjen basert på trening og øving, men også som følge av planer, prinsipper, retningslinjer og direksjon. Prinsippene og retningslinjene for bruk av luftvern kalles *employment principles* og *employment guidelines,* og burde i ihvertfall være del av enhver luftvernplanleggers bibel og 10 bud.

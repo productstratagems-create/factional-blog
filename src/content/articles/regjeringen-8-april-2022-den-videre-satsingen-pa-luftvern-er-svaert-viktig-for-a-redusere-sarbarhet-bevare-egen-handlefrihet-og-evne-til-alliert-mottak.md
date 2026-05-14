@@ -6,6 +6,8 @@ category: nato
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5401.jpg"
+heroImageAlt: "Patriot-system i felt med soldater og kontrollutstyr"
 ---
 
 Regjeringens melding nr. 10 til Stortinget sier følgende om de forsvarspolitiske ambisjonene innenfor tema norsk luftvern:

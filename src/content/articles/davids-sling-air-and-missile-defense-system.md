@@ -6,6 +6,8 @@ category: teknologi
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-22.png"
+heroImageAlt: "Mobil plattform avfyrer flere missiler med eksplosjoner"
 ---
 
 Finland has decided to acquire the David's Sling long-range air defense manufactured by Israel (Rafael) and the USA (Raytheon). Cost set at at least 316 million euros. With the option of doubling.

@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_3023.jpg"
+heroImageAlt: "Patriot-system med rumensk flagg i bakgrunnen"
 ---
 
 I juli 2017 godkjente amerikanske myndigheter et mulig salg av sju Patriot-batterier til Romania for 3,9 mrd. amerikanske dollar.

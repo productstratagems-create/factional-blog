@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5399.jpg"
+heroImageAlt: "PAC-3 missil avfyres i ørkenomgivelser"
 ---
 
 The Patriot system is currently used by 19 countries, with 240 units delivered worldwide. The demand for air defense missile systems, including Patriot, is expected to grow at an annual rate of 5% between 2025 and 2030. The U.S. has also recently approved major arms sales, including a sale to Germany, valued at approximately $5 billion.

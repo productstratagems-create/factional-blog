@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5824-1.jpg"
+heroImageAlt: "Forward Area Defense engasjementsdekkingsdiagram"
 ---
 
 Cracking open American field manuals reveals a crucial truth: air defense deployment isn't random. Local commanders don't just wing it. Instead, it resembles a wolf pack – a coordinated unit where positioning, spacing, and focus are vital.

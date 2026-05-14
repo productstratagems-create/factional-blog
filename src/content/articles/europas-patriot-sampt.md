@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_3013.jpg"
+heroImageAlt: "Diagram fra italiensk militærøvelse med luftvernsystemer"
 ---
 
 Rimelig bra system, eller gårsdagens teknologi med vekstpotensial?

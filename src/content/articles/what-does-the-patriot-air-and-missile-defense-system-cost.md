@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_3074.jpg"
+heroImageAlt: "Patriot M901–M903 lastekomparasjonsdiagram"
 ---
 
 ## According to GenAI …

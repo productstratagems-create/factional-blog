@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-11.png"
+heroImageAlt: "Stort futuristisk mobilt forsvarssystem i hangar"
 ---
 
 MEADS skulle være en erstatning for Patriot med PAC-3 MSE-missilet som det primære (selv om det ble lagt planer for flere missiltyper også). MEADS, var et felles prosjekt mellom europeiske MBDA (eid av Airbus Group, BAE Systems Plc og italienske Leonardo Finmeccanica SpA) og amerikanske Lockheed Martin.

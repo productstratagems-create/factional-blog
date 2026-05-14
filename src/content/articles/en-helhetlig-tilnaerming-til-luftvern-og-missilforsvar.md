@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_3012.jpg"
+heroImageAlt: "Illustrasjon av integrerte luftverndekkningssoner"
 ---
 
 I en [artikkel](https://www.defensenews.com/opinion/commentary/2020/06/26/its-time-to-rethink-japans-missile-defenses/) leser vi om Japans beslutning om å kansellere det planlagte kjøpet av to landbaserte ballistiske missilforsvarssystemer av typen Aegis Ashore til 3,6 mrd dollar. Artikkelforfatterne kommer så med velmenende råd om hva de japanske myndighetene heller bør benytte pengene til innenfor luftvern og missilforsvar. Rådene tar til orde for en helhetlig tilnærming, snarere enn en fokusert men nederlagsdømt satsning på få og svært kostbare missilforsvarssystemer.

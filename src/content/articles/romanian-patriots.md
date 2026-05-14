@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5813.jpg"
+heroImageAlt: "Missilforsvar med rumensk flagg"
 ---
 
 ## **A Detailed Look at the Missile Defense System Acquisition**

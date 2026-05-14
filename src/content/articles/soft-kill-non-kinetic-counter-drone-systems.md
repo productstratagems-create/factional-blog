@@ -6,6 +6,8 @@ category: anskaffelse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5453-1.jpg"
+heroImageAlt: "Stor oppblåsbar aerostatovervåkningsballong"
 ---
 
 *Electronic Warfare, Interceptor Drones, High-Power Microwaves, and the Invisible Layer of Counter-UAS*

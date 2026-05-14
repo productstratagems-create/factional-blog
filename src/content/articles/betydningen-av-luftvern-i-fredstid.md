@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/pexels-photo-24780251.jpg"
+heroImageAlt: "Gradert rosa-blå himmel med tynn missilkondensstripe"
 ---
 
 I denne artikkelen får vi et innblikk i hvordan US Air Force etterhvert begynner å tenke annerledes innenfor styrkeutvikling av operative støtteelementer som bl.a transportfly og tankfly. Den relativt store flyflåten skal mulig bli enda større, som følge av denne nye tankegangen. Hva er årsaken til dette?

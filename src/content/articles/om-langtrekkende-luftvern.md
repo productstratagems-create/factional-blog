@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5487-1.jpg"
+heroImageAlt: "Langtrekkende SAM avfyres fra lastebilmontert launcher"
 ---
 
 Den offentlige debatten om hvor mye luftvern, med hvilke kvaliteter, Norge egentlig trenger pågår. Det er imidlertid nødvendig å kvalifisere størrelsene som ofte går igjen i diskusjonene.

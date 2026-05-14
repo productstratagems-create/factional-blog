@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5966-1.jpg"
+heroImageAlt: "Flere sporbaserte luftvernkjøretøy med radarkupler"
 ---
 
 Europas luftforsvarsprioriteringer har gått fra moderate til betydelige investeringer etter 2022, mens USA har opprettholdt en jevn utviklingskurve med fokus på globalt forsvar.

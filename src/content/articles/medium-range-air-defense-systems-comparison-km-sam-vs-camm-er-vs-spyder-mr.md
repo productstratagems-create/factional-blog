@@ -6,6 +6,8 @@ category: nato
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5483-1.jpg"
+heroImageAlt: "To mobile luftvernplattformer side-by-side sammenligning"
 ---
 
 ## Executive Summary

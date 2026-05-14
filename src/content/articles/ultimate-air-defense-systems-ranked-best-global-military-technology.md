@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/image-37.png"
+heroImageAlt: "Flere missiler avfyres i koordinert salve ved solnedgang"
 ---
 
 ## **Executive Summary**

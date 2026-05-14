@@ -6,6 +6,8 @@ category: analyse
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5990.jpg"
+heroImageAlt: "Svakt missilkondensstripe mot rosa-blå solnedgangshimmel"
 ---
 
 Å bestemme riktig mengde luftvern er en praktisk og politisk utfordring. Et land kan sjelden beskytte alt luftrom til enhver tid. Hvert batteri dekker bare et begrenset område og har begrenset ammunisjon. Derfor må militære ledere prioritere hvilke byer, baser eller infrastruktur som får beskyttelse. Erfaringer fra Norge, Israel og Ukraina illustrerer at behovsvurdering baseres på områdenes betydning, trusselintensitet og systemenes kapasitet.

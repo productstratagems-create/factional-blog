@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5468.jpg"
+heroImageAlt: "Radardekkingsdiagram – høyde, rekkevidde og deteksjon"
 ---
 
 Moderne luftvern er ikke bare én enkeltkanon eller rakett – det er et hele-system som beskytter mot trusler på ulike avstander og høyder. Luftvernsystemer samvirker for å oppdage, spore og skyte ned fly, helikoptre, droner, cruisemissiler med mer. I et moderne forsvar må luftvernet bygges «lagdelt» (dybdebasert): svært kort rekkevidde (SHORAD) nær tropper og baser, middels rekkevidde (MRAD) for lokal områdebeskyttelse, og langtrekkende systemer (LRAD) for overordnet dekning. Dette er omtalt av Forsvarets Forskningsinstitutt, NATO og Forsvaret som «lagdelt luftvern» og er avgjørende for effektiv beskyttelse.

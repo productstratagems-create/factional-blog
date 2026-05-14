@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Redaksjonen"
 lang: no
 draft: false
+heroImage: "/images/img_5447-1.jpg"
+heroImageAlt: "To Patriot-missiler avfyres ved solnedgang"
 ---
 
 [caption id="attachment_960" align="alignnone" width="2400"]![IMG_8974](https://norskluftvern.com/wp-content/uploads/2017/06/img_8974.jpg) Iron Dome, Patriot og Arrow (Israel Defense Forces)[/caption]
