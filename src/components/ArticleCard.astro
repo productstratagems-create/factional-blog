@@ -31,7 +31,7 @@ const {
 } = Astro.props;
 ---
 
-<article class="article-card">
+<article class="article-card" data-article-lang={lang}>
   <a href={href} class="card-image-link" tabindex="-1" aria-hidden="true">
     {heroImage ? (
       <img

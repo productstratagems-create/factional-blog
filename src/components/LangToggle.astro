@@ -1,0 +1,58 @@
+<div class="lang-toggle" id="lang-toggle" role="group" aria-label="Språkfilter">
+  <button class="lt-btn" data-lang="no">NO</button>
+  <button class="lt-btn" data-lang="all">ALL</button>
+  <button class="lt-btn" data-lang="en">EN</button>
+</div>
+
+<script>
+  const KEY = 'site-lang';
+
+  function applyLang(lang: string) {
+    document.documentElement.setAttribute('data-lang-filter', lang);
+    localStorage.setItem(KEY, lang);
+    document.querySelectorAll('.lt-btn').forEach((btn) => {
+      btn.classList.toggle('active', (btn as HTMLElement).dataset.lang === lang);
+    });
+  }
+
+  applyLang(localStorage.getItem(KEY) || 'all');
+
+  document.getElementById('lang-toggle')?.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLElement>('.lt-btn');
+    if (btn?.dataset.lang) applyLang(btn.dataset.lang);
+  });
+</script>
+
+<style>
+  .lang-toggle {
+    display: inline-flex;
+    border: 1.5px solid var(--color-border);
+    border-radius: 999px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .lt-btn {
+    font-family: var(--font-ui);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 3px 7px;
+    border: none;
+    background: transparent;
+    color: var(--color-muted);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    line-height: 1.4;
+  }
+
+  .lt-btn.active {
+    background: var(--color-navy);
+    color: #fff;
+  }
+
+  .lt-btn:hover:not(.active) {
+    background: var(--color-surface);
+    color: var(--color-heading);
+  }
+</style>

@@ -28,7 +28,7 @@ const {
 } = Astro.props;
 ---
 
-<div class="hero-wrap">
+<div class="hero-wrap" data-article-lang={lang}>
   <a href={href} class="hero-card" aria-label={title}>
     {heroImage ? (
       <img
