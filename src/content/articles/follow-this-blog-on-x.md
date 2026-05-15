@@ -6,6 +6,8 @@ category: analyse
 author: "Norsk luftvern"
 lang: en
 draft: false
+heroImage: "/images/nl1.jpg"
+heroImageAlt: "Norsk Luftvern"
 ---
 
 [@norskluftvern ](https://x.com/norskluftvern?s=21&t=xNn1qj2F-h8_ysIyTDlQHw)

@@ -6,6 +6,8 @@ category: anskaffelse
 author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/cropped-img_8726.jpg"
+heroImageAlt: "Missile in flight"
 ---
 
 Nyheten er fersk: regjeringen setter av 29 millioner euro – rundt 315 millioner kroner hentet fra Nansen-programmet – som norsk medlemskontingent i EDIP for perioden 2026–2028. Det er første gang regjeringen setter av penger til å være med i EDIP, og forsvarsminister Tore O. Sandvik betegner deltakelsen som «et viktig ledd i regjeringens arbeid for å styrke ukrainsk tilgang på kritisk forsvarsmateriell.» 

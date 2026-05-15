@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/151s-e1495706135688.png"
+heroImageAlt: "Prop. 151 S – Kampkraft og bærekraft, Langtidsplan for forsvarssektoren"
 ---
 
 Regjeringen vil styrke beskyttelsen av Luftforsvarets baser, mottaksområder for alliert støtte og annen viktig infrastruktur. Det er helt avgjørende for utnyttelsen av F-35 og andre flysystemer at basene flyene opererer fra er beskyttet. Luftvern er det sentrale aktive elementet i beskyttelse mot luftangrep, også fra langtrekkende presisjonsvåpen. En eventuell fremtidig konflikt i norske nærområder vil kunne innebære bruk av slike våpen. Luftvernsystemet NASAMS II videreføres, oppgraderes og utvikles blant annet gjennom anskaffelse av nye kort/middels rekkevidde luftvernmissiler.

@@ -6,6 +6,8 @@ category: analyse
 author: "Norsk luftvern"
 lang: en
 draft: false
+heroImage: "/images/img_0117.jpg"
+heroImageAlt: "Future directed energy defense systems capability overview"
 ---
 
 The definitive guide to Norskluftvern.com
