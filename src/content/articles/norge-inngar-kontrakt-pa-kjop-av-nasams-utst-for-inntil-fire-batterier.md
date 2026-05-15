@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: no
 draft: false
+series: nordic
 heroImage: "/images/hmlnas.jpg"
 heroImageAlt: "NASAMS high mobility launcher system"
 ---

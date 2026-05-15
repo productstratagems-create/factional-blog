@@ -6,6 +6,7 @@ category: anskaffelse
 author: "Norsk luftvern"
 lang: no
 draft: false
+series: nordic
 heroImage: "/images/800px-avenger_missile.jpg"
 heroImageAlt: "Avenger short-range air defense system on HUMVEE"
 ---

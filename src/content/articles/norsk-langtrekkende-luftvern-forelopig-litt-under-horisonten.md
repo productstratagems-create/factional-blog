@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: no
 draft: false
+series: nordic
 heroImage: "/images/img_5402.jpg"
 heroImageAlt: "Patriot-launcherbeholder diagram"
 ---

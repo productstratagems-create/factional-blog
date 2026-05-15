@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: no
 draft: false
+series: nordic
 heroImage: "/images/img_5425-1.jpg"
 heroImageAlt: "PAC-3 missil i fart nær fjell"
 ---

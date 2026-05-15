@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: nordic
 heroImage: "/images/create-a-highly-detailed-high-resolution-image-showcasing-a-modern-nordic.png"
 heroImageAlt: "Modern Nordic air defense deployment with UAVs and radar systems"
 ---

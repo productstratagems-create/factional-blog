@@ -7,4 +7,8 @@ export const SERIES: Record<string, { title: string; description: string }> = {
     title: 'The Cost Analysis Series',
     description: 'Acquisition, interceptor, and lifecycle cost breakdowns of air defense systems.',
   },
+  nordic: {
+    title: 'The Nordic Series',
+    description: 'Air defense developments across Norway, Sweden, Finland, and Denmark.',
+  },
 };

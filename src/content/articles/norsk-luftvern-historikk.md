@@ -13,6 +13,7 @@ lang: no
 featured: false
 author: "Norsk luftvern"
 draft: false
+series: nordic
 heroImage: "/images/cropped-img_7371.jpeg"
 heroImageAlt: "Snow-covered mountainous Norwegian terrain with forests and valleys"
 ---

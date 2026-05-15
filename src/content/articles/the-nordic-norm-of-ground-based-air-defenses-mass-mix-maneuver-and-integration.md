@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: nordic
 heroImage: "/images/img_8026-1.png"
 heroImageAlt: "Map of Nordic NATO countries"
 ---

@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: nordic
 heroImage: "/images/img_3071.jpg"
 heroImageAlt: "Wisla-luftvernsystemdiagram for Polen"
 ---

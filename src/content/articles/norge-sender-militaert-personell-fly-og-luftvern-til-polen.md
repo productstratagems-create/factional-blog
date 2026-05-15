@@ -6,6 +6,7 @@ category: nato
 author: "Norsk luftvern"
 lang: no
 draft: false
+series: nordic
 heroImage: "/images/img_0040.jpg"
 heroImageAlt: "C-17 Globemaster III military cargo aircraft"
 ---

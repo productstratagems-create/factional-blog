@@ -6,6 +6,7 @@ category: anskaffelse
 author: "Norsk luftvern"
 lang: no
 draft: false
+series: nordic
 heroImage: "/images/cropped-img_8726.jpg"
 heroImageAlt: "Missile in flight"
 ---

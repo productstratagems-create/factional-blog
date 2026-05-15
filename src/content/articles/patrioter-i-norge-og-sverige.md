@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: no
 draft: false
+series: nordic
 heroImage: "/images/img_8043-1.jpg"
 heroImageAlt: "Patriot air defense system firing at twilight in coastal Nordic terrain"
 ---

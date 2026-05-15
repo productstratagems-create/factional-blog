@@ -6,6 +6,7 @@ category: anskaffelse
 author: "Norsk luftvern"
 lang: no
 draft: false
+series: nordic
 heroImage: "/images/create-a-highly-detailed-high-resolution-image-showcasing-a-modern-nordic-3.png"
 heroImageAlt: "Sveriges luftvern: systematisk oppbygging lag for lag"
 ---
