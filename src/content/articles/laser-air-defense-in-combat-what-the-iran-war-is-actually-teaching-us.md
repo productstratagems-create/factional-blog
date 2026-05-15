@@ -2,7 +2,7 @@
 title: "Laser Air Defense in Combat: What the Iran War Is Actually Teaching Us"
 date: 2026-03-03
 excerpt: "The conflict has become the most significant live test of directed-energy air defense in history — and the results are complicated. The promise has been on defense ministry briefing slides for thirty years: a laser…"
-category: luftvern
+category: directed-energy
 author: "Norsk luftvern"
 lang: en
 draft: false

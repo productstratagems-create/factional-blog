@@ -45,6 +45,16 @@ const categoryLabels: Record<string, string> = {
 };
 
 const label = categoryLabels[category] ?? category;
+
+const subCategoryMap: Record<string, { slug: string; label: string; i18nKey: string }[]> = {
+  teknologi: [{ slug: 'directed-energy', label: 'Høyenergivåpen', i18nKey: 'cat.name.directed-energy' }],
+};
+const subCats = subCategoryMap[category] ?? [];
+
+const parentCategoryMap: Record<string, { slug: string; label: string }> = {
+  'directed-energy': { slug: 'teknologi', label: 'Teknologi' },
+};
+const parentCat = parentCategoryMap[category];
 ---
 
 <BaseLayout
@@ -54,10 +64,25 @@ const label = categoryLabels[category] ?? category;
   <div class="category-page">
     <div class="container">
       <header class="page-header">
+        {parentCat && (
+          <a href={siteHref(`/categories/${parentCat.slug}`)} class="parent-breadcrumb">
+            ← <span data-i18n={`cat.name.${parentCat.slug}`}>{parentCat.label}</span>
+          </a>
+        )}
         <p class="page-super" data-i18n="cat.label">Kategori</p>
         <h1 class="page-title" data-i18n={`cat.name.${category}`}>{label}</h1>
         <p class="article-count">{total} <span data-i18n={total === 1 ? 'cat.article' : 'cat.articles'}>{total === 1 ? 'artikkel' : 'artikler'}</span></p>
       </header>
+
+      {subCats.length > 0 && (
+        <div class="subcategory-list">
+          {subCats.map(sc => (
+            <a href={siteHref(`/categories/${sc.slug}`)} class="subcategory-link" data-i18n={sc.i18nKey}>
+              {sc.label}
+            </a>
+          ))}
+        </div>
+      )}
 
       <Divider spacing="md" />
 
@@ -112,6 +137,46 @@ const label = categoryLabels[category] ?? category;
   }
 
   .articles-wrapper { padding-block: var(--spacing-xl); }
+
+  .parent-breadcrumb {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-teal);
+    text-decoration: none;
+    margin-bottom: var(--spacing-sm);
+    transition: color 0.15s;
+  }
+  .parent-breadcrumb:hover { color: var(--color-navy); }
+
+  .subcategory-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    padding-block: var(--spacing-md);
+  }
+
+  .subcategory-link {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.3em 0.9em;
+    border: 1.5px solid var(--color-teal);
+    color: var(--color-teal);
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+  }
+  .subcategory-link:hover {
+    background: var(--color-teal);
+    color: #fff;
+  }
 
   /* ── Pagination ── */
   .pagination {
