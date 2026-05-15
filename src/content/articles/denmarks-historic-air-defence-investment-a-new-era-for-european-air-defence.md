@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+heroImage: "/images/img_0280.png"
+heroImageAlt: "European air defense investment overview"
 ---
 
 ## Executive Summary

@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+heroImage: "/images/img_9164.jpg"
+heroImageAlt: "MEADS missile launch Flight Test 2 at White Sands Missile Range, 2013"
 ---
 
 ***The story of a Patriot that would not go away, and Europe that partly went it alone***.

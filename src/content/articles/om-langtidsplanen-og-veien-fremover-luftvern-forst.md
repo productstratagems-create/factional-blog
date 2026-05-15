@@ -6,6 +6,8 @@ category: anskaffelse
 author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/f2d9f196-ab2f-49be-808f-15a8e23f9d9b.jpeg"
+heroImageAlt: "Open road stretching to the horizon"
 ---
 
 Denne [artikkelen](https://www.vg.no/nyheter/i/Gy28nQ/tidligere-forsvarssjefer-krever-raskere-opprustning-norge-maa-prioritere-luftvern-og-hurtigspor-sier-diesen-og-sunde) fra VG illustrerer en tydelig oppfordring til raskere opprustning og modernisering av det norske luftvernet, der både tidligere forsvarssjefer og politiske ledere peker på viktigheten av å styrke nasjonal kapasitet, redusere forsinkelser i anskaffelsesprosesser og sikre et robust forsvar for den nære fremtiden.

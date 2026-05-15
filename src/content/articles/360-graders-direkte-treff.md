@@ -6,6 +6,8 @@ category: analyse
 author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/img_9188.jpg"
+heroImageAlt: "Air defense systems infographic showing EMADS and CAMM capabilities"
 ---
 
 Innenfor utviklingen av langtrekkende luftvern i USA og Europa satses det på 360° skuddsektor, stor ildkraft, men relativt få komponenter, og ikke minst såkallt "hit-to-kill" missiler.

@@ -6,6 +6,8 @@ category: luftvern
 author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/img_9193.jpg"
+heroImageAlt: "Air defense systems overview"
 ---
 
 Luftvernsystemer kan settes inn for å beskytte nasjonal suverenitet, kritisk infrastruktur og deployerte militære styrker mot et bredt spekter av lufttrusler. 

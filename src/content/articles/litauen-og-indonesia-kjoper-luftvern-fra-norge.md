@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/b91850f3-7065-4539-97bb-a540b62ebd9f.jpeg"
+heroImageAlt: "Map of the Baltic Sea region showing Norway, Sweden, Finland and the Baltic states"
 ---
 
 Litauen, som har vært i forhandlinger med den norske produsenten siden mai 2016, har nå (26. oktober 2017) inngått en kontrakt pålydende ca. 1 mrd. kr for levering av det som ettersigende skal være to batterier med med luftvernsystemet NASAMS (Norwegian/National Advanced Surface to Air Missile System). I tillegg er det kjent at Australia ønsker NASAMS som sitt neste luftvern til landstyrkene. [Ekstern artikkel](https://www.tu.no/artikler/kongsberg-selger-luftvern-til-litauen/410720) [Ekstern artikkel](http://www.australiandefence.com.au/news/2-billion-for-nasams-gbad-system)

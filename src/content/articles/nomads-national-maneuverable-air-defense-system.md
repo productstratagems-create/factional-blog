@@ -6,6 +6,8 @@ category: teknologi
 author: "Norsk luftvern"
 lang: en
 draft: false
+heroImage: "/images/0bc77492-c99e-4469-b769-dceeb670e8dc.jpeg"
+heroImageAlt: "NOMADS networked air defense diagram showing Färdigt 2026 concept"
 ---
 
 ## **National Maneuverable Air Defense System    **

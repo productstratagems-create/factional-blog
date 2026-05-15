@@ -6,6 +6,8 @@ category: analyse
 author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/img_0279.png"
+heroImageAlt: "Air defense systems overview"
 ---
 
 Belgia, som siden 1993 har hatt landbasert Mistral kjøretøysmontert kortholdsluftvern, markerer nedleggelsen av luftvernet med en siste skarpskyting. Enheten skal konverteres til artilleri, skal vi tro på det Jane's skriver. Hvordan skytingen gikk? Sju av åtte fulltreffere. [Ekstern artikkel](http://www.janes.com/article/70438/belgium-phases-out-mistral) [Ekstern artikkel](http://www.leta.lv/eng/defence_matters_eng/defence_matters_eng/news/EACBE248-7186-4AD0-AA28-8CF44F36EB17/)

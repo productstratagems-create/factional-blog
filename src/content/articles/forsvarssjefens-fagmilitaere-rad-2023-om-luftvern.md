@@ -6,6 +6,8 @@ category: analyse
 author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/img_9175-1.jpg"
+heroImageAlt: "Norwegian air defense operations"
 ---
 
 Forsvarssjefens fagmilitære råd 2023 om luftvern beskriver utfordringene knyttet til lufttrusler og behovet for en lagdelt tilnærming i luftvernet. Den legger vekt på behovet for å styrke eksisterende luftvernkapasiteter og investere i nye systemer for å møte trusler i forskjellige rekkevidder og baner.

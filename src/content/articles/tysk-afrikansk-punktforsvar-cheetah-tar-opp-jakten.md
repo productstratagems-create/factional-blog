@@ -6,6 +6,8 @@ category: teknologi
 author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/img_9189.jpg"
+heroImageAlt: "Air defense system"
 ---
 
 Som de sier i Frankrike: «plus ça change, plus c'est la même chose». På engelsk betyr dette noe á la «the more it changes, the more it stays the same». I en artikkel fra nettsiden til det amerikanske magasinet Popular mechanics kan vi lese om et luftvernsystem under utvikling av det tyske Rheinmetal.

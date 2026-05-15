@@ -6,6 +6,8 @@ category: analyse
 author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/ab56964c-7bfb-48a4-9f48-3442629eeec2.jpeg"
+heroImageAlt: "RAF Tornado GR4 fighter jet"
 ---
 
 Tobias Ellwood, MP for Bournemouth East, spurte om typene luftvernsystemer som er i bruk på tvers av Royal Navy, Army og Royal Air Force.

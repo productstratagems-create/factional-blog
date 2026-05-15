@@ -6,6 +6,8 @@ category: teknologi
 author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/f44db764-25f5-4b6b-a49c-6a6dd428228d.jpeg"
+heroImageAlt: "NOMADS tracked air defense vehicle concept illustration"
 ---
 
 ## **Norsk manøverbart luftvern**
