@@ -6,6 +6,7 @@ category: analyse
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/image-20.png"
 heroImageAlt: "Lastebilmontert missiellauncher avfyrer"
 ---

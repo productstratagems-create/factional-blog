@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/sam-d_launcher.jpg"
 heroImageAlt: "Historical SAM-D (early Patriot) test launch in snowy terrain"
 ---

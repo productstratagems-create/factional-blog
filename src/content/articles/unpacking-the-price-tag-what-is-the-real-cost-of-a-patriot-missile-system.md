@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/img_8025-1.png"
 heroImageAlt: "Cost effectiveness comparison of Patriot PAC-2 and SAMP/T systems"
 ---

@@ -6,6 +6,7 @@ category: analyse
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/img_8271-1.jpg"
 heroImageAlt: "Aegis BMD SM-3 evolution plan showing missile development blocks"
 ---

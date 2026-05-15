@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/img_7348-1.jpg"
 heroImageAlt: "IRIS-T SLX extended-range air defense system infographic"
 ---

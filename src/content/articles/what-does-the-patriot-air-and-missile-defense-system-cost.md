@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/img_3074.jpg"
 heroImageAlt: "Patriot M901–M903 lastekomparasjonsdiagram"
 ---

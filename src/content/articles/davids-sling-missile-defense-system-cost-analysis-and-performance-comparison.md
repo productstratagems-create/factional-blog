@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/image-35.png"
 heroImageAlt: "Militært launcherkjøretøy avfyrer med eksplosjon"
 ---

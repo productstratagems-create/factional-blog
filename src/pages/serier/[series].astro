@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleGrid from '../../components/ArticleGrid.astro';
 import Divider from '../../components/Divider.astro';
+import { SERIES } from '../../data/series';
 
 export async function getStaticPaths() {
   const allArticles = await getCollection('articles', (e) => !e.data.draft);
@@ -24,16 +25,9 @@ export async function getStaticPaths() {
   }));
 }
 
-const SERIES_META: Record<string, { title: string; description: string }> = {
-  comparison: {
-    title: 'The Comparison Series',
-    description: 'In-depth head-to-head analyses of air and missile defense systems.',
-  },
-};
-
 const { series } = Astro.params;
 const { articles } = Astro.props;
-const meta = SERIES_META[series] ?? { title: series, description: '' };
+const meta = SERIES[series] ?? { title: series, description: '' };
 ---
 
 <BaseLayout

@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/img_5412.jpg"
 heroImageAlt: "Patriot-ammunisjonslastebil med missiler"
 ---

@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/img_8023-1.jpg"
 heroImageAlt: "THAAD terminal high altitude area defense system launching an interceptor"
 ---

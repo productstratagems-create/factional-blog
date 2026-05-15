@@ -6,6 +6,7 @@ category: analyse
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/img_8842.jpg"
 heroImageAlt: "SM-6 missile launching from a destroyer at dusk"
 ---

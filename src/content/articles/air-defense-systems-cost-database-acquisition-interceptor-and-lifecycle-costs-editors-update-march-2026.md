@@ -6,6 +6,7 @@ category: analyse
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/img_9331.jpg"
 heroImageAlt: "Air defense systems cost database infographic January 2026"
 ---

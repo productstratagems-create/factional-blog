@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/img_8061-1.jpg"
 heroImageAlt: "Patriot air defense system radar and launcher silhouetted at dusk"
 ---

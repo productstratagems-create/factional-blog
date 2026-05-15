@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/img_8084-1.jpg"
 heroImageAlt: "Patriot missile launch montage with system vehicle and operator console"
 ---

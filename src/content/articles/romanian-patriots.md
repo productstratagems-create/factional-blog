@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/img_5813.jpg"
 heroImageAlt: "Missilforsvar med rumensk flagg"
 ---

@@ -6,6 +6,7 @@ category: analyse
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: cost
 heroImage: "/images/img_8191-1.jpg"
 heroImageAlt: "Iron Dome air defense system firing an interceptor missile"
 ---
