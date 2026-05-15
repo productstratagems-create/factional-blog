@@ -86,6 +86,7 @@ const searchIndex = articles
       tryOther: 'Prøv et annet søkeord.',
       tier2: 'Ingress',
       tier1: 'Tekst',
+      tierHits: (n) => `${n} treff`,
     },
     en: {
       among:   (n) => `Search among ${n} articles`,
@@ -94,6 +95,7 @@ const searchIndex = articles
       tryOther: 'Try a different search term.',
       tier2: 'Lead',
       tier1: 'Body',
+      tierHits: (n) => `${n} result${n === 1 ? '' : 's'}`,
     },
   };
 
@@ -152,7 +154,8 @@ const searchIndex = articles
   // ── Keyboard navigation ──────────────────────────────────────
 
   input.addEventListener('keydown', e => {
-    const items = listbox.querySelectorAll('[role="option"]');
+    const items = [...listbox.querySelectorAll('[role="option"]')]
+      .filter(el => !el.classList.contains('is-hidden'));
     if (!items.length) return;
 
     if (e.key === 'ArrowDown') {
@@ -199,7 +202,7 @@ const searchIndex = articles
     return (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '');
   }
 
-  function resultHTML(a, score, i, q) {
+  function resultHTML(a, score, i, q, hidden = false) {
     const t = SEARCH_T[sl()];
     const titleHTML = highlight(a.title, q);
 
@@ -214,9 +217,11 @@ const searchIndex = articles
       tierLabel = `<span class="si-tier">${t.tier1}</span>`;
     }
 
+    const hiddenClass = hidden ? ' is-hidden' : '';
+
     return `
       <li id="search-result-${i}" role="option" aria-selected="false"
-          class="search-item search-item--tier${score}">
+          class="search-item search-item--tier${score}${hiddenClass}">
         <a href="${a.href}" class="search-item-link">
           <span class="si-content">
             <span class="si-title">${titleHTML}</span>
@@ -230,8 +235,32 @@ const searchIndex = articles
       </li>`;
   }
 
+  function tierHeaderHTML(label, count, open) {
+    const t = SEARCH_T[sl()];
+    return `
+      <li class="tier-section" data-open="${open}" role="presentation">
+        <button class="tier-toggle" type="button">
+          <span class="tier-toggle-chevron" aria-hidden="true"></span>
+          <span class="tier-toggle-label">${label}</span>
+          <span class="tier-toggle-count">${t.tierHits(count)}</span>
+        </button>
+      </li>`;
+  }
+
   function attachResultListeners() {
     listbox.querySelectorAll('a').forEach(a => a.addEventListener('click', closeSearch));
+    listbox.querySelectorAll('.tier-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const header = btn.closest('.tier-section');
+        const isOpen = header.dataset.open === 'true';
+        header.dataset.open = String(!isOpen);
+        let sib = header.nextElementSibling;
+        while (sib && !sib.classList.contains('tier-section')) {
+          sib.classList.toggle('is-hidden', isOpen);
+          sib = sib.nextElementSibling;
+        }
+      });
+    });
   }
 
   // ── Render ───────────────────────────────────────────────────
@@ -272,7 +301,33 @@ const searchIndex = articles
       return;
     }
 
-    listbox.innerHTML = scored.map(({ a, score }, i) => resultHTML(a, score, i, q)).join('');
+    const t3 = scored.filter(x => x.score === 3);
+    const t2 = scored.filter(x => x.score === 2);
+    const t1 = scored.filter(x => x.score === 1);
+
+    // Auto-expand lower tiers when there are no title matches
+    const startOpen = t3.length === 0;
+
+    let html = '';
+    let idx = 0;
+
+    t3.forEach(({ a, score }) => { html += resultHTML(a, score, idx++, q); });
+
+    if (t2.length) {
+      html += tierHeaderHTML(t.tier2, t2.length, startOpen);
+      t2.forEach(({ a, score }) => {
+        html += resultHTML(a, score, idx++, q, !startOpen);
+      });
+    }
+
+    if (t1.length) {
+      html += tierHeaderHTML(t.tier1, t1.length, startOpen);
+      t1.forEach(({ a, score }) => {
+        html += resultHTML(a, score, idx++, q, !startOpen);
+      });
+    }
+
+    listbox.innerHTML = html;
     attachResultListeners();
   }
 
@@ -488,6 +543,52 @@ const searchIndex = articles
     border-radius: 2px;
     padding: 0 1px;
   }
+
+  /* ── Tier section headers ── */
+  :global(.tier-section) {
+    border-top: 1px solid var(--color-border);
+    margin-top: 0.25rem;
+  }
+
+  :global(.tier-toggle) {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.4rem 1.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-ui);
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--color-muted);
+    text-align: left;
+    transition: color 0.12s;
+  }
+
+  :global(.tier-toggle:hover) { color: var(--color-heading); }
+
+  :global(.tier-toggle-chevron::before) {
+    content: '▶';
+    font-size: 0.5rem;
+    display: inline-block;
+    transition: transform 0.15s;
+  }
+
+  :global(.tier-section[data-open="true"] .tier-toggle-chevron::before) {
+    content: '▼';
+  }
+
+  :global(.tier-toggle-count) {
+    margin-left: auto;
+    font-weight: 400;
+    opacity: 0.6;
+  }
+
+  :global(.is-hidden) { display: none; }
 
   /* ── Footer ── */
   .search-footer {
