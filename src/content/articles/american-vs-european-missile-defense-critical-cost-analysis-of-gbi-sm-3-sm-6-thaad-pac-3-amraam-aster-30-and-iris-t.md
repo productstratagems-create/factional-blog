@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: comparison
 heroImage: "/images/9ac39c69-f8b7-4085-8794-dd5cffb8e1b8-51917-00000e9ff635266b_file.jpg"
 heroImageAlt: "Interceptor unit cost comparison chart: IRIS-T, Aster 30 B1NT and PAC-3 MSE"
 ---

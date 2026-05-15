@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: comparison
 heroImage: "/images/img_5433.jpg"
 heroImageAlt: "NASAMS/TNG komponenter i feltdeployering"
 ---

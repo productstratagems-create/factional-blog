@@ -4,9 +4,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleGrid from '../../components/ArticleGrid.astro';
 import ArticleControls from '../../components/ArticleControls.astro';
 import Divider from '../../components/Divider.astro';
+import { siteHref } from '../../utils/slug';
 
 const allArticles = await getCollection('articles', (e) => !e.data.draft);
 const sorted = allArticles.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const comparisonCount = sorted.filter((a) => a.data.series === 'comparison').length;
 ---
 
 <BaseLayout
@@ -22,6 +24,15 @@ const sorted = allArticles.sort((a, b) => b.data.date.getTime() - a.data.date.ge
     <Divider spacing="md" />
 
     <ArticleControls totalCount={sorted.length} />
+
+    {comparisonCount > 0 && (
+      <a href={siteHref('/serier/comparison')} class="series-spotlight">
+        <span class="series-spotlight-super">Series</span>
+        <span class="series-spotlight-title">The Comparison Series</span>
+        <span class="series-spotlight-desc">In-depth head-to-head analyses of air defense systems</span>
+        <span class="series-spotlight-cta">View all {comparisonCount} →</span>
+      </a>
+    )}
 
     <div class="articles-wrapper">
       <ArticleGrid articles={sorted} columns={3} id="article-grid" />
@@ -57,4 +68,81 @@ const sorted = allArticles.sort((a, b) => b.data.date.getTime() - a.data.date.ge
   }
 
   .articles-wrapper { padding-block: var(--spacing-xl); }
+
+  .series-spotlight {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    column-gap: var(--spacing-lg);
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    margin-block: var(--spacing-lg);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-teal);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    text-decoration: none;
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .series-spotlight:hover {
+    border-color: var(--color-navy);
+    border-left-color: var(--color-navy);
+    background: var(--color-border);
+  }
+
+  .series-spotlight-super {
+    grid-column: 1;
+    grid-row: 1;
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-teal);
+  }
+
+  .series-spotlight-title {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-heading);
+    align-self: center;
+  }
+
+  .series-spotlight-desc {
+    grid-column: 1;
+    grid-row: 2;
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    color: var(--color-muted);
+  }
+
+  .series-spotlight-cta {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-navy);
+    white-space: nowrap;
+    align-self: center;
+  }
+
+  @media (max-width: 540px) {
+    .series-spotlight {
+      grid-template-columns: 1fr auto;
+      grid-template-rows: auto auto auto;
+    }
+    .series-spotlight-super { grid-column: 1; grid-row: 1; }
+    .series-spotlight-title { grid-column: 1; grid-row: 2; align-self: auto; }
+    .series-spotlight-desc { grid-column: 1; grid-row: 3; }
+    .series-spotlight-cta { grid-column: 2; grid-row: 1 / 4; }
+  }
 </style>

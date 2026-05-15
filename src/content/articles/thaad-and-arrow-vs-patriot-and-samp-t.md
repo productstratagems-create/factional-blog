@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: comparison
 heroImage: "/images/img_8317-1.jpg"
 heroImageAlt: "THAAD missile museum display and launch composite"
 ---

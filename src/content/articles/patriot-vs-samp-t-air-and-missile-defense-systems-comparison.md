@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: comparison
 heroImage: "/images/img_7246-1.jpg"
 heroImageAlt: "Infographic comparing Patriot and SAMP/T air defense systems"
 ---

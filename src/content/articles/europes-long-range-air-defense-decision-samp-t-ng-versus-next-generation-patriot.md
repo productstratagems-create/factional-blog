@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: comparison
 heroImage: "/images/img_5465-1.jpg"
 heroImageAlt: "SAMP/TNG system med dekkningssoner diagram"
 ---

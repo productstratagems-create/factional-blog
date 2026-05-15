@@ -1,0 +1,109 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleGrid from '../../components/ArticleGrid.astro';
+import Divider from '../../components/Divider.astro';
+
+export async function getStaticPaths() {
+  const allArticles = await getCollection('articles', (e) => !e.data.draft);
+  const seriesMap = new Map<string, typeof allArticles>();
+
+  for (const article of allArticles) {
+    const s = article.data.series;
+    if (s) {
+      if (!seriesMap.has(s)) seriesMap.set(s, []);
+      seriesMap.get(s)!.push(article);
+    }
+  }
+
+  return [...seriesMap.entries()].map(([series, articles]) => ({
+    params: { series },
+    props: {
+      articles: articles.sort((a, b) => b.data.date.getTime() - a.data.date.getTime()),
+    },
+  }));
+}
+
+const SERIES_META: Record<string, { title: string; description: string }> = {
+  comparison: {
+    title: 'The Comparison Series',
+    description: 'In-depth head-to-head analyses of air and missile defense systems.',
+  },
+};
+
+const { series } = Astro.params;
+const { articles } = Astro.props;
+const meta = SERIES_META[series] ?? { title: series, description: '' };
+---
+
+<BaseLayout
+  title={`${meta.title} | Norsk Luftvern`}
+  description={meta.description}
+>
+  <div class="series-page container">
+    <header class="page-header">
+      <p class="page-super">Series</p>
+      <h1 class="page-title">{meta.title}</h1>
+      {meta.description && <p class="page-desc">{meta.description}</p>}
+      <p class="page-count">{articles.length} articles</p>
+    </header>
+
+    <Divider spacing="md" />
+
+    <div class="series-grid">
+      <ArticleGrid articles={articles} columns={3} />
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .series-page {
+    padding-bottom: var(--spacing-3xl);
+  }
+
+  .page-header {
+    padding-block: var(--spacing-2xl) var(--spacing-xl);
+  }
+
+  .page-super {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-teal);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-heading);
+    line-height: 1;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .page-desc {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    color: var(--color-muted);
+    max-width: 52ch;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .page-count {
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .series-grid {
+    padding-block: var(--spacing-xl);
+  }
+</style>

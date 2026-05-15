@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: comparison
 heroImage: "/images/img_7360-1.jpg"
 heroImageAlt: "IRIS-T SLM air defense system launcher in operational display"
 ---

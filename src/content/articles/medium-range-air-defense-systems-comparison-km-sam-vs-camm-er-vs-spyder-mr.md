@@ -6,6 +6,7 @@ category: nato
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: comparison
 heroImage: "/images/img_5483-1.jpg"
 heroImageAlt: "To mobile luftvernplattformer side-by-side sammenligning"
 ---

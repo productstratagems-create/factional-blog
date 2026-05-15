@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: comparison
 heroImage: "/images/img_9375.jpg"
 heroImageAlt: "Comparison table for Patriot PAC-3 MSE, IRIS-T SLM/X and SAMP/T NG"
 ---

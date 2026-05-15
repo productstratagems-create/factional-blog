@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: comparison
 heroImage: "/images/img_7350.jpg"
 heroImageAlt: "IRIS-T SLM and SLS air defense systems comparison infographic"
 ---

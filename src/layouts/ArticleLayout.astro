@@ -4,7 +4,9 @@ import CategoryBadge from '../components/CategoryBadge.astro';
 import ArticleMeta from '../components/ArticleMeta.astro';
 import Divider from '../components/Divider.astro';
 import ArticleGrid from '../components/ArticleGrid.astro';
+import SeriesBanner from '../components/SeriesBanner.astro';
 import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 import { articleHref, siteHref, assetSrc } from '../utils/slug';
 
 interface Props {
@@ -15,10 +17,20 @@ interface Props {
 }
 
 const { entry, related, prev = null, next = null } = Astro.props;
-const { title, excerpt, date, category, author, heroImage, heroImageAlt, lang = 'no' } = entry.data;
+const { title, excerpt, date, category, author, heroImage, heroImageAlt, lang = 'no', series } = entry.data;
 
 const wordCount = entry.body?.split(/\s+/).length ?? 0;
 const readingTime = entry.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordCount / 200));
+
+const SERIES_LABELS: Record<string, string> = {
+  comparison: 'The Comparison Series',
+};
+
+let seriesCount = 0;
+if (series) {
+  const seriesArticles = await getCollection('articles', (e) => !e.data.draft && e.data.series === series);
+  seriesCount = seriesArticles.length;
+}
 ---
 
 <BaseLayout
@@ -58,6 +70,13 @@ const readingTime = entry.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordC
 
     <!-- Prose body -->
     <div class="article-container container">
+      {series && seriesCount > 0 && (
+        <SeriesBanner
+          seriesSlug={series}
+          seriesLabel={SERIES_LABELS[series] ?? series}
+          totalCount={seriesCount}
+        />
+      )}
       <div class="prose" id="article-body">
         <slot />
       </div>

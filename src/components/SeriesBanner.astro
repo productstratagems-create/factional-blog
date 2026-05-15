@@ -1,0 +1,79 @@
+---
+import { siteHref } from '../utils/slug';
+
+interface Props {
+  seriesSlug: string;
+  seriesLabel: string;
+  totalCount: number;
+}
+
+const { seriesSlug, seriesLabel, totalCount } = Astro.props;
+---
+
+<a href={siteHref(`/serier/${seriesSlug}`)} class="series-banner">
+  <span class="series-icon" aria-hidden="true">≡</span>
+  <span class="series-text">
+    <span class="series-label">{seriesLabel}</span>
+    <span class="series-count">· {totalCount} articles</span>
+  </span>
+  <span class="series-cta">See all →</span>
+</a>
+
+<style>
+  .series-banner {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--color-surface);
+    border-left: 3px solid var(--color-teal);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    max-width: var(--article-width, 720px);
+    margin-inline: auto;
+    margin-bottom: var(--spacing-xl);
+    transition: background 0.15s;
+  }
+
+  .series-banner:hover {
+    background: var(--color-border);
+  }
+
+  .series-icon {
+    color: var(--color-teal);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .series-text {
+    flex: 1;
+  }
+
+  .series-label {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-heading);
+    font-size: 0.75rem;
+  }
+
+  .series-count {
+    color: var(--color-muted);
+    margin-left: 0.25em;
+    font-size: 0.75rem;
+  }
+
+  .series-cta {
+    font-weight: 600;
+    color: var(--color-navy);
+    white-space: nowrap;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+  }
+</style>

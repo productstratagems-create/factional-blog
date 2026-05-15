@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: comparison
 heroImage: "/images/img_9124.png"
 heroImageAlt: "NATO-alliert luftvern sammenligningsinfografikk med missiloppskytning"
 ---

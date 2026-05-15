@@ -6,6 +6,7 @@ category: teknologi
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: comparison
 heroImage: "/images/img_8841.jpg"
 heroImageAlt: "THAAD air defense system firing in snowy terrain"
 ---

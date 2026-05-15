@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: comparison
 heroImage: "/images/img_9424.jpg"
 heroImageAlt: "Air defense systems and their confirmed kills in Ukraine and the Middle East"
 ---

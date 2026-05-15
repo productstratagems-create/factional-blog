@@ -6,6 +6,7 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: en
 draft: false
+series: comparison
 heroImage: "/images/img_5454-2-1.jpg"
 heroImageAlt: "SAMP/T missil avfyres i ørken"
 ---

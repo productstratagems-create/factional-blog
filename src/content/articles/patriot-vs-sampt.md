@@ -15,6 +15,7 @@ lang: no
 featured: false
 author: "Norsk luftvern"
 draft: false
+series: comparison
 ---
 
 Norge er i ferd med å anskaffe et langtrekkende luftvernsystem til erstatning for det aldrende NASAMS-systemet på mellomlang rekkevidde. To systemer peker seg ut som de mest aktuelle kandidatene: det amerikanske MIM-104 Patriot og det fransk-italienske SAMP/T Mamba. Begge er i aktiv operativ tjeneste i NATO-land, og begge representerer toppmoderne teknologi innen bakkebasert luftvern.
