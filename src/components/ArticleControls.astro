@@ -1,0 +1,204 @@
+---
+interface Props {
+  totalCount: number;
+}
+const { totalCount } = Astro.props;
+---
+
+<div class="article-controls">
+  <div class="controls-left">
+    <div class="control-group">
+      <label class="control-label" for="sort-select" data-i18n="controls.sort">Sort</label>
+      <select id="sort-select" class="sort-select">
+        <option value="date-desc" data-i18n="controls.newest">Newest first</option>
+        <option value="date-asc"  data-i18n="controls.oldest">Oldest first</option>
+      </select>
+    </div>
+    <div class="control-group">
+      <span class="control-label" data-i18n="controls.lang">Language</span>
+      <div class="lang-filter-group" role="group">
+        <button class="controls-lang-btn" data-lang="all" data-i18n="controls.all">All</button>
+        <button class="controls-lang-btn" data-lang="no">NO</button>
+        <button class="controls-lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </div>
+  <span class="controls-count" id="article-count">{totalCount} artikler</span>
+</div>
+
+<script>
+  import { apply } from '../scripts/i18n';
+
+  const grid = document.getElementById('article-grid');
+  const countEl = document.getElementById('article-count');
+  const sortSel = document.getElementById('sort-select') as HTMLSelectElement | null;
+  const langBtns = [...document.querySelectorAll<HTMLElement>('.controls-lang-btn')];
+
+  let uiLang: 'no' | 'en' = 'no';
+
+  function setActiveLangBtn(lang: string) {
+    langBtns.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+  }
+
+  function updateCount(n: number) {
+    if (!countEl) return;
+    countEl.textContent = uiLang === 'en'
+      ? `${n} article${n === 1 ? '' : 's'}`
+      : `${n} artikler`;
+  }
+
+  function applyFilters() {
+    if (!grid || !sortSel) return;
+    const sort = sortSel.value;
+    const lang = localStorage.getItem('site-lang') || 'all';
+    localStorage.setItem('articles-sort', sort);
+
+    const cards = [...grid.querySelectorAll<HTMLElement>('[data-article-lang]')];
+
+    cards
+      .sort((a, b) => {
+        const da = +(a.dataset.articleDate ?? 0);
+        const db = +(b.dataset.articleDate ?? 0);
+        return sort === 'date-asc' ? da - db : db - da;
+      })
+      .forEach(c => grid.appendChild(c));
+
+    let visible = 0;
+    cards.forEach(c => {
+      const show = lang === 'all' || c.dataset.articleLang === lang;
+      c.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    updateCount(visible);
+  }
+
+  // Restore saved preferences
+  const savedSort = localStorage.getItem('articles-sort') || 'date-desc';
+  if (sortSel) sortSel.value = savedSort;
+  setActiveLangBtn(localStorage.getItem('site-lang') || 'all');
+
+  applyFilters();
+
+  sortSel?.addEventListener('change', applyFilters);
+
+  langBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.dataset.lang ?? 'all';
+      document.documentElement.setAttribute('data-lang-filter', lang);
+      localStorage.setItem('site-lang', lang);
+      // Sync header LangToggle buttons
+      document.querySelectorAll<HTMLElement>('.lt-btn').forEach(b =>
+        b.classList.toggle('active', b.dataset.lang === lang));
+      setActiveLangBtn(lang);
+      apply(lang);
+      applyFilters();
+    });
+  });
+
+  // Sync when header LangToggle changes language
+  document.addEventListener('i18n:change', (e) => {
+    uiLang = (e as CustomEvent<'no' | 'en'>).detail ?? 'no';
+    setActiveLangBtn(localStorage.getItem('site-lang') || 'all');
+    applyFilters();
+  });
+</script>
+
+<style>
+  .article-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    flex-wrap: wrap;
+  }
+
+  .controls-left {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+  }
+
+  .control-group {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+  }
+
+  .control-label {
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-muted);
+    white-space: nowrap;
+  }
+
+  .sort-select {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-heading);
+    background: var(--color-bg);
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 3px 6px;
+    cursor: pointer;
+    outline-offset: 2px;
+  }
+
+  .sort-select:focus-visible {
+    outline: 2px solid var(--color-navy);
+  }
+
+  .lang-filter-group {
+    display: inline-flex;
+    border: 1.5px solid var(--color-border);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+
+  .controls-lang-btn {
+    font-family: var(--font-ui);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 3px 7px;
+    border: none;
+    background: transparent;
+    color: var(--color-muted);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    line-height: 1.4;
+  }
+
+  .controls-lang-btn.active {
+    background: var(--color-navy);
+    color: #fff;
+  }
+
+  .controls-lang-btn:hover:not(.active) {
+    background: var(--color-bg);
+    color: var(--color-heading);
+  }
+
+  .controls-count {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    color: var(--color-muted);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 480px) {
+    .article-controls {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
