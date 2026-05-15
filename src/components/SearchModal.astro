@@ -86,6 +86,7 @@ const searchIndex = articles
       tryOther: 'Prøv et annet søkeord.',
       tier2: 'Ingress',
       tier1: 'Tekst',
+      tier3: 'Tittel',
       tierHits: (n) => `${n} treff`,
     },
     en: {
@@ -95,6 +96,7 @@ const searchIndex = articles
       tryOther: 'Try a different search term.',
       tier2: 'Lead',
       tier1: 'Body',
+      tier3: 'Title',
       tierHits: (n) => `${n} result${n === 1 ? '' : 's'}`,
     },
   };
@@ -311,7 +313,10 @@ const searchIndex = articles
     let html = '';
     let idx = 0;
 
-    t3.forEach(({ a, score }) => { html += resultHTML(a, score, idx++, q); });
+    if (t3.length) {
+      html += tierHeaderHTML(t.tier3, t3.length, true);
+      t3.forEach(({ a, score }) => { html += resultHTML(a, score, idx++, q, false); });
+    }
 
     if (t2.length) {
       html += tierHeaderHTML(t.tier2, t2.length, startOpen);
