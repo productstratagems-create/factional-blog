@@ -32,7 +32,7 @@ Norge investerer nå i flere NASAMS-batterier, oppgraderte radarer og på sikt o
 
 ## Luftvernets rolle i totalforsvaret
 
-Luftvern er den første forsvarslinjen mot luftangrep og bidrar til å redusere belastningen på sivil beredskap og samfunnets øvrige ressurser. Dersom luftvernet lykkes i å stanse angrep, blir behovet for evakuering, tilfluktsrom og annen sivil krisehåndtering betydelig mindre. Samtidig er et robust sivilt beredskapssystem nødvendig for å håndtere konsekvensene dersom noen trusler skulle slippe gjennom[7](https://norskluftvern.com/2025/04/01/sivil-beredskap-og-luftvern-to-sider-av-samme-sak/).
+Luftvern er den første forsvarslinjen mot luftangrep og bidrar til å redusere belastningen på sivil beredskap og samfunnets øvrige ressurser. Dersom luftvernet lykkes i å stanse angrep, blir behovet for evakuering, tilfluktsrom og annen sivil krisehåndtering betydelig mindre. Samtidig er et robust sivilt beredskapssystem nødvendig for å håndtere konsekvensene dersom noen trusler skulle slippe gjennom[7](/articles/sivil-beredskap-og-luftvern-to-sider-av-samme-sak).
 
 ## Utfordringer og veien videre
 
@@ -52,7 +52,7 @@ Et moderne luftvern gir Norge mulighet til å opprettholde **høy beredskap over
 
 - [https://www.forsvarsforeningen.no/nyheter/fremtidig-luftvern-kan-koste-opp-mot-100-milliarder/](https://www.forsvarsforeningen.no/nyheter/fremtidig-luftvern-kan-koste-opp-mot-100-milliarder/)
 
-- [https://norskluftvern.com/2025/04/01/sivil-beredskap-og-luftvern-to-sider-av-samme-sak/](https://norskluftvern.com/2025/04/01/sivil-beredskap-og-luftvern-to-sider-av-samme-sak/)
+- [/articles/sivil-beredskap-og-luftvern-to-sider-av-samme-sak](/articles/sivil-beredskap-og-luftvern-to-sider-av-samme-sak)
 
 - [https://www.nrof.no/pro-patria-artikler/ikke-politisk-vilje-til-a-beskytte-landets-befolkning/](https://www.nrof.no/pro-patria-artikler/ikke-politisk-vilje-til-a-beskytte-landets-befolkning/)
 
@@ -66,7 +66,7 @@ Et moderne luftvern gir Norge mulighet til å opprettholde **høy beredskap over
 
 - -
 
-- [https://norskluftvern.com/2017/05/27/hoy-beredskap-over-lang-tid/](https://norskluftvern.com/2017/05/27/hoy-beredskap-over-lang-tid/)
+- [/articles/hoy-beredskap-over-lang-tid](/articles/hoy-beredskap-over-lang-tid)
 
 - -
 

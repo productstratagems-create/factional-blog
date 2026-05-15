@@ -12,7 +12,7 @@ heroImageAlt: "Air defense systems firing in a Nordic landscape at sunset"
 
 ## Introduction: A Dual-Track Strategy for a New Era
 
-Norway is undertaking a historic modernization of its air defense capabilities, guided by a clear and ambitious strategy. The [2025-2036 Long-Term Defence Plan (LTDP)](https://norskluftvern.com/2024/06/22/norway-long-term-plan-with-focus-on-air-defense/), unveiled in April 2024, commits the nation to a historic defense spending increase of 600 billion NOK over twelve years. A significant portion of this funding is dedicated to a dual-track air defense strategy: reinforcing its proven NASAMS backbone while formally acknowledging and planning to close a critical capability gap against tactical ballistic missiles (TBMs). This approach balances immediate operational needs with the necessity of countering future threats.
+Norway is undertaking a historic modernization of its air defense capabilities, guided by a clear and ambitious strategy. The [2025-2036 Long-Term Defence Plan (LTDP)](/articles/norway-long-term-plan-with-focus-on-air-defense), unveiled in April 2024, commits the nation to a historic defense spending increase of 600 billion NOK over twelve years. A significant portion of this funding is dedicated to a dual-track air defense strategy: reinforcing its proven NASAMS backbone while formally acknowledging and planning to close a critical capability gap against tactical ballistic missiles (TBMs). This approach balances immediate operational needs with the necessity of countering future threats.
 
 ## Reinforcing the Foundation: Unwavering Commitment to NASAMS
 

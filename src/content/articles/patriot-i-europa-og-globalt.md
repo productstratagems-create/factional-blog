@@ -59,22 +59,22 @@ Kjøpte tre Patriot-batterier fra Tyskland i 2004 (1) og 2014 (2), for henholdsv
 
 **Sverige**
 
-I 2018 valgte svenske myndigheter å anskaffe fire batterier med Patriot. I desember 2022 ankom det siste batteriet til landet. Totaltsum angitt til 3,2 mrd dollar for fire enheter, med 12 launchere, 100 GEM-T og 200 PAC-3. [Les også.](https://norskluftvern.com/2023/02/19/patrioter-i-norge-og-sverige/)
+I 2018 valgte svenske myndigheter å anskaffe fire batterier med Patriot. I desember 2022 ankom det siste batteriet til landet. Totaltsum angitt til 3,2 mrd dollar for fire enheter, med 12 launchere, 100 GEM-T og 200 PAC-3. [Les også.](/articles/patrioter-i-norge-og-sverige)
 
 **Polen**
 
-Polen anmodet om fire batterier og med tilhørende IBCS kontrollsystem i 2017, prisen var angitt til 10,5 mrd. dollar. Nedjustert til 4,75 mrd. ved kontraktsinngåelse. Leveransene var i gang i 2022, og materiellet som skal leveres er 4 radarer, 16 launchere, 219 PAC-3 MSE missiler, 2 IBCS planceller, 6 IBCS operasjonsceller, 6 IBCS kontrollceller og 5 Link-16 terminaler. [Les også.](https://norskluftvern.com/2023/02/24/polske-patrioter/)
+Polen anmodet om fire batterier og med tilhørende IBCS kontrollsystem i 2017, prisen var angitt til 10,5 mrd. dollar. Nedjustert til 4,75 mrd. ved kontraktsinngåelse. Leveransene var i gang i 2022, og materiellet som skal leveres er 4 radarer, 16 launchere, 219 PAC-3 MSE missiler, 2 IBCS planceller, 6 IBCS operasjonsceller, 6 IBCS kontrollceller og 5 Link-16 terminaler. [Les også.](/articles/polske-patrioter)
 
 ![](https://norskluftvern.com/wp-content/uploads/2023/02/img_3074.jpg?w=1024)
 *Polens prosjekt Wisla for anskaffelse av nytt luftvern. Fase én kostet 4,75 mrd. dollar. *
 
 **Romania**
 
-I juli 2017 godkjente amerikanske myndigheter et salg av sju batterier for 3,9 mrd. dollar, bestående av 7 radarer, 28 launchere, 56 GEM-T missiler, 168 PAC-3 MSE missiler. Året etter ble det inngått en tilleggsavtale for ytterligere tre batterier. Leveransen var godt i gang i 2022. [Les også.](https://norskluftvern.com/2023/02/23/rumenske-patrioter/)
+I juli 2017 godkjente amerikanske myndigheter et salg av sju batterier for 3,9 mrd. dollar, bestående av 7 radarer, 28 launchere, 56 GEM-T missiler, 168 PAC-3 MSE missiler. Året etter ble det inngått en tilleggsavtale for ytterligere tre batterier. Leveransen var godt i gang i 2022. [Les også.](/articles/rumenske-patrioter)
 
 **Sveits**
 
-I november 2021 fremkom det at kontrakten for fem batterier var pålydende rundt 2,1 milliarder dollar for fem radarer, 17 launchere, 70 GEM-T missiler og seks Link-16 terminaler. [Les også.](https://norskluftvern.com/2023/02/21/sveitsisk-patriot/)
+I november 2021 fremkom det at kontrakten for fem batterier var pålydende rundt 2,1 milliarder dollar for fem radarer, 17 launchere, 70 GEM-T missiler og seks Link-16 terminaler. [Les også.](/articles/sveitsisk-patriot)
 
 Oppdateringer:
 

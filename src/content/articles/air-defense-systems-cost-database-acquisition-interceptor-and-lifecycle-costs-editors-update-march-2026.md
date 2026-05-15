@@ -1,7 +1,7 @@
 ---
 title: "Air Defense Systems Cost Database: Acquisition, Interceptor, and Lifecycle Costs — Editor’s Update — March 2026"
 date: 2026-03-06
-excerpt: "This database(https://norskluftvern.com/2026/01/03/air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs/) was published in January 2026. In the six weeks since, two sequential real-world stress…"
+excerpt: "This database(/articles/air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs) was published in January 2026. In the six weeks since, two sequential real-world stress…"
 category: analyse
 author: "Norsk luftvern"
 lang: en
@@ -10,7 +10,7 @@ heroImage: "/images/img_9331.jpg"
 heroImageAlt: "Air defense systems cost database infographic January 2026"
 ---
 
-This [database](https://norskluftvern.com/2026/01/03/air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs/) was published in January 2026. In the six weeks since, two sequential real-world stress tests have fundamentally changed the context in which these cost figures should be read — and in some cases changed the figures themselves. 
+This [database](/articles/air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs) was published in January 2026. In the six weeks since, two sequential real-world stress tests have fundamentally changed the context in which these cost figures should be read — and in some cases changed the figures themselves. 
 
 The first is the June 2025 twelve-day Israel-Iran war (Operation Rising Lion), which this database was already written in the aftermath of. The second, and far more consequential, is **Operation Epic Fury**: the joint US-Israel military campaign against Iran launched on February 28, 2026, which is ongoing as of the date of this update. Together, these two events have compressed what were previously theoretical planning concerns about interceptor burn rates and stockpile depth into an active crisis — one that multiple senior US defense analysts are now describing openly as a “full-blown crisis” in interceptor availability.
 

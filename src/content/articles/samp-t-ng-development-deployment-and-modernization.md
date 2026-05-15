@@ -55,7 +55,7 @@ Unlike the standard Patriot, it offers full 360° coverage without mechanical ra
 As Europe confronts geopolitical shifts—including reduced U.S. NATO commitments—the SAMP/T NG exemplifies continental self-reliance. Its development cycle (2010–2025) mirrors evolving threats, from ballistic missiles to drone swarms, while maintaining interoperability with allied forces. With Ukraine’s successful deployments and ongoing NG upgrades, the system is poised to redefine European air defense postures independent of foreign platforms.
 
 **Resources:**
-[1] https://norskluftvern.com/2025/03/18/davids-sling-vs-samp-t-air-and-missile-defense-systems-comparison/
+[1] /articles/davids-sling-vs-samp-t-air-and-missile-defense-systems-comparison
 [2] https://armyrecognition.com/news/army-news/2025/samp-t-ng-air-defense-system-at-the-core-of-european-air-defense-with-first-gf300-mri-radar-validated
 [3] https://defence-industry.eu/samp-t-ng-a-new-european-system-for-the-multi-layered-air-defence/
 [4] https://finabel.org/italian-french-cooperation-for-the-development-of-a-new-air-defence-system/
@@ -68,7 +68,7 @@ As Europe confronts geopolitical shifts—including reduced U.S. NATO commitment
 [11] https://meta-defense.fr/en/2025/03/12/samp-t-vs-patriot-en-ukraine/
 [12] https://www.mbda-systems.com/products/area-protection/aster-family/aster-sampt-ng
 [13] https://mil.in.ua/en/news/italy-deploys-samp-t-air-defense-system-in-lithuania/
-[14] https://norskluftvern.com/2025/03/18/patriot-vs-samp-t-air-and-missile-defense-systems-comparison/
+[14] /articles/patriot-vs-samp-t-air-and-missile-defense-systems-comparison
 [15] https://armyrecognition.com/military-products/army/air-defense-systems/air-defense-vehicles/sampt-france-uk
 [16] https://kam.lt/en/italy-deploys-the-samp-t-long-range-ground-based-air-defence-system-as-practical-implementation-of-the-rotational-nato-air-defence-model/
 [17] https://en.defence-ua.com/analysis/davids_sling_could_outgun_patriot_and_sampt_in_estonias_air_defense_bid-14115.html

@@ -26,8 +26,8 @@ Fem faktorer for et sterkt luftvern
 
 Les også:
 
-https://norskluftvern.com/2017/06/28/lagdelt-luftvern-miks-av-hva
+/articles/lagdelt-luftvern-miks-av-hva
 
-https://norskluftvern.com/2017/06/01/luftvernets-knyttede-neve
+/articles/luftvernets-knyttede-neve
 
 [Image by macrovector](https://www.freepik.com/free-vector/glowing-search-radar-set-retrieval-system-control_4329573.htm#query=futuristic%20screen&position=24&from_view=search&track=ais) on Freepik

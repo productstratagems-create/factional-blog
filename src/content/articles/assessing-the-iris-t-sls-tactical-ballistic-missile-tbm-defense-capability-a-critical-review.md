@@ -1,7 +1,7 @@
 ---
 title: "Assessing the IRIS-T SL's Tactical Ballistic Missile (TBM) Defense Capability: A Critical Review"
 date: 2025-08-01
-excerpt: "Overview of the System The IRIS-T SL (Surface Launched)(https://norskluftvern.com/2025/02/09/iris-t-sl/) air defense system, a product of Diehl Defence, is designed as a modular, mobile solution for short- to…"
+excerpt: "Overview of the System The IRIS-T SL (Surface Launched)(/articles/iris-t-sl) air defense system, a product of Diehl Defence, is designed as a modular, mobile solution for short- to…"
 category: missilforsvar
 author: "Norsk luftvern"
 lang: en
@@ -12,7 +12,7 @@ heroImageAlt: "IRIS-T SLS short-range air defense system infographic"
 
 ## Overview of the System
 
-The [IRIS-T SL (Surface Launched)](https://norskluftvern.com/2025/02/09/iris-t-sl/) air defense system, a product of Diehl Defence, is designed as a modular, mobile solution for short- to medium-range threats, integrating sophisticated radar, advanced command-and-control, and highly maneuverable interceptors. The SLM variant offers engagement ranges up to 40km and altitudes of approximately 20km, with flexible integration into NATO-standard networks.
+The [IRIS-T SL (Surface Launched)](/articles/iris-t-sl) air defense system, a product of Diehl Defence, is designed as a modular, mobile solution for short- to medium-range threats, integrating sophisticated radar, advanced command-and-control, and highly maneuverable interceptors. The SLM variant offers engagement ranges up to 40km and altitudes of approximately 20km, with flexible integration into NATO-standard networks.
 
 ## Documented Performance and Claims
 
@@ -28,7 +28,7 @@ The [IRIS-T SL (Surface Launched)](https://norskluftvern.com/2025/02/09/iris-t-s
 
 **Technical Limits Acknowledged by Experts:** Major independent assessments and technical commentaries emphasize both the system’s design flexibility and its inherent constraints:
 
-The IRIS-T SL **is not a dedicated TBMD system** like the [Patriot](https://norskluftvern.com/2025/06/28/patriot-missile-systems-empirical-performance-data-2020-2025/) PAC-3 or Israel's [David’s Sling](https://norskluftvern.com/2024/04/23/davids-sling-air-and-missile-defense-system/). Its speed, altitude reach, and radar/command software are optimized for a broad set of aerial threats, *including* but not focused on TBMs.
+The IRIS-T SL **is not a dedicated TBMD system** like the [Patriot](/articles/patriot-missile-systems-empirical-performance-data-2020-2025) PAC-3 or Israel's [David’s Sling](/articles/davids-sling-air-and-missile-defense-system). Its speed, altitude reach, and radar/command software are optimized for a broad set of aerial threats, *including* but not focused on TBMs.
 
 Academic and technical sources argue that **any TBM intercept capability is present but limited**—primarily “point defense” against incoming missiles within a very narrowly defined range and altitude window, both much lower than those typical of advanced ballistic missile defense systems.
 
@@ -44,7 +44,7 @@ Real-world intercepts, if occurring, are likely restricted to low-altitude, shor
 
 **In sum:** The IRIS-T SL (especially in its SLM configuration) has likely succeeded in intercepting certain TBMs under favorable conditions, but its TBM defense remains a *complimentary, not primary*, function. Its actual operational value as a ballistic missile defense system must be viewed as a robust addition to layered defense—never a replacement for purpose-built long-range TBMD platforms.
 
-See also: [IRIS-T SL vs NASAMS](https://norskluftvern.com/2025/04/15/iris-t-sl-vs-nasams-air-defense-systems-comparison/)
+See also: [IRIS-T SL vs NASAMS](/articles/iris-t-sl-vs-nasams-air-defense-systems-comparison)
 
 Image: Diehl Defence
 
@@ -58,13 +58,13 @@ AI-generated article
 
 - [https://armyrecognition.com/focus-analysis-conflicts/army/defence-security-industry-technology/technology-german-iris-t-slm-air-defense-system-proves-effective-against-russian-ballistic-missiles-in-ukraine](https://armyrecognition.com/focus-analysis-conflicts/army/defence-security-industry-technology/technology-german-iris-t-slm-air-defense-system-proves-effective-against-russian-ballistic-missiles-in-ukraine)
 
-- [https://norskluftvern.com/2025/07/08/iris-t-sl-vs-vl-mica-vs-camm-european-air-defense-systems-comparison/](https://norskluftvern.com/2025/07/08/iris-t-sl-vs-vl-mica-vs-camm-european-air-defense-systems-comparison/)
+- [/articles/iris-t-sl-vs-vl-mica-vs-camm-european-air-defense-systems-comparison](/articles/iris-t-sl-vs-vl-mica-vs-camm-european-air-defense-systems-comparison)
 
 - [https://missilematters.substack.com/p/iris-t-slm-reports-successful-ballistic](https://missilematters.substack.com/p/iris-t-slm-reports-successful-ballistic)
 
 - [https://en.defence-ua.com/weapon_and_tech/germans_shecked_if_ukraines_iris_t_slm_can_stop_ballistic_missiles-15319.html](https://en.defence-ua.com/weapon_and_tech/germans_shecked_if_ukraines_iris_t_slm_can_stop_ballistic_missiles-15319.html)
 
-- [https://norskluftvern.com/2025/02/09/iris-t-sl/](https://norskluftvern.com/2025/02/09/iris-t-sl/)
+- [/articles/iris-t-sl](/articles/iris-t-sl)
 
 - [https://armyrecognition.com/military-products/army/air-defense-systems/air-defense-vehicles/iris-t-slm-medium-range-air-defense-missile-system-technical-data](https://armyrecognition.com/military-products/army/air-defense-systems/air-defense-vehicles/iris-t-slm-medium-range-air-defense-missile-system-technical-data)
 
@@ -76,11 +76,11 @@ AI-generated article
 
 - [https://defence-industry.eu/switzerland-signs-contract-for-combat-proven-iris-t-slm-ground-based-air-defence-system/](https://defence-industry.eu/switzerland-signs-contract-for-combat-proven-iris-t-slm-ground-based-air-defence-system/)
 
-- [https://norskluftvern.com/2025/06/25/air-defense-systems-combat-performance-vs-economic-reality/](https://norskluftvern.com/2025/06/25/air-defense-systems-combat-performance-vs-economic-reality/)
+- [/articles/air-defense-systems-combat-performance-vs-economic-reality](/articles/air-defense-systems-combat-performance-vs-economic-reality)
 
 - [https://en.defence-ua.com/industries/if_germany_developes_ai_enhanced_anti_ballistic_iris_t_slm_it_absolutely_should_be_tested_in_ukraine-15214.html](https://en.defence-ua.com/industries/if_germany_developes_ai_enhanced_anti_ballistic_iris_t_slm_it_absolutely_should_be_tested_in_ukraine-15214.html)
 
-- [https://norskluftvern.com/2025/04/15/iris-t-sl-vs-nasams-air-defense-systems-comparison/](https://norskluftvern.com/2025/04/15/iris-t-sl-vs-nasams-air-defense-systems-comparison/)
+- [/articles/iris-t-sl-vs-nasams-air-defense-systems-comparison](/articles/iris-t-sl-vs-nasams-air-defense-systems-comparison)
 
 - [https://armyrecognition.com/news/army-news/2025/breaking-news-slovenia-expands-air-defense-with-two-more-german-iris-t-slm-missile-systems](https://armyrecognition.com/news/army-news/2025/breaking-news-slovenia-expands-air-defense-with-two-more-german-iris-t-slm-missile-systems)
 

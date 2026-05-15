@@ -38,7 +38,7 @@ Videre er det i perioden 2023-2025, altså nær parallelt med anskaffelsen av se
 Så, i lys av dette kan vi kanskje spørre; Kommer Sverige til å gå «all in» og kjøpe Patriot for 30 mrd. kroner eller mer, og dermed måtte nedprioritere andre viktige anskaffelser? Vil Polen kunne motta modernisert Patriot på denne siden av 2030, når US Army ikke forventer noe før 2028? Dersom Norge ønsker å kjøpe fra Raytheon, når er det ledig produksjonskapasitet? Og, hvilket og hvor mye langtrekkende luftvern er det mulig å anskaffe for drøyt 5 mrd. kroner? Kommer den tyske politiske avgjørelsen om kjøp av MEADS til neste år? Den som lever får kanskje se?
 
 Se også:
-[Europas Patriot: SAMP/T](http://norskluftvern.com/2017/07/08/europas-patriot-sampt/)
-[Nye Patriot fra 2028](http://norskluftvern.com/2017/06/24/nye-patriot-fra-2028/)
-[Tiden moden for MEADS?](http://norskluftvern.com/2017/07/04/meads-moden/)
-[Langtrekkende luftvern på horisonten](http://norskluftvern.com/2017/05/23/langtrekkende-luftvern-og-radarhorisonten/)
+[Europas Patriot: SAMP/T](/articles/europas-patriot-sampt)
+[Nye Patriot fra 2028](/articles/nye-patriot-fra-2028)
+[Tiden moden for MEADS?](/articles/meads-moden)
+[Langtrekkende luftvern på horisonten](/articles/langtrekkende-luftvern-og-radarhorisonten)

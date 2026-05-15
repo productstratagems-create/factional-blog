@@ -1,7 +1,7 @@
 ---
 title: "IRIS-T SL vs. NASAMS: Air Defense Systems Comparison"
 date: 2025-04-15
-excerpt: "The NASAMS(https://norskluftvern.com/2025/02/08/nasams-norwegian-advanced-surface-to-air-missile-system-mobilt-og-modulaert-middelsrekkende-luftvernsystem/) and the IRIS-T…"
+excerpt: "The NASAMS(/articles/nasams-norwegian-advanced-surface-to-air-missile-system-mobilt-og-modulaert-middelsrekkende-luftvernsystem) and the IRIS-T…"
 category: missilforsvar
 author: "Norsk luftvern"
 lang: en
@@ -10,7 +10,7 @@ heroImage: "/images/img_7350.jpg"
 heroImageAlt: "IRIS-T SLM and SLS air defense systems comparison infographic"
 ---
 
-The [NASAMS](https://norskluftvern.com/2025/02/08/nasams-norwegian-advanced-surface-to-air-missile-system-mobilt-og-modulaert-middelsrekkende-luftvernsystem/) and the [IRIS-T SL](https://norskluftvern.com/2025/02/09/iris-t-sl/) are both modern ground‐based air defence solutions used by NATO and partner nations, but differ in terms of architecture, primary interceptor missiles and sensors and operational concepts.
+The [NASAMS](/articles/nasams-norwegian-advanced-surface-to-air-missile-system-mobilt-og-modulaert-middelsrekkende-luftvernsystem) and the [IRIS-T SL](/articles/iris-t-sl) are both modern ground‐based air defence solutions used by NATO and partner nations, but differ in terms of architecture, primary interceptor missiles and sensors and operational concepts.
 
 **IRIS-T SL**: Infra Red Imaging System Tail/Thrust Vector Controlled – Surface Launched.
 
@@ -49,7 +49,7 @@ Developed jointly by Raytheon and Kongsberg Defence & Aerospace, and is a networ
 
 NASAMS features multiple dispersed launchers, radars, and a central Fire Distribution Center (FDC) that links sensors and shooters over wide areas, coordinates engagement management, target allocation, and integrates data via multiple datalinks.
 
-The system use electronically scanned radars such as the Raytheon [Sentinel](https://www.rtx.com/raytheon/what-we-do/land/sentinel-radar) or potentially the newer medium-range radars like the [GhostEye MR](https://norskluftvern.com/2025/04/03/ghosteye-mr-ny-multifunksjonsradar-med-middels-rekkevidde-og-360-dekning/), as well as TV/IR cameras.
+The system use electronically scanned radars such as the Raytheon [Sentinel](https://www.rtx.com/raytheon/what-we-do/land/sentinel-radar) or potentially the newer medium-range radars like the [GhostEye MR](/articles/ghosteye-mr-ny-multifunksjonsradar-med-middels-rekkevidde-og-360-dekning), as well as TV/IR cameras.
 
 > *Normally, a number of NASAMS fire units are netted together in a uniquely designed ”hard-realtime” communication network to ensure minimum latency over large distances for maximum system performance utilizing the unique capabilities of the AMRAAM missile*
 > 
@@ -101,7 +101,7 @@ The system use electronically scanned radars such as the Raytheon [Sentinel](htt
 
 **IRIS-T SL **batteries are well suited for 360° point defence, as well as part of a layered air defense network in cooperation with longer-range systems - or dispersed while protecting moving battlegroups. The system with containerized and truck-mounted launchers, radars and command units offer rapid reaction times - combat ready postures are achieved minutes after relocation.
 
-Although the IRIS-T SL is a relatively new system compared to NASAMS, it has been acquired by several countries, including Ukraine. See [IRIS-T SL](https://norskluftvern.com/2025/02/09/iris-t-sl/) for extensive list of user countries. 
+Although the IRIS-T SL is a relatively new system compared to NASAMS, it has been acquired by several countries, including Ukraine. See [IRIS-T SL](/articles/iris-t-sl) for extensive list of user countries. 
 
 ![](https://norskluftvern.wordpress.com/wp-content/uploads/2025/04/img_7352-1.jpg?w=480)
 *IRIS-T battery on the move (Image: Diehl Defence)*
@@ -134,13 +134,13 @@ As of 2024, NASAMS is deployed by 13+ countries, amongst others Norway, the Unit
 
 **More on**
 
-- [IRIS-T SL](https://norskluftvern.com/2025/02/09/iris-t-sl/)
+- [IRIS-T SL](/articles/iris-t-sl)
 
-- [NASAMS](https://norskluftvern.com/2025/02/08/nasams-a-versatile-and-modern-air-defence-system/)
+- [NASAMS](/articles/nasams-a-versatile-and-modern-air-defence-system)
 
 **Check out **
 
-- [Patriot vs. SAMP/T](https://norskluftvern.com/2025/03/18/patriot-vs-samp-t-air-and-missile-defense-systems-comparison/)
+- [Patriot vs. SAMP/T](/articles/patriot-vs-samp-t-air-and-missile-defense-systems-comparison)
 
 Image collage: Royal Norwegian Airforce / Diehl Defence
 
