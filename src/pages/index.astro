@@ -49,12 +49,27 @@ const featuredReadingTime = featured?.data.readingTimeMinutes ?? Math.max(1, Mat
 
       {allArticles.length > 13 && (
         <div class="load-more">
-          <a href={siteHref('/articles')} class="btn-outline">Vis alle artikler</a>
+          <a href={siteHref('/articles')} class="btn-outline" id="show-all-btn">Vis alle artikler</a>
+          <div class="lang-shortcuts">
+            <button class="lang-sc" data-lang="no">Norsk</button>
+            <span class="lang-sc-sep">·</span>
+            <button class="lang-sc" data-lang="en">English</button>
+          </div>
         </div>
       )}
     </section>
   </div>
 </BaseLayout>
+
+<script>
+  const articlesHref = document.getElementById('show-all-btn')?.getAttribute('href') ?? '/articles';
+  document.querySelectorAll<HTMLButtonElement>('.lang-sc').forEach(btn => {
+    btn.addEventListener('click', () => {
+      localStorage.setItem('site-lang', btn.dataset.lang ?? 'all');
+      window.location.href = articlesHref;
+    });
+  });
+</script>
 
 <style>
   .home-page {
@@ -93,5 +108,38 @@ const featuredReadingTime = featured?.data.readingTimeMinutes ?? Math.max(1, Mat
   .btn-outline:hover {
     background: var(--color-navy);
     color: #fff;
+  }
+
+  .lang-shortcuts {
+    margin-top: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35em;
+  }
+
+  .lang-sc {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-navy);
+    opacity: 0.55;
+    padding: 0.2em 0.4em;
+    transition: opacity 0.15s;
+  }
+
+  .lang-sc:hover {
+    opacity: 1;
+  }
+
+  .lang-sc-sep {
+    font-size: 0.7rem;
+    color: var(--color-navy);
+    opacity: 0.3;
   }
 </style>
