@@ -1,6 +1,6 @@
 ---
 title: "NASAMS – Norsk luftvern i eksportklasse"
-date: 2017-01-01
+date: 2025-02-08
 excerpt: "NASAMS (Norwegian Advanced Surface-to-Air Missile System) er et norskutviklet, modulært luftvernsystem som har blitt et av verdens mest utbredte mellomdistanse luftvern. Systemet er utviklet av Kongsberg Defence &…"
 category: missilforsvar
 author: "Norsk luftvern"

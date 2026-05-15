@@ -1,6 +1,6 @@
 ---
 title: "C-UAS HELWS (High Energy Laser Weapon System) Counter-Drone System (US)"
-date: 2017-01-01
+date: 2025-03-30
 excerpt: "The C-UAS HELWS (High Energy Laser Weapon System), a cutting-edge directed energy weapon developed by Raytheon Technologies. Utilizing a high-energy laser, HELWS offers a precise and low-cost-per-shot solution for…"
 category: directed-energy
 author: "Norsk luftvern"

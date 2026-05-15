@@ -1,6 +1,6 @@
 ---
 title: "NASAMS Anti-Tactical Ballistic Missile Integration: Technical Projections"
-date: 2017-01-01
+date: 2025-07-30
 excerpt: "PAC-3 MSE emerges as the most viable near-term ballistic missile defense integration candidate for NASAMS, leveraging proven hit-to-kill technology with minimal architectural modifications, while GhostEye MR radar…"
 category: missilforsvar
 author: "Norsk luftvern"

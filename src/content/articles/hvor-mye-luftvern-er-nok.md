@@ -1,6 +1,6 @@
 ---
 title: "Hvor mye luftvern er nok?"
-date: 2017-01-01
+date: 2023-06-07
 excerpt: "Å bestemme riktig mengde luftvern er en praktisk og politisk utfordring. Et land kan sjelden beskytte alt luftrom til enhver tid. Hvert batteri dekker bare et begrenset område og har begrenset ammunisjon. Derfor må…"
 category: luftvern
 author: "Norsk luftvern"

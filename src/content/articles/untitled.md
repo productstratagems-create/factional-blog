@@ -5,7 +5,7 @@ excerpt: "<?php // Function to register the shortcode for Norges Luftvernløft I
 category: analyse
 author: "Norsk luftvern"
 lang: no
-draft: false
+draft: true
 ---
 
 <?php

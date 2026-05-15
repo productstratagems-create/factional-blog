@@ -1,6 +1,6 @@
 ---
 title: "Split-Second Guardians: The Human Drama Behind Air Defense Decisions"
-date: 2017-01-01
+date: 2024-07-04
 excerpt: "Captain Sahar Saudyan was playing Jungle Speed with her teammates just hours before she would make the ultimate sacrifice. The 21-year-old Iron Dome operator had no way of knowing that October 7, 2023, would transform…"
 category: analyse
 author: "Norsk luftvern"

@@ -1,6 +1,6 @@
 ---
 title: "The Evolution of Western Ground-Based Long-Range Air and Missile Defenses"
-date: 2017-01-01
+date: 2025-08-01
 excerpt: "From Early Air Defense Systems to Defense against Ballistic and Hypersonic Threats The trajectory of Western ground-based long-range air and missile defense underscores a continuous adaptation to evolving aerial threats,…"
 category: missilforsvar
 author: "Norsk luftvern"
