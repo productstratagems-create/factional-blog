@@ -84,12 +84,16 @@ const searchIndex = articles
       result:  (n) => n === 1 ? `${n} resultat` : `${n} resultater`,
       none:    (q) => `Ingen artikler matcher «${q}»`,
       tryOther: 'Prøv et annet søkeord.',
+      tier2: 'Ingress',
+      tier1: 'Tekst',
     },
     en: {
       among:   (n) => `Search among ${n} articles`,
       result:  (n) => n === 1 ? `${n} result` : `${n} results`,
       none:    (q) => `No articles match «${q}»`,
       tryOther: 'Try a different search term.',
+      tier2: 'Lead',
+      tier1: 'Body',
     },
   };
 
@@ -187,12 +191,41 @@ const searchIndex = articles
     return text.replace(new RegExp(`(${escRe(q)})`, 'gi'), '<mark>$1</mark>');
   }
 
-  function resultHTML(a, i, q) {
+  function getSnippet(text, q, maxLen = 150) {
+    const idx = text.toLowerCase().indexOf(q.toLowerCase());
+    if (idx < 0) return text.slice(0, maxLen) + (text.length > maxLen ? '…' : '');
+    const start = Math.max(0, idx - 55);
+    const end   = Math.min(text.length, start + maxLen);
+    return (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '');
+  }
+
+  function resultHTML(a, score, i, q) {
+    const t = SEARCH_T[sl()];
+    const titleHTML = highlight(a.title, q);
+
+    let snipHTML  = '';
+    let tierLabel = '';
+
+    if (score === 2) {
+      snipHTML  = `<span class="si-snip">${highlight(getSnippet(a.firstPara, q), q)}</span>`;
+      tierLabel = `<span class="si-tier">${t.tier2}</span>`;
+    } else if (score === 1) {
+      snipHTML  = `<span class="si-snip">${highlight(getSnippet(a.body, q), q)}</span>`;
+      tierLabel = `<span class="si-tier">${t.tier1}</span>`;
+    }
+
     return `
-      <li id="search-result-${i}" role="option" aria-selected="false" class="search-item">
+      <li id="search-result-${i}" role="option" aria-selected="false"
+          class="search-item search-item--tier${score}">
         <a href="${a.href}" class="search-item-link">
-          <span class="si-title">${a.title}</span>
-          <span class="si-date">${a.date}</span>
+          <span class="si-content">
+            <span class="si-title">${titleHTML}</span>
+            ${snipHTML}
+          </span>
+          <span class="si-meta">
+            ${tierLabel}
+            <span class="si-date">${a.date}</span>
+          </span>
         </a>
       </li>`;
   }
@@ -239,7 +272,7 @@ const searchIndex = articles
       return;
     }
 
-    listbox.innerHTML = scored.map(({ a }, i) => resultHTML(a, i, q)).join('');
+    listbox.innerHTML = scored.map(({ a, score }, i) => resultHTML(a, score, i, q)).join('');
     attachResultListeners();
   }
 
@@ -372,7 +405,7 @@ const searchIndex = articles
 
   :global(.search-item-link) {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
     padding: 0.65rem 1.25rem 0.65rem calc(1.25rem - 3px);
     border-left: 3px solid transparent;
@@ -391,9 +424,15 @@ const searchIndex = articles
     border-left-color: var(--color-teal);
   }
 
-  :global(.si-title) {
+  :global(.si-content) {
     flex: 1;
     min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  :global(.si-title) {
     font-family: var(--font-ui);
     font-size: 0.875rem;
     font-weight: 500;
@@ -404,8 +443,39 @@ const searchIndex = articles
     text-overflow: ellipsis;
   }
 
-  :global(.si-date) {
+  :global(.si-snip) {
+    font-family: var(--font-ui);
+    font-size: 0.78rem;
+    color: var(--color-muted);
+    line-height: 1.45;
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  :global(.si-meta) {
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+    padding-top: 1px;
+  }
+
+  :global(.si-tier) {
+    font-family: var(--font-ui);
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--color-teal);
+    opacity: 0.75;
+    white-space: nowrap;
+  }
+
+  :global(.si-date) {
     font-family: var(--font-ui);
     font-size: 0.72rem;
     color: #9CA3AF;
