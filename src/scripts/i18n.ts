@@ -64,6 +64,12 @@ export const T = {
     'controls.oldest': 'Eldste først',
     'controls.lang':   'Språk',
     'controls.all':    'Alle',
+    'series.header':   'Serier',
+    'series.label':    'Serie',
+    'series.articles': 'artikler',
+    'series.see-all':  'Se alle →',
+    'series.explore':  'Utforsk →',
+    'series.view-all': 'Se alle',
   },
   en: {
     'nav.home':        'Home',
@@ -130,6 +136,12 @@ export const T = {
     'controls.oldest': 'Oldest first',
     'controls.lang':   'Language',
     'controls.all':    'All',
+    'series.header':   'Series',
+    'series.label':    'Series',
+    'series.articles': 'articles',
+    'series.see-all':  'See all →',
+    'series.explore':  'Explore →',
+    'series.view-all': 'View all',
   },
 } as const;
 

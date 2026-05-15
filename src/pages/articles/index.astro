@@ -35,10 +35,10 @@ const seriesList = [...seriesMap.entries()]
 
     {seriesList.map(([slug, count]) => (
       <a href={siteHref(`/serier/${slug}`)} class="series-spotlight">
-        <span class="series-spotlight-super">Series</span>
+        <span class="series-spotlight-super" data-i18n="series.label">Serie</span>
         <span class="series-spotlight-title">{SERIES[slug].title}</span>
         <span class="series-spotlight-desc">{SERIES[slug].description}</span>
-        <span class="series-spotlight-cta">View all {count} →</span>
+        <span class="series-spotlight-cta"><span data-i18n="series.view-all">Se alle</span> {count} →</span>
       </a>
     ))}
 

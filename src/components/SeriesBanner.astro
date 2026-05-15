@@ -14,9 +14,9 @@ const { seriesSlug, seriesLabel, totalCount } = Astro.props;
   <span class="series-icon" aria-hidden="true">≡</span>
   <span class="series-text">
     <span class="series-label">{seriesLabel}</span>
-    <span class="series-count">· {totalCount} articles</span>
+    <span class="series-count">· {totalCount} <span data-i18n="series.articles">artikler</span></span>
   </span>
-  <span class="series-cta">See all →</span>
+  <span class="series-cta" data-i18n="series.see-all">Se alle →</span>
 </a>
 
 <style>
