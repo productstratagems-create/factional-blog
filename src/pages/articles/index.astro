@@ -2,15 +2,11 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleGrid from '../../components/ArticleGrid.astro';
+import ArticleControls from '../../components/ArticleControls.astro';
 import Divider from '../../components/Divider.astro';
-import { siteHref } from '../../utils/slug';
-
-const PAGE_SIZE = 18;
 
 const allArticles = await getCollection('articles', (e) => !e.data.draft);
 const sorted = allArticles.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
-const pageArticles = sorted.slice(0, PAGE_SIZE);
-const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
 ---
 
 <BaseLayout
@@ -21,22 +17,15 @@ const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
     <header class="page-header">
       <p class="page-super" data-i18n="archive.super">Arkiv</p>
       <h1 class="page-title" data-i18n="archive.title">Alle artikler</h1>
-      <p class="article-count">{sorted.length} <span data-i18n="archive.total">artikler totalt</span></p>
     </header>
 
     <Divider spacing="md" />
 
-    <div class="articles-wrapper">
-      <ArticleGrid articles={pageArticles} columns={3} />
-    </div>
+    <ArticleControls totalCount={sorted.length} />
 
-    {totalPages > 1 && (
-      <nav class="pagination" aria-label="Sidenavigasjon">
-        <span class="pagination-btn pagination-btn--disabled" data-i18n="page.prev">← Forrige</span>
-        <span class="pagination-info"><span data-i18n="page.page">Side</span> 1 <span data-i18n="page.of">av</span> {totalPages}</span>
-        <a class="pagination-btn" href={siteHref('/articles/page/2')} data-i18n="page.next">Neste →</a>
-      </nav>
-    )}
+    <div class="articles-wrapper">
+      <ArticleGrid articles={sorted} columns={3} id="article-grid" />
+    </div>
   </div>
 </BaseLayout>
 
@@ -65,56 +54,7 @@ const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
     letter-spacing: 0.06em;
     color: var(--color-heading);
     line-height: 1;
-    margin-bottom: var(--spacing-sm);
-  }
-
-  .article-count {
-    font-family: var(--font-ui);
-    font-size: 0.875rem;
-    color: var(--color-muted);
-    margin: 0;
   }
 
   .articles-wrapper { padding-block: var(--spacing-xl); }
-
-  .pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-md);
-    padding-block: var(--spacing-xl) var(--spacing-2xl);
-  }
-
-  .pagination-btn {
-    font-family: var(--font-ui);
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    padding: 0.5em 1.2em;
-    border: 2px solid var(--color-navy);
-    color: var(--color-navy);
-    text-decoration: none;
-    border-radius: var(--radius-sm);
-    transition: background 0.15s, color 0.15s;
-    white-space: nowrap;
-  }
-
-  a.pagination-btn:hover {
-    background: var(--color-navy);
-    color: #fff;
-  }
-
-  .pagination-btn--disabled {
-    opacity: 0.3;
-    cursor: default;
-    pointer-events: none;
-  }
-
-  .pagination-info {
-    font-family: var(--font-ui);
-    font-size: 0.8rem;
-    color: var(--color-muted);
-    white-space: nowrap;
-  }
 </style>

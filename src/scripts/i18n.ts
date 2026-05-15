@@ -59,6 +59,11 @@ export const T = {
     'search.navigate': 'naviger',
     'search.open-key': 'åpne',
     'search.close-key':'lukk',
+    'controls.sort':   'Sorter',
+    'controls.newest': 'Nyeste først',
+    'controls.oldest': 'Eldste først',
+    'controls.lang':   'Språk',
+    'controls.all':    'Alle',
   },
   en: {
     'nav.home':        'Home',
@@ -120,6 +125,11 @@ export const T = {
     'search.navigate': 'navigate',
     'search.open-key': 'open',
     'search.close-key':'close',
+    'controls.sort':   'Sort',
+    'controls.newest': 'Newest first',
+    'controls.oldest': 'Oldest first',
+    'controls.lang':   'Language',
+    'controls.all':    'All',
   },
 } as const;
 

@@ -6,15 +6,16 @@ import { articleHref } from '../utils/slug';
 interface Props {
   articles: CollectionEntry<'articles'>[];
   columns?: 2 | 3;
+  id?: string;
 }
 
-const { articles, columns = 3 } = Astro.props;
+const { articles, columns = 3, id } = Astro.props;
 ---
 
 {articles.length === 0 ? (
   <p class="no-articles">Ingen artikler funnet.</p>
 ) : (
-  <div class:list={['article-grid', `article-grid--${columns}col`]}>
+  <div class:list={['article-grid', `article-grid--${columns}col`]} id={id}>
     {articles.map((article) => {
       const wordCount = article.body?.split(/\s+/).length ?? 0;
       const readingTime = article.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordCount / 200));
