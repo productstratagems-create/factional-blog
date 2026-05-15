@@ -22,4 +22,4 @@ Så selv om behovet for mer og moderne luftvern allerede er identifisert som kri
 
 Se også disse blogginnleggene:
 [Ny giv for kortholdsluftvernet](http://norskluftvern.com/2017/05/24/us-army-revitaliserer-kortholdsluftvernet/)
-[USA etterspør nytt kortholdsluftvern, og industrien svarer](/articles/usa-etterspor-nytt-kortholdsluftvern-og-industrien-svarer)
+[USA etterspør nytt kortholdsluftvern, og industrien svarer](../articles/usa-etterspor-nytt-kortholdsluftvern-og-industrien-svarer)

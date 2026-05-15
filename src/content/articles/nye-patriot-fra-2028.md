@@ -49,8 +49,8 @@ Det er derfor ikke urimelig å anta at interessen er økende her i Europa for hv
 
 Se også innleggene:
 
-[Tiden moden for MEADS?](/articles/meads-moden)
+[Tiden moden for MEADS?](../articles/meads-moden)
 
-[Europas Patriot: SAMP/T](/articles/europas-patriot-sampt)
+[Europas Patriot: SAMP/T](../articles/europas-patriot-sampt)
 
-[Langtrekkende luftvern på horisonten](/articles/langtrekkende-luftvern-og-radarhorisonten)
+[Langtrekkende luftvern på horisonten](../articles/langtrekkende-luftvern-og-radarhorisonten)

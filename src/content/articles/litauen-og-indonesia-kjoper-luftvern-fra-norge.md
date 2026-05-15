@@ -31,5 +31,5 @@ Den tredje oppgraderingen av NASAMS skal stå klar i 2018; og denne omfatter int
 Raytheon, som forstår NASAMS som National Advanced Surface to Air Missile System, skriver på sine internettsider at sju land verden over har systemet så langt; USA, Norge, Finland, Spania, Nederland, et ikke-bekjentgjort land, samt at systemer er under produksjon for Oman. Medregnet Litauen, Australia og Indonesia teller vi dermed etterhvert hele 10 NASAMS brukernasjoner. [Ekstern artikkel](https://www.raytheon.com/capabilities/products/nasams/)
 
 Se også:
-[Tsjekkia satser på mer luftvern](/articles/tsjekkia-satser-pa-mer-luftvern)
-[EMADS treffer blinken?](/articles/emads-treffer-blinken)
+[Tsjekkia satser på mer luftvern](../articles/tsjekkia-satser-pa-mer-luftvern)
+[EMADS treffer blinken?](../articles/emads-treffer-blinken)

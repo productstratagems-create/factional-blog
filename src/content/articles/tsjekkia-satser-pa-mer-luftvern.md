@@ -12,7 +12,7 @@ heroImageAlt: "Polsk offisielt taler om nytt militært utstyr"
 
 I tillegg til å planlegge kjøp av middelsrekkende luftvern til drøyt 4 mrd. kr, nærmer det seg en løsning for nytt luftvern til landstyrkene.
 
-Fra før vet vi at Tsjekkia skal anskaffe fire batterier med middelsrekkende luftvern til snaut $470 mill. (drøyt 4 mrd kr.) Tsjekkerne sier at systemet skal ha 50 km missilrekkevidde. Les mer om dette i innlegget: [Tsjekkia anskaffer nytt luftvern](/articles/tsjekkia-anskaffer-middelsrekkende-luftvern).
+Fra før vet vi at Tsjekkia skal anskaffe fire batterier med middelsrekkende luftvern til snaut $470 mill. (drøyt 4 mrd kr.) Tsjekkerne sier at systemet skal ha 50 km missilrekkevidde. Les mer om dette i innlegget: [Tsjekkia anskaffer nytt luftvern](../articles/tsjekkia-anskaffer-middelsrekkende-luftvern).
 
 [caption id="attachment_1445" align="alignnone" width="630"]![IMG_9193](https://norskluftvern.com/wp-content/uploads/2017/07/img_9193.jpg) RBS 70 NG (Saab)[/caption]
 
@@ -28,11 +28,11 @@ Se også:
 
 [Ny giv for kortholdsluftvernet ](http://norskluftvern.com/2017/05/24/us-army-revitaliserer-kortholdsluftvernet/)
 
-[Lagdelt luftvern; men miks av hva?](/articles/lagdelt-luftvern-miks-av-hva)
+[Lagdelt luftvern; men miks av hva?](../articles/lagdelt-luftvern-miks-av-hva)
 
-[Luftvernets knyttede neve og de 10 bud](/articles/luftvernets-knyttede-neve)
+[Luftvernets knyttede neve og de 10 bud](../articles/luftvernets-knyttede-neve)
 
-[Langtrekkende luftvern på horisonten ](/articles/langtrekkende-luftvern-og-radarhorisonten)
+[Langtrekkende luftvern på horisonten ](../articles/langtrekkende-luftvern-og-radarhorisonten)
 
 Eksterne artikler:
 

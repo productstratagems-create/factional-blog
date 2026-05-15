@@ -18,6 +18,6 @@ Armasuisse har fire potensielle systemer fra tre leverandører:
 
 - IRIS-T SLM fra Diehl Defence (Tyskland),
 - NASAMS fra Kongsberg og Raytheon (USA), og
-- [SAMP/T](/articles/samp-t-the-european-patriot) og [EMADS](/articles/emads-hits-the-mark) fra MBDA (Frankrike).
+- [SAMP/T](../articles/samp-t-the-european-patriot) og [EMADS](../articles/emads-hits-the-mark) fra MBDA (Frankrike).
 
-I juni 2021 besluttet Sveits å gå til anskaffelse av fem batterier med Patriot langtrekkende luftvern. I november 2021 fremkom det at kontrakten for Patriot pålydende rundt 2,1 milliarder amerikanske dollar. I september 2022 vedtok det sveitsiske parlamentet at anskaffelsene kunne iverksettes. I februar 2023 ble det kjent at Sveits ville utvide Patriot-kontrakten med drøyt 320 millioner dollar til å inkludere produsentens PAC-3 MSE missiler, slik at systemet også mer effektivt kan skyte ned taktiske ballistiske missiler. [Les mer her](/articles/sveitsisk-patriot)
+I juni 2021 besluttet Sveits å gå til anskaffelse av fem batterier med Patriot langtrekkende luftvern. I november 2021 fremkom det at kontrakten for Patriot pålydende rundt 2,1 milliarder amerikanske dollar. I september 2022 vedtok det sveitsiske parlamentet at anskaffelsene kunne iverksettes. I februar 2023 ble det kjent at Sveits ville utvide Patriot-kontrakten med drøyt 320 millioner dollar til å inkludere produsentens PAC-3 MSE missiler, slik at systemet også mer effektivt kan skyte ned taktiske ballistiske missiler. [Les mer her](../articles/sveitsisk-patriot)

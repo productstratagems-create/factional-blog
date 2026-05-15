@@ -20,7 +20,7 @@ Based on operational data from Ukraine and Middle East conflicts, modern counter
 
 ### Patriot and SAMP/T Integration
 
-Traditional surface-to-air missile systems like [Patriot](/articles/patriot-missile-systems-empirical-performance-data-2020-2025) and [SAMP/T](/articles/samp-t-the-european-patriot) have demonstrated effectiveness against larger drone threats, particularly Group 3 and Group 4 UAVs. Ukraine’s deployment demonstrated combat efficacy, with a SAMP/T battery intercepting a Russian jet at 90-mile ranges in March 2025. Each $500 million battery can fire 8 missiles in 10 seconds. However, these systems face cost-effectiveness challenges when engaging smaller threats, with interceptor costs ranging from $480,000 (Stinger) to $2.1 million (Standard Missile-2).
+Traditional surface-to-air missile systems like [Patriot](../articles/patriot-missile-systems-empirical-performance-data-2020-2025) and [SAMP/T](../articles/samp-t-the-european-patriot) have demonstrated effectiveness against larger drone threats, particularly Group 3 and Group 4 UAVs. Ukraine’s deployment demonstrated combat efficacy, with a SAMP/T battery intercepting a Russian jet at 90-mile ranges in March 2025. Each $500 million battery can fire 8 missiles in 10 seconds. However, these systems face cost-effectiveness challenges when engaging smaller threats, with interceptor costs ranging from $480,000 (Stinger) to $2.1 million (Standard Missile-2).
 
 ### Short-Range Air Defense (SHORAD) Systems
 
@@ -31,7 +31,7 @@ Modern SHORAD platforms have adapted to address the drone threat through special
 
 ### Dedicated Kinetic Solutions
 
-Purpose-built kinetic interceptors like the [Coyote Block 2](/articles/coyote-block-2-counter-drone-system-us) provide mid-range solutions for drone threats. The Army in February inked a deal with defense contractor Raytheon for hundreds of Coyote Block 2C interceptors – at $100,000 a shot – explicitly to support its counter-drone initiatives in the Middle East. These interceptors offer improved cost-effectiveness compared to traditional missiles while maintaining kinetic kill capabilities.
+Purpose-built kinetic interceptors like the [Coyote Block 2](../articles/coyote-block-2-counter-drone-system-us) provide mid-range solutions for drone threats. The Army in February inked a deal with defense contractor Raytheon for hundreds of Coyote Block 2C interceptors – at $100,000 a shot – explicitly to support its counter-drone initiatives in the Middle East. These interceptors offer improved cost-effectiveness compared to traditional missiles while maintaining kinetic kill capabilities.
 
 ![](https://norskluftvern.wordpress.com/wp-content/uploads/2025/07/img_8133-1.jpg?w=779)
 *Coyote UAS in flight over Avon Park, Fl. (NOAA)*
@@ -54,7 +54,7 @@ Advanced EW systems combine multiple attack vectors. Lithuania recently delivere
 
 ### High-Energy Laser Systems
 
-Directed energy weapons have emerged as game-changing technology for counter-drone operations. Israel has used a new air defense laser to shoot down Hezbollah drones in the current conflict in the Middle East, it has been confirmed. The [Iron Beam](/articles/iron-beam-laser-innovation-redefining-short-range-air-defenses-and-global-markets) system represents the world’s first operationally deployed combat laser, successfully engaging multiple aerial targets.
+Directed energy weapons have emerged as game-changing technology for counter-drone operations. Israel has used a new air defense laser to shoot down Hezbollah drones in the current conflict in the Middle East, it has been confirmed. The [Iron Beam](../articles/iron-beam-laser-innovation-redefining-short-range-air-defenses-and-global-markets) system represents the world’s first operationally deployed combat laser, successfully engaging multiple aerial targets.
 
 ![](https://norskluftvern.wordpress.com/wp-content/uploads/2025/07/img_8136.jpg?w=1024)
 *Iron Beam (Rafael) *
@@ -67,7 +67,7 @@ Modern laser systems demonstrate impressive performance metrics:
 
 - The drone defence system from EOS uses a powerful laser as its DE source. It has disabled Group 1 drones at an effective rate of 20 drones per minute – at ranges of more than 1,000 metres
 
-- The Army has not only deployed a platoon of four 50-kilowatt Directed Energy Maneuver-Short Range Air Defense, or [DE M-SHORAD](/articles/redefining-the-battlefield-how-wide-proliferation-of-high-powered-laser-air-defenses-can-transform-operations), prototypes to Central Command for “real world testing,” but taken possession of its most powerful laser yet – the 300-kilowatt Indirect Fire Protection Capability-High Energy Laser
+- The Army has not only deployed a platoon of four 50-kilowatt Directed Energy Maneuver-Short Range Air Defense, or [DE M-SHORAD](../articles/redefining-the-battlefield-how-wide-proliferation-of-high-powered-laser-air-defenses-can-transform-operations), prototypes to Central Command for “real world testing,” but taken possession of its most powerful laser yet – the 300-kilowatt Indirect Fire Protection Capability-High Energy Laser
 
 ![](https://norskluftvern.wordpress.com/wp-content/uploads/2025/07/img_8134.jpg?w=1024)
 *DE M-SHORAD (Northrop Grumman)*
@@ -88,7 +88,7 @@ AI-powered drone threat prediction systems are rapidly advancing, with the poten
 
 ### Net-Based Capture Systems
 
-Non-destructive engagement methods like the [SkyWall](/articles/skywall-100-skywall-300-counter-drone-system-uk) systems offer unique advantages for specific scenarios, particularly in urban environments where debris mitigation is critical. These systems enable intact drone capture for intelligence analysis while minimizing collateral damage.
+Non-destructive engagement methods like the [SkyWall](../articles/skywall-100-skywall-300-counter-drone-system-uk) systems offer unique advantages for specific scenarios, particularly in urban environments where debris mitigation is critical. These systems enable intact drone capture for intelligence analysis while minimizing collateral damage.
 
 ![](https://norskluftvern.wordpress.com/wp-content/uploads/2025/07/img_8135.jpg?w=1024)
 *SkyWall (U.S. Army Southern European Task Force, Africa)*

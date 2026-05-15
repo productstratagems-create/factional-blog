@@ -28,8 +28,8 @@ Landmaktproposisjon» er som følger:
 Begrepet «kampluftvern» er å finne i proposisjoner fra Forsvarsdepartementet til Stortinget fra minst 2012. Begrepet har antatt oppstått før dette, innen miljøene i Hæren, etter utfasingen NALLADS fra 2004. Amerikanerne kaller tilsvarende kapabiliteter for MSHORAD; «maneuver SHORAD». Men, selv om luftvern er luftvern - så har likevel de ulike brukermiljøene satt sine merkelapper på luftvernet, i disse tilfellene basert på hvem som er «eier» og hvem som er tiltenkt som støttet avdeling.
 
 Se også:
-[Langtidsplanen for Forsvaret (2015-2016)](/articles/om-norsk-luftvern-i-prop-151-s-2015-2016-kampkraft-og-baerekraft-langtidsplan-for-forsvarssektoren)
-[Tsjekkia satser på mer luftvern](/articles/tsjekkia-satser-pa-mer-luftvern)
-[USA etterspør nytt kortholdsluftvern, og industrien svarer](/articles/usa-etterspor-nytt-kortholdsluftvern-og-industrien-svarer)
-[Belgia legger ned, mens Sveits vil styrke luftvernet](/articles/belgia-legger-ned-mens-sveits-vil-styrke-luftvernet)
-[Tysk-nederlands luftvernsamarbeid snart klart til skudd](/articles/prosjekt-apollo-tysk-nederlandsk-luftvern)
+[Langtidsplanen for Forsvaret (2015-2016)](../articles/om-norsk-luftvern-i-prop-151-s-2015-2016-kampkraft-og-baerekraft-langtidsplan-for-forsvarssektoren)
+[Tsjekkia satser på mer luftvern](../articles/tsjekkia-satser-pa-mer-luftvern)
+[USA etterspør nytt kortholdsluftvern, og industrien svarer](../articles/usa-etterspor-nytt-kortholdsluftvern-og-industrien-svarer)
+[Belgia legger ned, mens Sveits vil styrke luftvernet](../articles/belgia-legger-ned-mens-sveits-vil-styrke-luftvernet)
+[Tysk-nederlands luftvernsamarbeid snart klart til skudd](../articles/prosjekt-apollo-tysk-nederlandsk-luftvern)

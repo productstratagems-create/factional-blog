@@ -14,7 +14,7 @@ MEADS fremstår i offentligheten som et nokså modent system, men med få eller 
 
 Et felles prosjekt mellom europeiske MBDA (eid av Airbus Group, BAE Systems Plc og italienske Leonardo Finmeccanica SpA) og amerikanske Lockheed Martin for utvikling av neste generasjons langtrekkende luftvern og taktisk ballistisk missilforsvar.
 
-Systemet har komponenter som får plass i C-130 Hercules og A400, og består av multifunksjonsradar med aktiv elektronisk styrt lobe (AESA), elektronikk med gallium nitrid (GaN) i stedet for tradisjonell silisium, 360° radardekning og skuddsektor og PAC-3 MSE missiler med direkte treff ("hit-to-kill"). MEADS var opprinnelig et program for erstatning av Patriot i Europa og USA, men US Army har trukket seg fra samarbeidet, og ser til Raytheon for sitt "nye Patriot". Se tidligere innlegg om [Nye Patriot fra 2028](/articles/nye-patriot-fra-2028).
+Systemet har komponenter som får plass i C-130 Hercules og A400, og består av multifunksjonsradar med aktiv elektronisk styrt lobe (AESA), elektronikk med gallium nitrid (GaN) i stedet for tradisjonell silisium, 360° radardekning og skuddsektor og PAC-3 MSE missiler med direkte treff ("hit-to-kill"). MEADS var opprinnelig et program for erstatning av Patriot i Europa og USA, men US Army har trukket seg fra samarbeidet, og ser til Raytheon for sitt "nye Patriot". Se tidligere innlegg om [Nye Patriot fra 2028](../articles/nye-patriot-fra-2028).
 
 MEADS ble testskutt i et scenario med både ballistiske og aerodynamiske målprofiler i 2013, og du kan lese mer om det i denne artikkelen. [Ekstern artikkel](http://m.aviationweek.com/defense/meads-hits-ballistic-cruise-missiles-test)
 

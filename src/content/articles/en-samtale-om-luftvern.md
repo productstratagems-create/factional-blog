@@ -128,4 +128,4 @@ For det fjerde må det være en politisk vilje til å bruke systemet som avskrek
 
 Til sammen må disse faktorene være på plass for at et luftvernssystem skal ha en reell avskrekkingseffekt og bidra til å opprettholde fred og stabilitet i regionen.
 
-Les også [Hva er luftvernets rolle i et nektelseskonsept?](/articles/hva-er-luftvernets-rolle-i-et-nektelseskonsept)
+Les også [Hva er luftvernets rolle i et nektelseskonsept?](../articles/hva-er-luftvernets-rolle-i-et-nektelseskonsept)

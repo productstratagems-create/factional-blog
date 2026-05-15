@@ -80,7 +80,7 @@ The Nordic picture illustrates the system’s positioning: Sweden embraced IRIS-
 
 The broader European market remains contested between the German-led ESSI framework promoting IRIS-T/Patriot/Arrow 3 and French advocacy for SAMP/T. This competition, while creating political tensions, is driving unprecedented investment in European air defense industrial capacity after decades of underinvestment.
 
-[Read more on IRIS-T SL here](/articles/iris-t-sl-vs-vl-mica-vs-camm-european-air-defense-systems-comparison)
+[Read more on IRIS-T SL here](../articles/iris-t-sl-vs-vl-mica-vs-camm-european-air-defense-systems-comparison)
 
 Image: DIEHL DEFENCE
 
