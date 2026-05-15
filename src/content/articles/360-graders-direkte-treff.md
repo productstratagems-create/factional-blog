@@ -6,8 +6,8 @@ category: analyse
 author: "Norsk luftvern"
 lang: no
 draft: false
-heroImage: "/images/img_9188.jpg"
-heroImageAlt: "Air defense systems infographic showing EMADS and CAMM capabilities"
+heroImage: "/images/ab56964c-7bfb-48a4-9f48-3442629eeec2.jpeg"
+heroImageAlt: "RAF Tornado GR4 representing aerial threats engaged by modern 360° air defense systems"
 ---
 
 Innenfor utviklingen av langtrekkende luftvern i USA og Europa satses det på 360° skuddsektor, stor ildkraft, men relativt få komponenter, og ikke minst såkallt "hit-to-kill" missiler.
