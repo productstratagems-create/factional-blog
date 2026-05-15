@@ -6,6 +6,8 @@ category: missilforsvar
 author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/image-17.png"
+heroImageAlt: "Tyskt luftvern- og missilforsvar"
 ---
 
 Overleveringsseremonien 3. desember på Holzdorf flystasjon markerte et vendepunkt for europeisk luftvern. Tysklands første operative Arrow 3-batteri, kulminasjonen av en anskaffelse på 4 milliarder euro som representerer Israels største forsvarseksport noensinne, posisjonerer Berlin i forkant av kontinental ballistisk missilforsvar. For Norge, som følger med fra den arktiske periferien med sin egen fleremilliardersatsing på luftvernmodernisering, reiser den tyske prestasjonen et ubehagelig spørsmål: hvorfor forblir norsk luftrom fullstendig uforsvart mot nettopp den trusselen Arrow 3 ble designet for å møte?

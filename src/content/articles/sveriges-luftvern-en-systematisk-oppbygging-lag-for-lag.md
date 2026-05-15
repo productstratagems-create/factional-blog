@@ -6,8 +6,8 @@ category: anskaffelse
 author: "Norsk luftvern"
 lang: no
 draft: false
-heroImage: "/images/img_9193.jpg"
-heroImageAlt: "RBS 70 NG (Saab) Swedish short-range air defense missile system"
+heroImage: "/images/create-a-highly-detailed-high-resolution-image-showcasing-a-modern-nordic-3.png"
+heroImageAlt: "Sveriges luftvern: systematisk oppbygging lag for lag"
 ---
 
 *Denne analysen dokumenterer den svenske luftvernoppbyggingen fra 2021 til i dag, med utgangspunkt i offentlig tilgjengelig materiale fra Försvarsmakten, FMV og den svenske regjering.*

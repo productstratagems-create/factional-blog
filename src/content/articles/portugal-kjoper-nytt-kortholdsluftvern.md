@@ -6,6 +6,8 @@ category: anskaffelse
 author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/img_9104-e1498201459818.jpg"
+heroImageAlt: "Portugal kjøper nytt kortholdsluftvern"
 ---
 
 Det er ikke spesifisert hvilket våpensystem det er tale om, men kontrakten omfatter åtte mobile utskytningsramper, åtte våpenterminaler og to 3D overvåkingsradarer. [Ekstern artikkel](http://www.janes.com/article/71293/portugal-to-acquire-air-defence-system-through-nato) [Ekstern artikkel](http://theportugalnews.com/news/portugal-orders-32ms-worth-of-air-defence-weapons-for-anti-aircraft-protection/42191)

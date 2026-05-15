@@ -6,7 +6,7 @@ category: luftvern
 author: "Norsk luftvern"
 lang: no
 draft: false
-heroImage: "/images/img_9189.jpg"
+heroImage: "/images/image-3.png"
 heroImageAlt: "CAMM-ER (Common Anti-Air Modular Missile Extended Range) air defense missile system"
 ---
 

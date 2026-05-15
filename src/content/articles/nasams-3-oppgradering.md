@@ -8,7 +8,7 @@ tags:
   - Kongsberg
   - Raytheon
   - oppgradering
-heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/NASAMS_3.jpg/1280px-NASAMS_3.jpg"
+heroImage: "/images/img_8295-1.jpg"
 heroImageAlt: "NASAMS 3 launcher under øvelse på Rena"
 lang: no
 featured: false
