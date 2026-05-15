@@ -27,6 +27,6 @@ Se også:
 
 [Integrasjon av luftvern ](https://wordpress.com/post/norskluftvern.com/980)
 
-[Lagdelt luftvern; men miks av hva?](../articles/lagdelt-luftvern-miks-av-hva)
+[Lagdelt luftvern; men miks av hva?](../lagdelt-luftvern-miks-av-hva)
 
-[Langtrekkende luftvern på horisonten ](../articles/langtrekkende-luftvern-og-radarhorisonten)
+[Langtrekkende luftvern på horisonten ](../langtrekkende-luftvern-og-radarhorisonten)

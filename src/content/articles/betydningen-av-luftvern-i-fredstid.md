@@ -32,8 +32,8 @@ I så måte har altså tilstedeværelsen av et potent luftvern, allerede i freds
 
 Se også:
 
-[Lagdelt luftvern; men miks av hva?](../articles/lagdelt-luftvern-miks-av-hva)
+[Lagdelt luftvern; men miks av hva?](../lagdelt-luftvern-miks-av-hva)
 
-[Luftvernets knyttede neve og de 10 bud](../articles/luftvernets-knyttede-neve)
+[Luftvernets knyttede neve og de 10 bud](../luftvernets-knyttede-neve)
 
-[Langtrekkende luftvern på horisonten ](../articles/langtrekkende-luftvern-og-radarhorisonten)
+[Langtrekkende luftvern på horisonten ](../langtrekkende-luftvern-og-radarhorisonten)

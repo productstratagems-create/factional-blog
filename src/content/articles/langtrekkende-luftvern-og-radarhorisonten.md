@@ -40,4 +40,4 @@ Se også:
 
 [Integrasjon av luftvern ](https://wordpress.com/post/norskluftvern.com/980)
 
-[Lagdelt luftvern; men miks av hva?](../articles/lagdelt-luftvern-miks-av-hva)
+[Lagdelt luftvern; men miks av hva?](../lagdelt-luftvern-miks-av-hva)

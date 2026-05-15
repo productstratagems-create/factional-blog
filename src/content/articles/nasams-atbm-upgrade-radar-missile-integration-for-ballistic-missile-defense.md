@@ -25,7 +25,7 @@ Several radar systems offer varying capabilities for ballistic missile detection
 
 ### US Radar Systems
 
-**[GhostEye MR](../articles/ghosteye-mr-ny-multifunksjonsradar-med-middels-rekkevidde-og-360-dekning)**
+**[GhostEye MR](../ghosteye-mr-ny-multifunksjonsradar-med-middels-rekkevidde-og-360-dekning)**
 
 Developed by Raytheon, this advanced Active Electronically Scanned Array (AESA) radar provides 360-degree coverage for surveillance and fire control. It has a detection range of up to 40 km for tactical targets and an optimal altitude coverage between 3,000 and 12,000 meters, with a maximum of 20,000 meters. Crucially, it's specifically designed for ballistic missile detection, capable of tracking and engaging multiple targets simultaneously. Integration with NASAMS is already underway, with tests conducted in early 2024. Each system is estimated to cost between $40-60 million, offering a direct upgrade path with minimal integration issues.
 
@@ -109,7 +109,7 @@ Developed by Israel Aerospace Industries, this missile has a range of up to 150 
 
 ### European Missile Options
 
-**[Aster 30 Block 1NT](../articles/samp-t-the-european-patriot)**
+**[Aster 30 Block 1NT](../samp-t-the-european-patriot)**
 
 From the European consortium MBDA, this missile can intercept targets at ranges over 150 km and altitudes up to 30 km, reaching hypersonic speeds. It uses an active RF seeker with "PIF-PAF" control. It's specifically designed for anti-tactical ballistic missile defense, capable of countering missiles with ranges up to 1,500 km. It's not integrated with NASAMS. Each missile costs $4-5 million and benefits from extensive development for ballistic missile defense with proven technology.
 

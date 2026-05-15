@@ -19,14 +19,14 @@ Systemet baserer seg på velkjent teknologi med mobile radarer og luftvernkanone
 
 Les også disse om mengde, miks, mobilitet og integrasjon:
 
-[Lagdelt luftvern - men miks av hva?](../articles/lagdelt-luftvern-miks-av-hva)
+[Lagdelt luftvern - men miks av hva?](../lagdelt-luftvern-miks-av-hva)
 
-[](../articles/lagdelt-luftvern-miks-av-hva)
+[](../lagdelt-luftvern-miks-av-hva)
 
-[Integrasjon av luftvern](../articles/integrasjon-av-luftvern)
+[Integrasjon av luftvern](../integrasjon-av-luftvern)
 
-[](../articles/integrasjon-av-luftvern)
+[](../integrasjon-av-luftvern)
 
-[Luftvernets knyttede neve](../articles/luftvernets-knyttede-neve)
+[Luftvernets knyttede neve](../luftvernets-knyttede-neve)
 
-[](../articles/luftvernets-knyttede-neve)
+[](../luftvernets-knyttede-neve)

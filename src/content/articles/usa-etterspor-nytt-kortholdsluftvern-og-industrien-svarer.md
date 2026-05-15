@@ -36,7 +36,7 @@ http://www.thedrive.com/the-war-zone/15030/highlights-from-the-showroom-floor-at
 Mer om AUSA: https://www.ausa.org/about-us
 
 Se også:
-[Lysende fremtid for laserluftvern](../articles/laserluftvern-kjapt-trygt-og-billig)
-[Lagdelt luftvern; men miks av hva?](../articles/lagdelt-luftvern-miks-av-hva)
-[Når er det riktig å skyte med luftvern?](../articles/luftkrig-improvisert)
-[Luftvern mot droner](../articles/luftvern-mot-droner)
+[Lysende fremtid for laserluftvern](../laserluftvern-kjapt-trygt-og-billig)
+[Lagdelt luftvern; men miks av hva?](../lagdelt-luftvern-miks-av-hva)
+[Når er det riktig å skyte med luftvern?](../luftkrig-improvisert)
+[Luftvern mot droner](../luftvern-mot-droner)

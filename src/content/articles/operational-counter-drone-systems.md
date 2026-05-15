@@ -1,7 +1,7 @@
 ---
 title: "Operational Counter-Drone Systems"
 date: 2025-03-31
-excerpt: "U.S. Systems - Coyote Block 2(../articles/coyote-block-2-counter-drone-system-us) (Raytheon) – A kinetic interceptor designed to shoot down drones. - Epirus’…"
+excerpt: "U.S. Systems - Coyote Block 2(../coyote-block-2-counter-drone-system-us) (Raytheon) – A kinetic interceptor designed to shoot down drones. - Epirus’…"
 category: missilforsvar
 author: "Norsk luftvern"
 lang: en
@@ -12,16 +12,16 @@ heroImageAlt: "Military personnel operating air defense systems with drones at s
 
 **U.S. Systems**
 
-- **[Coyote Block 2](../articles/coyote-block-2-counter-drone-system-us) **(Raytheon) – A kinetic interceptor designed to shoot down drones.
+- **[Coyote Block 2](../coyote-block-2-counter-drone-system-us) **(Raytheon) – A kinetic interceptor designed to shoot down drones.
 
-- **[Epirus’ Leonidas](../articles/epirus-leonidas-counter-drone-system-us)** (Epirus Inc.) – A high-power microwave system capable of disabling swarms.
+- **[Epirus’ Leonidas](../epirus-leonidas-counter-drone-system-us)** (Epirus Inc.) – A high-power microwave system capable of disabling swarms.
 
-- **[DroneDefender](../articles/dronedefender-counter-drone-system-us) **(Dedrone) – A handheld RF jammer used by military and law enforcement.
+- **[DroneDefender](../dronedefender-counter-drone-system-us) **(Dedrone) – A handheld RF jammer used by military and law enforcement.
 
-- **[Stryker M-SHORAD](../articles/stryker-m-shorad-counter-drone-system-us)** (Leonardo DRS) – Mounted on an armored vehicle, this system combines a laser, missiles, and a 30mm cannon.
+- **[Stryker M-SHORAD](../stryker-m-shorad-counter-drone-system-us)** (Leonardo DRS) – Mounted on an armored vehicle, this system combines a laser, missiles, and a 30mm cannon.
 
 #### **European Systems**
 
-- **[SkyWall 100 & 300](../articles/skywall-100-skywall-300-counter-drone-system-uk) **(OpenWorks Engineering, UK) – Net-based capture systems.
+- **[SkyWall 100 & 300](../skywall-100-skywall-300-counter-drone-system-uk) **(OpenWorks Engineering, UK) – Net-based capture systems.
 
-- **[Drone Dome](../articles/drone-dome-counter-drone-system-israel) **(Rafael, Israel) – Jams and destroys drones using high-energy lasers.
+- **[Drone Dome](../drone-dome-counter-drone-system-israel) **(Rafael, Israel) – Jams and destroys drones using high-energy lasers.

@@ -1,7 +1,7 @@
 ---
 title: "Air Defense Systems Cost Database: Acquisition, Interceptor, and Lifecycle Costs"
 date: 2026-01-02
-excerpt: "Updated version March 2026(../articles/air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs-editors-update-march-2026) The most comprehensive open-source reference for…"
+excerpt: "Updated version March 2026(../air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs-editors-update-march-2026) The most comprehensive open-source reference for…"
 category: anskaffelse
 author: "Norsk luftvern"
 lang: en
@@ -10,7 +10,7 @@ heroImage: "/images/img_9125.png"
 heroImageAlt: "Air Defense Systems Cost Database - anskaffelse, interceptor og livssykluskostnader"
 ---
 
-[Updated version March 2026](../articles/air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs-editors-update-march-2026)
+[Updated version March 2026](../air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs-editors-update-march-2026)
 
 *The most comprehensive open-source reference for Western air defense system costs. Updated quarterly with new procurement data, contract announcements, and cost estimates.*
 

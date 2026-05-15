@@ -34,8 +34,8 @@ Så mens MEADS selges med en høyst moderne GaN AESA 360 radar og PAC-3 missil m
 
 Les mer om MEADS og Nye Patriot i disse innleggene:
 
-[Tiden moden for MEADS?](../articles/meads-moden)
+[Tiden moden for MEADS?](../meads-moden)
 
-[Nye Patriot fra 2028](../articles/nye-patriot-fra-2028)
+[Nye Patriot fra 2028](../nye-patriot-fra-2028)
 
-[Langtrekkende luftvern på horisonten](../articles/langtrekkende-luftvern-og-radarhorisonten)
+[Langtrekkende luftvern på horisonten](../langtrekkende-luftvern-og-radarhorisonten)

@@ -23,11 +23,11 @@ light green (joined members in 2023 and 2024.*
 
 At its core, ESSI is a cooperative procurement project.3 The initiative aims to create a multi-layered, integrated air and missile defense system across the continent by streamlining the acquisition of proven, off-the-shelf systems.4 The architecture is envisioned in three layers:
 
-**Medium-range:** Centered on the German-made 5[IRIS−T SLM](../articles/iris-t-sl-vs-nasams-air-defense-systems-comparison), a system that has earned significant acclaim for its performance in Ukraine.6
+**Medium-range:** Centered on the German-made 5[IRIS−T SLM](../iris-t-sl-vs-nasams-air-defense-systems-comparison), a system that has earned significant acclaim for its performance in Ukraine.6
 
-**Long-range:** Covered by the American-made [MIM-104 Patriot system](../articles/patriot-vs-samp-t-air-and-missile-defense-systems-comparison), the long-standing backbone of many NATO allies' air defense.
+**Long-range:** Covered by the American-made [MIM-104 Patriot system](../patriot-vs-samp-t-air-and-missile-defense-systems-comparison), the long-standing backbone of many NATO allies' air defense.
 
-**Exo-atmospheric:** The highest layer, designed to intercept ballistic missiles, would be handled by the Israeli-American [Arrow 3](../articles/arrow-3-missile-defense-system-cost-analysis-and-performance-comparison) system.7
+**Exo-atmospheric:** The highest layer, designed to intercept ballistic missiles, would be handled by the Israeli-American [Arrow 3](../arrow-3-missile-defense-system-cost-analysis-and-performance-comparison) system.7
 
 As of mid-2025, the initiative has garnered the support of over 20 European nations, including the United Kingdom, the Nordic countries, and Eastern European states.8 The logic is compelling: by purchasing systems collectively, nations can reduce costs, speed up delivery, and ensure seamless interoperability from day one.9It is a pragmatic solution to a pressing problem.
 
@@ -53,7 +53,7 @@ The primary grievance is the heavy reliance on American and Israeli technology.1
 
 **Creates Political Dependencies:** The use of systems like Patriot and Arrow 3 is subject to approval from Washington D.C. This gives the United States a potential veto over aspects of European security. In a world of shifting geopolitical tides, critics ask if Europe can truly afford to have its defense capabilities dependent on the political whims of a non-European ally.
 
-**Neglects the French Vision:** France has long championed a different path—one centered on developing, producing, and procuring European systems to ensure the continent's freedom of action. This vision is embodied in the ongoing development of the [next-generation SAMP/T NG](../articles/samp-t-the-european-patriot). By endorsing ESSI, European nations are, in effect, rejecting this vision of a sovereign defense identity.
+**Neglects the French Vision:** France has long championed a different path—one centered on developing, producing, and procuring European systems to ensure the continent's freedom of action. This vision is embodied in the ongoing development of the [next-generation SAMP/T NG](../samp-t-the-european-patriot). By endorsing ESSI, European nations are, in effect, rejecting this vision of a sovereign defense identity.
 
 #### A Continent Divided on its Future
 
@@ -79,9 +79,9 @@ The initiative risks creating a two-tiered Europe: one group of nations deeply i
 
 - [The initiative aims to create a multi-layered, integrated air and missile defense system across the continent by streamlining the acquisition of proven, off-the-shelf systems.](https://www.nato.int/cps/en/natohq/news_219119.htm)
 
-- [Medium-range layer centered on the German-made IRIS-T SLM.](../articles/iris-t-sl)
+- [Medium-range layer centered on the German-made IRIS-T SLM.](../iris-t-sl)
 
-- [IRIS-T SLM has earned significant acclaim for its performance in Ukraine.](../articles/iris-t-sl-vs-nasams-air-defense-systems-comparison)
+- [IRIS-T SLM has earned significant acclaim for its performance in Ukraine.](../iris-t-sl-vs-nasams-air-defense-systems-comparison)
 
 - [Exo-atmospheric layer would be handled by the Israeli-American Arrow 3 system.](https://www.jns.org/europe/russia-ukraine-war/23/9/18/319527/)
 

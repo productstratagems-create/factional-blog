@@ -36,11 +36,11 @@ For ordens skyld; den maritime varianten av systemet kaller MBDA for Sea Ceptor.
 
 Se også:
 
-[Tsjekkia anskaffer nytt luftvern](../articles/tsjekkia-anskaffer-middelsrekkende-luftvern)
+[Tsjekkia anskaffer nytt luftvern](../tsjekkia-anskaffer-middelsrekkende-luftvern)
 
 [Ny giv for kortholdsluftvernet](http://norskluftvern.com/2017/05/24/us-army-revitaliserer-kortholdsluftvernet/)
 
-[Lagdelt luftvern; men miks av hva?](../articles/lagdelt-luftvern-miks-av-hva)
+[Lagdelt luftvern; men miks av hva?](../lagdelt-luftvern-miks-av-hva)
 
 Eksterne artikler og systemreklame:
 
