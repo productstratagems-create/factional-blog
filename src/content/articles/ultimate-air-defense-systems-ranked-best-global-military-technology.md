@@ -3,7 +3,7 @@ title: "Ultimate Air Defense Systems Ranked: Best Global Military Technology"
 date: 2025-07-14
 excerpt: "Executive Summary This comprehensive research establishes a systematic methodology for evaluating ground-based air defense systems and identifies optimal solutions for Nordic/European defense contexts. Analysis of 25+…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/image-37.png"

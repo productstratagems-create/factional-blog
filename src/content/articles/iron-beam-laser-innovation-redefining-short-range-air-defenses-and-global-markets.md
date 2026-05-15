@@ -2,8 +2,8 @@
 title: "Iron Beam: Laser Innovation Redefining Short-Range Air Defenses"
 date: 2025-04-11
 excerpt: "The modern battlefield is witnessing a rapid evolution in threats—from inexpensive rockets and mortars to agile unmanned aerial systems (UAVs) and loitering munitions. In response, Israel’s defense industry has pioneered…"
-category: luftvern
-author: "Redaksjonen"
+category: directed-energy
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8138.jpg"

@@ -3,7 +3,7 @@ title: "USA etterspør nytt kortholdsluftvern, og industrien svarer"
 date: 2017-10-10
 excerpt: "Et tidligere innlegg omhandlet hvordan den amerikanske hæren nå planlegger å revitalisere manøveravdelingene med moderne mobilt kortholdsluftvern, og at industrien er invitert til å demonstrere systemer som er…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5962-1.jpg"

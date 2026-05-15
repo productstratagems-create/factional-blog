@@ -3,7 +3,7 @@ title: "What Does the Patriot Air and Missile Defense System Cost?"
 date: 2024-11-18
 excerpt: "According to GenAI … The Patriot air and missile defense system is a significant investment, with costs varying based on specific configurations and the number of missiles included. While exact figures aren't publicly…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_3074.jpg"

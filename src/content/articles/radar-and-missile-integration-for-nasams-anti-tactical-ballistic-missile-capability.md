@@ -3,9 +3,11 @@ title: "Radar and Missile Integration for NASAMS Anti-Tactical Ballistic Missile
 date: 2017-01-01
 excerpt: "The proliferation of tactical ballistic missiles (TBMs) on the modern battlefield presents a rapidly evolving threat that challenges many of the world's most established air defense systems. The highly effective…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
+heroImage: "/images/img_8723.jpg"
+heroImageAlt: "ERIEYE AEW&C radar coverage versus ground-based radar diagram"
 ---
 
 The proliferation of tactical ballistic missiles (TBMs) on the modern battlefield presents a rapidly evolving threat that challenges many of the world's most established air defense systems. The highly effective Norwegian-American National Advanced Surface-to-Air Missile System (NASAMS), a stalwart in defending against aircraft, drones, and cruise missiles, was not originally conceived to counter the unique high-speed, high-altitude trajectory of ballistic threats. Addressing this capability gap is critical for ensuring the system's relevance and effectiveness in future conflicts.

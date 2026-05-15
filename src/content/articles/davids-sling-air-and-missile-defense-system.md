@@ -3,7 +3,7 @@ title: "David's Sling air and missile defense system"
 date: 2024-04-23
 excerpt: "Finland has decided to acquire the David's Sling long-range air defense manufactured by Israel (Rafael) and the USA (Raytheon). Cost set at at least 316 million euros. With the option of doubling. David's Sling air…"
 category: teknologi
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/image-22.png"

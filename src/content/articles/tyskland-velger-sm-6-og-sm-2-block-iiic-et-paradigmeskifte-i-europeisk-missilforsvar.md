@@ -3,9 +3,11 @@ title: "Tyskland velger SM-6 og SM-2 Block IIIC: Et paradigmeskifte i europeisk 
 date: 2025-11-15
 excerpt: "Den 14. november 2025 godkjente det amerikanske utenriksdepartementet et salg til Tyskland av Standard Missile-6 (SM-6) Block I og Standard Missile-2 (SM-2) Block IIIC til en estimert verdi på 3,9 milliarder dollar.…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/launch-test-phase-v-scenario-2.jpg"
+heroImageAlt: "Missile launch test"
 ---
 
 Den 14. november 2025 godkjente det amerikanske utenriksdepartementet et salg til Tyskland av Standard Missile-6 (SM-6) Block I og Standard Missile-2 (SM-2) Block IIIC til en estimert verdi på 3,9 milliarder dollar. 

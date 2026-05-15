@@ -3,7 +3,7 @@ title: "GhostEye MR: Ny multifunksjonsradar med middels rekkevidde og 360° dekn
 date: 2025-04-03
 excerpt: "GhostEye MR-radaren er en avansert luft- og missilforsvarsradar med middels rekkevidde og 360° dekning, utviklet for å oppdage, følge og identifisere et bredt utvalg av trusler som kryssermissiler, droner, fly og…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_8291.jpg"

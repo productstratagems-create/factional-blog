@@ -3,9 +3,11 @@ title: "Tysk-afrikansk punktforsvar: Cheetah tar opp jakten"
 date: 2019-04-27
 excerpt: "Som de sier i Frankrike: «plus ça change, plus c'est la même chose». På engelsk betyr dette noe á la «the more it changes, the more it stays the same». I en artikkel fra nettsiden til det amerikanske magasinet Popular…"
 category: teknologi
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/img_0124-e1520197361256.jpg"
+heroImageAlt: "German Bundeswehr Patriot missile launch during NATO training exercise, Crete 2015"
 ---
 
 Som de sier i Frankrike: «plus ça change, plus c'est la même chose». På engelsk betyr dette noe á la «the more it changes, the more it stays the same». I en artikkel fra nettsiden til det amerikanske magasinet Popular mechanics kan vi lese om et luftvernsystem under utvikling av det tyske Rheinmetal.

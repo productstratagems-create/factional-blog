@@ -3,7 +3,7 @@ title: "Germany’s Arrow 3 Acquisition: From Zeitenwende to Operational Reality
 date: 2025-12-06
 excerpt: "The largest defense export in Israeli history marks a paradigm shift in European missile defense On 3 December 2025, the German Air Force formally received its first operational Arrow 3 battery at Holzdorf Air Base in…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/image-17.png"

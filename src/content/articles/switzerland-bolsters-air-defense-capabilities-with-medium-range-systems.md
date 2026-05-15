@@ -3,9 +3,11 @@ title: "Switzerland Bolsters Air Defense Capabilities with Medium-Range Systems"
 date: 2024-06-22
 excerpt: "On April 30, 2024, the Swiss Federal Office for Armaments Procurement, Armasuisse, officially issued a request for proposals (RFP) to three manufacturers for the acquisition of new medium-range ground-based air defense…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
+heroImage: "/images/img_9176.jpg"
+heroImageAlt: "Medium-range air defense missile system"
 ---
 
 On April 30, 2024, the Swiss Federal Office for Armaments Procurement, Armasuisse, officially issued a request for proposals (RFP) to three manufacturers for the acquisition of new medium-range ground-based air defense systems.

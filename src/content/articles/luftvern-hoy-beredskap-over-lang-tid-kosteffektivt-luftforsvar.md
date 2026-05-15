@@ -3,7 +3,7 @@ title: "Luftvern: Høy beredskap over lang tid – kosteffektivt luftforsvar"
 date: 2025-06-30
 excerpt: "Norge og andre europeiske land har de siste årene opplevd økt behov for høy luftmilitær beredskap som følge av endrede sikkerhetspolitiske forhold, særlig etter krigen i Ukraina. Erfaringene fra både norske og allierte…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5480-1.jpg"

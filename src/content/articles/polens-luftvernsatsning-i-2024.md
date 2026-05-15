@@ -3,7 +3,7 @@ title: "Polens luftvernsatsning i 2024"
 date: 2024-04-15
 excerpt: "Polen signerte i september 2023 kontrakter med europeiske og amerikanske selskaper for å styrke landets luftforsvar. Landet planlegger å bruke 137 milliarder zloty (32,9 milliarder dollar) i 2024, tilsvarende 4% av BNP.…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5837.jpg"

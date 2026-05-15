@@ -18,7 +18,7 @@ export async function GET(context) {
       description: entry.data.excerpt,
       link: `/articles/${articleSlug(entry.id)}/`,
       categories: [entry.data.category, ...(entry.data.tags ?? [])],
-      author: entry.data.author ?? 'Redaksjonen',
+      author: entry.data.author ?? 'Norsk luftvern',
     })),
     customData: '<language>no</language>',
   });

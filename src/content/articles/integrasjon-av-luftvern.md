@@ -3,7 +3,7 @@ title: "Integrasjon av luftvern"
 date: 2017-06-13
 excerpt: "Et av de fire prinsippene for bruk av luftvern dreier seg om integrasjon mellom våpensystemer og integrasjon mellom systemer og beslutningstakere. Hvordan er dette løst i det amerikanske luftvernet? Integrasjon av…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_7243-1.jpg"

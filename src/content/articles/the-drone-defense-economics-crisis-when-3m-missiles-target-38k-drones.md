@@ -3,7 +3,7 @@ title: "The Drone Defense Economics Crisis: When $3M Missiles Target $38K Drones
 date: 2025-06-26
 excerpt: "The fundamental economics of drone warfare have created an unsustainable cost asymmetry that threatens traditional air defense models. Ukraine’s combat data reveals that drones account for 70% of combat casualties, while…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_9411.jpg"

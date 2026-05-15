@@ -3,7 +3,7 @@ title: "Patrioter i Norge og Sverige"
 date: 2023-02-19
 excerpt: "Etter at NIKE-systemet begynte å gå ut på dato mot slutten av 1980-tallet, så har Norge vurdert nytt langtrekkende luftvern minst to ganger, men så langt har det ikke ført til anskaffelser. Sverige, som besluttet å…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_8043-1.jpg"

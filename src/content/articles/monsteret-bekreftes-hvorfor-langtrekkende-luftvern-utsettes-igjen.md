@@ -3,7 +3,7 @@ title: "Mønsteret bekreftes: Hvorfor langtrekkende luftvern utsettes — igjen"
 date: 2026-03-27
 excerpt: "En analyse av de underliggende rotårsakene til utsettelsen av Norges ballistiske missilforsvar Aktualisering Den 27. mars 2026 la regjeringen Støre frem sin oppdaterte langtidsplan for forsvarssektoren. Rammen ble økt…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5411.jpg"

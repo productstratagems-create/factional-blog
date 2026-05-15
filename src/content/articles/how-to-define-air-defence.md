@@ -3,7 +3,7 @@ title: "Defining Air Defence"
 date: 2025-03-03
 excerpt: "Air defence systems can be deployed to protect national sovereignty, critical infrastructure, and deployed military forces against a broad spectrum of aerial threats. A comprehensive definition of air defence systems,…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/image-3.png"

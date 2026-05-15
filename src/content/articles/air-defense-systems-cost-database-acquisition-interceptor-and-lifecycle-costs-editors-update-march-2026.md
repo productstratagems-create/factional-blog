@@ -3,7 +3,7 @@ title: "Air Defense Systems Cost Database: Acquisition, Interceptor, and Lifecyc
 date: 2026-03-06
 excerpt: "This database(https://norskluftvern.com/2026/01/03/air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs/) was published in January 2026. In the six weeks since, two sequential real-world stress…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_9331.jpg"

@@ -2,8 +2,8 @@
 title: "The Future of SHORAD: AI, Drones, and Lasers in Modern Air Defense"
 date: 2025-07-28
 excerpt: "From Fulda Gap to the Drone Swarm: The Rebirth of Brigade Air Defense The evolution of brigade-level air defense represents one of the most critical shifts in modern warfare, driven by the urgent need to counter new…"
-category: luftvern
-author: "Redaksjonen"
+category: directed-energy
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_9410.jpg"

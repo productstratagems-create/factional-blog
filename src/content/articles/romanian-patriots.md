@@ -3,7 +3,7 @@ title: "What does the Patriot Air and Missile Defense System cost the Romanians?
 date: 2024-06-15
 excerpt: "A Detailed Look at the Missile Defense System Acquisition Introduction In July 2017, the United States government approved a potential sale of seven Patriot missile batteries to Romania for $3.9 billion. The following…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_5813.jpg"

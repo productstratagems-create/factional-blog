@@ -3,7 +3,7 @@ title: "European Prioritization of Ground Based Air Defenses: Strategic Initiati
 date: 2025-03-12
 excerpt: "The landscape of European ground based air defense (GBAD) has undergone significant transformation in recent years, with leading European nations increasingly prioritizing the development and deployment of advanced air…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_7276-1.jpg"

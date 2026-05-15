@@ -3,7 +3,7 @@ title: "Det norske luftvernartilleriet - et kort historisk tilbakeblikk"
 date: 2017-05-22
 excerpt: "Arbeidet med å bygge opp luftvernet i Norge etter krigen, startet i oktober 1945, med oberstløytnant Leif Husjord som nylig utnevnt Generalinspektør og sjef for Luftvernartilleriet. Drøyt åtte år senere, i 1953, hadde…"
 category: history
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_7119-1.jpg"

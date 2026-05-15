@@ -3,7 +3,7 @@ title: "Sveits vurderer nytt luftvern"
 date: 2017-06-22
 excerpt: "I 2014 ble planene om kjøp av 22 Gripen-E skrinlagt, men sveitsiske myndigheter har etter dette vært i forhandlinger med det tyske Rheinmetall og ettersigende også signert en kontrakt i 2016 for levetidsforlengelse av…"
 category: anskaffelse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5426-1.jpg"

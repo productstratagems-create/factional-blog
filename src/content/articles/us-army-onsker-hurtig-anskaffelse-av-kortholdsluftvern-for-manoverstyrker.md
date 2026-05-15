@@ -3,7 +3,7 @@ title: "US Army ønsker hurtig anskaffelse av kortholdsluftvern for manøverstyr
 date: 2017-12-08
 excerpt: "Den amerikanske hæren har forespurt industrien om en midlertidig luftvernløsning på 72 Stryker kjøretøy for manøveravdelinger. Anskaffelsen er imidlertid ikke like rundt hjørnet. Av kjente krav til systemet kan det…"
 category: anskaffelse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5413-1.jpg"

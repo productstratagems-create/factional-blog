@@ -3,7 +3,7 @@ title: "Norsk luftvern i den moderne tidsalder"
 date: 2025-07-17
 excerpt: "Det strategiske grunnlaget for norsk luftvern Norge står overfor en fundamentalt endret sikkerhetssituasjon. Det nye langtidsplanen for forsvaret (2025-2036) mer enn dobler forsvarsbudsjettet i reelle termer, med…"
 category: anskaffelse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/create-a-highly-detailed-high-resolution-image-showcasing-a-modern-nordic-1.png"

@@ -3,7 +3,7 @@ title: "The European Patriot - SAMP/T Air and Missile Defense System"
 date: 2024-05-01
 excerpt: "The SAMP/T air defense system has emerged as Europe’s flagship alternative to the U.S.-made Patriot, offering advanced capabilities while reinforcing continental defense sovereignty. Developed through Franco-Italian…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_5404-1.jpg"

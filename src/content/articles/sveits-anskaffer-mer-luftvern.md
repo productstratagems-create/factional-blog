@@ -3,7 +3,7 @@ title: "Sveits anskaffer mer luftvern"
 date: 2024-05-13
 excerpt: "Den 30. april 2024 utstedte det sveitsiske føderale kontoret for forsvarsanskaffelser, Armasuisse, offisielt en forespørsel om forslag til tre produsenter for anskaffelse av nye bakkebaserte luftvernsystemer med middels…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5443.jpg"

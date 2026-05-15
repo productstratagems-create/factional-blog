@@ -3,7 +3,7 @@ title: "Høy beredskap over lang tid"
 date: 2017-05-27
 excerpt: "caption id=\"attachment960\" align=\"alignnone\" width=\"2400\"IMG8974(https://norskluftvern.com/wp-content/uploads/2017/06/img8974.jpg) Iron Dome, Patriot og Arrow (Israel Defense Forces)/caption Et par artikler som gir et…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5447-1.jpg"

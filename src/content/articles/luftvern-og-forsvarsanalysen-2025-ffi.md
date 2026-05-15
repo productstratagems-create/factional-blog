@@ -3,7 +3,7 @@ title: "Luftvern og Forsvarsanalysen 2025 (FFI)"
 date: 2025-02-18
 excerpt: "Innledning Luftvern spiller en avgjørende rolle i Norges forsvarsevne, særlig i lys av økende sikkerhetspolitiske utfordringer. Forsvarsanalysen 2025 fremhever viktige funn og anbefalinger knyttet til luftvern, med fokus…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_7236-1.png"

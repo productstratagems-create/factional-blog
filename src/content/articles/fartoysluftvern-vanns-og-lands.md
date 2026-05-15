@@ -3,7 +3,7 @@ title: "Fartøysluftvern til vanns og til lands"
 date: 2017-06-04
 excerpt: "Typisk for større marinefartøy i luftvernsammenheng er oppsett med flere ulike våpensystemer og tilhørende sensorer basert på forskjellig teknologi, alt under en felles ledelse. En miks av integrert luftvern, om du vil.…"
 category: teknologi
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_7214-1.jpg"

@@ -1,34 +1,37 @@
 ---
 import { getCollection } from 'astro:content';
-import { articleHref, assetSrc } from '../utils/slug';
+import { articleHref } from '../utils/slug';
 
-const CATEGORY_LABELS: Record<string, string> = {
-  luftvern:        'Luftvern',
-  missilforsvar:   'Missilforsvar',
-  'missile-systems': 'Missilsystemer',
-  procurement:     'Anskaffelser',
-  anskaffelse:     'Anskaffelse',
-  policy:          'Forsvarspolitikk',
-  exercises:       'Øvelser',
-  history:         'Historie',
-  analyse:         'Analyse',
-  analysis:        'Analyse',
-  teknologi:       'Teknologi',
-  nato:            'NATO',
-};
+// Strip markdown syntax to plain searchable text
+function extractText(raw = '') {
+  return raw
+    .replace(/!\[.*?\]\(.*?\)/g, '')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/^#{1,6}\s+/gm, '')
+    .replace(/`{1,3}[\s\S]*?`{1,3}/g, ' ')
+    .replace(/[*_]{1,3}([^*_\n]+)[*_]{1,3}/g, '$1')
+    .replace(/^\|.*$/gm, '')
+    .replace(/^\s*[-*+>]\s+/gm, '')
+    .replace(/&[a-z]+;/g, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 
 const articles = await getCollection('articles', ({ data }) => !data.draft);
 const searchIndex = articles
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .map(entry => ({
-    title:         entry.data.title,
-    href:          articleHref(entry.id),
-    categorySlug:  entry.data.category?.toLowerCase() ?? '',
-    excerpt:       entry.data.excerpt ?? '',
-    lang:          entry.data.lang ?? 'no',
-    date:          entry.data.date.toLocaleDateString('nb-NO', { day: 'numeric', month: 'short', year: 'numeric' }),
-    thumb:         entry.data.heroImage ? assetSrc(entry.data.heroImage) : null,
-  }));
+  .map(entry => {
+    const plain = extractText(entry.body ?? '');
+    const firstPara = plain.split(/\s{2,}/).find(s => s.trim().length > 25) ?? '';
+    return {
+      title:     entry.data.title,
+      href:      articleHref(entry.id),
+      date:      entry.data.date.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' }),
+      firstPara: firstPara.slice(0, 250),
+      body:      plain.slice(0, 500),
+    };
+  });
 ---
 
 <dialog class="search-dialog" id="search-dialog" aria-label="Søk i artikler">
@@ -75,49 +78,18 @@ const searchIndex = articles
 </dialog>
 
 <script define:vars={{ searchIndex }}>
-  // Inline translations for dynamically-generated strings
   const SEARCH_T = {
     no: {
-      recent:  'Siste artikler',
       among:   (n) => `Søk blant ${n} artikler`,
       result:  (n) => n === 1 ? `${n} resultat` : `${n} resultater`,
       none:    (q) => `Ingen artikler matcher «${q}»`,
-      tryOther:'Prøv et annet søkeord.',
-      cats: {
-        luftvern:        'Luftvern',
-        missilforsvar:   'Missilforsvar',
-        'missile-systems': 'Missilsystemer',
-        anskaffelse:     'Anskaffelse',
-        procurement:     'Anskaffelser',
-        policy:          'Forsvarspolitikk',
-        exercises:       'Øvelser',
-        history:         'Historie',
-        analyse:         'Analyse',
-        analysis:        'Analyse',
-        teknologi:       'Teknologi',
-        nato:            'NATO',
-      },
+      tryOther: 'Prøv et annet søkeord.',
     },
     en: {
-      recent:  'Recent articles',
       among:   (n) => `Search among ${n} articles`,
       result:  (n) => n === 1 ? `${n} result` : `${n} results`,
       none:    (q) => `No articles match «${q}»`,
-      tryOther:'Try a different search term.',
-      cats: {
-        luftvern:        'Air Defense',
-        missilforsvar:   'Missile Defense',
-        'missile-systems': 'Missile Defense',
-        anskaffelse:     'Procurement',
-        procurement:     'Procurement',
-        policy:          'Defense Policy',
-        exercises:       'Exercises',
-        history:         'History',
-        analyse:         'Analysis',
-        analysis:        'Analysis',
-        teknologi:       'Technology',
-        nato:            'NATO',
-      },
+      tryOther: 'Try a different search term.',
     },
   };
 
@@ -141,7 +113,7 @@ const searchIndex = articles
     lastTrigger = trigger;
     input.value = '';
     activeIdx = -1;
-    renderEmpty();
+    renderIdle();
     dialog.showModal();
     requestAnimationFrame(() => input.focus());
   }
@@ -215,36 +187,12 @@ const searchIndex = articles
     return text.replace(new RegExp(`(${escRe(q)})`, 'gi'), '<mark>$1</mark>');
   }
 
-  // Show text around the match, not always from the start
-  function snippet(text, q, ctx = 90) {
-    if (!text) return '';
-    const idx = text.toLowerCase().indexOf(q.toLowerCase());
-    if (idx === -1 || !q) return text.slice(0, ctx * 2) + (text.length > ctx * 2 ? '…' : '');
-    const start = Math.max(0, idx - ctx);
-    const end   = Math.min(text.length, idx + q.length + ctx);
-    return (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '');
-  }
-
   function resultHTML(a, i, q) {
-    const t = SEARCH_T[sl()];
-    const catLabel = (a.categorySlug && t.cats[a.categorySlug]) || a.categorySlug || '';
-    const thumb = a.thumb
-      ? `<img class="si-thumb" src="${a.thumb}" alt="" loading="lazy" decoding="async">`
-      : `<div class="si-thumb si-thumb-empty"><span>NL</span></div>`;
-    const titleHTML   = q ? highlight(a.title, q)          : a.title;
-    const excerptHTML = q ? highlight(snippet(a.excerpt, q), q) : '';
     return `
       <li id="search-result-${i}" role="option" aria-selected="false" class="search-item">
         <a href="${a.href}" class="search-item-link">
-          ${thumb}
-          <div class="si-body">
-            <span class="si-meta">${catLabel}${catLabel && a.date ? ' · ' : ''}${a.date}</span>
-            <span class="si-title">${titleHTML}</span>
-            ${excerptHTML ? `<span class="si-excerpt">${excerptHTML}</span>` : ''}
-          </div>
-          <svg class="si-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
-            <path d="M5 8h6M8 5l3 3-3 3"/>
-          </svg>
+          <span class="si-title">${a.title}</span>
+          <span class="si-date">${a.date}</span>
         </a>
       </li>`;
   }
@@ -255,45 +203,50 @@ const searchIndex = articles
 
   // ── Render ───────────────────────────────────────────────────
 
-  function renderEmpty() {
-    const t = SEARCH_T[sl()];
-    const recent = searchIndex.slice(0, 6);
-    status.textContent = t.among(searchIndex.length);
+  function renderIdle() {
+    status.textContent = SEARCH_T[sl()].among(searchIndex.length);
     input.removeAttribute('aria-activedescendant');
-    listbox.innerHTML = `
-      <li class="search-section-label" aria-hidden="true">${t.recent}</li>
-      ${recent.map((a, i) => resultHTML(a, i, '')).join('')}`;
-    attachResultListeners();
+    listbox.removeAttribute('data-has-results');
+    listbox.innerHTML = '';
   }
 
   function renderResults(query) {
     const t  = SEARCH_T[sl()];
     const q  = query.trim();
     const ql = q.toLowerCase();
-    if (!q) { renderEmpty(); return; }
 
-    const matches = searchIndex.filter(a =>
-      a.title.toLowerCase().includes(ql) || a.excerpt.toLowerCase().includes(ql)
-    );
+    if (!q) { renderIdle(); return; }
 
-    const total = matches.length;
-    status.textContent = total
-      ? t.result(total)
-      : t.none(q);
+    // Rank: title match (3) > first-paragraph match (2) > body match (1)
+    const scored = searchIndex
+      .map(a => {
+        const score = a.title.toLowerCase().includes(ql) ? 3
+          : a.firstPara.toLowerCase().includes(ql)       ? 2
+          : a.body.toLowerCase().includes(ql)            ? 1
+          : 0;
+        return { a, score };
+      })
+      .filter(x => x.score > 0)
+      .sort((x, y) => y.score - x.score);
+
+    const total = scored.length;
+    status.textContent = total ? t.result(total) : t.none(q);
+
+    listbox.setAttribute('data-has-results', '');
 
     if (!total) {
       listbox.innerHTML = `<li class="no-results">${t.none('<strong>' + q + '</strong>')} ${t.tryOther}</li>`;
       return;
     }
 
-    listbox.innerHTML = matches.slice(0, 12).map((a, i) => resultHTML(a, i, q)).join('');
+    listbox.innerHTML = scored.map(({ a }, i) => resultHTML(a, i, q)).join('');
     attachResultListeners();
   }
 
   // Re-render when lang changes while modal is open
   document.addEventListener('i18n:change', () => {
     if (!dialog.open) return;
-    input.value.trim() ? renderResults(input.value) : renderEmpty();
+    input.value.trim() ? renderResults(input.value) : renderIdle();
   });
 </script>
 
@@ -382,144 +335,84 @@ const searchIndex = articles
   }
 
   /* ── List ── */
+
+  /* Collapsed by default — expands only when results are present */
   .search-listbox {
     list-style: none;
     margin: 0;
-    padding: 0.4rem 0;
-    overflow-y: auto;
-    flex: 1;
+    padding: 0;
+    flex: 0 0 0;
+    overflow: hidden;
     scroll-padding-block: 0.4rem;
   }
 
-  /* Section label (e.g. "Siste artikler") */
-  .search-section-label {
-    padding: 0.35rem 1rem 0.25rem;
-    font-family: var(--font-ui);
-    font-size: 0.65rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--color-muted);
+  .search-listbox[data-has-results] {
+    flex: 1 1 auto;
+    padding: 0.4rem 0;
+    overflow-y: auto;
   }
 
-  .no-results {
-    padding: 1.5rem 1rem;
+  /* Footer gets a top border only when separated from a result list */
+  .search-listbox[data-has-results] + .search-footer {
+    border-top: 1px solid var(--color-border);
+  }
+
+  /* ── Result rows — all injected via innerHTML, must use :global ── */
+
+  :global(.no-results) {
+    padding: 1.75rem 1rem;
     font-family: var(--font-ui);
     font-size: 0.875rem;
     color: var(--color-muted);
     text-align: center;
   }
+  :global(.no-results strong) { color: var(--color-heading); }
 
-  .no-results strong { color: var(--color-heading); }
+  :global(.search-item) { display: block; }
 
-  /* ── Result row ── */
-  .search-item { display: block; }
-
-  .search-item-link {
+  :global(.search-item-link) {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    padding: 0.6rem 1rem;
+    gap: 1rem;
+    padding: 0.65rem 1.25rem 0.65rem calc(1.25rem - 3px);
+    border-left: 3px solid transparent;
     text-decoration: none;
-    border-radius: 6px;
-    margin: 0 0.4rem;
-    transition: background 0.1s;
+    color: inherit;
+    transition: background 0.1s, border-color 0.12s;
     outline: none;
   }
 
-  .search-item-link:hover {
+  :global(.search-item-link:hover) {
     background: var(--color-surface);
   }
 
-  /* Keyboard-selected item: strong teal ring */
-  .search-item.is-active .search-item-link {
+  :global(.search-item.is-active .search-item-link) {
     background: var(--color-surface);
-    box-shadow: inset 0 0 0 2px var(--color-teal);
+    border-left-color: var(--color-teal);
   }
 
-  /* Thumbnail */
-  .si-thumb {
-    flex-shrink: 0;
-    width: 56px;
-    height: 42px;
-    border-radius: 4px;
-    object-fit: cover;
-    display: block;
-    background: var(--color-surface);
-  }
-
-  .si-thumb-empty {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, var(--color-heading) 0%, #3D1515 100%);
-    border-radius: 4px;
-  }
-
-  .si-thumb-empty span {
-    font-family: var(--font-display);
-    font-size: 0.7rem;
-    font-weight: 800;
-    color: rgba(255,255,255,0.25);
-    letter-spacing: 0.1em;
-  }
-
-  /* Content block */
-  .si-body {
+  :global(.si-title) {
     flex: 1;
     min-width: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .si-meta {
     font-family: var(--font-ui);
-    font-size: 0.65rem;
-    color: var(--color-muted);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .si-title {
-    font-family: var(--font-ui);
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 0.875rem;
+    font-weight: 500;
     color: var(--color-heading);
-    line-height: 1.25;
+    line-height: 1.3;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  .si-excerpt {
-    font-family: var(--font-body);
-    font-size: 0.75rem;
-    line-height: 1.4;
-    color: var(--color-muted);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  /* Arrow chevron — visible on hover/active */
-  .si-arrow {
+  :global(.si-date) {
     flex-shrink: 0;
-    width: 16px;
-    height: 16px;
-    color: var(--color-border);
-    transition: color 0.1s, transform 0.1s;
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    color: #9CA3AF;
+    white-space: nowrap;
   }
 
-  .search-item-link:hover .si-arrow,
-  .search-item.is-active .si-arrow {
-    color: var(--color-teal);
-    transform: translateX(2px);
-  }
-
-  /* Highlight marks */
-  .search-item-link :global(mark) {
+  :global(mark) {
     background: rgba(91, 191, 181, 0.3);
     color: inherit;
     border-radius: 2px;
@@ -534,7 +427,6 @@ const searchIndex = articles
     align-items: center;
     gap: 1rem;
     padding: 0.5rem 1rem;
-    border-top: 1px solid var(--color-border);
     background: var(--color-surface);
   }
 

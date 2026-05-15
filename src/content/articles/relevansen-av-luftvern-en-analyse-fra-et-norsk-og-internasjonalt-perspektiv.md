@@ -3,7 +3,7 @@ title: "Relevansen av luftvern: En analyse fra et norsk og internasjonalt perspe
 date: 2023-06-24
 excerpt: "Luftvern er en avgjørende del av forsvarsstrategien til mange nasjoner over hele verden. Det er et forsvarssystem som er utviklet for å beskytte mot fiendtlige luftangrep, inkludert fly, helikoptre, missiler og droner. I…"
 category: history
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5488-1.jpg"

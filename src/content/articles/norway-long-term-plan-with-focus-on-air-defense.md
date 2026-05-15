@@ -3,9 +3,11 @@ title: "Norway: Long-term plan with focus on air defense"
 date: 2024-06-22
 excerpt: "Prop. 87 S (2023-2024) The Norwegian government proposes to strengthen the country's defense with 600 billion kroner over the next 12 years,from 2024 to 2036. This significant investment aims to enhance Norway's ability…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
+heroImage: "/images/img_0282.png"
+heroImageAlt: "Norwegian air defense planning"
 ---
 
 **Prop. 87 S (2023-2024)**

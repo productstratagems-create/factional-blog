@@ -3,7 +3,7 @@ title: "Tysklands satsning på luftvern og missilforsvar og Norges ballistiske m
 date: 2025-12-06
 excerpt: "Overleveringsseremonien 3. desember på Holzdorf flystasjon markerte et vendepunkt for europeisk luftvern. Tysklands første operative Arrow 3-batteri, kulminasjonen av en anskaffelse på 4 milliarder euro som representerer…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 ---

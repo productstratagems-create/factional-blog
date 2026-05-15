@@ -3,7 +3,7 @@ title: "Når er det riktig å skyte med luftvern?"
 date: 2017-06-04
 excerpt: "Når tilsynelatende truende objekter flyr gjennom lufta, og tiden de er der oppe ikke tillater oppsending av jagerfly, hva er alternativet da? Skyter man med luftvern? De følgende artiklene omhandler hvordan komplekse og…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/image-29.png"

@@ -3,7 +3,7 @@ title: "Missilforsvar: hva er det?"
 date: 2017-06-05
 excerpt: "Hva menes med missilforsvar? Er det abstrakt som et begrep, en funksjon eller en oppgave eller noe håndfast som et våpensystem? caption id=\"attachment919\" align=\"alignnone\"…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_8834.jpg"

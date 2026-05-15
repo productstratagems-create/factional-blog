@@ -3,7 +3,7 @@ title: "David’s Sling vs. SAMP/T Air and Missile Defense Systems Comparison"
 date: 2025-03-18
 excerpt: "Introduction The modern security landscape is characterized by an increasing proliferation of sophisticated aerial threats, including ballistic missiles, cruise missiles, rockets, and advanced aircraft. This necessitates…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_5454-2-1.jpg"

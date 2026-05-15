@@ -3,7 +3,7 @@ title: "Gun-Based Air Defense Systems: Past, Present and Future"
 date: 2025-03-14
 excerpt: "The Resurgence and Revenge of the Gun The landscape of gun-based air defense artillery systems has undergone significant transformation throughout military history, with recent developments indicating a renaissance for…"
 category: history
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_7244-1.jpg"

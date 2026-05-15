@@ -3,7 +3,7 @@ title: "Sammenligning av utviklingen i bakkebaserte luftforsvarssystemer i Europ
 date: 2025-02-16
 excerpt: "Europas luftforsvarsprioriteringer har gått fra moderate til betydelige investeringer etter 2022, mens USA har opprettholdt en jevn utviklingskurve med fokus på globalt forsvar. Fra 2022 har investeringene i Europa…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5966-1.jpg"

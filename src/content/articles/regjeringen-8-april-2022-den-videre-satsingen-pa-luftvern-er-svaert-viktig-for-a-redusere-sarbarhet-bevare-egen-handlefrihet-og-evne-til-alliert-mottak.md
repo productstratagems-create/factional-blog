@@ -3,7 +3,7 @@ title: "Regjeringen 8. april 2022: «Den videre satsingen på luftvern er svært
 date: 2022-04-13
 excerpt: "Regjeringens melding nr. 10 til Stortinget sier følgende om de forsvarspolitiske ambisjonene innenfor tema norsk luftvern: Gitt trusselbildet er økt evne til beskyttelse mot lufttrusler i form av langtrekkende…"
 category: nato
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5401.jpg"

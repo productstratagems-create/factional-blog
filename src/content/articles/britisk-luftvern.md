@@ -3,9 +3,11 @@ title: "Britisk luftvern"
 date: 2024-04-22
 excerpt: "Tobias Ellwood, MP for Bournemouth East, spurte om typene luftvernsystemer som er i bruk på tvers av Royal Navy, Army og Royal Air Force. Svaret fra James Cartlidge MP, statsminister for forsvar, listet opp ulike…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
+heroImage: "/images/img_9188.jpg"
+heroImageAlt: "Air defense systems infographic showing EMADS and CAMM capabilities"
 ---
 
 Tobias Ellwood, MP for Bournemouth East, spurte om typene luftvernsystemer som er i bruk på tvers av Royal Navy, Army og Royal Air Force.

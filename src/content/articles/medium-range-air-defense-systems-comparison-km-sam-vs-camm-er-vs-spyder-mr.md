@@ -3,7 +3,7 @@ title: "Medium-Range Air Defense Systems Comparison: KM-SAM vs CAMM-ER vs SPYDER
 date: 2025-07-07
 excerpt: "Executive Summary The medium-range air defense market presents three distinct technological approaches, each optimized for different operational requirements and strategic priorities. KM-SAM emerges as the cost-effective…"
 category: nato
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_5483-1.jpg"

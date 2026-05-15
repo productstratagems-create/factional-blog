@@ -3,7 +3,7 @@ title: "Five Factors for a Strong Air Defense"
 date: 2024-04-08
 excerpt: "Here are some points that may be useful if someone is wondering what can/should be included in a strengthened air defense. Share them with those concerned. 1) A distributed network of mobile and fixed passive and active…"
 category: luftvern
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8127-1.jpg"

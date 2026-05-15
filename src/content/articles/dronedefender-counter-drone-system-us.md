@@ -3,9 +3,11 @@ title: "DroneDefender Counter-Drone System (US)"
 date: 2025-03-30
 excerpt: "DroneDefender, a portable counter-drone system developed by Dedrone. Utilizing radio-frequency (RF) jamming, DroneDefender provides a non-kinetic method for neutralizing unmanned aerial threats, primarily commercial…"
 category: teknologi
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
+heroImage: "/images/img_8762.jpg"
+heroImageAlt: "Commercial quadcopter drone in flight"
 ---
 
 DroneDefender, a portable counter-drone system developed by Dedrone. Utilizing radio-frequency (RF) jamming, DroneDefender provides a non-kinetic method for neutralizing unmanned aerial threats, primarily commercial drones.

@@ -3,9 +3,11 @@ title: "Norwegian Air Defense Artillery - A Brief Historical Review"
 date: 2024-04-06
 excerpt: "The work of building up air defense in Norway after the war began in October 1945, with Lieutenant Colonel Leif Husjord as the newly appointed Inspector General and Chief of Air Defense Artillery. Just over eight years…"
 category: analyse
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
+heroImage: "/images/the-british-army-in-norway-april-june-1940-n182-1b2ff4.jpg"
+heroImageAlt: "British anti-aircraft gun crew in Norway, April–June 1940"
 ---
 
 The work of building up air defense in Norway after the war began in October 1945, with Lieutenant Colonel Leif Husjord as the newly appointed Inspector General and Chief of Air Defense Artillery. Just over eight years later, in 1953, the Air Defense Artillery had established itself as the second largest branch of the Armed Forces. And the plan for mobilization was for a period of over 20,000 officers and soldiers, to man 45 heavy and 39 light batteries distributed over 21 battalions. The equipment was a mixture of American and British materiel, as well as German materiel taken over after the war. In addition, the Home Guard Air Defense and the Army could set up an additional 29 gun batteries. In 1955, the Boyesen Committee recommended that the air defense, which had been subordinated to the Army in 1952, should be returned to the Air Force. This transfer took place gradually until 1960, with a downsizing of the air defense structure, in which the remaining battalions were transferred to military airfields. The Air Force then changed its name back to the Air Force. At the same time, the Storting accepted an offer from the United States in 1957 to receive the NIKE air defense missile system. With coverage at all altitudes and a range of over 150 km from four locations around Oslo, the country had for the first time an area air defense for Eastern Norway. NIKE was operational from 1960 until its official decommissioning on January 9, 1991.

@@ -3,7 +3,7 @@ title: "The Complete Air Defense Systems Comparison Matrix: Western Systems Rank
 date: 2026-01-02
 excerpt: "A systematic guide to understanding how Patriot, SAMP/T, THAAD, Arrow, NASAMS, IRIS-T, and other NATO-aligned systems compare across range, cost, capability, and operational deployment. Why This Comparison Matters…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 featured: true

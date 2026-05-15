@@ -3,7 +3,7 @@ title: "THAAD and ARROW vs. PATRIOT and SAMP/T"
 date: 2025-06-25
 excerpt: "How Four Nations Built the World’s Most Advanced Shield - And What It Reveals About Modern Alliance Strategy The world’s most sophisticated missile defense systems tell a story that extends far beyond their technical…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/img_8317-1.jpg"

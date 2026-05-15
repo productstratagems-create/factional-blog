@@ -3,7 +3,7 @@ title: "Langtidsplanen med satsing på luftvern"
 date: 2024-04-10
 excerpt: "Prop. 87 S (2023–2024) Regjeringen ønsker å styrke forsvaret av Norge med 600 milliarder kroner de neste 12 årene, fra i 2024 til 2036. Regjeringen ønsker at det kjøpes langtrekkende luftvern som skal beskytte Norge mot…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_3027.jpg"

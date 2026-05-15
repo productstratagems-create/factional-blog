@@ -3,7 +3,7 @@ title: "The Legacy of MEADS vs. Next-Generation Patriot: Shaping the Future of A
 date: 2025-07-31
 excerpt: "In the world of modern air and missile defense, few projects were as ambitious—or as consequential—as the Medium Extended Air Defense System (MEADS). Conceived as a collaborative effort between the United States,…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
 heroImage: "/images/sam-d_launcher.jpg"

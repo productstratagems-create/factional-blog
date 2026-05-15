@@ -12,13 +12,14 @@ const { currentPath = import.meta.env.BASE_URL } = Astro.props;
 
 const HOME = siteHref('/');
 const nav = [
-  { href: HOME,                                   label: 'Forsiden',    i18n: 'nav.home'        },
-  { href: siteHref('/categories/luftvern'),       label: 'Luftvern',    i18n: 'nav.luftvern'    },
-  { href: siteHref('/categories/missilforsvar'),  label: 'Missilforsvar', i18n: 'nav.missile'  },
-  { href: siteHref('/categories/teknologi'),      label: 'Teknologi',   i18n: 'nav.tech'        },
-  { href: siteHref('/categories/anskaffelse'),    label: 'Anskaffelser',i18n: 'nav.procurement' },
-  { href: siteHref('/categories/analyse'),        label: 'Analyse',     i18n: 'nav.analysis'    },
-  { href: siteHref('/about'),                     label: 'Om oss',      i18n: 'nav.about'       },
+  { href: HOME,                                        label: 'Forsiden',       i18n: 'nav.home'            },
+  { href: siteHref('/categories/luftvern'),            label: 'Luftvern',       i18n: 'nav.luftvern'        },
+  { href: siteHref('/categories/missilforsvar'),       label: 'Missilforsvar',  i18n: 'nav.missile'         },
+  { href: siteHref('/categories/teknologi'),           label: 'Teknologi',      i18n: 'nav.tech'            },
+  { href: siteHref('/categories/directed-energy'),     label: 'Høyenergivåpen', i18n: 'nav.directed-energy', sub: true },
+  { href: siteHref('/categories/anskaffelse'),         label: 'Anskaffelser',   i18n: 'nav.procurement'     },
+  { href: siteHref('/categories/analyse'),             label: 'Analyse',        i18n: 'nav.analysis'        },
+  { href: siteHref('/about'),                          label: 'Om oss',         i18n: 'nav.about'           },
 ];
 
 function isActive(href: string) {
@@ -51,11 +52,11 @@ function isActive(href: string) {
     <div class="header-right">
       <nav class="site-nav" aria-label="Navigasjon" data-i18n-aria="nav.aria">
         <ul role="list">
-          {nav.map(({ href, label, i18n }) => (
+          {nav.map(({ href, label, i18n, sub }) => (
             <li>
               <a
                 href={href}
-                class:list={['nav-link', { active: isActive(href) }]}
+                class:list={['nav-link', { active: isActive(href), 'nav-link--sub': sub }]}
                 data-i18n={i18n}
                 {...isActive(href) ? { 'aria-current': 'page' } : {}}
               >
@@ -83,15 +84,15 @@ function isActive(href: string) {
     </div>
     <nav aria-label="Mobilnavigasjon" data-i18n-aria="nav.mobile-aria">
       <ul role="list">
-        {nav.map(({ href, label, i18n }) => (
+        {nav.map(({ href, label, i18n, sub }) => (
           <li>
             <a
               href={href}
-              class:list={['nav-link', { active: isActive(href) }]}
+              class:list={['nav-link', { active: isActive(href), 'nav-link--sub': sub }]}
               data-i18n={i18n}
               {...isActive(href) ? { 'aria-current': 'page' } : {}}
             >
-              {label}
+              {sub ? '↳ ' : ''}{label}
             </a>
           </li>
         ))}
@@ -169,6 +170,16 @@ function isActive(href: string) {
     border-bottom-color: var(--color-teal);
   }
 
+  .nav-link--sub {
+    font-size: 0.68rem;
+    opacity: 0.75;
+  }
+
+  .nav-link--sub:hover,
+  .nav-link--sub.active {
+    opacity: 1;
+  }
+
   /* ── Hamburger ── */
   .nav-hamburger {
     display: flex;
@@ -219,6 +230,7 @@ function isActive(href: string) {
   }
 
   .mobile-nav-wrap .nav-link { font-size: 0.95rem; padding-block: 0.4em; }
+  .mobile-nav-wrap .nav-link--sub { padding-left: 1.25rem; font-size: 0.85rem; }
 
   .nav-toggle-input:checked ~ .mobile-nav-wrap { display: block; }
 
@@ -230,7 +242,7 @@ function isActive(href: string) {
   }
 
   /* ── Desktop ── */
-  @media (min-width: 769px) {
+  @media (min-width: 1024px) {
     .header-inner { grid-template-columns: 120px 1fr auto; }
 
     .site-nav { display: block; }

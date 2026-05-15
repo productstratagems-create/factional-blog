@@ -3,7 +3,7 @@ title: "EMADS treffer blinken?"
 date: 2017-07-09
 excerpt: "Systemet EMADS, ikke et klassisk \"fiks ferdig hyllevaresystem\" med alt du trenger i en eske, men heller en idé, der utskytningsplattform med missiler er eneste tydelige fellesnevner, og resten synes å være opp til kjøper…"
 category: teknologi
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_3061.jpg"

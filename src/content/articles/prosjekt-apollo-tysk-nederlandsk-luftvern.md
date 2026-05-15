@@ -3,7 +3,7 @@ title: "Prosjekt Apollo: tysk-nederlandsk luftvernsamarbeid snart klart til skud
 date: 2017-10-03
 excerpt: "En felles tysk-nederlandsk deployerbar innsatsstyrke kan snart stå klar til tjeneste for NATO. Kun de siste forberedelsene gjenstår. Men samarbeidet er mer omfattende enn kun et styrkebidrag til forsvarsalliansen.…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_5403.jpg"

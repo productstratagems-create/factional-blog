@@ -11,7 +11,7 @@ tags:
   - luftvernets utvikling
 lang: no
 featured: false
-author: "Redaksjonen"
+author: "Norsk luftvern"
 draft: false
 heroImage: "/images/cropped-img_7371.jpeg"
 heroImageAlt: "Snow-covered mountainous Norwegian terrain with forests and valleys"

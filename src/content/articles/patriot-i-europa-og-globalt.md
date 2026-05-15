@@ -3,7 +3,7 @@ title: "Hva koster Patriot i Europa og globalt?"
 date: 2023-02-24
 excerpt: "Patriot er i dag solgt til, eller i bruk av, hele 18 land verden over. I Europa er brukerne Nederland (1987), Tyskland (1989), Hellas (1999), Spania (2004), Romania (2017), Sverige (2018), Polen (2018) og Sveits (2022).…"
 category: missilforsvar
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: no
 draft: false
 heroImage: "/images/img_8835.jpg"

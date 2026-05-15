@@ -3,9 +3,11 @@ title: "An outsider’s view of the Norwegian air defense artillery"
 date: 2023-05-27
 excerpt: "Title: Norway's Air Defense Artillery: A Necessity in a Changing World Introduction: Norway's air defense artillery has a rich history, marked by significant developments and adaptations to changing security landscapes.…"
 category: history
-author: "Redaksjonen"
+author: "Norsk luftvern"
 lang: en
 draft: false
+heroImage: "/images/b40l60.jpg"
+heroImageAlt: "Historic anti-aircraft gun on public display"
 ---
 
 Title: Norway's Air Defense Artillery: A Necessity in a Changing World
