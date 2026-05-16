@@ -2,7 +2,7 @@
 title: "Assessing the IRIS-T SL's Tactical Ballistic Missile (TBM) Defense Capability: A Critical Review"
 date: 2025-08-01
 excerpt: "Overview of the System The IRIS-T SL (Surface Launched)(../iris-t-sl) air defense system, a product of Diehl Defence, is designed as a modular, mobile solution for short- to…"
-category: missilforsvar
+category: luftvern
 author: "Norsk luftvern"
 lang: en
 draft: false

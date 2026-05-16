@@ -2,7 +2,7 @@
 title: "IRIS-T SL Air Defense System: Cost Analysis and Performance Comparison"
 date: 2026-03-14
 excerpt: "Europe’s Combat-Proven Air Defense at Competitive Pricing The IRIS-T SL family commands €0.43–4.4 million per interceptor depending on variant, positioning it as Europe’s most cost-effective combat-proven medium-range…"
-category: missilforsvar
+category: luftvern
 tags: [iris-t, cost-analysis, comparison]
 author: "Norsk luftvern"
 lang: en

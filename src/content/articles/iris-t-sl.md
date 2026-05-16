@@ -2,7 +2,7 @@
 title: "IRIS-T SL Air Defence System"
 date: 2025-02-09
 excerpt: "Advanced Air Defence with a Focus on Precision and Mobility The IRIS-T SL (Infra Red Imaging System Tail/Thrust Vector Controlled – Surface Launched) represents one of the most modern and capable short- to medium-range…"
-category: missilforsvar
+category: luftvern
 author: "Norsk luftvern"
 lang: en
 draft: false

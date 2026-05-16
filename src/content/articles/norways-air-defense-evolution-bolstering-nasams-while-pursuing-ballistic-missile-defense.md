@@ -2,7 +2,7 @@
 title: "Norway's Air Defense Evolution: Bolstering NASAMS While Pursuing Ballistic Missile Defense"
 date: 2025-07-30
 excerpt: "Introduction: A Dual-Track Strategy for a New Era Norway is undertaking a historic modernization of its air defense capabilities, guided by a clear and ambitious strategy. The 2025-2036 Long-Term Defence Plan…"
-category: missilforsvar
+category: luftvern
 tags: [norway, nasams, ballistic-missile-defense]
 author: "Norsk luftvern"
 lang: en

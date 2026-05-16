@@ -2,7 +2,7 @@
 title: "IRIS-T SL vs VL MICA vs CAMM: European Air Defense Systems Comparison"
 date: 2025-07-08
 excerpt: "The selection of advanced air defense systems has become a defining strategic decision for European defense organizations navigating the complex intersection of technological sovereignty, alliance interoperability, and…"
-category: missilforsvar
+category: luftvern
 author: "Norsk luftvern"
 lang: en
 draft: false

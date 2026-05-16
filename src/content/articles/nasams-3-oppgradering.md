@@ -2,7 +2,7 @@
 title: "NASAMS 3: Norges neste luftvernsgenerasjon"
 date: 2025-02-08
 excerpt: "NASAMS 3 er den nyeste generasjonen av det norsk-amerikanske luftvernsystemet. Vi ser nærmere på hva som er nytt, og hva oppgraderingen betyr for Luftforsvaret."
-category: missilforsvar
+category: luftvern
 tags:
   - NASAMS
   - Kongsberg

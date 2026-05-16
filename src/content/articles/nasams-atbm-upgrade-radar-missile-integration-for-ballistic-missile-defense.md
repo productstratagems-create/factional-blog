@@ -2,7 +2,7 @@
 title: "NASAMS ATBM Upgrade: Radar &amp; Missile Integration for Ballistic Missile Defense"
 date: 2025-07-30
 excerpt: "The proliferation of tactical ballistic missiles (TBMs) on the modern battlefield presents a rapidly evolving threat that challenges many of the world's most established air defense systems. The highly effective…"
-category: missilforsvar
+category: luftvern
 author: "Norsk luftvern"
 lang: en
 draft: false

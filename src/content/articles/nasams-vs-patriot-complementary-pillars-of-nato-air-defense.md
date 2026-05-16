@@ -2,7 +2,7 @@
 title: "NASAMS vs PATRIOT: Complementary pillars of NATO air defense"
 date: 2025-07-05
 excerpt: "The Ukraine conflict has fundamentally validated two cornerstone air defense systems: Norway’s NASAMS and America’s PATRIOT. Both systems have proven their combat effectiveness against sophisticated Russian threats, but…"
-category: missilforsvar
+category: luftvern
 author: "Norsk luftvern"
 lang: en
 draft: false

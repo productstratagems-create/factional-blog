@@ -2,7 +2,7 @@
 title: "NASAMS luftvernsystem"
 date: 2025-02-08
 excerpt: "Mobilt, modulært og middelsrekkende luftvern NASAMS (Norwegian Advanced Surface-to-Air Missile System) er et mobilt, modulært middelsrekkende luftvernsystem utviklet i samarbeid mellom Kongsberg Defence & Aerospace og…"
-category: missilforsvar
+category: luftvern
 author: "Norsk luftvern"
 lang: no
 draft: false

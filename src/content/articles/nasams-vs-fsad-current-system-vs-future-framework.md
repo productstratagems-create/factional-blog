@@ -2,7 +2,7 @@
 title: "NASAMS vs FSAD: Current System vs Future Framework"
 date: 2025-07-25
 excerpt: "\"Full Spectrum Air Defence,\" as defined by Kongsberg, is a comprehensive, layered, and scalable air defense system-architecture designed to counter the full range of aerial threats. It integrates various layers of…"
-category: missilforsvar
+category: luftvern
 author: "Norsk luftvern"
 lang: en
 draft: false

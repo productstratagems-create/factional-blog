@@ -2,7 +2,7 @@
 title: "Norge inngår kontrakt på kjøp av NASAMS-utstyr for inntil fire batterier"
 date: 2024-06-29
 excerpt: "Norge har signert en kontrakt med Kongsberg Defence & Aerospace (KDA) for å kjøpe mer NASAMS-luftvern til en verdi på 2,3 milliarder kroner, i tillegg til en fastprisopsjon på mer luftvern til 2,5 milliarder kroner.…"
-category: missilforsvar
+category: anskaffelse
 author: "Norsk luftvern"
 lang: no
 draft: false

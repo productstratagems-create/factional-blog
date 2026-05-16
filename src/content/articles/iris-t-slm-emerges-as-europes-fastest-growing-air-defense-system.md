@@ -2,7 +2,7 @@
 title: "IRIS-T SLM emerges as Europe’s fastest-growing air defense system"
 date: 2025-12-11
 excerpt: "The German-made IRIS-T SLM has become part of the backbone of European medium-range air defense, with at least eight nations ordering systems through the European Sky Shield Initiative framework since 2023. Diehl Defence…"
-category: missilforsvar
+category: luftvern
 author: "Norsk luftvern"
 lang: en
 draft: false
