@@ -62,6 +62,10 @@ const fullTitle = title === 'Norsk Luftvern' ? title : `${title} | Norsk Luftver
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
 
+    <!-- Apply theme before paint to avoid flash; respect prefers-color-scheme on first visit -->
+    <script is:inline>
+      (function(){var t=localStorage.getItem('site-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);})();
+    </script>
     <!-- Apply lang filter before paint to avoid flash; auto-detect on first visit -->
     <script is:inline>
       (function(){var l=localStorage.getItem('site-lang');if(!l){l='all';try{var langs=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||''];for(var i=0;i<langs.length;i++){var s=(langs[i]||'').toLowerCase();if(/^(nb|nn|no)/.test(s)){l='no';break;}if(/^en/.test(s)){l='en';break;}}}catch(e){}localStorage.setItem('site-lang',l);}document.documentElement.setAttribute('data-lang-filter',l);})();

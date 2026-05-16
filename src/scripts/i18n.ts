@@ -78,6 +78,7 @@ export const T = {
     'series.next':     'Neste del →',
     'toc.label':       'Innhold',
     'toc.sections':    'seksjoner',
+    'tags.label':      'Stikkord',
   },
   en: {
     'nav.home':        'Home',
@@ -158,6 +159,7 @@ export const T = {
     'series.next':     'Next part →',
     'toc.label':       'Contents',
     'toc.sections':    'sections',
+    'tags.label':      'Tags',
   },
 } as const;
 

@@ -3,6 +3,7 @@ title: "Patriot Missile Systems: Empirical Performance Data (2020-2025)"
 date: 2025-06-28
 excerpt: "Patriot missile systems experienced extensive combat deployment and testing from 2020-2025, providing unprecedented empirical data on system performance. The most significant finding is the confirmed intercept of Russian…"
 category: missilforsvar
+tags: [patriot, comparison]
 author: "Norsk luftvern"
 lang: en
 draft: false

@@ -1,0 +1,65 @@
+<button class="dm-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="dm-icon dm-icon--sun" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+  </svg>
+  <svg class="dm-icon dm-icon--moon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+  </svg>
+</button>
+
+<script>
+  const KEY = 'site-theme';
+
+  function applyTheme(theme: string) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem(KEY, theme);
+    document.querySelectorAll<HTMLButtonElement>('.dm-btn').forEach(btn => {
+      btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    });
+  }
+
+  // Initialise to match the value already set by the inline script in BaseLayout
+  const current = document.documentElement.getAttribute('data-theme') || 'light';
+  applyTheme(current);
+
+  // Delegate from document so desktop + mobile instances both respond
+  document.addEventListener('click', (e) => {
+    if ((e.target as HTMLElement).closest('.dm-btn')) {
+      const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+    }
+  });
+</script>
+
+<style>
+  .dm-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color-border);
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-muted);
+    padding: 0;
+    transition: border-color 0.15s, color 0.15s;
+    flex-shrink: 0;
+  }
+
+  .dm-btn:hover {
+    border-color: var(--color-navy);
+    color: var(--color-navy);
+  }
+
+  .dm-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Show sun in dark mode, moon in light mode */
+  [data-theme="dark"] .dm-icon--moon { display: none; }
+  [data-theme="light"] .dm-icon--sun,
+  :not([data-theme]) .dm-icon--sun { display: none; }
+</style>

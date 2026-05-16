@@ -3,6 +3,7 @@ title: "Arrow-3 Missile Defense System: Cost Analysis and Performance Comparison
 date: 2025-07-18
 excerpt: "Exo-Atmospheric Defense with Competitive Pricing Arrow-3 interceptors cost approximately $4 million each, making them 86% less expensive than competing SM-3 Block IIA systems while offering superior range and proven…"
 category: analyse
+tags: [arrow-3, cost-analysis, ballistic-missile-defense]
 author: "Norsk luftvern"
 lang: en
 draft: false

@@ -3,6 +3,7 @@ title: "Counter-Drone Systems Comparison: C-UAS Technology Assessment"
 date: 2025-07-10
 excerpt: "The proliferation of unmanned aerial systems across contemporary battlefields has fundamentally altered the threat landscape, demanding comprehensive counter-drone solutions that can address everything from commercial…"
 category: luftvern
+tags: [counter-drone, comparison]
 author: "Norsk luftvern"
 lang: en
 draft: false

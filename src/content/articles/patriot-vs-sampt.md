@@ -5,9 +5,9 @@ excerpt: "En teknisk gjennomgang av de to mest aktuelle langtrekkende luftvernsy
 category: missilforsvar
 tags:
   - Patriot
-  - SAMP/T
+  - samp-t
   - Mamba
-  - langtrekkende luftvern
+  - langtrekkende-luftvern
   - sammenligning
 heroImage: "/images/img_8855.png"
 heroImageAlt: "Patriot og SAMP/T luftvernsystemer side om side under øvelse"

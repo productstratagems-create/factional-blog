@@ -35,6 +35,19 @@
   --article-width: 720px;
 }
 
+/* ── Dark mode token overrides ── */
+[data-theme="dark"] {
+  --color-bg:      #111827;
+  --color-text:    #E5E7EB;
+  --color-heading: #F9FAFB;
+  --color-navy:    #93B4F0;
+  --color-teal:    #5BBFB5;
+  --color-red:     #E74C3C;
+  --color-muted:   #9CA3AF;
+  --color-surface: #1F2937;
+  --color-border:  #374151;
+}
+
 /* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; }
 

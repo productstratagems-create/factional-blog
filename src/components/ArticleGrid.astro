@@ -33,6 +33,7 @@ const { articles, columns = 3, id } = Astro.props;
           readingTime={readingTime}
           lang={article.data.lang}
           featured={article.data.featured}
+          tags={article.data.tags}
         />
       );
     })}

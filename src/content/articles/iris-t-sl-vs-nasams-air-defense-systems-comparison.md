@@ -3,6 +3,7 @@ title: "IRIS-T SL vs. NASAMS: Air Defense Systems Comparison"
 date: 2025-04-15
 excerpt: "The NASAMS(../nasams-norwegian-advanced-surface-to-air-missile-system-mobilt-og-modulaert-middelsrekkende-luftvernsystem) and the IRIS-T…"
 category: missilforsvar
+tags: [iris-t, nasams, comparison]
 author: "Norsk luftvern"
 lang: en
 draft: false

@@ -2,6 +2,7 @@
 import Logo from './Logo.astro';
 import Divider from './Divider.astro';
 import LangToggle from './LangToggle.astro';
+import DarkModeToggle from './DarkModeToggle.astro';
 import { siteHref } from '../utils/slug';
 
 interface Props {
@@ -69,6 +70,7 @@ function isActive(href: string) {
       </nav>
 
       <div class="desktop-lang">
+        <DarkModeToggle />
         <LangToggle />
       </div>
 
@@ -81,6 +83,7 @@ function isActive(href: string) {
   <!-- Mobile dropdown -->
   <div class="mobile-nav-wrap">
     <div class="mobile-lang-wrap">
+      <DarkModeToggle />
       <LangToggle />
     </div>
     <nav aria-label="Mobilnavigasjon" data-i18n-aria="nav.mobile-aria">
@@ -240,6 +243,9 @@ function isActive(href: string) {
 
   .mobile-lang-wrap {
     padding: var(--spacing-sm) var(--spacing-lg) 0;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
   }
 
   /* ── Desktop ── */
@@ -258,7 +264,7 @@ function isActive(href: string) {
       align-items: center;
     }
 
-    .desktop-lang { display: flex; align-items: center; margin-left: var(--spacing-md); }
+    .desktop-lang { display: flex; align-items: center; gap: var(--spacing-sm); margin-left: var(--spacing-md); }
 
     .nav-hamburger { display: none; }
     .mobile-nav-wrap { display: none !important; }

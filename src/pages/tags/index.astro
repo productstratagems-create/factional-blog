@@ -1,0 +1,123 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Divider from '../../components/Divider.astro';
+import { siteHref } from '../../utils/slug';
+
+const allArticles = await getCollection('articles', (e) => !e.data.draft);
+
+const tagCounts = new Map<string, number>();
+for (const article of allArticles) {
+  for (const tag of article.data.tags ?? []) {
+    tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
+  }
+}
+
+const tags = [...tagCounts.entries()]
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+---
+
+<BaseLayout
+  title="Stikkord | Norsk Luftvern"
+  description="Bla gjennom alle temaer og stikkord på Norsk Luftvern."
+>
+  <div class="tags-page container">
+    <header class="page-header">
+      <p class="page-super" data-i18n="tags.label">Stikkord</p>
+      <h1 class="page-title">Alle temaer</h1>
+    </header>
+
+    <Divider spacing="md" />
+
+    {tags.length === 0 ? (
+      <p class="no-tags">Ingen stikkord funnet.</p>
+    ) : (
+      <div class="tag-cloud">
+        {tags.map(([tag, count]) => (
+          <a href={siteHref(`/tags/${tag}`)} class="tag-item">
+            <span class="tag-name">{tag}</span>
+            <span class="tag-count">{count}</span>
+          </a>
+        ))}
+      </div>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .tags-page {
+    padding-bottom: var(--spacing-3xl);
+  }
+
+  .page-header {
+    padding-block: var(--spacing-2xl) var(--spacing-xl);
+  }
+
+  .page-super {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-teal);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-heading);
+    line-height: 1;
+  }
+
+  .tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    padding-top: var(--spacing-xl);
+  }
+
+  .tag-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.35em 0.9em;
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+  }
+
+  .tag-item:hover {
+    border-color: var(--color-teal);
+    background: var(--color-surface);
+  }
+
+  .tag-name {
+    font-family: var(--font-ui);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text);
+    text-transform: lowercase;
+  }
+
+  .tag-count {
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--color-teal);
+    background: var(--color-surface);
+    border-radius: var(--radius-full);
+    padding: 0.1em 0.45em;
+    line-height: 1.5;
+  }
+
+  .no-tags {
+    font-family: var(--font-ui);
+    color: var(--color-muted);
+    padding-top: var(--spacing-xl);
+  }
+</style>

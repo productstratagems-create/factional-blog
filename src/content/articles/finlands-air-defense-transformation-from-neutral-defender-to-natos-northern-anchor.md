@@ -3,6 +3,7 @@ title: "Finland’s air defense transformation: from neutral defender to NATO’
 date: 2025-11-25
 excerpt: "Finland has executed one of the most dramatic military pivots in modern European history, transforming from seven decades of carefully maintained neutrality into a frontline NATO state with rapidly expanding air and…"
 category: nato
+tags: [nordic, nato, europe]
 author: "Norsk luftvern"
 lang: en
 draft: false

@@ -6,6 +6,7 @@ import Divider from '../components/Divider.astro';
 import ArticleGrid from '../components/ArticleGrid.astro';
 import SeriesBanner from '../components/SeriesBanner.astro';
 import TableOfContents from '../components/TableOfContents.astro';
+import TagBadge from '../components/TagBadge.astro';
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 import { articleHref, siteHref, assetSrc } from '../utils/slug';
@@ -22,7 +23,7 @@ interface Props {
 const { entry, related, prev = null, next = null, headings = [] } = Astro.props;
 const tocHeadings = headings.filter(h => h.depth === 2 || h.depth === 3);
 const hasToc = tocHeadings.length >= 3;
-const { title, excerpt, date, category, author, heroImage, heroImageAlt, lang = 'no', series } = entry.data;
+const { title, excerpt, date, category, author, heroImage, heroImageAlt, lang = 'no', series, tags } = entry.data;
 
 const wordCount = entry.body?.split(/\s+/).length ?? 0;
 const readingTime = entry.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordCount / 200));
@@ -72,6 +73,7 @@ if (series) {
       <div class="article-hero-content container">
         <div class="hero-badges">
           <CategoryBadge category={category} href={siteHref(`/categories/${category}`)} />
+          {tags && tags.length > 0 && tags.map(tag => <TagBadge tag={tag} />)}
         </div>
         <h1 class="article-title">{title}</h1>
         <ArticleMeta pubDate={date} author={author} readingTime={readingTime} lang={lang} />

@@ -3,6 +3,7 @@ title: "Patriot Missile Defense System: Cost Analysis and Performance Comparison
 date: 2026-03-09
 excerpt: "The Western World’s Backbone Air Defense at a Crossroads Patriot PAC-3 MSE interceptors cost $4.2 million per unit based on the FY2025 Army budget request, positioning the system as the most widely deployed — and…"
 category: missilforsvar
+tags: [patriot, cost-analysis, comparison]
 author: "Norsk luftvern"
 lang: en
 draft: false

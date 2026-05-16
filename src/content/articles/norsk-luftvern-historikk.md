@@ -8,7 +8,7 @@ tags:
   - Nike
   - HAWK
   - NASAMS
-  - luftvernets utvikling
+  - luftvernets-utvikling
 lang: no
 featured: false
 author: "Norsk luftvern"
