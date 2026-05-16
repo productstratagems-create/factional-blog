@@ -80,6 +80,26 @@ if (series) {
               totalCount={seriesCount}
             />
           )}
+          {hasToc && (
+            <details class="toc-mobile">
+              <summary class="toc-mobile-summary">
+                <span class="toc-mobile-label" data-i18n="toc.label">Innhold</span>
+                <span class="toc-mobile-meta">
+                  {tocHeadings.length} <span data-i18n="toc.sections">seksjoner</span>
+                </span>
+                <svg class="toc-mobile-chevron" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </summary>
+              <ol class="toc-mobile-list">
+                {tocHeadings.map(h => (
+                  <li class={`toc-mobile-item${h.depth === 3 ? ' toc-mobile-item--sub' : ''}`}>
+                    <a href={`#${h.slug}`} class="toc-mobile-link">{h.text}</a>
+                  </li>
+                ))}
+              </ol>
+            </details>
+          )}
           <div class="prose" id="article-body">
             <slot />
           </div>
@@ -220,6 +240,85 @@ if (series) {
     .article-toc-col {
       display: none;
     }
+  }
+
+  /* ── Mobile TOC ── */
+  .toc-mobile { display: none; }
+
+  @media (max-width: 1080px) {
+    .toc-mobile {
+      display: block;
+      border: 1px solid var(--color-border);
+      border-left: 3px solid var(--color-teal);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      background: var(--color-surface);
+      margin-bottom: var(--spacing-xl);
+    }
+
+    .toc-mobile-summary {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      padding: var(--spacing-sm) var(--spacing-md);
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+    .toc-mobile-summary::-webkit-details-marker { display: none; }
+
+    .toc-mobile-label {
+      font-family: var(--font-ui);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-teal);
+    }
+
+    .toc-mobile-meta {
+      font-family: var(--font-ui);
+      font-size: 0.7rem;
+      color: var(--color-muted);
+      flex: 1;
+    }
+
+    .toc-mobile-chevron {
+      width: 12px;
+      height: 12px;
+      color: var(--color-muted);
+      transition: transform 0.15s;
+      flex-shrink: 0;
+    }
+
+    .toc-mobile[open] .toc-mobile-chevron {
+      transform: rotate(180deg);
+    }
+
+    .toc-mobile-list {
+      list-style: none;
+      margin: 0;
+      padding: var(--spacing-xs) 0 var(--spacing-sm);
+      border-top: 1px solid var(--color-border);
+    }
+
+    .toc-mobile-item--sub .toc-mobile-link {
+      padding-left: calc(var(--spacing-md) + 0.9rem);
+      font-size: 0.8rem;
+      opacity: 0.75;
+    }
+
+    .toc-mobile-link {
+      display: block;
+      padding: 0.35em var(--spacing-md);
+      font-family: var(--font-ui);
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--color-navy);
+      text-decoration: none;
+      line-height: 1.3;
+    }
+
+    .toc-mobile-link:hover { text-decoration: underline; }
   }
 
   /* ── Prose typography ── */
@@ -409,3 +508,11 @@ if (series) {
     .article-nav-link--prev { grid-column: 1; text-align: left; }
   }
 </style>
+
+<script>
+  document.querySelectorAll<HTMLAnchorElement>('.toc-mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector<HTMLDetailsElement>('.toc-mobile')?.removeAttribute('open');
+    });
+  });
+</script>
