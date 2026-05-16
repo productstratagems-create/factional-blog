@@ -7,5 +7,68 @@
       "https://www.armyrecognition.com/news/army-news/2026/u-s-army-awards-4-76b-pac-3-mse-contract-as-allies-fund-patriot-missile-surge/",
       "https://news.lockheedmartin.com/2025-09-03-us-army-awards-lockheed-martin-9-8-b-contract-to-bolster-missile-defense-with-pac-3-mse"
     ]
+  },
+  "arrow-3-missile-defense-system-cost-analysis-and-performance-comparison": {
+    "summary": "Germany received its first operational Arrow-3 battery on December 3, 2025, at a ceremony near Berlin — the first deployment of the system outside Israel. Within weeks, the Bundestag approved a €3.1 billion ($3.5 billion) expansion of the original acquisition contract, which IAI formalized in January 2026. The combined value of Germany's Arrow-3 program now exceeds $6.5 billion, making it the largest defense export in Israeli history. The expansion adds interceptors, launchers, and extended multi-year support, with deliveries staggered through the late 2020s.\n\nThe surge in demand has brought inventory sustainability into sharp focus. Analysis of interceptor expenditure during the 2026 Israel-Iran conflict suggests Arrow-3 stockpiles are finite and slow to replenish — one estimate places current inventory at roughly 65 interceptors, with production timelines measured in years rather than months. The $2–4 million per-interceptor cost cited in this article remains a useful reference, but the production ramp required to meet allied demand at scale will take considerable time to materialize. Scarcity and strategic value, not manufacturing cost alone, are driving the program's headline contract figures.",
+    "lastVerified": "2026-05-16",
+    "sources": [
+      "https://breakingdefense.com/2025/12/germany-receives-first-arrow-3-air-defense-system-from-israel/",
+      "https://www.timesofisrael.com/german-parliament-approves-3-5b-expansion-of-arrow-3-deal-with-israel/",
+      "https://www.asdnews.com/news/defense/2026/01/12/iai-announces-31bn-contract-expansion-arrow-3-missile-defense-system-deal-with-germany"
+    ]
+  },
+  "patriot-missile-defense-system-cost-analysis-and-performance-comparison": {
+    "summary": "Since this article was published in March 2026, the pricing dynamics it describes have continued to move. April 2026 brought a $4.76 billion undefinitized contract action for accelerated PAC-3 MSE production — the second large-scale award in eight months, following the September 2025 $9.8 billion contract. The seven-year ramp toward 2,000 missiles per year is now formally underway, though near-term unit costs remain elevated while the production base builds.\n\nSwitzерland's Patriot procurement has become the clearest illustration of the cost-overrun risk inherent in long-lead defense contracts. Its 2022 order for five batteries, originally valued at CHF 2 billion ($2.2 billion), is now projected to exceed the original figure by more than 50%, driven by inflation, supply chain pressure, and scope changes. In parallel, European industrial and political momentum behind sovereign alternatives to Patriot is accelerating: Germany's IRIS-T SLX, MBDA's Aster 30 B1NT, and the broader European Sky Shield Initiative are increasingly cited by governments as long-term hedges against both U.S. export dependency and Patriot's premium price point.",
+    "lastVerified": "2026-05-16",
+    "sources": [
+      "https://www.militarytimes.com/industry/techwatch/2026/04/10/pentagon-lockheed-martin-agree-to-47-billion-pac-3-interceptor-deal/",
+      "https://www.aerotime.aero/articles/switzerland-patriot-cost-overrun-scrap",
+      "https://www.euronews.com/2026/02/26/air-defence-made-in-europe-is-the-alternative-to-patriot-coming-from-germany"
+    ]
+  },
+  "iron-dome-missile-defense-system-cost-analysis-and-performance-comparison": {
+    "summary": "In November 2025, a Raytheon-Rafael joint venture secured approximately $1.25 billion in contracts to supply Israel with Tamir interceptors assembled in Arkansas — alongside SkyHunter, the U.S.-licensed variant — establishing the first significant Iron Dome production base outside Israel. Two new export customers emerged: Cyprus paid €104 million for one battery plus five years of support, and Romania selected Iron Dome for its short-range air defense requirement.\n\nThe most operationally significant development was Iron Dome's first deployment outside Israel or the United States: a battery and IDF crew were dispatched to the UAE at President Mohamed bin Zayed's request during the 2026 Israel-Iran conflict, demonstrating both the system's strategic reach and the geopolitical weight it now carries. That same conflict generated detailed interceptor expenditure analysis, intensifying debate about stockpile sustainability at the $40,000–50,000 per-missile cost level when engagement rates are high. The debate took on a new dimension in May 2026 when the Congressional Budget Office released its estimate of $1.2 trillion over 20 years for the U.S. \"Golden Dome\" national missile defense concept — built around 7,800 space-based interceptors — placing Iron Dome's mature and battle-tested unit economics in a new reference frame for public cost comparisons.",
+    "lastVerified": "2026-05-16",
+    "sources": [
+      "https://militarnyi.com/en/news/us-begins-production-of-missiles-for-iron-dome-israel-places-order-using-us-aid/",
+      "https://www.fdd.org/analysis/2026/03/25/iron-dome-steps-up-on-ballistic-missiles/",
+      "https://breakingdefense.com/2026/05/golden-dome-could-cost-up-to-1-2-trillion-over-20-years-cbo-estimates/"
+    ]
+  },
+  "thaad-missile-defense-system-cost-analysis-and-performance-comparison": {
+    "summary": "Two contracts have reshaped THAAD's production trajectory since mid-2025. In July 2025, the Missile Defense Agency added $2.063 billion to Lockheed Martin's THAAD production contract, raising the cumulative program value to $10.4 billion. Then in January 2026, Lockheed and the Pentagon signed a framework agreement to quadruple annual THAAD output from 96 to 400 interceptors per year — the most ambitious capacity commitment in the program's history. L3Harris separately won a $400 million contract in February 2026 for solid rocket boosters and Liquid Divert and Attitude Control Systems, confirming the ramp extends across the full supply chain.\n\nThe FY2026 budget request allocates $840 million for 37 interceptors (25 discretionary, 12 mandatory reconciliation), implying a fully burdened appropriated cost of roughly $22–23 million per missile — materially above the $12–15 million production figure cited in this article, which reflects manufacturing cost without R&D amortization and full government support. CSIS analysis published in 2026 identified THAAD as one of the systems most vulnerable to inventory depletion under sustained high-tempo engagement, a finding that directly underpins the January quadrupling decision. Missiles ordered now under the new framework will not arrive in volume before 2028–2029, leaving a near-term gap between demand and available inventory.",
+    "lastVerified": "2026-05-16",
+    "sources": [
+      "https://milmag.pl/en/over-2-billion-usd-for-thaad-missile-production/",
+      "https://breakingdefense.com/2026/01/lockheed-pentagon-ink-plan-to-boost-thaad-interceptor-production/",
+      "https://thedefensepost.com/2026/02/18/l3harris-thaad-upgrade-us/"
+    ]
+  },
+  "air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs": {
+    "summary": "The database has already received a formal March 2026 editors' update covering operational data from Ukraine and the 2026 Israel-Iran conflict. The headline finding from those stress tests is that real-world cost-per-engagement figures consistently exceed theoretical per-missile costs by a factor of 1.5–3x once radar operation, personnel tempo, and logistics are included — a caveat that applies to every entry in this database. Switzerland's Patriot procurement, one of the reference cases, is now facing cost overruns potentially exceeding 50% of its original CHF 2 billion contract, illustrating how acquisition-price figures can diverge significantly from final delivered costs.\n\nThree simultaneous production ramp decisions since this database was published have begun to shift the long-term capacity picture: the January 2026 Lockheed-Pentagon framework to quadruple THAAD output (96 → 400/year), the seven-year PAC-3 MSE ramp toward 2,000/year, and Diehl Defence's €1.5 billion factory investment targeting 2,000 IRIS-T missiles annually. None of these commitments lower near-term unit costs — they reflect a consensus that current production rates are structurally inadequate for the threat environment — but they establish the baseline against which future cost evolution can be tracked. The latest reference point for database context: the CBO's May 2026 estimate of $1.2 trillion over 20 years for a U.S. national-scale \"Golden Dome\" shield.",
+    "lastVerified": "2026-05-16",
+    "sources": [
+      "https://www.csis.org/analysis/depleting-missile-defense-interceptor-inventory",
+      "https://www.aerotime.aero/articles/switzerland-patriot-cost-overrun-scrap",
+      "https://breakingdefense.com/2026/05/golden-dome-could-cost-up-to-1-2-trillion-over-20-years-cbo-estimates/"
+    ]
+  },
+  "iris-t-sl-air-defense-system-cost-analysis-and-performance-comparison": {
+    "summary": "IRIS-T SL has become the fastest-expanding European air defense program by number of active contracts in 2025–2026. Eight ESSI (European Sky Shield Initiative) member states — Germany, Sweden, Estonia, Latvia, Bulgaria, Switzerland, Denmark, and Slovenia — have all signed procurement agreements, with total committed value exceeding €3.6 billion. Ukraine's cumulative orders, anchored by a €2.2 billion contract in May 2025, represent the single largest national commitment. Denmark signed a second contract in December 2025 for additional fire units, and Switzerland budgeted CHF 660 million under its Armament Programme 2025 for further systems and missiles.\n\nDiehl Defence has committed approximately €1.5 billion to expand manufacturing, with production reaching 800–1,000 IRIS-T missiles per year by end of 2025 and a stated target of 2,000 annually once new facilities come online. Bulgaria's decision to procure seven IRIS-T SLM batteries for approximately $1.4 billion — versus roughly $7 billion for equivalent Patriot coverage — has become the benchmark cost comparison most frequently cited by European governments weighing alternatives to U.S. long-range systems. The combination of combat validation in Ukraine, active ESSI expansion, and a rapidly growing industrial base now positions IRIS-T SL as the primary reference point for European-made air defense economics.",
+    "lastVerified": "2026-05-16",
+    "sources": [
+      "https://en.defence-ua.com/news/how_many_iris_t_systems_and_missiles_can_be_procured_for_22_billion_under_the_new_contract_for_ukraine-14702.html",
+      "https://euro-sd.com/2025/12/major-news/48169/denmark-buys-more-iris-t-slm/",
+      "https://debuglies.com/2025/08/18/cost-effectiveness-and-evolving-capabilities-of-the-iris-t-slm-and-slx-ground-based-air-defence-systems-in-the-2025-geopolitical-landscape/"
+    ]
+  },
+  "air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs-editors-update-march-2026": {
+    "summary": "The two months since this update was published have added two significant data points. In April 2026, the Pentagon and Lockheed Martin signed a $4.76 billion undefinitized contract action for accelerated PAC-3 MSE production — the second large-scale award in eight months after the September 2025 $9.8 billion contract — confirming that the production constraints flagged in this update are driving procurement decisions at a pace not seen in the program's peacetime history. In May 2026, the Congressional Budget Office published its first detailed estimate of the U.S. \"Golden Dome\" concept: $1.2 trillion over 20 years, anchored by approximately 7,800 space-based interceptors. That figure adds a new tier of cost reference — space-basing — that has no current production benchmark but will increasingly shape how terrestrial interceptor economics are framed in public debate.\n\nInventory depletion — the central theme of this update's stress tests — has attracted formal independent analysis. CSIS identified THAAD and Arrow-3 as the systems with the tightest stockpile margins relative to observed engagement rates, while tracking sites have attempted to quantify Arrow-3 inventory at roughly 65 interceptors, with replenishment timelines extending years into the future. These assessments broadly confirm this update's conclusion: cost-per-shot figures are only meaningful alongside an honest account of how many shots remain available.",
+    "lastVerified": "2026-05-16",
+    "sources": [
+      "https://www.militarytimes.com/industry/techwatch/2026/04/10/pentagon-lockheed-martin-agree-to-47-billion-pac-3-interceptor-deal/",
+      "https://breakingdefense.com/2026/05/golden-dome-could-cost-up-to-1-2-trillion-over-20-years-cbo-estimates/",
+      "https://www.csis.org/analysis/depleting-missile-defense-interceptor-inventory"
+    ]
   }
 }
