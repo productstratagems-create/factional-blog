@@ -7,8 +7,8 @@ tags: [hypersonic, HGV, missile-defense, sensors, THAAD, Arrow-4, SM-6]
 author: "Norsk luftvern"
 lang: en
 draft: false
-heroImage: "/images/launch-test-phase-v-scenario-2.jpg"
-heroImageAlt: "Surface-to-air missile interceptor launches during a flight test in the desert"
+heroImage: "/images/IMG_9678.jpeg"
+heroImageAlt: "THAAD interceptor missile launches in a dramatic fireball during a flight test"
 relatedSlugs:
   - beyond-hypersonic-missile-defense-full-range-air-missile-defense-challenges
   - thaad-missile-defense-system-cost-analysis-and-performance-comparison
