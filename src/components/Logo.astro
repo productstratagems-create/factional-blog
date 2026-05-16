@@ -46,7 +46,13 @@ const src = assetSrc('/images/IMG_9667.jpeg');
     object-position: center center;
   }
 
+  :global([data-theme="dark"]) .logo {
+    background: var(--color-bg);
+    isolation: isolate;
+  }
+
   :global([data-theme="dark"]) .logo img {
     filter: invert(1);
+    mix-blend-mode: screen;
   }
 </style>
