@@ -19,9 +19,15 @@ const seriesCards = Object.entries(SERIES).map(([slug, meta]) => ({
 })).filter((s) => s.count > 0);
 
 const featured = sorted.find((a) => a.data.featured) ?? sorted[0];
-const rest = featured
-  ? sorted.filter((a) => a.id !== featured.id).slice(0, 12)
-  : sorted.slice(1, 13);
+
+const EDITORIAL_CATEGORIES = ['analyse', 'missilforsvar', 'luftvern'] as const;
+
+const editorialSections = EDITORIAL_CATEGORIES.map(cat => ({
+  cat,
+  articles: sorted
+    .filter(a => a.data.category === cat && a.id !== featured?.id)
+    .slice(0, 3),
+})).filter(s => s.articles.length > 0);
 
 const featuredWordCount = featured?.body?.split(/\s+/).length ?? 0;
 const featuredReadingTime = featured?.data.readingTimeMinutes ?? Math.max(1, Math.ceil(featuredWordCount / 200));
@@ -70,20 +76,29 @@ const featuredReadingTime = featured?.data.readingTimeMinutes ?? Math.max(1, Mat
       </section>
     )}
 
-    <section class="articles-section container">
-      <ArticleGrid articles={rest} columns={3} />
+    <Divider />
 
-      {allArticles.length > 13 && (
-        <div class="load-more">
-          <a href={siteHref('/articles')} class="btn-outline" id="show-all-btn">Vis alle artikler</a>
-          <div class="lang-shortcuts">
-            <button class="lang-sc" data-lang="no">Norsk</button>
-            <span class="lang-sc-sep">·</span>
-            <button class="lang-sc" data-lang="en">English</button>
-          </div>
+    {editorialSections.map(sec => (
+      <section class="editorial-section container">
+        <div class="editorial-header">
+          <p class="editorial-label" data-i18n={`cat.name.${sec.cat}`}>
+            {sec.cat === 'analyse' ? 'Analyse' : sec.cat === 'missilforsvar' ? 'Missilforsvar' : 'Luftvern'}
+          </p>
+          <a href={siteHref(`/categories/${sec.cat}`)} class="editorial-see-all"
+             data-i18n="series.see-all">Se alle →</a>
         </div>
-      )}
-    </section>
+        <ArticleGrid articles={sec.articles} columns={3} />
+      </section>
+    ))}
+
+    <div class="load-more container">
+      <a href={siteHref('/articles')} class="btn-outline" id="show-all-btn">Vis alle artikler</a>
+      <div class="lang-shortcuts">
+        <button class="lang-sc" data-lang="no">Norsk</button>
+        <span class="lang-sc-sep">·</span>
+        <button class="lang-sc" data-lang="en">English</button>
+      </div>
+    </div>
   </div>
 </BaseLayout>
 
@@ -106,14 +121,47 @@ const featuredReadingTime = featured?.data.readingTimeMinutes ?? Math.max(1, Mat
     padding-block: var(--spacing-lg);
   }
 
-  .articles-section {
-    padding-top: var(--spacing-lg);
-    padding-bottom: var(--spacing-2xl);
+  .editorial-section {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
   }
+
+  .editorial-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--spacing-sm);
+  }
+
+  .editorial-label {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-heading);
+    margin: 0;
+  }
+
+  .editorial-see-all {
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-navy);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.15s;
+  }
+
+  .editorial-see-all:hover { color: var(--color-teal); }
 
   .load-more {
     text-align: center;
-    margin-top: var(--spacing-2xl);
+    padding-block: var(--spacing-xl) var(--spacing-2xl);
   }
 
   .btn-outline {
