@@ -118,6 +118,14 @@ if (series) {
             <slot />
           </div>
 
+          {researchContext && (
+            <WhereAreWeNow
+              summary={researchContext.summary}
+              lastVerified={researchContext.lastVerified}
+              lang={lang as 'no' | 'sv' | 'en'}
+            />
+          )}
+
           {(seriesPrev || seriesNext) && (
             <nav class="series-nav" aria-label="Serie-navigasjon">
               <p class="series-nav-label">
@@ -147,14 +155,6 @@ if (series) {
           </aside>
         )}
       </div>
-
-      {researchContext && (
-        <WhereAreWeNow
-          summary={researchContext.summary}
-          lastVerified={researchContext.lastVerified}
-          lang={lang as 'no' | 'sv' | 'en'}
-        />
-      )}
 
       <Divider spacing="lg" />
 
