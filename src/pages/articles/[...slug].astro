@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
 import { articleSlug } from '../../utils/slug';
+import researchContext from '../../data/research-context.json';
 
 export async function getStaticPaths() {
   const entries = await getCollection('articles', (e) => !e.data.draft);
@@ -34,8 +35,10 @@ if (related.length === 0) {
     .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
     .slice(0, 3);
 }
+const slug = articleSlug(entry.id);
+const research = (researchContext as Record<string, { summary: string; lastVerified: string }>)[slug] ?? null;
 ---
 
-<ArticleLayout entry={entry} related={related} prev={prevEntry} next={nextEntry} headings={headings}>
+<ArticleLayout entry={entry} related={related} prev={prevEntry} next={nextEntry} headings={headings} researchContext={research}>
   <Content />
 </ArticleLayout>
