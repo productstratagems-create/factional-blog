@@ -1,1 +1,11 @@
-{}
+{
+  "what-does-the-patriot-missile-system-cost": {
+    "summary": "The unit economics outlined in this article remain broadly valid, but the scale of recent contracts signals a significant cost escalation driven by wartime demand. In September 2025, the U.S. Army awarded Lockheed Martin a $9.8 billion contract for 1,970 PAC-3 MSE interceptors — implying a domestic unit cost of roughly $5 million, but export packages with full logistics support continue to reach $6.25–7 million per missile. A further $4.76 billion undefinitized contract action followed in April 2026, specifically to accelerate production in response to allied demand and stockpile depletion from deliveries to Ukraine.\n\nOn the ground equipment side, prices have risen sharply. The Netherlands signed a contract in early 2026 for a single additional Patriot battery at approximately $627 million — well above the ~$360 million per-battery figure cited in this article for recent European acquisitions. Denmark received U.S. State Department approval in August 2025 for a full IBCS-integrated Patriot PAC-3 MSE package valued at up to $8.5 billion, reflecting the growing premium for deep NATO interoperability. A NATO consortium of Germany, Romania, Spain, and the Netherlands also concluded a $5.5 billion joint purchase for up to 1,000 GEM-T missiles.\n\nProduction capacity is the critical constraint shaping all of these numbers. Lockheed Martin and the Pentagon set a seven-year framework in January 2026 targeting an increase in PAC-3 MSE output from roughly 600 missiles per year to approximately 2,000. Until that ramp is complete, scarcity continues to underpin pricing — meaning the cost figures in this article should be treated as floors, not ceilings, for any new acquisition in the current market.",
+    "lastVerified": "2026-05-16",
+    "sources": [
+      "https://www.defensenews.com/global/europe/2026/03/24/netherlands-plans-11-billion-rush-order-for-extra-patriot-system/",
+      "https://www.armyrecognition.com/news/army-news/2026/u-s-army-awards-4-76b-pac-3-mse-contract-as-allies-fund-patriot-missile-surge/",
+      "https://news.lockheedmartin.com/2025-09-03-us-army-awards-lockheed-martin-9-8-b-contract-to-bolster-missile-defense-with-pac-3-mse"
+    ]
+  }
+}
