@@ -70,6 +70,7 @@ export const T = {
     'series.see-all':  'Se alle →',
     'series.explore':  'Utforsk →',
     'series.view-all': 'Se alle',
+    'toc.label':       'Innhold',
   },
   en: {
     'nav.home':        'Home',
@@ -142,6 +143,7 @@ export const T = {
     'series.see-all':  'See all →',
     'series.explore':  'Explore →',
     'series.view-all': 'View all',
+    'toc.label':       'Contents',
   },
 } as const;
 

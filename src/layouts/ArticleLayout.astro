@@ -5,6 +5,7 @@ import ArticleMeta from '../components/ArticleMeta.astro';
 import Divider from '../components/Divider.astro';
 import ArticleGrid from '../components/ArticleGrid.astro';
 import SeriesBanner from '../components/SeriesBanner.astro';
+import TableOfContents from '../components/TableOfContents.astro';
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 import { articleHref, siteHref, assetSrc } from '../utils/slug';
@@ -15,9 +16,12 @@ interface Props {
   related: CollectionEntry<'articles'>[];
   prev?: CollectionEntry<'articles'> | null;
   next?: CollectionEntry<'articles'> | null;
+  headings?: { depth: number; slug: string; text: string }[];
 }
 
-const { entry, related, prev = null, next = null } = Astro.props;
+const { entry, related, prev = null, next = null, headings = [] } = Astro.props;
+const tocHeadings = headings.filter(h => h.depth === 2 || h.depth === 3);
+const hasToc = tocHeadings.length >= 3;
 const { title, excerpt, date, category, author, heroImage, heroImageAlt, lang = 'no', series } = entry.data;
 
 const wordCount = entry.body?.split(/\s+/).length ?? 0;
@@ -67,15 +71,25 @@ if (series) {
 
     <!-- Prose body -->
     <div class="article-container container">
-      {series && seriesCount > 0 && (
-        <SeriesBanner
-          seriesSlug={series}
-          seriesLabel={SERIES[series]?.title ?? series}
-          totalCount={seriesCount}
-        />
-      )}
-      <div class="prose" id="article-body">
-        <slot />
+      <div class={`article-main${hasToc ? ' has-toc' : ''}`}>
+        <div class="article-body-col">
+          {series && seriesCount > 0 && (
+            <SeriesBanner
+              seriesSlug={series}
+              seriesLabel={SERIES[series]?.title ?? series}
+              totalCount={seriesCount}
+            />
+          )}
+          <div class="prose" id="article-body">
+            <slot />
+          </div>
+        </div>
+
+        {hasToc && (
+          <aside class="article-toc-col" aria-label="Innholdsfortegnelse">
+            <TableOfContents headings={tocHeadings} />
+          </aside>
+        )}
       </div>
 
       <Divider spacing="lg" />
@@ -175,7 +189,37 @@ if (series) {
 
   /* ── Article body ── */
   .article-container {
-    padding-block: var(--spacing-2xl) var(--spacing-3xl);
+    padding-bottom: var(--spacing-3xl);
+  }
+
+  .article-main {
+    padding-top: var(--spacing-2xl);
+  }
+
+  .article-main.has-toc {
+    display: grid;
+    grid-template-columns: minmax(0, var(--article-width, 720px)) 220px;
+    column-gap: var(--spacing-2xl);
+    align-items: start;
+  }
+
+  .article-toc-col {
+    position: sticky;
+    top: 5rem;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+
+  .article-toc-col::-webkit-scrollbar { display: none; }
+
+  @media (max-width: 1080px) {
+    .article-main.has-toc {
+      display: block;
+    }
+    .article-toc-col {
+      display: none;
+    }
   }
 
   /* ── Prose typography ── */
