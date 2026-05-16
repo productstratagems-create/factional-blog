@@ -3,6 +3,7 @@ title: "Hva er «nok luftvern»?"
 date: 2026-04-11
 excerpt: "Et forsøk på en strukturell målestokk Påstanden «man kan aldri ha nok luftvern» kommer noen ganger opp i debatten, og dermed går lufta litt ut av ballongen – og med god grunn. Dette reflekterer en grunnleggende…"
 category: luftvern
+tags: [norway, nato, luftvern]
 author: "Norsk luftvern"
 lang: no
 draft: false

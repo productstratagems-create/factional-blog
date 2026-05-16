@@ -3,6 +3,7 @@ title: "Sikkerhetsnettet er borte. Norsk planlegging henger etter"
 date: 2026-03-08
 excerpt: "Operation Epic Fury — den pågående amerikansk-israelske militæroperasjonen mot Iran — tærer på beholdninger som allerede var kraftig redusert etter juni-krigen i fjor. Det tar år å bygge opp THAAD-lagrene igjen.…"
 category: analyse
+tags: [norway, nato, thaad]
 author: "Norsk luftvern"
 lang: no
 draft: false

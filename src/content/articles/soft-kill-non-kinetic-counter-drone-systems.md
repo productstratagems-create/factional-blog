@@ -3,6 +3,7 @@ title: "Soft Kill: Non-Kinetic Counter-Drone Systems&nbsp;"
 date: 2026-03-23
 excerpt: "Electronic Warfare, Interceptor Drones, High-Power Microwaves, and the Invisible Layer of Counter-UAS Guns shoot drones down. Missiles blow them up. Lasers burn through them. These are the counter-drone effectors that…"
 category: luftvern
+tags: [counter-drone, directed-energy]
 author: "Norsk luftvern"
 lang: en
 draft: false

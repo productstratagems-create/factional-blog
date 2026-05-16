@@ -59,9 +59,13 @@ const categories = [
 
 <style>
   .site-footer {
-    background: var(--color-heading);
+    background: #1C0808;
     color: rgba(255,255,255,0.75);
     margin-top: var(--spacing-3xl);
+  }
+
+  :global([data-theme="dark"]) .site-footer {
+    background: #0D1117;
   }
 
   .footer-inner {

@@ -45,4 +45,8 @@ const src = assetSrc('/images/IMG_9667.jpeg');
     object-fit: cover;
     object-position: center center;
   }
+
+  :global([data-theme="dark"]) .logo img {
+    filter: invert(1);
+  }
 </style>

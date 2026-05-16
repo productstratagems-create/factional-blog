@@ -3,6 +3,7 @@ title: "Patriot vs. IRIS-T SLM/X vs. SAMP/T NG"
 date: 2026-03-13
 excerpt: "COMPARATIVE ANALYSIS Europe’s Long-Range Air Defense Options in 2026 Introduction The question of which long-range air defense system a European country should buy has never been more consequential—or more constrained.…"
 category: missilforsvar
+tags: [patriot, iris-t, samp-t, comparison]
 author: "Norsk luftvern"
 lang: en
 draft: false

@@ -3,6 +3,7 @@ title: "American vs. European Short Range Air Defense"
 date: 2026-03-22
 excerpt: "Critical Cost Analysis of U.S. and European SHORAD systems. Short range air defense—the SHORAD tier covering engagements from point-blank out to roughly 15 kilometers, protecting maneuver forces, forward operating bases,…"
 category: missilforsvar
+tags: [comparison, europe, nato, counter-drone]
 author: "Norsk luftvern"
 lang: en
 draft: false
