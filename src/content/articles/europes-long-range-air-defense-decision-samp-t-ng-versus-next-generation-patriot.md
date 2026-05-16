@@ -24,7 +24,15 @@ The Ground Fire 300 radar represents a generational leap over the original Arabe
 
 **Patriot’s modernization centers on the Lower Tier Air and Missile Defense Sensor (LTAMDS)**—a true 360-degree radar using three GaN AESA arrays, eliminating the legacy system’s notorious rear blind spot. A single secondary LTAMDS array delivers more capability than the entire current Patriot radar. The system achieved Milestone C approval for low-rate initial production in early 2025, with 94 radars planned and full-rate production anticipated by 2028.
 
-The PAC-3 MSE interceptor provides Patriot’s primary anti-ballistic capability through hit-to-kill technology. With range exceeding **60 km** and intercept altitude of **20-40 km** against ballistic missiles, it uses 180 miniature attitude control motors for extreme terminal maneuverability. The June 2025 flight test validated upgraded seeker algorithms enhancing target discrimination in complex electronic warfare environments. Specification Aster 30 Block 1 NT PAC-3 MSE Maximum range (aerodynamic) >150 km ~160 km (GEM-T) Maximum range (ballistic) TBM up to 1,500 km class MRBM proven Kill mechanism Blast-fragmentation with proximity fuse Hit-to-kill kinetic Speed Mach 4.5 Mach 5+ Radar detection range 400 km (GF 300) ~300+ km (LTAMDS) Targets tracked 1,000+ Enhanced over legacy
+The PAC-3 MSE interceptor provides Patriot’s primary anti-ballistic capability through hit-to-kill technology. With range exceeding **60 km** and intercept altitude of **20-40 km** against ballistic missiles, it uses 180 miniature attitude control motors for extreme terminal maneuverability. The June 2025 flight test validated upgraded seeker algorithms enhancing target discrimination in complex electronic warfare environments. 
+| Specification | Aster 30 Block 1 NT | PAC-3 MSE |
+|---|---|---|
+| Maximum range (aerodynamic) | >150 km | ~160 km (GEM-T) |
+| Maximum range (ballistic) | TBM up to 1,500 km class | MRBM proven |
+| Kill mechanism | Blast-fragmentation with proximity fuse | Hit-to-kill kinetic |
+| Speed | Mach 4.5 | Mach 5+ |
+| Radar detection range | 400 km (GF 300) | ~300+ km (LTAMDS) |
+| Targets tracked | 1,000+ | Enhanced over legacy |
 
 ## Ukraine combat data reshapes performance assessments
 
@@ -68,7 +76,14 @@ The most consequential factor driving current procurement decisions may be deliv
 
 **MBDA has dramatically accelerated Aster production**, achieving a 500% increase from 2022 baselines. Lead times have fallen from 42 months to 30 months, with an 18-month target by 2026. The company invested €2.4 billion in production capacity expansion for 2025-2029 and recruited 2,500 employees in 2024 alone. Annual Aster production is rising from approximately 80-100 units in 2025 toward **300+ missiles per year by 2028**.
 
-Current production rate comparison: System 2024 Output 2027 Target Key Constraint PAC-3 MSE 500+ missiles 650 missiles Boeing seeker availability PAC-2 GEM-T 240 missiles 420 missiles New European facility (2026) Aster (all variants) 80-100 missiles 300+ missiles Lead time reduction ongoing Patriot batteries ~12/year ~12/year Global demand exceeds supply
+Current production rate comparison:
+
+| System | 2024 Output | 2027 Target | Key Constraint |
+|---|---|---|---|
+| PAC-3 MSE | 500+ missiles | 650 missiles | Boeing seeker availability |
+| PAC-2 GEM-T | 240 missiles | 420 missiles | New European facility (2026) |
+| Aster (all variants) | 80-100 missiles | 300+ missiles | Lead time reduction ongoing |
+| Patriot batteries | ~12/year | ~12/year | Global demand exceeds supply |
 
 Denmark explicitly cited delivery timelines in selecting SAMP/T NG. Lieutenant General Per Pugholm Olsen stated directly that Patriot “delivery timelines are longer”—a determinative factor for a nation that had **no operational ground-based surface-to-air missile systems** prior to 2025.
 
@@ -96,7 +111,13 @@ The Nordic countries have each charted independent paths on long-range air defen
 
 **Norway remains the critical undecided player.** The 2025-2036 Long-Term Defence Plan allocates NOK 600 billion ($55 billion) over 12 years, explicitly identifying long-range air defense as one of the highest priorities. The plan calls for a system “to protect one geographical area against tactical ballistic missiles,” with investment funds postponed until after 2028. Chief of Defence General Eirik Kristoffersen acknowledged in April 2024: “I don’t have a clear answer today what sort of system we should buy… we need to compare all systems.”
 
-Norway’s Defence Commission estimated that full layered coverage of Oslo, Bergen, and military airbases would cost approximately **NOK 60 billion ($5.5 billion)** with annual operating costs of NOK 4 billion. Bergen naval base alone requires an additional NOK 20 billion investment. Nordic Country Long-Range Selection Delivery Status Rationale Sweden Patriot (2018) FOC 2025 Speed; Saab partnership Finland David’s Sling (2023) Contracted High-altitude gap; first export Denmark SAMP/T NG (2025) On order Delivery timelines; European autonomy Norway TBD (post-2028) Under consideration NASAMS expansion prioritized
+Norway’s Defence Commission estimated that full layered coverage of Oslo, Bergen, and military airbases would cost approximately **NOK 60 billion ($5.5 billion)** with annual operating costs of NOK 4 billion. Bergen naval base alone requires an additional NOK 20 billion investment. 
+| Nordic Country | Long-Range Selection | Delivery Status | Rationale |
+|---|---|---|---|
+| Sweden | Patriot (2018) | FOC 2025 | Speed; Saab partnership |
+| Finland | David’s Sling (2023) | Contracted | High-altitude gap; first export |
+| Denmark | SAMP/T NG (2025) | On order | Delivery timelines; European autonomy |
+| Norway | TBD (post-2028) | Under consideration | NASAMS expansion prioritized |
 
 ## Implications for Norway’s forthcoming decision
 

@@ -294,15 +294,34 @@ Range: Capable of intercepting targets at ranges over 150 km
 
 ### Radar Integration Complexity
 
-Radar SystemIntegration ComplexityKey Integration ChallengesGhostEye MRLowAlready being integrated; software compatibility optimizedAN/MPQ-64 Sentinel F1NoneAlready integrated (baseline)ELM-2084 MMRHighDifferent data protocols, physical interfaces, command structuresELM-2311 C-MMRHighDifferent data protocols, physical interfaces, command structuresSaab Giraffe 4AMediumNATO standards compatibility but requires interface developmentThales Ground Master 200 MM/AMediumNATO standards compatibility but requires interface development
+| Radar System | Integration Complexity | Key Integration Challenges |
+|---|---|---|
+| GhostEye MR | Low | Already being integrated; software compatibility optimized |
+| AN/MPQ-64 Sentinel F1 | None | Already integrated (baseline) |
+| ELM-2084 MMR | High | Different data protocols, physical interfaces, command structures |
+| ELM-2311 C-MMR | High | Different data protocols, physical interfaces, command structures |
+| Saab Giraffe 4A | Medium | NATO standards compatibility but requires interface development |
+| Thales Ground Master 200 MM/A | Medium | NATO standards compatibility but requires interface development |
 
 ### Missile Integration Complexity
 
-Missile SystemIntegration ComplexityKey Integration ChallengesAMRAAM-ERNoneAlready integrated with NASAMS 3PAC-3 MSEVery HighDifferent launcher requirements, fire control, guidance data linksStunner/SkyCeptorHighDifferent fire control systems, potential new launcher requirementsBarak ERMedium-HighSimilar launch architecture but different guidance systemsAster 30 Block 1NTVery HighDesigned for different system architecture, complex integration
+| Missile System | Integration Complexity | Key Integration Challenges |
+|---|---|---|
+| AMRAAM-ER | None | Already integrated with NASAMS 3 |
+| PAC-3 MSE | Very High | Different launcher requirements, fire control, guidance data links |
+| Stunner/SkyCeptor | High | Different fire control systems, potential new launcher requirements |
+| Barak ER | Medium-High | Similar launch architecture but different guidance systems |
+| Aster 30 Block 1NT | Very High | Designed for different system architecture, complex integration |
 
 ## 4. Comprehensive Capability Comparison
 
-System CombinationATBM CapabilityRangeCost EfficiencyTime to ImplementationGhostEye MR + AMRAAM-ERModerateMediumHighShort (1-2 years)**ELM-2084 + Stunner/SkyCeptor****Very High****Long****Medium****Long (5+ years)**GhostEye MR + PAC-3 MSEHighMediumLowMedium-Long (3-5 years)ELM-2311 + Barak ERHighLongMediumLong (4-6 years)Thales GM-200 + Aster 30 Block 1NTHighLongLowVery Long (6+ years)
+| System Combination | ATBM Capability | Range | Cost Efficiency | Time to Implementation |
+|---|---|---|---|---|
+| GhostEye MR + AMRAAM-ER | Moderate | Medium | High | Short (1-2 years) |
+| **ELM-2084 + Stunner/SkyCeptor** | **Very High** | **Long** | **Medium** | **Long (5+ years)** |
+| GhostEye MR + PAC-3 MSE | High | Medium | Low | Medium-Long (3-5 years) |
+| ELM-2311 + Barak ER | High | Long | Medium | Long (4-6 years) |
+| Thales GM-200 + Aster 30 Block 1NT | High | Long | Low | Very Long (6+ years) |
 
 ## 5. Recommended Upgrade Pathway
 
@@ -342,7 +361,12 @@ The target end-state is a NASAMS architecture networked with **ELM-2084 MMR** ra
 
 ## 6. Cost-Benefit Analysis
 
-System Integration PathwayUpfront CostOperational CostCapability GainStrategic Value**Recommended Phased Pathway****Staged over 5+ years****Medium-High****Very High****Excellent.** Builds capability progressively, manages risk.GhostEye MR + AMRAAM-ER (Phase 1)$40-60M + missile stockLowModerateHigh (quick, foundational capability)Full ELM-2084 + Stunner (One Step)$100-125M + $20-30M/battery + high NREMediumVery HighMedium (high initial risk, long delay to any capability)GhostEye + PAC-3 MSE$40-60M + $50-60M/battery + high NREHighHighMedium (high cost, complex integration)
+| System Integration Pathway | Upfront Cost | Operational Cost | Capability Gain | Strategic Value |
+|---|---|---|---|---|
+| **Recommended Phased Pathway** | **Staged over 5+ years** | **Medium-High** | **Very High** | **Excellent.** Builds capability progressively, manages risk. |
+| GhostEye MR + AMRAAM-ER (Phase 1) | $40-60M + missile stock | Low | Moderate | High (quick, foundational capability) |
+| Full ELM-2084 + Stunner (One Step) | $100-125M + $20-30M/battery + high NRE | Medium | Very High | Medium (high initial risk, long delay to any capability) |
+| GhostEye + PAC-3 MSE | $40-60M + $50-60M/battery + high NRE | High | High | Medium (high cost, complex integration) |
 
 ## 7. Implementation Roadmap
 

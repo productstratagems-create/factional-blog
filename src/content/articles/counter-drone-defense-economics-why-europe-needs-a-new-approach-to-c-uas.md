@@ -34,7 +34,12 @@ Counter-Unmanned Aerial Systems (C-UAS) encompasses technologies designed to det
 
 NATO categorizes UAS by size and capability:
 
-GroupWeightExampleTypical CostThreat Profile**Group 1**<9 kgDJI Mavic, FPV drones$500-5,000Reconnaissance, grenade delivery**Group 2**9-25 kgCommercial/military small UAS$5,000-50,000ISR, small munitions**Group 3**25-600 kgShahed-136, Bayraktar TB2$20,000-5MStrike, persistent ISR**Group 4**>600 kgMQ-9 Reaper class$10M+Strategic ISR, precision strike
+| Group | Weight | Example | Typical Cost | Threat Profile |
+|---|---|---|---|---|
+| **Group 1** | <9 kg | DJI Mavic, FPV drones | $500-5,000 | Reconnaissance, grenade delivery |
+| **Group 2** | 9-25 kg | Commercial/military small UAS | $5,000-50,000 | ISR, small munitions |
+| **Group 3** | 25-600 kg | Shahed-136, Bayraktar TB2 | $20,000-5M | Strike, persistent ISR |
+| **Group 4** | >600 kg | MQ-9 Reaper class | $10M+ | Strategic ISR, precision strike |
 
 Traditional air defense systems (Patriot, SAMP/T, NASAMS) were designed primarily for Group 4 threats and aircraft. They can engage Group 3 drones but at economically unsustainable cost ratios. For Groups 1-2, they are largely ineffective—these targets are too small, too slow, and too cheap to justify engagement.
 
@@ -42,7 +47,14 @@ The C-UAS problem is therefore not about capability but about economics: how do 
 
 ### Why Traditional Air Defense Struggles
 
-FactorTraditional GBADC-UAS Requirement**Target RCS**>1 m² (aircraft)0.001-0.1 m² (small drones)**Target speed**200-3,000 km/h50-200 km/h**Target altitude**100-30,000 m0-500 m (often)**Engagement cost**$500K-5M acceptableMust be <$100K, ideally <$10K**Magazine depth**4-16 missiles per launcherPotentially hundreds of engagements per day**Detection range**Optimized for high/fastStruggles with low/slow/small
+| Factor | Traditional GBAD | C-UAS Requirement |
+|---|---|---|
+| **Target RCS** | >1 m² (aircraft) | 0.001-0.1 m² (small drones) |
+| **Target speed** | 200-3,000 km/h | 50-200 km/h |
+| **Target altitude** | 100-30,000 m | 0-500 m (often) |
+| **Engagement cost** | $500K-5M acceptable | Must be <$100K, ideally <$10K |
+| **Magazine depth** | 4-16 missiles per launcher | Potentially hundreds of engagements per day |
+| **Detection range** | Optimized for high/fast | Struggles with low/slow/small |
 
 NASAMS and IRIS-T SLM can engage larger drones effectively, but using a $400,000-1.5 million missile against a $20,000 Shahed still represents a 20:1 cost disadvantage. Against a $500 FPV drone, the ratio becomes absurd.
 
@@ -103,7 +115,11 @@ Non-kinetic solutions disable drones without physical destruction, offering pote
 **RF Jamming**
 Systems that overwhelm drone control links, forcing the drone to land, return home, or lose control.
 
-SystemManufacturerTypeRangeCostDroneGun TacticalDroneShieldHandheld1-2 km$30-50KAUDSChess DynamicsFixed/mobile5+ km$1-2MDedroneDefenderDedroneFixed1-2 km$200-500K
+| System | Manufacturer | Type | Range | Cost |
+|---|---|---|---|---|
+| DroneGun Tactical | DroneShield | Handheld | 1-2 km | $30-50K |
+| AUDS | Chess Dynamics | Fixed/mobile | 5+ km | $1-2M |
+| Dedrone Defender | Dedrone | Fixed | 1-2 km | $200-500K |
 
 **Limitations:**
 
@@ -129,7 +145,11 @@ Systems that feed false navigation data to drones, redirecting them away from pr
 **High-Power Microwave (HPM)**
 Directed energy systems that fry drone electronics.
 
-SystemDeveloperStatusRangeNotesLeonidasEpirus (US)Fielded1+ kmCounter-swarm capableRAVENRaytheonDevelopmentTBDCounter-electronicsMjölnirAFRL (US)DevelopmentTBDHigh-power prototype
+| System | Developer | Status | Range | Notes |
+|---|---|---|---|---|
+| Leonidas | Epirus (US) | Fielded | 1+ km | Counter-swarm capable |
+| RAVEN | Raytheon | Development | TBD | Counter-electronics |
+| Mjölnir | AFRL (US) | Development | TBD | High-power prototype |
 
 HPM systems offer the theoretical advantage of engaging swarms simultaneously and very low cost-per-shot. However, they remain largely developmental and face challenges with range and precision targeting.
 
@@ -140,19 +160,36 @@ When soft-kill fails or isn’t appropriate, kinetic solutions physically destro
 **Gun-Based Systems**
 Cannons with specialized ammunition for drone engagement.
 
-SystemCountryCaliberRangeCost per SystemCost per EngagementSkynexGermany35mm4 km€30-50M~$1,000Phalanx (C-RAM)USA20mm2 km$15M~$100Skyranger 30Germany30mm3 km€15-25M~$500Oerlikon RevolverSwitzerland35mm4 km€20-30M~$1,000
+| System | Country | Caliber | Range | Cost per System | Cost per Engagement |
+|---|---|---|---|---|---|
+| Skynex | Germany | 35mm | 4 km | €30-50M | ~$1,000 |
+| Phalanx (C-RAM) | USA | 20mm | 2 km | $15M | ~$100 |
+| Skyranger 30 | Germany | 30mm | 3 km | €15-25M | ~$500 |
+| Oerlikon Revolver | Switzerland | 35mm | 4 km | €20-30M | ~$1,000 |
 
 Gun systems offer excellent cost-per-engagement economics but limited range. They’re ideal for point defense but cannot provide wide-area coverage.
 
 **Specialized C-UAS Interceptors**
 Purpose-built missiles and drones designed to kill drones cost-effectively.
 
-SystemCountryTypeRangeUnit CostCost per KillCoyote Block 2USAJet-powered interceptor10-15 km$100K$100KMADIS/StingerUSAIR missile8 km$120K$120KRoadrunner-MUSA (Anduril)Reusable interceptorTBD$200-300KLower if recoveredAnvilUSA (Anduril)Kamikaze interceptorShort$10-20K$10-20KSkyWall 300UKNet launcher300m$50-100K$100-500
+| System | Country | Type | Range | Unit Cost | Cost per Kill |
+|---|---|---|---|---|---|
+| Coyote Block 2 | USA | Jet-powered interceptor | 10-15 km | $100K | $100K |
+| MADIS/Stinger | USA | IR missile | 8 km | $120K | $120K |
+| Roadrunner-M | USA (Anduril) | Reusable interceptor | TBD | $200-300K | Lower if recovered |
+| Anvil | USA (Anduril) | Kamikaze interceptor | Short | $10-20K | $10-20K |
+| SkyWall 300 | UK | Net launcher | 300m | $50-100K | $100-500 |
 
 **Directed Energy (Laser) Systems**
 The theoretical endgame for C-UAS economics: near-zero marginal cost per engagement.
 
-SystemDeveloperPowerStatusExpected Cost per ShotIron BeamRafael (Israel)100 kWNear operational~$2HELWSRaytheon (US)50 kWLimited fielding~$1DragonfireUK consortium50 kWTestingTBDRheinmetall HELGermany20-100 kWDevelopment~$1HELMA-PEU100 kWDevelopmentTBD
+| System | Developer | Power | Status | Expected Cost per Shot |
+|---|---|---|---|---|
+| Iron Beam | Rafael (Israel) | 100 kW | Near operational | ~$2 |
+| HELWS | Raytheon (US) | 50 kW | Limited fielding | ~$1 |
+| Dragonfire | UK consortium | 50 kW | Testing | TBD |
+| Rheinmetall HEL | Germany | 20-100 kW | Development | ~$1 |
+| HELMA-P | EU | 100 kW | Development | TBD |
 
 Lasers promise to solve the cost asymmetry problem entirely. A $50 million laser system that can engage 1,000 drones at $2 each ($2,000 total) versus a missile system where 1,000 engagements cost $100 million represents a fundamental shift in defensive economics.
 
@@ -343,7 +380,13 @@ France has notably not announced a military laser C-UAS program, relying instead
 
 Compared to US and Israeli investments, European C-UAS remains:
 
-DimensionUS/IsraelEurope**Deployed systems**Multiple, combat-testedLimited, mostly developmental**Laser programs**Operational/near-operational2027+ timelines**Procurement scale**Thousands of interceptorsDozens to hundreds**Doctrinal integration**MatureEmerging**Industrial base**EstablishedFragmented
+| Dimension | US/Israel | Europe |
+|---|---|---|
+| **Deployed systems** | Multiple, combat-tested | Limited, mostly developmental |
+| **Laser programs** | Operational/near-operational | 2027+ timelines |
+| **Procurement scale** | Thousands of interceptors | Dozens to hundreds |
+| **Doctrinal integration** | Mature | Emerging |
+| **Industrial base** | Established | Fragmented |
 
 ## The Norwegian Question
 
@@ -353,7 +396,10 @@ Norway faces a specific C-UAS calculus shaped by geography, threat environment, 
 
 Norway’s ground-based air defense centers on NASAMS, with Patriot under consideration for long-range/BMD capability. Neither system is optimized for C-UAS:
 
-SystemC-UAS CapabilityLimitation**NASAMS**Can engage Group 3+ dronesAMRAAM too expensive for Group 1-2**Patriot (if acquired)**Can engage Group 3-4 dronesMassive cost asymmetry
+| System | C-UAS Capability | Limitation |
+|---|---|---|
+| **NASAMS** | Can engage Group 3+ drones | AMRAAM too expensive for Group 1-2 |
+| **Patriot (if acquired)** | Can engage Group 3-4 drones | Massive cost asymmetry |
 
 Norway has **no dedicated C-UAS capability** in current force structure or announced procurement plans.
 
@@ -458,7 +504,12 @@ The European Sky Shield Initiative (ESSI) provides a potential framework for coo
 
 ### ESSI Potential for C-UAS
 
-OpportunityStatusJoint procurement of C-UAS systemsNot currently addressedShared sensor networksUnder discussionCommon C2 architectureIn developmentCoordinated laser developmentLimited
+| Opportunity | Status |
+|---|---|
+| Joint procurement of C-UAS systems | Not currently addressed |
+| Shared sensor networks | Under discussion |
+| Common C2 architecture | In development |
+| Coordinated laser development | Limited |
 
 ESSI could theoretically enable:
 
@@ -526,7 +577,11 @@ NATO has recognized the C-UAS challenge through various initiatives:
 
 The cost of inaction is not zero. Consider:
 
-ScenarioCost of DefenseCost of No DefenseDrone harassment of oil platformNOK 100M (C-UAS system)Production disruption, potential casualtiesDrone ISR of military exerciseNOK 50M (mobile C-UAS)Intelligence compromiseMass drone attack on baseNOK 500M (layered C-UAS)Base destruction, aircraft losses in billions
+| Scenario | Cost of Defense | Cost of No Defense |
+|---|---|---|
+| Drone harassment of oil platform | NOK 100M (C-UAS system) | Production disruption, potential casualties |
+| Drone ISR of military exercise | NOK 50M (mobile C-UAS) | Intelligence compromise |
+| Mass drone attack on base | NOK 500M (layered C-UAS) | Base destruction, aircraft losses in billions |
 
 The asymmetry that makes drones attractive to attackers is the same asymmetry that makes C-UAS investment attractive to defenders—if procured at the right cost point.
 

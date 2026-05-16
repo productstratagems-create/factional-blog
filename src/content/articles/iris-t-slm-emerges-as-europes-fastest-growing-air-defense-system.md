@@ -26,7 +26,16 @@ The political significance extends beyond military capability. France has critic
 
 **Sweden** represents the largest Nordic commitment, signing contracts totaling over **€1.1 billion**. The June 2025 agreement covers **seven IRIS-T SLM fire units** (49 vehicles) at SEK 9 billion (~€810 million), with deliveries scheduled from mid-2028 to 2030. Sweden also ordered equipment for four IRIS-T SLS short-range platoons in November 2025 at approximately SEK 3.5 billion. As a founding consortium partner holding an 18% development share since the 1990s, Sweden already operates IRIS-T missiles on Gripen fighters.
 
-**Switzerland** signed a **500 million Swiss franc** contract in July 2025 for five IRIS-T SLM systems, becoming the 15th ESSI member when it formally joined in October 2024. This purchase represents Switzerland’s return to integrated air defense after decades without such capability, notably achieved while maintaining Swiss neutrality outside NATO. Country Contract Value Fire Units Delivery Timeline Germany €950 million 6 SLM 2024-2027 Sweden ~€1.1 billion 7 SLM + 4 SLS platoons 2028-2030 Switzerland ~€525 million 5 SLM TBD Estonia/Latvia (joint) ~€1 billion combined 3 SLM 2024-2025 Slovenia ~€200 million+ 3 SLM 2025-2027 Bulgaria €182 million 1 SLM (+options for 6 more) 2025+ Denmark Undisclosed 1+ units 2026
+**Switzerland** signed a **500 million Swiss franc** contract in July 2025 for five IRIS-T SLM systems, becoming the 15th ESSI member when it formally joined in October 2024. This purchase represents Switzerland’s return to integrated air defense after decades without such capability, notably achieved while maintaining Swiss neutrality outside NATO. 
+| Country | Contract Value | Fire Units | Delivery Timeline |
+|---|---|---|---|
+| Germany | €950 million | 6 SLM | 2024-2027 |
+| Sweden | ~€1.1 billion | 7 SLM + 4 SLS platoons | 2028-2030 |
+| Switzerland | ~€525 million | 5 SLM | TBD |
+| Estonia/Latvia (joint) | ~€1 billion combined | 3 SLM | 2024-2025 |
+| Slovenia | ~€200 million+ | 3 SLM | 2025-2027 |
+| Bulgaria | €182 million | 1 SLM (+options for 6 more) | 2025+ |
+| Denmark | Undisclosed | 1+ units | 2026 |
 
 **Bulgaria** signed an initial €182 million contract in October 2024 for one fire unit, with options to purchase up to five additional IRIS-T SLM units and one IRIS-T SLX long-range unit by 2032—potentially totaling **$1.4 billion**. Bulgaria explicitly chose IRIS-T over Patriot because the cost differential meant it could achieve national coverage with seven batteries for approximately $1.4 billion versus $7 billion for Patriot.
 
@@ -58,7 +67,13 @@ Despite this expansion, **significant bottlenecks remain**. Approximately 75% of
 
 ## Cost comparisons favor IRIS-T for medium-range requirements
 
-IRIS-T SLM offers compelling economics compared to competing systems. A standard **IRIS-T SLM battery costs approximately €150-200 million** depending on configuration, with individual missiles priced at **€400,000 to €1 million**. Sweden’s order at approximately €115 million per battery reflects a reduced configuration with two launchers instead of the standard three. System Battery Cost Missile Cost Key Advantage IRIS-T SLM €150-200 million €400K-€1 million Best value for cruise missile/aircraft defense NASAMS $150-285 million $1-2.4 million (AMRAAM) Missile flexibility, mature system SAMP/T ~$500-550 million ~$2 million (Aster 30) Ballistic missile defense capability Patriot $360M-$1.1 billion $3.7-4 million (PAC-3) Long-range BMD benchmark
+IRIS-T SLM offers compelling economics compared to competing systems. A standard **IRIS-T SLM battery costs approximately €150-200 million** depending on configuration, with individual missiles priced at **€400,000 to €1 million**. Sweden’s order at approximately €115 million per battery reflects a reduced configuration with two launchers instead of the standard three. 
+| System | Battery Cost | Missile Cost | Key Advantage |
+|---|---|---|---|
+| IRIS-T SLM | €150-200 million | €400K-€1 million | Best value for cruise missile/aircraft defense |
+| NASAMS | $150-285 million | $1-2.4 million (AMRAAM) | Missile flexibility, mature system |
+| SAMP/T | ~$500-550 million | ~$2 million (Aster 30) | Ballistic missile defense capability |
+| Patriot | $360M-$1.1 billion | $3.7-4 million (PAC-3) | Long-range BMD benchmark |
 
 IRIS-T missiles cost roughly **one-third to one-half** of SAMP/T’s Aster 30 interceptors and approximately **one-quarter** of Patriot PAC-3 missiles. This differential drove Bulgaria’s decision: achieving national coverage with seven batteries would cost roughly $1.4 billion with IRIS-T versus $7 billion with Patriot.
 
