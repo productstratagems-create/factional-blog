@@ -9,8 +9,14 @@
  *   node src/scripts/enrich-articles.mjs --limit=5  # process first N articles
  *   node src/scripts/enrich-articles.mjs --slug=my-article-slug  # single article
  *
+ * On each update cycle the previous panel is appended to the article body
+ * as a dated "## Update / ## Oppdatering" section before the new panel is
+ * generated. This keeps the article as a living document while the panel
+ * always shows the freshest synthesis.
+ *
  * Requires:  ANTHROPIC_API_KEY env var
  * Writes to: src/data/research-context.json  (commit this file)
+ *            src/content/articles/*.md        (appends update sections)
  */
 
 import { readdir, readFile, writeFile, mkdir } from 'fs/promises';
@@ -49,6 +55,30 @@ function isStale(entry) {
   if (!entry?.lastVerified) return true;
   const age = (Date.now() - new Date(entry.lastVerified).getTime()) / 86_400_000;
   return age > STALE_DAYS;
+}
+
+// ── Integrate previous panel into article body ─────────────────────────────
+async function integrateIntoArticle(file, prev, lang) {
+  const articlePath = join(ARTICLES, file);
+  const raw = await readFile(articlePath, 'utf8');
+
+  const date = new Date(prev.lastVerified + 'T00:00:00Z');
+  const dateStr = date.toLocaleDateString(
+    lang === 'en' ? 'en-GB' : lang === 'sv' ? 'sv-SE' : 'nb-NO',
+    { year: 'numeric', month: 'long' },
+  );
+
+  const heading = lang === 'en'
+    ? `## Update: ${dateStr}`
+    : lang === 'sv'
+    ? `## Uppdatering: ${dateStr}`
+    : `## Oppdatering: ${dateStr}`;
+
+  // Skip if this exact heading is already in the article (idempotent)
+  if (raw.includes(heading)) return false;
+
+  await writeFile(articlePath, raw.trimEnd() + `\n\n${heading}\n\n${prev.summary}\n`);
+  return true;
 }
 
 // ── Enrichment call ────────────────────────────────────────────────────────
@@ -149,6 +179,12 @@ async function main() {
 
     process.stdout.write(`enrich ${slug} …`);
     try {
+      // Bake the previous panel into the article before replacing it
+      if (ctx[slug]?.summary) {
+        const integrated = await integrateIntoArticle(file, ctx[slug], fm.lang || 'no');
+        if (integrated) process.stdout.write(' [prev→article]');
+      }
+
       ctx[slug] = await enrich(slug, fm, client);
       processed++;
       process.stdout.write(' done\n');
