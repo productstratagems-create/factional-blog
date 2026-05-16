@@ -1,0 +1,155 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Divider from '../../components/Divider.astro';
+import { siteHref } from '../../utils/slug';
+import { SERIES } from '../../data/series';
+
+const allArticles = await getCollection('articles', (e) => !e.data.draft);
+
+const seriesData = Object.entries(SERIES).map(([slug, meta]) => ({
+  slug,
+  ...meta,
+  count: allArticles.filter((a) => a.data.series === slug).length,
+})).filter((s) => s.count > 0);
+---
+
+<BaseLayout
+  title="Serier | Norsk Luftvern"
+  description="Utforsk alle artikkelserierne fra Norsk Luftvern — grundige, flerdelte analyser av luftvern og missilforsvar."
+>
+  <div class="serier-page container">
+    <header class="page-header">
+      <p class="page-super" data-i18n="series.header">Serier</p>
+      <h1 class="page-title">Artikkelse&shy;rier</h1>
+    </header>
+
+    <Divider spacing="md" />
+
+    <div class="series-grid">
+      {seriesData.map((s) => (
+        <a href={siteHref(`/serier/${s.slug}`)} class="series-card">
+          <span class="series-card-super" data-i18n="series.label">Serie</span>
+          <span class="series-card-title">{s.title}</span>
+          <span class="series-card-desc">{s.description}</span>
+          <span class="series-card-footer">
+            <span class="series-card-count">
+              {s.count} <span data-i18n="series.parts">deler</span>
+            </span>
+            <span class="series-card-cta" data-i18n="series.explore">Utforsk →</span>
+          </span>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .serier-page {
+    padding-bottom: var(--spacing-3xl);
+  }
+
+  .page-header {
+    padding-block: var(--spacing-2xl) var(--spacing-xl);
+  }
+
+  .page-super {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-teal);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-heading);
+    line-height: 1;
+  }
+
+  .series-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    padding-top: var(--spacing-xl);
+  }
+
+  .series-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-teal);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    text-decoration: none;
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .series-card:hover {
+    border-color: var(--color-navy);
+    border-left-color: var(--color-navy);
+    background: var(--color-border);
+  }
+
+  .series-card-super {
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-teal);
+  }
+
+  .series-card-title {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-heading);
+    line-height: 1.15;
+  }
+
+  .series-card-desc {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--color-muted);
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .series-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .series-card-count {
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-muted);
+  }
+
+  .series-card-cta {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-navy);
+  }
+</style>

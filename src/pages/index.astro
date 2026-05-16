@@ -67,7 +67,7 @@ const featuredReadingTime = featured?.data.readingTimeMinutes ?? Math.max(1, Mat
               <span class="series-card-title">{s.title}</span>
               <span class="series-card-desc">{s.description}</span>
               <span class="series-card-footer">
-                <span class="series-card-count">{s.count} <span data-i18n="series.articles">artikler</span></span>
+                <span class="series-card-count">{s.count} <span data-i18n="series.parts">deler</span></span>
                 <span class="series-card-cta" data-i18n="series.explore">Utforsk →</span>
               </span>
             </a>
@@ -81,9 +81,12 @@ const featuredReadingTime = featured?.data.readingTimeMinutes ?? Math.max(1, Mat
     {editorialSections.map(sec => (
       <section class="editorial-section container">
         <div class="editorial-header">
-          <p class="editorial-label" data-i18n={`cat.name.${sec.cat}`}>
-            {sec.cat === 'analyse' ? 'Analyse' : sec.cat === 'missilforsvar' ? 'Missilforsvar' : 'Luftvern'}
-          </p>
+          <div class="editorial-header-left">
+            <p class="editorial-eyebrow" data-i18n="cat.label">Kategori</p>
+            <p class="editorial-label" data-i18n={`cat.name.${sec.cat}`}>
+              {sec.cat === 'analyse' ? 'Analyse' : sec.cat === 'missilforsvar' ? 'Missilforsvar' : 'Luftvern'}
+            </p>
+          </div>
           <a href={siteHref(`/categories/${sec.cat}`)} class="editorial-see-all"
              data-i18n="series.see-all">Se alle →</a>
         </div>
@@ -133,6 +136,22 @@ const featuredReadingTime = featured?.data.readingTimeMinutes ?? Math.max(1, Mat
     margin-bottom: var(--spacing-md);
     border-bottom: 1px solid var(--color-border);
     padding-bottom: var(--spacing-sm);
+  }
+
+  .editorial-header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+  }
+
+  .editorial-eyebrow {
+    font-family: var(--font-ui);
+    font-size: 0.62rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-teal);
+    margin: 0;
   }
 
   .editorial-label {
