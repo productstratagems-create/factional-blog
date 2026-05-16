@@ -28,6 +28,8 @@ export async function getStaticPaths() {
 const { series } = Astro.params;
 const { articles } = Astro.props;
 const meta = SERIES[series] ?? { title: series, description: '' };
+const countNo = articles.filter(a => a.data.lang !== 'en').length;
+const countEn = articles.filter(a => a.data.lang === 'en').length;
 ---
 
 <BaseLayout
@@ -39,7 +41,9 @@ const meta = SERIES[series] ?? { title: series, description: '' };
       <p class="page-super" data-i18n="series.label">Serie</p>
       <h1 class="page-title">{meta.title}</h1>
       {meta.description && <p class="page-desc">{meta.description}</p>}
-      <p class="page-count">{articles.length} <span data-i18n="series.parts">deler</span></p>
+      <p class="page-count" data-count-all={articles.length} data-count-no={countNo} data-count-en={countEn}>
+        <span id="page-count-num">{articles.length}</span> <span data-i18n="series.parts">deler</span>
+      </p>
     </header>
 
     <Divider spacing="md" />
@@ -101,3 +105,8 @@ const meta = SERIES[series] ?? { title: series, description: '' };
     padding-block: var(--spacing-xl);
   }
 </style>
+
+<script>
+  import { initPageCount } from '../../scripts/pageCount';
+  initPageCount();
+</script>

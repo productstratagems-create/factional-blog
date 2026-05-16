@@ -26,6 +26,8 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.params;
 const { articles } = Astro.props;
+const countNo = articles.filter(a => a.data.lang !== 'en').length;
+const countEn = articles.filter(a => a.data.lang === 'en').length;
 ---
 
 <BaseLayout
@@ -38,7 +40,9 @@ const { articles } = Astro.props;
         <a href={siteHref('/tags')} data-i18n="tags.label">Stikkord</a>
       </p>
       <h1 class="page-title">{tag}</h1>
-      <p class="page-count">{articles.length} {articles.length === 1 ? 'artikkel' : 'artikler'}</p>
+      <p class="page-count" data-count-all={articles.length} data-count-no={countNo} data-count-en={countEn}>
+        <span id="page-count-num">{articles.length}</span> <span data-i18n="cat.articles">artikler</span>
+      </p>
     </header>
 
     <Divider spacing="md" />
@@ -100,3 +104,8 @@ const { articles } = Astro.props;
     padding-block: var(--spacing-xl);
   }
 </style>
+
+<script>
+  import { initPageCount } from '../../scripts/pageCount';
+  initPageCount();
+</script>

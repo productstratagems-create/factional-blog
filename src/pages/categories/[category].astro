@@ -21,13 +21,15 @@ export async function getStaticPaths() {
         articles: catArticles.slice(0, PAGE_SIZE),
         category,
         total: catArticles.length,
+        countNo: catArticles.filter(a => a.data.lang !== 'en').length,
+        countEn: catArticles.filter(a => a.data.lang === 'en').length,
         totalPages,
       },
     };
   });
 }
 
-const { articles, category, total, totalPages } = Astro.props;
+const { articles, category, total, countNo, countEn, totalPages } = Astro.props;
 
 const categoryLabels: Record<string, string> = {
   'luftvern':        'Luftvern',
@@ -71,7 +73,9 @@ const parentCat = parentCategoryMap[category];
         )}
         <p class="page-super" data-i18n="cat.label">Kategori</p>
         <h1 class="page-title" data-i18n={`cat.name.${category}`}>{label}</h1>
-        <p class="article-count">{total} <span data-i18n={total === 1 ? 'cat.article' : 'cat.articles'}>{total === 1 ? 'artikkel' : 'artikler'}</span></p>
+        <p class="article-count" data-count-all={total} data-count-no={countNo} data-count-en={countEn}>
+          <span id="page-count-num">{total}</span> <span data-i18n="cat.articles">artikler</span>
+        </p>
       </header>
 
       {subCats.length > 0 && (
@@ -220,3 +224,8 @@ const parentCat = parentCategoryMap[category];
     white-space: nowrap;
   }
 </style>
+
+<script>
+  import { initPageCount } from '../../scripts/pageCount';
+  initPageCount();
+</script>

@@ -36,6 +36,8 @@ export async function getStaticPaths() {
           pageNum,
           totalPages,
           total: catArticles.length,
+          countNo: catArticles.filter(a => a.data.lang !== 'en').length,
+          countEn: catArticles.filter(a => a.data.lang === 'en').length,
         },
       });
     }
@@ -44,7 +46,7 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const { articles, category, pageNum, totalPages, total } = Astro.props;
+const { articles, category, pageNum, totalPages, total, countNo, countEn } = Astro.props;
 
 const categoryLabels: Record<string, string> = {
   'luftvern':        'Luftvern',
@@ -75,7 +77,9 @@ const nextHref = pageNum < totalPages ? siteHref(`/categories/${category}/page/$
       <header class="page-header">
         <p class="page-super">Kategori</p>
         <h1 class="page-title">{label}</h1>
-        <p class="article-count">{total} {total === 1 ? 'artikkel' : 'artikler'}</p>
+        <p class="article-count" data-count-all={total} data-count-no={countNo} data-count-en={countEn}>
+          <span id="page-count-num">{total}</span> <span data-i18n="cat.articles">artikler</span>
+        </p>
       </header>
 
       <Divider spacing="md" />
@@ -174,3 +178,8 @@ const nextHref = pageNum < totalPages ? siteHref(`/categories/${category}/page/$
     white-space: nowrap;
   }
 </style>
+
+<script>
+  import { initPageCount } from '../../../../scripts/pageCount';
+  initPageCount();
+</script>
