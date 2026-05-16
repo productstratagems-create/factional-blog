@@ -5,16 +5,24 @@ interface Props {
   seriesSlug: string;
   seriesLabel: string;
   totalCount: number;
+  currentPosition?: number;
 }
 
-const { seriesSlug, seriesLabel, totalCount } = Astro.props;
+const { seriesSlug, seriesLabel, totalCount, currentPosition } = Astro.props;
 ---
 
 <a href={siteHref(`/serier/${seriesSlug}`)} class="series-banner">
   <span class="series-icon" aria-hidden="true">≡</span>
   <span class="series-text">
+    {currentPosition && (
+      <span class="series-position">
+        <span data-i18n="series.part">Del</span> {currentPosition} <span data-i18n="series.of">av</span> {totalCount} ·&nbsp;
+      </span>
+    )}
     <span class="series-label">{seriesLabel}</span>
-    <span class="series-count">· {totalCount} <span data-i18n="series.articles">artikler</span></span>
+    {!currentPosition && (
+      <span class="series-count">· {totalCount} <span data-i18n="series.articles">artikler</span></span>
+    )}
   </span>
   <span class="series-cta" data-i18n="series.see-all">Se alle →</span>
 </a>
@@ -51,6 +59,12 @@ const { seriesSlug, seriesLabel, totalCount } = Astro.props;
 
   .series-text {
     flex: 1;
+  }
+
+  .series-position {
+    font-weight: 600;
+    color: var(--color-teal);
+    font-size: 0.75rem;
   }
 
   .series-label {

@@ -51,6 +51,9 @@ const {
     <div class="card-category">
       <CategoryBadge category={category} />
     </div>
+    <div class="card-lang" aria-label={`Language: ${lang.toUpperCase()}`}>
+      {lang.toUpperCase()}
+    </div>
   </a>
 
   <div class="card-body">
@@ -119,6 +122,23 @@ const {
     position: absolute;
     top: var(--spacing-sm);
     left: var(--spacing-sm);
+  }
+
+  .card-lang {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background: rgba(10, 3, 3, 0.55);
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--font-ui);
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.15em 0.5em;
+    border-radius: var(--radius-full);
+    line-height: 1.6;
+    pointer-events: none;
   }
 
   /* ── Body ── */
