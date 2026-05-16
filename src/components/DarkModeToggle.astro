@@ -29,6 +29,11 @@
       applyTheme(next);
     }
   });
+
+  // Sync with OS preference changes during the session
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    applyTheme(e.matches ? 'dark' : 'light');
+  });
 </script>
 
 <style>

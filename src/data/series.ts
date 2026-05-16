@@ -11,4 +11,8 @@ export const SERIES: Record<string, { title: string; description: string }> = {
     title: 'The Nordic Series',
     description: 'Air defense developments across Norway, Sweden, Finland, and Denmark.',
   },
+  laser: {
+    title: 'The Directed Energy Series',
+    description: 'High-energy lasers, HPM systems, and directed-energy weapons reshaping modern air defense.',
+  },
 };

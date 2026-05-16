@@ -8,6 +8,7 @@ lang: no
 draft: false
 heroImage: "/images/image-2.png"
 heroImageAlt: "Air defense system firing red energy beams at an aerial threat"
+series: laser
 ---
 
 Operativt utplassert mobilt luftvern med laser i lavforsvar mot missiler, raketter, artilleri og bombekaster ligger muligens noe nærmere i tid enn mange tenker seg.
