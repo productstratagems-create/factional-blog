@@ -21,7 +21,7 @@ const { seriesSlug, seriesLabel, totalCount, currentPosition } = Astro.props;
     )}
     <span class="series-label">{seriesLabel}</span>
     {!currentPosition && (
-      <span class="series-count">· {totalCount} <span data-i18n="series.articles">artikler</span></span>
+      <span class="series-count">· {totalCount} <span data-i18n="series.parts">deler</span></span>
     )}
   </span>
   <span class="series-cta" data-i18n="series.see-all">Se alle →</span>

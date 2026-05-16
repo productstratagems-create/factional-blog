@@ -47,6 +47,7 @@ export async function getStaticPaths() {
 const { articles, category, pageNum, totalPages, total } = Astro.props;
 
 const categoryLabels: Record<string, string> = {
+  'luftvern':        'Luftvern',
   'missilforsvar':   'Missilforsvar',
   'missile-systems': 'Missilsystemer',
   'procurement':     'Anskaffelser',
