@@ -3,7 +3,7 @@ title: "Intercepting Hypersonic Glide Vehicles: Physics, Sensors, and the Progra
 date: 2026-05-16
 excerpt: "Hypersonic glide vehicles don't just fly fast — they exploit a specific altitude band and flight profile that renders most existing interceptors geometrically incapable of engagement. Understanding why requires moving beyond speed to sensor coverage, engagement timelines, and the physics of hit-to-kill at the boundary of the atmosphere."
 category: analyse
-tags: [hypersonic, HGV, missile-defense, sensors, THAAD, Arrow-4, SM-6]
+tags: [hypersonic, hgv, missile-defense, sensors, thaad, arrow-4, sm-6]
 author: "Norsk luftvern"
 lang: en
 draft: false
