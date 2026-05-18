@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleGrid from '../../components/ArticleGrid.astro';
-import ArticleTimeline from '../../components/ArticleTimeline.astro';
 import ArticleControls from '../../components/ArticleControls.astro';
 import Divider from '../../components/Divider.astro';
 import { SERIES } from '../../data/series';
@@ -54,7 +53,6 @@ const countEn = articles.filter(a => a.data.lang === 'en').length;
 
     <div class="series-grid">
       <ArticleGrid articles={articles} columns={3} id="article-grid" />
-      {articles.length > 1 && <ArticleTimeline articles={articles} />}
     </div>
   </div>
 </BaseLayout>
