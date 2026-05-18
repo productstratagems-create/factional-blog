@@ -8,6 +8,8 @@ lang: no
 draft: false
 heroImage: "/images/img_2988.jpg"
 heroImageAlt: "Norsk luftvern-tidslinje infografikk 1957–2022"
+tags: [norway]
+
 ---
 
 ### Sammendrag

@@ -9,6 +9,8 @@ draft: false
 series: comparison
 heroImage: "/images/img_9124.png"
 heroImageAlt: "NATO-alliert luftvern sammenligningsinfografikk med missiloppskytning"
+tags: [patriot, nasams, comparison, nato]
+
 ---
 
 The Ukraine conflict has fundamentally validated two cornerstone air defense systems: Norway’s NASAMS and America’s PATRIOT. Both systems have proven their combat effectiveness against sophisticated Russian threats, but analysis reveals they serve **complementary rather than competitive roles** in modern air defense architecture. NASAMS excels at cruise missile and aircraft interception with 94% effectiveness at significantly lower cost, while PATRIOT specializes in ballistic missile defense with proven success against hypersonic threats. For NATO allies, the strategic question isn’t which system to choose, but how to optimize their combined deployment.

@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/img_0285.png"
 heroImageAlt: "NASAMS air defense equipment"
+tags: [nasams, procurement, norway]
+
 ---
 
 **Norway has signed a contract with Kongsberg Defence & Aerospace (KDA) to buy more NASAMS air defense systems worth NOK 2.3 billion, with a fixed-price option for additional air defense worth NOK 2.5 billion.**

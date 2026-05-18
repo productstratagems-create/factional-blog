@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/1280px-thel-actd.jpg"
 heroImageAlt: "THEL Tactical High Energy Laser system"
+tags: [counter-drone, directed-energy]
+
 ---
 
 Epirus Leonidas, a cutting-edge counter-drone system developed by Epirus Inc. Utilizing high-power microwave (HPM) technology, Leonidas offers a non-kinetic solution for neutralizing unmanned aerial systems, particularly drone swarms.

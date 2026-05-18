@@ -9,6 +9,8 @@ draft: false
 series: nordic
 heroImage: "/images/create-a-highly-detailed-high-resolution-image-showcasing-a-modern-nordic-4.png"
 heroImageAlt: "Air defense systems and aircraft in a Nordic landscape"
+tags: [norway]
+
 ---
 
 Norge står overfor det mest alvorlige trusselbildet siden den kalde krigen. Samtidig gjennomfører Norge den største satsingen på luftvern siden 1960-tallet – over 40 milliarder kroner skal investeres frem til 2036. Men hvorfor trenger et lite NATO-land som Norge egen luftvernskapasitet?

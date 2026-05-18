@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/img_8726.jpg"
 heroImageAlt: "Ballistic missile launch arc long-exposure photograph"
+tags: [norway]
+
 ---
 
 Norway faces its most significant air defense capability gap in decades, having operated no long-range ground-based air defense systems exceeding 100 kilometers since decommissioning its NIKE Hercules batteries in 1991.

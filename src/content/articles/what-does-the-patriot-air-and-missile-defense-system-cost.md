@@ -9,6 +9,8 @@ draft: false
 series: cost
 heroImage: "/images/img_3074.jpg"
 heroImageAlt: "Patriot M901–M903 lastekomparasjonsdiagram"
+tags: [patriot, ballistic-missile-defense]
+
 ---
 
 ## According to GenAI …

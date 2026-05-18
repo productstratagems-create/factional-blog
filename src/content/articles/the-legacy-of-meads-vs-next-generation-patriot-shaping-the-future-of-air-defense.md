@@ -9,6 +9,8 @@ draft: false
 series: comparison
 heroImage: "/images/sam-d_launcher.jpg"
 heroImageAlt: "Historical SAM-D (early Patriot) test launch in snowy terrain"
+tags: [patriot, comparison]
+
 ---
 
 In the world of modern air and missile defense, few projects were as ambitious—or as consequential—as the Medium Extended Air Defense System (MEADS). Conceived as a collaborative effort between the United States, Germany, and Italy, MEADS was designed to leapfrog existing defense systems, offering transformative capabilities that seemed, at the time, almost futuristic. While MEADS never reached operational deployment, its vision and foundational technologies laid the groundwork for the advances we see today in next-generation systems like the Patriot, particularly with the advent of the Lower Tier Air and Missile Defense Sensor (LTAMDS) and the PAC-3 Missile Segment Enhancement (MSE).

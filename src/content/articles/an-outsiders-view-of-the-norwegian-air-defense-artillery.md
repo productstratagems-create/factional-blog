@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/b40l60.jpg"
 heroImageAlt: "Historic anti-aircraft gun on public display"
+tags: [norway]
+
 ---
 
 Title: Norway's Air Defense Artillery: A Necessity in a Changing World

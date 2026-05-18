@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/img_8195-1.png"
 heroImageAlt: "Satellite orbital periods and altitudes: GPS, Galileo, GLONASS and others"
+tags: [ballistic-missile-defense, europe]
+
 ---
 
 Europe has emerged as a notable force in integrated air and missile defense (IAMD) sensor technologies, driven by €326 billion in defense spending in 2024 and unprecedented threats from hypersonic weapons and complex air attack scenarios. **European defense companies now deliver world-class radar systems, space-based sensors, and integrated C4ISR solutions that rival or exceed US capabilities while providing strategic autonomy**. The convergence of space-based early warning systems like TWISTER, advanced ground-based AESA radars from SAMP/T NG, and next-generation data fusion frameworks represents Europe’s most ambitious defense technology initiative since the Cold War.

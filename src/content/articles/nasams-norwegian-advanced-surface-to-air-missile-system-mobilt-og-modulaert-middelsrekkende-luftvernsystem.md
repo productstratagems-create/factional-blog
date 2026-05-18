@@ -8,6 +8,8 @@ lang: no
 draft: false
 heroImage: "/images/img_8288.jpg"
 heroImageAlt: "NASAMS II fire unit communication architecture diagram"
+tags: [nasams, norway]
+
 ---
 
 ## **Mobilt, modulært og middelsrekkende luftvern**

@@ -9,6 +9,8 @@ draft: false
 heroImage: "/images/img_5833-1.jpg"
 heroImageAlt: "To missillauncherlastebiler avfyrer i ørken"
 series: laser
+tags: [directed-energy, europe]
+
 ---
 
 Denne oversikten dekker de viktigste aspektene av artikkelen og gir innsikt i Europas fremgang innen høyenergi laservåpen.

@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/img_8309-1.jpg"
 heroImageAlt: "Standard Missile launching from a navy destroyer"
+tags: [ballistic-missile-defense]
+
 ---
 
 **The Deutsche Marine’s most ambitious surface combatant program extends Zeitenwende to sea**

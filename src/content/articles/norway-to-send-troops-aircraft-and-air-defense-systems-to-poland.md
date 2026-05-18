@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/81e34536-dc65-4525-8ebd-0b1e79c59623.jpeg"
 heroImageAlt: "Fighter jet silhouette against sunset sky"
+tags: [norway]
+
 ---
 
 The situation in Ukraine is critical, and much of the material support for the country is being transported through Poland. In a few days, Norway will be sending a contribution consisting of soldiers, aircraft, and air defense systems to help protect the most important hub for the transport of civilian and military material support from other countries to Ukraine. In this way, Norway is helping to ensure that aid reaches Ukraine so that it can continue its fight for freedom, says Defense Minister Bjørn Arild Gram.

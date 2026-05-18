@@ -9,6 +9,8 @@ draft: false
 series: nordic
 heroImage: "/images/img_5425-1.jpg"
 heroImageAlt: "PAC-3 missil i fart nær fjell"
+tags: [patriot, norway]
+
 ---
 
 Norge skal anskaffe to nye, langtrekkende luftvernbatterier for å øke beskyttelsen mot lufttrusler.

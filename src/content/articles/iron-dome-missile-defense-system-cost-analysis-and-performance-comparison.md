@@ -3,13 +3,14 @@ title: "Iron Dome Missile Defense System: Cost Analysis and Performance Comparis
 date: 2025-07-18
 excerpt: "Precision Defense Despite Premium Costs Iron Dome interceptors cost $40,000-50,000 each, commanding premium pricing that customers willingly pay for proven 90%+ success rates and unmatched area coverage. Despite costing…"
 category: analyse
-tags: [iron-dome, cost-analysis, comparison]
 author: "Norsk luftvern"
 lang: en
 draft: false
 series: cost
 heroImage: "/images/img_8191-1.jpg"
 heroImageAlt: "Iron Dome air defense system firing an interceptor missile"
+tags: [iron-dome, cost-analysis, comparison, ballistic-missile-defense]
+
 ---
 
 ## Precision Defense Despite Premium Costs

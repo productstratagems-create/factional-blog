@@ -3,17 +3,14 @@ title: "NASAMS 3: Norges neste luftvernsgenerasjon"
 date: 2025-02-08
 excerpt: "NASAMS 3 er den nyeste generasjonen av det norsk-amerikanske luftvernsystemet. Vi ser nærmere på hva som er nytt, og hva oppgraderingen betyr for Luftforsvaret."
 category: luftvern
-tags:
-  - NASAMS
-  - Kongsberg
-  - Raytheon
-  - oppgradering
 heroImage: "/images/img_8295-1.jpg"
 heroImageAlt: "NASAMS 3 launcher under øvelse på Rena"
 lang: no
 featured: false
 author: "Norsk luftvern"
 draft: false
+tags: [nasams, procurement, norway]
+
 ---
 
 NASAMS — National Advanced Surface-to-Air Missile System — er selve grunnsteinen i norsk luftvern. Systemet er utviklet i et samarbeid mellom Kongsberg Defence & Aerospace og Raytheon, og er i dag i operativ tjeneste i over 15 land verden rundt.

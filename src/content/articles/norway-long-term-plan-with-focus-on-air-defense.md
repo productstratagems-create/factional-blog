@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/img_0282.png"
 heroImageAlt: "Norwegian air defense planning"
+tags: [norway]
+
 ---
 
 **Prop. 87 S (2023-2024)**

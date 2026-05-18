@@ -8,6 +8,8 @@ lang: no
 draft: false
 heroImage: "/images/futuristic-air-defense-console.png"
 heroImageAlt: "Futuristisk militærkonsoll med glødende skjermer"
+tags: [norway]
+
 ---
 
 I møte med nye trusler og et skjerpet sikkerhetspolitisk landskap arbeider Norge med å utvikle et helhetlig luftvernsystem. I debatten brukes begreper som «lagdelt luftvern» og «fullspektrum-luftvern» – men hva betyr det egentlig? I denne artikkelen skiller vi mellom forsvarsfaglige behov og industribaserte løsninger, og ser på hvordan Norge planlegger å tette kritiske hull i luftvernet.

@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/img_0123.jpg"
 heroImageAlt: "Military directed energy weapon system on heavy vehicle"
+tags: [counter-drone]
+
 ---
 
 The SkyWall 100 and SkyWall 300, a unique counter-drone system developed by OpenWorks Engineering. Utilizing net-based capture technology, these systems offer a non-destructive method for intercepting unmanned aerial vehicles.

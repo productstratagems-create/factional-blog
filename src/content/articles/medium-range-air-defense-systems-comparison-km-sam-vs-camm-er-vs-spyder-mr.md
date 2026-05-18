@@ -9,6 +9,8 @@ draft: false
 series: comparison
 heroImage: "/images/img_5483-1.jpg"
 heroImageAlt: "To mobile luftvernplattformer side-by-side sammenligning"
+tags: [comparison]
+
 ---
 
 ## Executive Summary

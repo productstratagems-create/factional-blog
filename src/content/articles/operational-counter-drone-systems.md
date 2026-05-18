@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/img_8280-1.png"
 heroImageAlt: "Military personnel operating air defense systems with drones at sunset"
+tags: [counter-drone]
+
 ---
 
 **U.S. Systems**

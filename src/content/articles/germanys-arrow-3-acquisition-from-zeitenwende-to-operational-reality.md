@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/image-17.png"
 heroImageAlt: "Launcherkjøretøy med vindturbiner i bakgrunnen"
+tags: [arrow-3, procurement]
+
 ---
 
 **The largest defense export in Israeli history marks a paradigm shift in European missile defense**

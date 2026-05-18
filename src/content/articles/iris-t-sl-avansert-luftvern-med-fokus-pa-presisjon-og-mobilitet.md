@@ -8,6 +8,8 @@ lang: no
 draft: false
 heroImage: "/images/img_7271-1.jpg"
 heroImageAlt: "IRIS-T air defense system on a truck-mounted launcher in desert terrain"
+tags: [iris-t]
+
 ---
 
 ## **Avansert luftvern med fokus på presisjon og mobilitet**

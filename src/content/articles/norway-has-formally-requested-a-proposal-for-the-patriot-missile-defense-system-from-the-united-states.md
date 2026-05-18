@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/3a7f0d9f-8a13-43ea-87fc-2fab24d1567f.jpeg"
 heroImageAlt: "Patriot air defense Combat Power operational map, 7 March 2003"
+tags: [patriot, ballistic-missile-defense, norway]
+
 ---
 
 ## **Norway has formally requested a proposal for the Patriot missile defense system from the United States.**

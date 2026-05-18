@@ -8,6 +8,8 @@ lang: no
 draft: false
 heroImage: "/images/img_3013.jpg"
 heroImageAlt: "Diagram fra italiensk militærøvelse med luftvernsystemer"
+tags: [patriot, samp-t, europe]
+
 ---
 
 Rimelig bra system, eller gårsdagens teknologi med vekstpotensial?

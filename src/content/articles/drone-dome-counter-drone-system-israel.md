@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/image-31.png"
 heroImageAlt: "Militær drone svever over ørkenkjøretøy ved solnedgang"
+tags: [counter-drone]
+
 ---
 
 The Drone Dome, a comprehensive counter-drone system developed by Rafael Advanced Defense Systems. Designed to protect against a wide range of unmanned aerial threats, Drone Dome employs a multi-layered approach, combining radar, electro-optical/infrared sensors, RF jamming, and optional laser capabilities. 

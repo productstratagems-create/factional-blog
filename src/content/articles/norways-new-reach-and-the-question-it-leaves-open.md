@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/img_5930-1.jpg"
 heroImageAlt: "Luftvernlauncher avfyrer med snødekte fjell i bakgrunnen"
+tags: [norway]
+
 ---
 
 **On January 30, 2026, Norway signed a contract for its first land-based long-range precision fire capability. The Chunmoo deal answered one of the most pressing questions in Norwegian Army modernization. It also brought another into sharper focus.**

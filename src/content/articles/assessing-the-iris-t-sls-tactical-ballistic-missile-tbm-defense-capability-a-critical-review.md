@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/img_7346-1.jpg"
 heroImageAlt: "IRIS-T SLS short-range air defense system infographic"
+tags: [iris-t, ballistic-missile-defense]
+
 ---
 
 ## Overview of the System

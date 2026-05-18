@@ -8,6 +8,8 @@ lang: no
 draft: false
 heroImage: "/images/img_3173.jpg"
 heroImageAlt: "Globalt radarnettverksdekkingskart"
+tags: [europe]
+
 ---
 
 Det europeiske luftforsvarslandskapet har gjennomgått betydelige endringer de siste årene, der ledende europeiske nasjoner har tilpasset sine prioriteringer og investeringer for å møte nye sikkerhetsmessige utfordringer. Russland-Ukraina-konflikten har fungert som en katalysator for denne endringen, der den har avdekket sårbarheter i eksisterende forsvarssystemer og fremhevet behovet for mer robuste, integrerte tilnærminger til luft- og missilforsvar. Europeiske nasjoner har respondert ved å revidere sine forsvarsprioriteringer, lansere samarbeidsinitiativer og øke investeringene i bakkebaserte luftforsvarssystemer.

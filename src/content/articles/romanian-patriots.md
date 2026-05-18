@@ -9,6 +9,8 @@ draft: false
 series: cost
 heroImage: "/images/img_5813.jpg"
 heroImageAlt: "Missilforsvar med rumensk flagg"
+tags: [patriot]
+
 ---
 
 ## **A Detailed Look at the Missile Defense System Acquisition**

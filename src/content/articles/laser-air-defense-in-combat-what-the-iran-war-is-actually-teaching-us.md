@@ -9,6 +9,8 @@ draft: false
 heroImage: "/images/novel-air-defense-tech-2.png"
 heroImageAlt: "Futuristisk kjøretøy avfyrer energivåpen i urbant miljø"
 series: laser
+tags: [directed-energy]
+
 ---
 
 **The conflict has become the most significant live test of directed-energy air defense in history — and the results are complicated.**

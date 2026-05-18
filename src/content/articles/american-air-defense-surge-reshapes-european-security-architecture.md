@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/img_3410.jpg"
 heroImageAlt: "Stort militært transportfly med jagerfly i formasjon"
+tags: [europe]
+
 ---
 
 *In the vast expanse of the New Mexico desert, a PAC-3 MSE missile streaks skyward, its exhaust trail cutting through the dawn sky like a silver thread. Inside the Lockheed Martin production facility, workers attach the 13,000th missile to the assembly line—a number that would have seemed impossible just three years ago. Halfway across the world, in a Brussels conference room, European defense ministers study satellite imagery of the expanding American industrial complex, each calculating what this unprecedented surge means for their own nations’ security. The age of American homeland defense has begun, and with it, the quiet revolution that will reshape every alliance calculation for the next generation.*

@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/army-mehel-laser-stryker-at-ft-sill-mfix.jpg"
 heroImageAlt: "US Army MEHEL high-energy laser mounted on Stryker vehicle at Fort Sill"
+tags: [coyote, counter-drone]
+
 ---
 
 The Coyote Block 2 counter-drone system is a kinetic interceptor developed by Raytheon Technologies. Designed for military air defense, the system aims to neutralize unmanned aerial threats, particularly small and medium-sized drones.

@@ -3,13 +3,14 @@ title: "Air Defense Systems Cost Database: Acquisition, Interceptor, and Lifecyc
 date: 2026-03-06
 excerpt: "This database(../air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs) was published in January 2026. In the six weeks since, two sequential real-world stress…"
 category: analyse
-tags: [cost-analysis, comparison]
 author: "Norsk luftvern"
 lang: en
 draft: false
 series: cost
 heroImage: "/images/img_9331.jpg"
 heroImageAlt: "Air defense systems cost database infographic January 2026"
+tags: [cost-analysis, comparison, procurement]
+
 ---
 
 This [database](../air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs) was published in January 2026. In the six weeks since, two sequential real-world stress tests have fundamentally changed the context in which these cost figures should be read — and in some cases changed the figures themselves. 

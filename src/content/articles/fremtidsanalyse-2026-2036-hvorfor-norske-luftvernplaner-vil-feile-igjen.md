@@ -8,6 +8,8 @@ lang: no
 draft: false
 heroImage: "/images/img_5442-1.jpg"
 heroImageAlt: "Norsk automatisert forsvarsarkitektur – Færdigt 2026"
+tags: [norway]
+
 ---
 
 Introduksjon: Forutsigbar gjentakelse

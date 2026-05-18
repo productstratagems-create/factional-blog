@@ -8,6 +8,8 @@ lang: no
 draft: false
 heroImage: "/images/img_5488-1.jpg"
 heroImageAlt: "Mellomdistanse SAM avfyres fra mobil taktisk launcher"
+tags: [norway]
+
 ---
 
 Luftvern er en avgjørende del av forsvarsstrategien til mange nasjoner over hele verden. Det er et forsvarssystem som er utviklet for å beskytte mot fiendtlige luftangrep, inkludert fly, helikoptre, missiler og droner. I denne artikkelen vil vi utforske ulike syn på relevansen av luftvern sett fra Norge og et internasjonalt perspektiv. Vi vil også se på historiske hendelser der luftvern har spilt en viktig rolle, samt utviklingen av luftvern i Norge etter andre verdenskrig.

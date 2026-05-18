@@ -9,6 +9,8 @@ draft: false
 series: cost
 heroImage: "/images/img_5412.jpg"
 heroImageAlt: "Patriot-ammunisjonslastebil med missiler"
+tags: [patriot]
+
 ---
 
 What does Patriot cost in Europe and globally?

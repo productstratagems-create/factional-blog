@@ -8,6 +8,8 @@ lang: no
 draft: false
 heroImage: "/images/972fd479-c351-4e81-9f9f-b6afe0a12045.webp"
 heroImageAlt: "PAC-3 MSE missil avfyres mot blå himmel"
+tags: [norway]
+
 ---
 
 Her er noen punkter som kan være nyttige dersom noen lurer på hva som kan/bør omfattes av et styrket luftvern. Del dem til de det angår.

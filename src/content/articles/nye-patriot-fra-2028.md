@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/49ddcdcf-3e86-4fc1-bd47-8095ac35e1f5.jpeg"
 heroImageAlt: "Patriot missile launcher deployed in desert"
+tags: [patriot]
+
 ---
 
 Oppdatering 3. april 2025:

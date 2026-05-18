@@ -9,6 +9,8 @@ draft: false
 series: nordic
 heroImage: "/images/create-a-highly-detailed-high-resolution-image-showcasing-a-modern-nordic-3.png"
 heroImageAlt: "Sveriges luftvern: systematisk oppbygging lag for lag"
+tags: [sweden]
+
 ---
 
 *Denne analysen dokumenterer den svenske luftvernoppbyggingen fra 2021 til i dag, med utgangspunkt i offentlig tilgjengelig materiale fra Försvarsmakten, FMV og den svenske regjering.*

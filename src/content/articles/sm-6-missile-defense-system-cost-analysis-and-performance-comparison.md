@@ -9,6 +9,8 @@ draft: false
 series: cost
 heroImage: "/images/img_8842.jpg"
 heroImageAlt: "SM-6 missile launching from a destroyer at dusk"
+tags: [cost-analysis, comparison, ballistic-missile-defense]
+
 ---
 
 ## America’s Combat-Proven Naval Multi-Mission Shield

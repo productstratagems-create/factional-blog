@@ -3,12 +3,6 @@ title: "Norsk luftvern fra Nike til NASAMS: En historisk oversikt"
 date: 2024-12-01
 excerpt: "Fra de statiske Nike Ajax-batteriene på 1950-tallet til dagens mobile NASAMS — en gjennomgang av 70 år med norsk luftvern."
 category: history
-tags:
-  - historikk
-  - Nike
-  - HAWK
-  - NASAMS
-  - luftvernets-utvikling
 lang: no
 featured: false
 author: "Norsk luftvern"
@@ -16,6 +10,8 @@ draft: false
 series: nordic
 heroImage: "/images/cropped-img_7371.jpeg"
 heroImageAlt: "Snow-covered mountainous Norwegian terrain with forests and valleys"
+tags: [nasams, norway]
+
 ---
 
 Norsk luftvern har en rik og variert historie som strekker seg tilbake til de første etterkrigsårene. Fra de imponerende, men statiske Nike-batteriene langs kysten til dagens mobile og nettverksintegrerte NASAMS-system — historien speiler både den teknologiske utviklingen og de skiftende trusselvurderingene i en verden i kontinuerlig endring.

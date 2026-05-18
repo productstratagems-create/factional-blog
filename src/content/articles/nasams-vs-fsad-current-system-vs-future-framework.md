@@ -9,6 +9,8 @@ draft: false
 series: comparison
 heroImage: "/images/img_5433.jpg"
 heroImageAlt: "NASAMS/TNG komponenter i feltdeployering"
+tags: [nasams, comparison]
+
 ---
 
 "Full Spectrum Air Defence," as defined by Kongsberg, is a comprehensive, layered, and scalable air defense system-architecture designed to counter the full range of aerial threats. It integrates various layers of defense – very short, short, medium, and long range – each tailored to address specific threats like drones, cruise missiles, and ballistic missiles. This integrated approach ensures a unified and effective response to diverse aerial and missile attacks.

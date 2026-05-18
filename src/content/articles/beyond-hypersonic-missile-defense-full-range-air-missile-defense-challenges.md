@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/img_8338.png"
 heroImageAlt: "Beyond Hypersonic Missile Defense: NATO's full air defense challenge infographic"
+tags: [ballistic-missile-defense, hypersonic]
+
 ---
 
 Hypersonic glide vehicles have quickly become the new buzzword in missile defense debates. They capture headlines with their blistering speeds and unpredictable flight paths. Russia, China, and the United States are all racing to deploy them, while adapting doctrines to also meet the challenge. But while hypersonic missile defense is important, it is only one piece of a far bigger puzzle. Modern ground-based air defense must be ready to counter a full spectrum of threats. These include traditional ballistic missiles and stealthy cruise weapons. They also face relentless drone swarms and high-speed sea-skimming attacks. Each category poses a different set of challenges. The real test will be building a layered and flexible system. This system must be capable of defeating all threats at once.

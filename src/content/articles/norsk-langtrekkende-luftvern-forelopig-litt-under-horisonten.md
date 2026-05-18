@@ -9,6 +9,8 @@ draft: false
 series: nordic
 heroImage: "/images/img_5402.jpg"
 heroImageAlt: "Patriot-launcherbeholder diagram"
+tags: [norway]
+
 ---
 
 En rekke land i Europa ønsker langtrekkende luftvern. Så også Norge, men detaljene er foreløpig få, og usikkerheten stor. Det synes som at veien fram til moderne langtrekkende luftvern i Europa både er lang og kronglete, og med flere skyer på himmelen.

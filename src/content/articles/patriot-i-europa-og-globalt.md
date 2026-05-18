@@ -8,6 +8,8 @@ lang: no
 draft: false
 heroImage: "/images/img_8835.jpg"
 heroImageAlt: "Mobile PAC-3 Patriot air defense system deployed in the field"
+tags: [patriot, europe]
+
 ---
 
 Patriot er i dag solgt til, eller i bruk av, hele 18 land verden over. I Europa er brukerne Nederland (1987), Tyskland (1989), Hellas (1999), Spania (2004), Romania (2017), Sverige (2018), Polen (2018) og Sveits (2022). I resten av verden er det ytterligere ni brukerland: Japan, Israel, Saudi-Arabia, Kuwait, Taiwan, Korea, Forente arabiske emirater, Qatar og Bahrain. Sortert etter anskaffelsesdato.

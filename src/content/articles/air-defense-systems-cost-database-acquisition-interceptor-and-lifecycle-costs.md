@@ -3,13 +3,14 @@ title: "Air Defense Systems Cost Database: Acquisition, Interceptor, and Lifecyc
 date: 2026-01-02
 excerpt: "Updated version March 2026(../air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs-editors-update-march-2026) The most comprehensive open-source reference for…"
 category: anskaffelse
-tags: [cost-analysis, patriot, nasams, thaad]
 author: "Norsk luftvern"
 lang: en
 draft: false
 series: cost
 heroImage: "/images/img_9125.png"
 heroImageAlt: "Air Defense Systems Cost Database - anskaffelse, interceptor og livssykluskostnader"
+tags: [cost-analysis, patriot, nasams, thaad, procurement]
+
 ---
 
 [Updated version March 2026](../air-defense-systems-cost-database-acquisition-interceptor-and-lifecycle-costs-editors-update-march-2026)

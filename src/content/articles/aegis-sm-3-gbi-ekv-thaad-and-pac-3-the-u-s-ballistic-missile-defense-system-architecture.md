@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/img_8028-1.jpg"
 heroImageAlt: "Ballistic missile defense phases: boost, midcourse and terminal"
+tags: [patriot, thaad, sm-3, ballistic-missile-defense]
+
 ---
 
 The United States operates the world’s most sophisticated ballistic missile defense system, integrating multiple layers of sensors, interceptors, and command networks to counter threats across all phases of ballistic missile flight. Recent combat deployments and evolving threats have validated some capabilities while highlighting critical gaps that drive ongoing modernization efforts.

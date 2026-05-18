@@ -8,6 +8,8 @@ lang: no
 draft: false
 heroImage: "/images/cropped-cropped-img_87261.jpg"
 heroImageAlt: "Missile launch arc against evening sky"
+tags: [europe]
+
 ---
 
 I kjølvannet av nylige uttalelser fra USA som har sådd tvil om landets fortsatte engasjement i europeisk sikkerhet, har flere europeiske nasjoner den siste tiden kommet med en rekke kunngjøringer knyttet til eget forsvar. 

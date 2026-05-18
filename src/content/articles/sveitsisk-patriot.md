@@ -8,6 +8,8 @@ lang: no
 draft: false
 heroImage: "/images/img_2982.jpg"
 heroImageAlt: "Patriot-batterier utplassert i ørken med tre launcherpakker"
+tags: [patriot]
+
 ---
 
 I juni 2021 besluttet Sveits å gå til anskaffelse av 36 F-35 kampfly og fem batterier med Patriot langtrekkende luftvern. Dette i konkurranse mot flytypene Eurofighter Typhoon, F/A-18 Super Hornet, Rafale og luftvernsystemet [SAMP/T](../europas-patriot-sampt). Systemene er en sentral del av moderniseringen av landets luftforsvarsevne frem mot 2030, som i dag består av en aldrende flåte med F/A-18 Hornet og F-5 Tiger kampfly, samt Rapier, Stinger og Skyguard luftvern.  [Ekstern artikkel](https://www.aviacionline.com/2021/06/surprise-surprise-swiss-federal-council-proposes-the-purchase-of-36-lockheed-martin-f-35a-for-nfk-program/) [Ekstern artikkel](https://www.thedefensepost.com/2021/07/01/switzerland-f-35-replacement-fleet/)

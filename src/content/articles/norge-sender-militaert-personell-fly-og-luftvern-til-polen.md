@@ -9,6 +9,8 @@ draft: false
 series: nordic
 heroImage: "/images/img_0040.jpg"
 heroImageAlt: "C-17 Globemaster III military cargo aircraft"
+tags: [norway]
+
 ---
 
 Norge sender militært personell, fly og luftvern til Polen for å beskytte et sentralt knutepunkt for transport av hjelp til Ukraina. Denne flyplassen er avgjørende for å få frem både humanitær hjelp og militært utstyr til Ukraina. 

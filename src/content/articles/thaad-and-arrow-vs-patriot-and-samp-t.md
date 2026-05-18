@@ -9,6 +9,8 @@ draft: false
 series: comparison
 heroImage: "/images/img_8317-1.jpg"
 heroImageAlt: "THAAD missile museum display and launch composite"
+tags: [patriot, samp-t, thaad, comparison]
+
 ---
 
 ## How Four Nations Built the World’s Most Advanced Shield - And What It Reveals About Modern Alliance Strategy

@@ -9,6 +9,8 @@ draft: false
 heroImage: "/images/img_8282-1.png"
 heroImageAlt: "Air defense systems and directed energy weapons over an urban landscape"
 series: laser
+tags: [directed-energy, europe]
+
 ---
 
 European nations are making significant strides in the development of laser-directed energy weapons (LDEWs) as part of their broader efforts to modernize defense capabilities. These systems, designed to counter emerging threats such as drones, missiles, and artillery, are being prioritized due to their cost-effectiveness, operational flexibility, and potential to complement traditional kinetic weapons. With numerous projects underway and multinational collaborations gaining momentum, Europe aims to achieve operational deployment of advanced LDEWs by 2030. This article provides a comprehensive overview of key European initiatives, prototypes, and strategic plans in this domain.

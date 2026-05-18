@@ -9,6 +9,8 @@ draft: false
 series: cost
 heroImage: "/images/sam-d_launcher.jpg"
 heroImageAlt: "Historical SAM-D (early Patriot) test launch in snowy terrain"
+tags: [patriot, hypersonic]
+
 ---
 
 The MIM-104 Patriot missile system represents one of the most successful examples of adaptive military technology in modern history, evolving from a 1961 Cold War concept into today’s premier air and missile defense system capable of intercepting hypersonic weapons. Over six decades, battlefield experience has directly driven its transformation through multiple technical generations, with development costs exceeding $30 billion and current interceptors costing up to $7 million each.

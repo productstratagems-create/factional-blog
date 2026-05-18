@@ -9,6 +9,8 @@ draft: false
 series: nordic
 heroImage: "/images/img_8043-1.jpg"
 heroImageAlt: "Patriot air defense system firing at twilight in coastal Nordic terrain"
+tags: [patriot, norway, sweden]
+
 ---
 
 Etter at NIKE-systemet begynte å gå ut på dato mot slutten av 1980-tallet, så har Norge vurdert nytt langtrekkende luftvern minst to ganger, men så langt har det ikke ført til anskaffelser. Sverige, som besluttet å anskaffe Patriot i 2018, fikk det siste av i alt fire batterier i 2022. Det følgende er en kort oppsummering av hvordan dette skred frem i de to landene.

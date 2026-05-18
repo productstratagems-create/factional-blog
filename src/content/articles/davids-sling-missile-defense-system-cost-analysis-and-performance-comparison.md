@@ -9,6 +9,8 @@ draft: false
 series: cost
 heroImage: "/images/image-35.png"
 heroImageAlt: "Militært launcherkjøretøy avfyrer med eksplosjon"
+tags: [davids-sling, cost-analysis, comparison, ballistic-missile-defense]
+
 ---
 
 ## Cost-Effective Excellence in Medium-Range Defense

@@ -9,6 +9,8 @@ draft: false
 series: nordic
 heroImage: "/images/hmlnas.jpg"
 heroImageAlt: "NASAMS high mobility launcher system"
+tags: [nasams, procurement, norway]
+
 ---
 
 Norge har signert en kontrakt med Kongsberg Defence & Aerospace (KDA) for å kjøpe mer NASAMS-luftvern til en verdi på 2,3 milliarder kroner, i tillegg til en fastprisopsjon på mer luftvern til 2,5 milliarder kroner. 

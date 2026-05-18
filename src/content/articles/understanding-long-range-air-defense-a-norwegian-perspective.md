@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/image-5.png"
 heroImageAlt: "Air defense radar targeting aircraft in Nordic terrain"
+tags: [norway]
+
 ---
 
 **Introduction**

@@ -8,6 +8,8 @@ lang: no
 draft: false
 heroImage: "/images/img_8303-1.jpg"
 heroImageAlt: "Mobile radar system on a truck in a winter coastal landscape"
+tags: [nasams, ballistic-missile-defense]
+
 ---
 
 PAC-3 MSE emerges as the most viable near-term ballistic missile defense integration candidate for NASAMS, leveraging proven hit-to-kill technology with minimal architectural modifications, while GhostEye MR radar provides the essential sensor foundation already under development. This combination could deliver tactical ballistic missile defense capability by 2027-2030 within existing NASAMS open architecture parameters.

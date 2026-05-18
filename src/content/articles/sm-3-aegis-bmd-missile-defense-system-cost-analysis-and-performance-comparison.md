@@ -9,6 +9,8 @@ draft: false
 series: cost
 heroImage: "/images/img_8271-1.jpg"
 heroImageAlt: "Aegis BMD SM-3 evolution plan showing missile development blocks"
+tags: [sm-3, cost-analysis, comparison, ballistic-missile-defense]
+
 ---
 
 ## **Ultra-Premium Missile Defense at Strategic Scale**

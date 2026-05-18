@@ -9,6 +9,8 @@ draft: false
 series: nordic
 heroImage: "/images/800px-avenger_missile.jpg"
 heroImageAlt: "Avenger short-range air defense system on HUMVEE"
+tags: [norway]
+
 ---
 
 Landmaktsproposisjonen prioriterer luftvern, sammen med artilleri, stridsvogn og langtrekkende våpensystemer, fremfor helikoptre til Hæren. Første anskaffelse i 2020-21, med kjøretøybasert luftvern, dernest bærbart luftvern fra 2025-28.

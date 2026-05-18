@@ -3,13 +3,14 @@ title: "Finland’s air defense transformation: from neutral defender to NATO’
 date: 2025-11-25
 excerpt: "Finland has executed one of the most dramatic military pivots in modern European history, transforming from seven decades of carefully maintained neutrality into a frontline NATO state with rapidly expanding air and…"
 category: nato
-tags: [nordic, nato, europe]
 author: "Norsk luftvern"
 lang: en
 draft: false
 series: nordic
 heroImage: "/images/img_8026-1.png"
 heroImageAlt: "Map of Nordic NATO countries: Norway, Sweden, Finland, Denmark and Iceland"
+tags: [nordic, nato, europe, finland]
+
 ---
 
 Finland has executed one of the most dramatic military pivots in modern European history, transforming from seven decades of carefully maintained neutrality into a frontline NATO state with rapidly expanding air and missile defense capabilities. The €317 million acquisition of Israel’s David’s Sling system, the first export sale of this advanced weapon, marks the centerpiece of an ambitious layered defense architecture now protecting 1,340 kilometers of NATO’s newest border with Russia.

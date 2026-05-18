@@ -8,6 +8,8 @@ lang: en
 draft: false
 heroImage: "/images/img_7347-1.jpg"
 heroImageAlt: "IRIS-T SLM medium-range air defense system infographic"
+tags: [iris-t, europe]
+
 ---
 
 The German-made IRIS-T SLM has become part of the **backbone of European medium-range air defense**, with at least **eight nations ordering systems** through the European Sky Shield Initiative framework since 2023. Diehl Defence has scaled production capacity by a factor of ten and invested approximately **€1 billion** to meet surging demand, with confirmed European contract values exceeding **€3.6 billion**. However, production still cannot match combined European and Ukrainian demand, creating multi-year delivery backlogs extending to 2030.

@@ -9,6 +9,8 @@ draft: false
 series: nordic
 heroImage: "/images/img_0280.png"
 heroImageAlt: "European air defense investment overview"
+tags: [denmark, europe]
+
 ---
 
 ## Executive Summary

@@ -3,12 +3,6 @@ title: "Patriot vs. SAMP/T: Sammenligning av luftvernsystemer"
 date: 2025-01-15
 excerpt: "En teknisk gjennomgang av de to mest aktuelle langtrekkende luftvernsystemene for Norge — MIM-104 Patriot og SAMP/T Mamba. Hva skiller dem, og hva betyr det for norsk luftvern?"
 category: missilforsvar
-tags:
-  - Patriot
-  - samp-t
-  - Mamba
-  - langtrekkende-luftvern
-  - sammenligning
 heroImage: "/images/img_8855.png"
 heroImageAlt: "Patriot og SAMP/T luftvernsystemer side om side under øvelse"
 lang: no
@@ -16,6 +10,8 @@ featured: false
 author: "Norsk luftvern"
 draft: false
 series: comparison
+tags: [patriot, samp-t, comparison]
+
 ---
 
 Norge er i ferd med å anskaffe et langtrekkende luftvernsystem til erstatning for det aldrende NASAMS-systemet på mellomlang rekkevidde. To systemer peker seg ut som de mest aktuelle kandidatene: det amerikanske MIM-104 Patriot og det fransk-italienske SAMP/T Mamba. Begge er i aktiv operativ tjeneste i NATO-land, og begge representerer toppmoderne teknologi innen bakkebasert luftvern.
