@@ -177,10 +177,6 @@ function dayMonth(d: Date, lang: string) {
     color: var(--color-muted);
   }
 
-  /* Respect global language filter — same pattern as article cards */
-  :global(html[data-lang-filter="en"]) .tl-item[data-article-lang="no"] { display: none; }
-  :global(html[data-lang-filter="no"]) .tl-item[data-article-lang="en"] { display: none; }
-
   @media (max-width: 600px) {
     .tl-year-group {
       grid-template-columns: 1fr;

@@ -108,8 +108,12 @@ const { totalCount } = Astro.props;
         c.style.display = lang === 'all' || c.dataset.articleLang === lang ? '' : 'none';
       });
       updateCount(countVisible(grid, lang));
-    } else {
-      updateCount(countVisible(tlEl, lang));
+    } else if (tlEl) {
+      const items = [...tlEl.querySelectorAll<HTMLElement>('[data-article-lang]')];
+      items.forEach(item => {
+        item.style.display = lang === 'all' || item.dataset.articleLang === lang ? '' : 'none';
+      });
+      updateCount(items.filter(el => lang === 'all' || el.dataset.articleLang === lang).length);
     }
   }
 
