@@ -36,7 +36,7 @@ let seriesPrev: CollectionEntry<'articles'> | null = null;
 let seriesNext: CollectionEntry<'articles'> | null = null;
 
 if (series) {
-  const seriesArticles = (await getCollection('articles', (e) => !e.data.draft && e.data.series === series))
+  const seriesArticles = (await getCollection('articles', (e) => !e.data.draft && e.data.series === series && e.data.lang === lang))
     .sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
   seriesCount = seriesArticles.length;
   const seriesIdx = seriesArticles.findIndex(e => e.id === entry.id);

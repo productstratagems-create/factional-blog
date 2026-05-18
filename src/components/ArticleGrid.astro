@@ -14,11 +14,13 @@ interface Props {
 const { articles, columns = 3, id } = Astro.props;
 
 const allArticles = await getCollection('articles', e => !e.data.draft);
-const seriesMap = new Map<string, string[]>();
+const seriesMapNo = new Map<string, string[]>();
+const seriesMapEn = new Map<string, string[]>();
 for (const a of allArticles.sort((a, b) => a.data.date.getTime() - b.data.date.getTime())) {
   if (a.data.series) {
-    if (!seriesMap.has(a.data.series)) seriesMap.set(a.data.series, []);
-    seriesMap.get(a.data.series)!.push(a.id);
+    const map = a.data.lang === 'en' ? seriesMapEn : seriesMapNo;
+    if (!map.has(a.data.series)) map.set(a.data.series, []);
+    map.get(a.data.series)!.push(a.id);
   }
 }
 ---
@@ -32,7 +34,8 @@ for (const a of allArticles.sort((a, b) => a.data.date.getTime() - b.data.date.g
       const readingTime = article.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordCount / 200));
 
       const s = article.data.series;
-      const seriesIds = s ? seriesMap.get(s) : undefined;
+      const articleLang = article.data.lang === 'en' ? 'en' : 'no';
+      const seriesIds = s ? (articleLang === 'en' ? seriesMapEn : seriesMapNo).get(s) : undefined;
       const seriesPosition = seriesIds
         ? { title: SERIES[s!]?.title ?? s!, part: seriesIds.indexOf(article.id) + 1, total: seriesIds.length }
         : undefined;

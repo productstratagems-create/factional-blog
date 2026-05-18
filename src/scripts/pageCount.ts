@@ -5,11 +5,8 @@ export function initPageCount() {
   const container = numEl.parentElement;
 
   function update() {
-    const lang = document.documentElement.getAttribute('data-lang-filter') || 'all';
-    const count =
-      lang === 'en' ? container?.dataset.countEn :
-      lang === 'no' ? container?.dataset.countNo :
-      container?.dataset.countAll;
+    const lang = localStorage.getItem('site-lang') === 'en' ? 'en' : 'no';
+    const count = lang === 'en' ? container?.dataset.countEn : container?.dataset.countNo;
     if (count !== undefined) numEl.textContent = count;
   }
 

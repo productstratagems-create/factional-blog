@@ -70,10 +70,12 @@ const fullTitle = title === 'Norsk Luftvern' ? title : `${title} | Norsk Luftver
     <script is:inline>
       (function(){var l=localStorage.getItem('site-lang');if(!l||l==='all'){l='no';try{var langs=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||''];for(var i=0;i<langs.length;i++){var s=(langs[i]||'').toLowerCase();if(/^(nb|nn|no)/.test(s)){l='no';break;}if(/^en/.test(s)){l='en';break;}}}catch(e){}localStorage.setItem('site-lang',l);}if(l!=='en')l='no';document.documentElement.setAttribute('data-lang-filter',l);})();
     </script>
-    <!-- Apply UI translations on load -->
+    <!-- Apply UI translations and page counts on load -->
     <script>
       import { apply } from '../scripts/i18n';
+      import { initPageCount } from '../scripts/pageCount';
       apply(localStorage.getItem('site-lang') === 'en' ? 'en' : 'no');
+      initPageCount();
     </script>
   </head>
 

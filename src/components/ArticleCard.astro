@@ -66,7 +66,11 @@ const {
       <div class="card-series">
         <span class="card-series-name">{seriesPosition.title}</span>
         <span class="card-series-sep">·</span>
-        <span class="card-series-pos">Del {seriesPosition.part} av {seriesPosition.total}</span>
+        <span class="card-series-pos">
+          {lang === 'en'
+            ? `Part ${seriesPosition.part} of ${seriesPosition.total}`
+            : `Del ${seriesPosition.part} av ${seriesPosition.total}`}
+        </span>
       </div>
     )}
     <h2 class="card-title">
