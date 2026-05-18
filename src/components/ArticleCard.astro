@@ -17,6 +17,7 @@ interface Props {
   lang?: string;
   featured?: boolean;
   tags?: string[];
+  seriesPosition?: { title: string; part: number; total: number };
 }
 
 const {
@@ -31,6 +32,7 @@ const {
   readingTime,
   lang = 'no',
   tags,
+  seriesPosition,
 } = Astro.props;
 ---
 
@@ -60,6 +62,13 @@ const {
   </a>
 
   <div class="card-body">
+    {seriesPosition && (
+      <div class="card-series">
+        <span class="card-series-name">{seriesPosition.title}</span>
+        <span class="card-series-sep">·</span>
+        <span class="card-series-pos">Del {seriesPosition.part} av {seriesPosition.total}</span>
+      </div>
+    )}
     <h2 class="card-title">
       <a href={href}>{title}</a>
     </h2>
@@ -195,4 +204,20 @@ const {
     gap: 0.3em;
     margin-top: -0.15em;
   }
+
+  .card-series {
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-teal);
+    margin-bottom: -0.2em;
+  }
+
+  .card-series-sep { opacity: 0.4; }
+  .card-series-pos { opacity: 0.75; }
 </style>

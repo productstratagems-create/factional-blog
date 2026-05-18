@@ -1,7 +1,9 @@
 ---
 import ArticleCard from './ArticleCard.astro';
+import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import { articleHref } from '../utils/slug';
+import { SERIES } from '../data/series';
 
 interface Props {
   articles: CollectionEntry<'articles'>[];
@@ -10,6 +12,15 @@ interface Props {
 }
 
 const { articles, columns = 3, id } = Astro.props;
+
+const allArticles = await getCollection('articles', e => !e.data.draft);
+const seriesMap = new Map<string, string[]>();
+for (const a of allArticles.sort((a, b) => a.data.date.getTime() - b.data.date.getTime())) {
+  if (a.data.series) {
+    if (!seriesMap.has(a.data.series)) seriesMap.set(a.data.series, []);
+    seriesMap.get(a.data.series)!.push(a.id);
+  }
+}
 ---
 
 {articles.length === 0 ? (
@@ -19,6 +30,12 @@ const { articles, columns = 3, id } = Astro.props;
     {articles.map((article) => {
       const wordCount = article.body?.split(/\s+/).length ?? 0;
       const readingTime = article.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordCount / 200));
+
+      const s = article.data.series;
+      const seriesIds = s ? seriesMap.get(s) : undefined;
+      const seriesPosition = seriesIds
+        ? { title: SERIES[s!]?.title ?? s!, part: seriesIds.indexOf(article.id) + 1, total: seriesIds.length }
+        : undefined;
 
       return (
         <ArticleCard
@@ -34,6 +51,7 @@ const { articles, columns = 3, id } = Astro.props;
           lang={article.data.lang}
           featured={article.data.featured}
           tags={article.data.tags}
+          seriesPosition={seriesPosition}
         />
       );
     })}
