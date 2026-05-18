@@ -6,8 +6,8 @@ category: analyse
 author: "Norsk luftvern"
 lang: en
 draft: false
-heroImage: "/images/img_0117.jpg"
-heroImageAlt: "Future directed energy defense systems capability overview"
+heroImage: "/images/futuristic-air-defense-control-room-with-large-screens.png"
+heroImageAlt: "Futuristic air and missile defense command center with large operational screens"
 tags: [comparison, nato, europe, ballistic-missile-defense]
 
 ---

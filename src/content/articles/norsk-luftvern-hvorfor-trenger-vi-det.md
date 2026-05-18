@@ -6,6 +6,7 @@ category: nato
 author: "Norsk luftvern"
 lang: no
 draft: false
+featured: true
 series: nordic
 heroImage: "/images/create-a-highly-detailed-high-resolution-image-showcasing-a-modern-nordic-4.png"
 heroImageAlt: "Air defense systems and aircraft in a Nordic landscape"

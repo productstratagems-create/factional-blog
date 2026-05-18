@@ -18,19 +18,26 @@ const seriesCards = Object.entries(SERIES).map(([slug, meta]) => ({
   count: allArticles.filter((a) => a.data.series === slug).length,
 })).filter((s) => s.count > 0);
 
-const featured = sorted.find((a) => a.data.featured) ?? sorted[0];
+const featuredNo = sorted.find((a) => a.data.featured && a.data.lang !== 'en')
+  ?? sorted.find((a) => a.data.lang !== 'en') ?? sorted[0];
+const featuredEn = sorted.find((a) => a.data.featured && a.data.lang === 'en')
+  ?? sorted.find((a) => a.data.lang === 'en') ?? sorted[0];
+
+const featuredIds = new Set([featuredNo?.id, featuredEn?.id].filter(Boolean));
 
 const EDITORIAL_CATEGORIES = ['analyse', 'missilforsvar', 'luftvern'] as const;
 
 const editorialSections = EDITORIAL_CATEGORIES.map(cat => ({
   cat,
   articles: sorted
-    .filter(a => a.data.category === cat && a.id !== featured?.id)
+    .filter(a => a.data.category === cat && !featuredIds.has(a.id))
     .slice(0, 3),
 })).filter(s => s.articles.length > 0);
 
-const featuredWordCount = featured?.body?.split(/\s+/).length ?? 0;
-const featuredReadingTime = featured?.data.readingTimeMinutes ?? Math.max(1, Math.ceil(featuredWordCount / 200));
+function readingTime(a: (typeof sorted)[0]) {
+  const wc = a?.body?.split(/\s+/).length ?? 0;
+  return a?.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wc / 200));
+}
 ---
 
 <BaseLayout
@@ -38,19 +45,35 @@ const featuredReadingTime = featured?.data.readingTimeMinutes ?? Math.max(1, Mat
   description="Nyheter, analyser og dybdeartikler om norsk luftvern og missilforsvar."
 >
   <div class="home-page">
-    {featured && (
-      <section class="hero-section container">
+    {featuredNo && (
+      <section class="hero-section container" data-article-lang="no">
         <HeroArticle
-          title={featured.data.title}
-          excerpt={featured.data.excerpt}
-          href={articleHref(featured.id)}
-          heroImage={featured.data.heroImage}
-          heroImageAlt={featured.data.heroImageAlt}
-          category={featured.data.category}
-          pubDate={featured.data.date}
-          author={featured.data.author}
-          readingTime={featuredReadingTime}
-          lang={featured.data.lang}
+          title={featuredNo.data.title}
+          excerpt={featuredNo.data.excerpt}
+          href={articleHref(featuredNo.id)}
+          heroImage={featuredNo.data.heroImage}
+          heroImageAlt={featuredNo.data.heroImageAlt}
+          category={featuredNo.data.category}
+          pubDate={featuredNo.data.date}
+          author={featuredNo.data.author}
+          readingTime={readingTime(featuredNo)}
+          lang={featuredNo.data.lang}
+        />
+      </section>
+    )}
+    {featuredEn && featuredEn.id !== featuredNo?.id && (
+      <section class="hero-section container" data-article-lang="en">
+        <HeroArticle
+          title={featuredEn.data.title}
+          excerpt={featuredEn.data.excerpt}
+          href={articleHref(featuredEn.id)}
+          heroImage={featuredEn.data.heroImage}
+          heroImageAlt={featuredEn.data.heroImageAlt}
+          category={featuredEn.data.category}
+          pubDate={featuredEn.data.date}
+          author={featuredEn.data.author}
+          readingTime={readingTime(featuredEn)}
+          lang={featuredEn.data.lang}
         />
       </section>
     )}

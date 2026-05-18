@@ -5,6 +5,7 @@ import ArticleGrid from '../../components/ArticleGrid.astro';
 import ArticleControls from '../../components/ArticleControls.astro';
 import Divider from '../../components/Divider.astro';
 import { siteHref } from '../../utils/slug';
+import { CATEGORIES } from '../../data/categories';
 
 export async function getStaticPaths() {
   const PAGE_SIZE = 18;
@@ -32,22 +33,8 @@ export async function getStaticPaths() {
 
 const { articles, category, total, countNo, countEn, totalPages } = Astro.props;
 
-const categoryLabels: Record<string, string> = {
-  'luftvern':        'Luftvern',
-  'missilforsvar':   'Missilforsvar',
-  'missile-systems': 'Missilsystemer',
-  'procurement':     'Anskaffelser',
-  'anskaffelse':     'Anskaffelse',
-  'policy':          'Forsvarspolitikk',
-  'exercises':       'Øvelser',
-  'history':         'Historie',
-  'analyse':         'Analyse',
-  'analysis':        'Analyse',
-  'teknologi':       'Teknologi',
-  'nato':            'NATO',
-};
-
-const label = categoryLabels[category] ?? category;
+const catMeta = CATEGORIES[category];
+const label = catMeta?.labelNo ?? category;
 
 const subCategoryMap: Record<string, { slug: string; label: string; i18nKey: string }[]> = {
   teknologi: [{ slug: 'directed-energy', label: 'Høyenergivåpen', i18nKey: 'cat.name.directed-energy' }],
@@ -77,6 +64,12 @@ const parentCat = parentCategoryMap[category];
         <p class="article-count" data-count-all={total} data-count-no={countNo} data-count-en={countEn}>
           <span id="page-count-num">{total}</span> <span data-i18n="cat.articles">artikler</span>
         </p>
+        {catMeta?.descNo && (
+          <p class="page-desc" data-article-lang="no">{catMeta.descNo}</p>
+        )}
+        {catMeta?.descEn && (
+          <p class="page-desc" data-article-lang="en">{catMeta.descEn}</p>
+        )}
       </header>
 
       {subCats.length > 0 && (
@@ -141,6 +134,15 @@ const parentCat = parentCategoryMap[category];
     font-size: 0.875rem;
     color: var(--color-muted);
     margin: 0;
+  }
+
+  .page-desc {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--color-muted);
+    max-width: 52rem;
+    margin-top: var(--spacing-md);
   }
 
   .articles-wrapper { padding-block: var(--spacing-xl); }

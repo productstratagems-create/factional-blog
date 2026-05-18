@@ -1,0 +1,177 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Divider from '../../components/Divider.astro';
+import { siteHref } from '../../utils/slug';
+import { CATEGORIES } from '../../data/categories';
+
+const allArticles = await getCollection('articles', (e) => !e.data.draft);
+
+const categoriesData = Object.entries(CATEGORIES).map(([slug, meta]) => {
+  const catArticles = allArticles.filter((a) => a.data.category === slug);
+  return {
+    slug,
+    ...meta,
+    total: catArticles.length,
+    countNo: catArticles.filter((a) => a.data.lang !== 'en').length,
+    countEn: catArticles.filter((a) => a.data.lang === 'en').length,
+  };
+}).filter((c) => c.total > 0);
+---
+
+<BaseLayout
+  title="Kategorier | Norsk Luftvern"
+  description="Utforsk alle kategoriene på Norsk Luftvern — fra luftvern og missilforsvar til teknologi, analyse og anskaffelser."
+>
+  <div class="categories-page container">
+    <header class="page-header">
+      <p class="page-super">
+        <span data-article-lang="no">Kategorier</span>
+        <span data-article-lang="en">Categories</span>
+      </p>
+      <h1 class="page-title">
+        <span data-article-lang="no">Utforsk etter kategori</span>
+        <span data-article-lang="en">Browse by category</span>
+      </h1>
+    </header>
+
+    <Divider spacing="md" />
+
+    <div class="cat-grid">
+      {categoriesData.map((c) => (
+        <a href={siteHref(`/categories/${c.slug}`)} class="cat-card">
+          <span class="cat-card-super" data-i18n="cat.label">Kategori</span>
+          <span class="cat-card-title">
+            <span data-article-lang="no">{c.labelNo}</span>
+            <span data-article-lang="en">{c.labelEn}</span>
+          </span>
+          <span class="cat-card-desc">
+            <span data-article-lang="no">{c.descNo}</span>
+            <span data-article-lang="en">{c.descEn}</span>
+          </span>
+          <span class="cat-card-footer">
+            <span class="cat-card-count">
+              <span data-article-lang="no">{c.countNo} <span data-i18n="cat.articles">artikler</span></span>
+              <span data-article-lang="en">{c.countEn} articles</span>
+            </span>
+            <span class="cat-card-cta">
+              <span data-article-lang="no">Utforsk →</span>
+              <span data-article-lang="en">Explore →</span>
+            </span>
+          </span>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .categories-page {
+    padding-bottom: var(--spacing-3xl);
+  }
+
+  .page-header {
+    padding-block: var(--spacing-2xl) var(--spacing-xl);
+  }
+
+  .page-super {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-teal);
+    margin-bottom: var(--spacing-sm);
+    display: block;
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-heading);
+    line-height: 1;
+  }
+
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 26rem), 1fr));
+    gap: var(--spacing-lg);
+    padding-top: var(--spacing-xl);
+  }
+
+  .cat-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-teal);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    text-decoration: none;
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .cat-card:hover {
+    border-color: var(--color-navy);
+    border-left-color: var(--color-navy);
+    background: var(--color-border);
+  }
+
+  .cat-card-super {
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-teal);
+  }
+
+  .cat-card-title {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-heading);
+    line-height: 1.15;
+  }
+
+  .cat-card-desc {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--color-muted);
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .cat-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .cat-card-count {
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-muted);
+  }
+
+  .cat-card-cta {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-navy);
+  }
+</style>
