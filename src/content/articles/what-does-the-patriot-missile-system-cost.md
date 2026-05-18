@@ -7,7 +7,7 @@ author: "Norsk luftvern"
 lang: en
 draft: false
 series: cost
-heroImage: "/images/img_5412.jpg"
+heroImage: "/images/img_5399.jpg"
 heroImageAlt: "Patriot-ammunisjonslastebil med missiler"
 tags: [patriot]
 
