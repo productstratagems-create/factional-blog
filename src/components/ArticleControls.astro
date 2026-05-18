@@ -24,20 +24,23 @@ const { totalCount } = Astro.props;
     </div>
   </div>
   <div class="controls-right">
-    <div class="view-toggle" role="group" aria-label="Visning">
-      <button class="view-btn" id="view-grid" title="Rutenett" aria-label="Rutenett">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true">
-          <rect x="0" y="0" width="6" height="6" rx="1"/><rect x="8" y="0" width="6" height="6" rx="1"/>
-          <rect x="0" y="8" width="6" height="6" rx="1"/><rect x="8" y="8" width="6" height="6" rx="1"/>
-        </svg>
-      </button>
-      <button class="view-btn" id="view-timeline" title="Tidslinje" aria-label="Tidslinje">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true">
-          <rect x="0" y="1" width="4" height="2" rx="1"/><rect x="6" y="1" width="8" height="2" rx="1"/>
-          <rect x="0" y="6" width="4" height="2" rx="1"/><rect x="6" y="6" width="8" height="2" rx="1"/>
-          <rect x="0" y="11" width="4" height="2" rx="1"/><rect x="6" y="11" width="8" height="2" rx="1"/>
-        </svg>
-      </button>
+    <div class="control-group">
+      <span class="control-label" data-i18n="controls.view">Visning</span>
+      <div class="view-toggle" role="group" aria-label="Visning">
+        <button class="view-btn" id="view-grid" title="Rutenett" aria-label="Rutenett">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true">
+            <rect x="0" y="0" width="6" height="6" rx="1"/><rect x="8" y="0" width="6" height="6" rx="1"/>
+            <rect x="0" y="8" width="6" height="6" rx="1"/><rect x="8" y="8" width="6" height="6" rx="1"/>
+          </svg>
+        </button>
+        <button class="view-btn" id="view-timeline" title="Tidslinje" aria-label="Tidslinje">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true">
+            <rect x="0" y="1" width="4" height="2" rx="1"/><rect x="6" y="1" width="8" height="2" rx="1"/>
+            <rect x="0" y="6" width="4" height="2" rx="1"/><rect x="6" y="6" width="8" height="2" rx="1"/>
+            <rect x="0" y="11" width="4" height="2" rx="1"/><rect x="6" y="11" width="8" height="2" rx="1"/>
+          </svg>
+        </button>
+      </div>
     </div>
     <span class="controls-count" id="article-count">{totalCount} artikler</span>
   </div>
