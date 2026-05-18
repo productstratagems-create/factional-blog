@@ -92,8 +92,9 @@ const { totalCount } = Astro.props;
 
   function applyFilters() {
     const lang = localStorage.getItem('site-lang') || 'all';
+    const view = currentView();
 
-    if (currentView() === 'grid' && grid && sortSel) {
+    if (view === 'grid' && grid && sortSel) {
       const sort = sortSel.value;
       localStorage.setItem('articles-sort', sort);
       const cards = [...grid.querySelectorAll<HTMLElement>('[data-article-lang]')];
@@ -107,11 +108,16 @@ const { totalCount } = Astro.props;
       cards.forEach(c => {
         c.style.display = lang === 'all' || c.dataset.articleLang === lang ? '' : 'none';
       });
-      updateCount(countVisible(grid, lang));
-    } else if (tlEl) {
-      const items = [...tlEl.querySelectorAll<HTMLElement>('[data-article-lang]')];
+      updateCount(cards.filter(c => lang === 'all' || c.dataset.articleLang === lang).length);
+    } else if (view === 'timeline' && tlEl) {
+      const items = [...tlEl.querySelectorAll<HTMLElement>('.tl-item[data-article-lang]')];
       items.forEach(item => {
         item.style.display = lang === 'all' || item.dataset.articleLang === lang ? '' : 'none';
+      });
+      tlEl.querySelectorAll<HTMLElement>('.tl-year-group').forEach(group => {
+        const anyVisible = [...group.querySelectorAll<HTMLElement>('.tl-item')]
+          .some(item => item.style.display !== 'none');
+        group.style.display = anyVisible ? '' : 'none';
       });
       updateCount(items.filter(el => lang === 'all' || el.dataset.articleLang === lang).length);
     }
@@ -137,7 +143,6 @@ const { totalCount } = Astro.props;
         b.classList.toggle('active', b.dataset.lang === lang));
       setActiveLangBtn(lang);
       apply(lang);
-      applyFilters();
     });
   });
 
