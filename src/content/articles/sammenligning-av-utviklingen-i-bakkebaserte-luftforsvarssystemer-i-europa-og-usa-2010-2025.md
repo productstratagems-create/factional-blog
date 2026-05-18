@@ -9,6 +9,7 @@ draft: false
 heroImage: "/images/img_5966-1.jpg"
 heroImageAlt: "Flere sporbaserte luftvernkjøretøy med radarkupler"
 tags: [comparison, europe]
+series: us-europe
 
 ---
 

@@ -9,6 +9,7 @@ draft: false
 heroImage: "/images/img_3410.jpg"
 heroImageAlt: "Stort militært transportfly med jagerfly i formasjon"
 tags: [europe]
+series: us-europe
 
 ---
 
