@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleGrid from '../../components/ArticleGrid.astro';
+import ArticleControls from '../../components/ArticleControls.astro';
 import Divider from '../../components/Divider.astro';
 import { siteHref } from '../../utils/slug';
 
@@ -90,8 +91,10 @@ const parentCat = parentCategoryMap[category];
 
       <Divider spacing="md" />
 
+      <ArticleControls totalCount={articles.length} />
+
       <div class="articles-wrapper">
-        <ArticleGrid articles={articles} columns={3} />
+        <ArticleGrid articles={articles} columns={3} id="article-grid" />
       </div>
 
       {totalPages > 1 && (
@@ -225,7 +228,3 @@ const parentCat = parentCategoryMap[category];
   }
 </style>
 
-<script>
-  import { initPageCount } from '../../scripts/pageCount';
-  initPageCount();
-</script>

@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleGrid from '../../components/ArticleGrid.astro';
+import ArticleControls from '../../components/ArticleControls.astro';
 import Divider from '../../components/Divider.astro';
 import { SERIES } from '../../data/series';
 
@@ -48,8 +49,10 @@ const countEn = articles.filter(a => a.data.lang === 'en').length;
 
     <Divider spacing="md" />
 
+    {articles.length > 1 && <ArticleControls totalCount={articles.length} />}
+
     <div class="series-grid">
-      <ArticleGrid articles={articles} columns={3} />
+      <ArticleGrid articles={articles} columns={3} id="article-grid" />
     </div>
   </div>
 </BaseLayout>
@@ -106,7 +109,3 @@ const countEn = articles.filter(a => a.data.lang === 'en').length;
   }
 </style>
 
-<script>
-  import { initPageCount } from '../../scripts/pageCount';
-  initPageCount();
-</script>
