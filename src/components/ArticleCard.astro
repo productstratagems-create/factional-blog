@@ -17,7 +17,7 @@ interface Props {
   lang?: string;
   featured?: boolean;
   tags?: string[];
-  seriesPosition?: { title: string; part: number; total: number };
+  seriesPosition?: { titleNo: string; titleEn: string; part: number; total: number };
 }
 
 const {
@@ -64,7 +64,8 @@ const {
   <div class="card-body">
     {seriesPosition && (
       <div class="card-series">
-        <span class="card-series-name">{seriesPosition.title}</span>
+        <span class="card-series-name" data-article-lang="no">{seriesPosition.titleNo}</span>
+        <span class="card-series-name" data-article-lang="en">{seriesPosition.titleEn}</span>
         <span class="card-series-sep">·</span>
         <span class="card-series-pos">
           {lang === 'en'

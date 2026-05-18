@@ -14,7 +14,10 @@ const sorted = allArticles.sort(
 
 const seriesCards = Object.entries(SERIES).map(([slug, meta]) => ({
   slug,
-  ...meta,
+  titleNo: meta.titleNo,
+  titleEn: meta.titleEn,
+  descriptionNo: meta.descriptionNo,
+  descriptionEn: meta.descriptionEn,
   count: allArticles.filter((a) => a.data.series === slug).length,
 })).filter((s) => s.count > 0);
 
@@ -87,8 +90,14 @@ function readingTime(a: (typeof sorted)[0]) {
           {seriesCards.map((s) => (
             <a href={siteHref(`/serier/${s.slug}`)} class="series-card">
               <span class="series-card-super" data-i18n="series.label">Serie</span>
-              <span class="series-card-title">{s.title}</span>
-              <span class="series-card-desc">{s.description}</span>
+              <span class="series-card-title">
+                <span data-article-lang="no">{s.titleNo}</span>
+                <span data-article-lang="en">{s.titleEn}</span>
+              </span>
+              <span class="series-card-desc">
+                <span data-article-lang="no">{s.descriptionNo}</span>
+                <span data-article-lang="en">{s.descriptionEn}</span>
+              </span>
               <span class="series-card-footer">
                 <span class="series-card-count">{s.count} <span data-i18n="series.parts">deler</span></span>
                 <span class="series-card-cta" data-i18n="series.explore">Utforsk →</span>

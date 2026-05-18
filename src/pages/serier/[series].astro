@@ -28,20 +28,24 @@ export async function getStaticPaths() {
 
 const { series } = Astro.params;
 const { articles } = Astro.props;
-const meta = SERIES[series] ?? { title: series, description: '' };
+const meta = SERIES[series] ?? { titleNo: series, titleEn: series, descriptionNo: '', descriptionEn: '' };
 const countNo = articles.filter(a => a.data.lang !== 'en').length;
 const countEn = articles.filter(a => a.data.lang === 'en').length;
 ---
 
 <BaseLayout
-  title={`${meta.title} | Norsk Luftvern`}
-  description={meta.description}
+  title={`${meta.titleNo} | Norsk Luftvern`}
+  description={meta.descriptionNo}
 >
   <div class="series-page container">
     <header class="page-header">
       <p class="page-super" data-i18n="series.label">Serie</p>
-      <h1 class="page-title">{meta.title}</h1>
-      {meta.description && <p class="page-desc">{meta.description}</p>}
+      <h1 class="page-title">
+        <span data-article-lang="no">{meta.titleNo}</span>
+        <span data-article-lang="en">{meta.titleEn}</span>
+      </h1>
+      {meta.descriptionNo && <p class="page-desc" data-article-lang="no">{meta.descriptionNo}</p>}
+      {meta.descriptionEn && <p class="page-desc" data-article-lang="en">{meta.descriptionEn}</p>}
       <p class="page-count" data-count-all={articles.length} data-count-no={countNo} data-count-en={countEn}>
         <span id="page-count-num">{articles.length}</span> <span data-i18n="series.parts">deler</span>
       </p>

@@ -8,8 +8,8 @@ author: "Norsk luftvern"
 lang: en
 draft: false
 series: us-europe
-heroImage: "/images/img_9409.jpg"
-heroImageAlt: "Comparison table for M-SHORAD and Skyranger 30 short-range air defense systems"
+heroImage: "/images/IMG_9735.jpeg"
+heroImageAlt: "M-SHORAD SGT Stout Stryker air defense vehicle on patrol in Europe"
 ---
 
 *Critical Cost Analysis of* U.S. and European SHORAD systems.

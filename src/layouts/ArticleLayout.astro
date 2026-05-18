@@ -89,7 +89,7 @@ if (series) {
           {series && seriesCount > 0 && (
             <SeriesBanner
               seriesSlug={series}
-              seriesLabel={SERIES[series]?.title ?? series}
+              seriesLabel={lang === 'en' ? (SERIES[series]?.titleEn ?? series) : (SERIES[series]?.titleNo ?? series)}
               totalCount={seriesCount}
               currentPosition={seriesPosition}
             />
@@ -129,7 +129,7 @@ if (series) {
           {(seriesPrev || seriesNext) && (
             <nav class="series-nav" aria-label="Serie-navigasjon">
               <p class="series-nav-label">
-                <span data-i18n="series.label">Serie</span>: {SERIES[series!]?.title ?? series}
+                <span data-i18n="series.label">Serie</span>: {lang === 'en' ? (SERIES[series!]?.titleEn ?? series) : (SERIES[series!]?.titleNo ?? series)}
               </p>
               <div class="series-nav-inner">
                 {seriesPrev ? (

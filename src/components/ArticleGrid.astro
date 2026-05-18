@@ -37,7 +37,7 @@ for (const a of allArticles.sort((a, b) => a.data.date.getTime() - b.data.date.g
       const articleLang = article.data.lang === 'en' ? 'en' : 'no';
       const seriesIds = s ? (articleLang === 'en' ? seriesMapEn : seriesMapNo).get(s) : undefined;
       const seriesPosition = seriesIds
-        ? { title: SERIES[s!]?.title ?? s!, part: seriesIds.indexOf(article.id) + 1, total: seriesIds.length }
+        ? { titleNo: SERIES[s!]?.titleNo ?? s!, titleEn: SERIES[s!]?.titleEn ?? s!, part: seriesIds.indexOf(article.id) + 1, total: seriesIds.length }
         : undefined;
 
       return (
