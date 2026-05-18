@@ -1,0 +1,206 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import CategoryBadge from './CategoryBadge.astro';
+import { articleHref } from '../utils/slug';
+import { SERIES } from '../data/series';
+
+interface Props {
+  articles: CollectionEntry<'articles'>[];
+}
+
+const { articles } = Astro.props;
+
+// Group by year, newest year first; newest article first within each year
+const byYear = new Map<number, CollectionEntry<'articles'>[]>();
+for (const a of articles) {
+  const y = a.data.date.getFullYear();
+  if (!byYear.has(y)) byYear.set(y, []);
+  byYear.get(y)!.push(a);
+}
+const years = [...byYear.entries()]
+  .sort((a, b) => b[0] - a[0])
+  .map(([year, arts]) => [year, arts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime())] as const);
+
+function dayMonth(d: Date, lang: string) {
+  const locale = lang === 'en' ? 'en-GB' : 'no-NO';
+  return new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'short' }).format(d);
+}
+---
+
+<div id="article-timeline" class="article-timeline" hidden>
+  {years.map(([year, arts]) => (
+    <div class="tl-year-group">
+      <div class="tl-year-label">{year}</div>
+      <ol class="tl-items">
+        {arts.map(article => {
+          const wordCount = article.body?.split(/\s+/).length ?? 0;
+          const readingTime = article.data.readingTimeMinutes ?? Math.max(1, Math.ceil(wordCount / 200));
+          const seriesTitle = article.data.series ? (SERIES[article.data.series]?.title ?? null) : null;
+          return (
+            <li
+              class="tl-item"
+              data-article-lang={article.data.lang}
+              data-article-date={article.data.date.getTime().toString()}
+            >
+              <time class="tl-date" datetime={article.data.date.toISOString()}>
+                {dayMonth(article.data.date, article.data.lang ?? 'no')}
+              </time>
+              <div class="tl-body">
+                {seriesTitle && <span class="tl-series">{seriesTitle}</span>}
+                <h3 class="tl-title">
+                  <a href={articleHref(article.id)}>{article.data.title}</a>
+                </h3>
+                <p class="tl-excerpt">{article.data.excerpt}</p>
+                <div class="tl-meta">
+                  <CategoryBadge category={article.data.category} />
+                  <span class="tl-reading">{readingTime} min</span>
+                </div>
+              </div>
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  ))}
+</div>
+
+<style>
+  .article-timeline {
+    padding-block: var(--spacing-xl);
+  }
+
+  .tl-year-group {
+    display: grid;
+    grid-template-columns: 3.5rem 1fr;
+    gap: 0 var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .tl-year-label {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--color-heading);
+    text-align: right;
+    padding-top: 0.9rem;
+    position: sticky;
+    top: 4.5rem;
+    align-self: start;
+    letter-spacing: 0.02em;
+  }
+
+  .tl-items {
+    border-left: 2px solid var(--color-border);
+    padding-left: var(--spacing-lg);
+    list-style: none;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .tl-item {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    gap: 0 var(--spacing-md);
+    padding-block: var(--spacing-md);
+    border-bottom: 1px solid var(--color-border);
+    transition: background 0.1s;
+  }
+
+  .tl-item:last-child { border-bottom: none; }
+
+  .tl-date {
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-muted);
+    text-align: right;
+    padding-top: 0.25em;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+
+  .tl-body { min-width: 0; }
+
+  .tl-series {
+    display: block;
+    font-family: var(--font-ui);
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-teal);
+    margin-bottom: 0.2em;
+  }
+
+  .tl-title {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--color-heading);
+    margin: 0 0 0.3em;
+    line-height: 1.2;
+  }
+
+  .tl-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .tl-title a:hover { color: var(--color-navy); }
+
+  .tl-excerpt {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: var(--color-muted);
+    margin: 0 0 var(--spacing-sm);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .tl-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+
+  .tl-reading {
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    color: var(--color-muted);
+  }
+
+  /* Respect global language filter — same pattern as article cards */
+  :global(html[data-lang-filter="en"]) .tl-item[data-article-lang="no"] { display: none; }
+  :global(html[data-lang-filter="no"]) .tl-item[data-article-lang="en"] { display: none; }
+
+  @media (max-width: 600px) {
+    .tl-year-group {
+      grid-template-columns: 1fr;
+    }
+
+    .tl-year-label {
+      text-align: left;
+      position: static;
+      border-bottom: 2px solid var(--color-border);
+      padding-bottom: var(--spacing-sm);
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .tl-items {
+      border-left: none;
+      padding-left: 0;
+    }
+
+    .tl-item {
+      grid-template-columns: 2.5rem 1fr;
+    }
+  }
+</style>

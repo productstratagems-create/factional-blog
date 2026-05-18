@@ -7,7 +7,7 @@ const { totalCount } = Astro.props;
 
 <div class="article-controls">
   <div class="controls-left">
-    <div class="control-group">
+    <div class="control-group" id="sort-control-group">
       <label class="control-label" for="sort-select" data-i18n="controls.sort">Sort</label>
       <select id="sort-select" class="sort-select">
         <option value="date-desc" data-i18n="controls.newest">Newest first</option>
@@ -23,15 +23,36 @@ const { totalCount } = Astro.props;
       </div>
     </div>
   </div>
-  <span class="controls-count" id="article-count">{totalCount} artikler</span>
+  <div class="controls-right">
+    <div class="view-toggle" role="group" aria-label="Visning">
+      <button class="view-btn" id="view-grid" title="Rutenett" aria-label="Rutenett">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true">
+          <rect x="0" y="0" width="6" height="6" rx="1"/><rect x="8" y="0" width="6" height="6" rx="1"/>
+          <rect x="0" y="8" width="6" height="6" rx="1"/><rect x="8" y="8" width="6" height="6" rx="1"/>
+        </svg>
+      </button>
+      <button class="view-btn" id="view-timeline" title="Tidslinje" aria-label="Tidslinje">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true">
+          <rect x="0" y="1" width="4" height="2" rx="1"/><rect x="6" y="1" width="8" height="2" rx="1"/>
+          <rect x="0" y="6" width="4" height="2" rx="1"/><rect x="6" y="6" width="8" height="2" rx="1"/>
+          <rect x="0" y="11" width="4" height="2" rx="1"/><rect x="6" y="11" width="8" height="2" rx="1"/>
+        </svg>
+      </button>
+    </div>
+    <span class="controls-count" id="article-count">{totalCount} artikler</span>
+  </div>
 </div>
 
 <script>
   import { apply } from '../scripts/i18n';
 
-  const grid = document.getElementById('article-grid');
+  const grid    = document.getElementById('article-grid');
+  const tlEl    = document.getElementById('article-timeline');
   const countEl = document.getElementById('article-count');
   const sortSel = document.getElementById('sort-select') as HTMLSelectElement | null;
+  const sortGroup = document.getElementById('sort-control-group');
+  const gridBtn = document.getElementById('view-grid');
+  const tlBtn   = document.getElementById('view-timeline');
   const langBtns = [...document.querySelectorAll<HTMLElement>('.controls-lang-btn')];
 
   let uiLang: 'no' | 'en' = 'no';
@@ -47,39 +68,57 @@ const { totalCount } = Astro.props;
       : `${n} artikler`;
   }
 
+  function countVisible(container: HTMLElement | null, lang: string) {
+    if (!container) return 0;
+    return [...container.querySelectorAll<HTMLElement>('[data-article-lang]')]
+      .filter(el => lang === 'all' || el.dataset.articleLang === lang).length;
+  }
+
+  function currentView(): 'grid' | 'timeline' {
+    return (localStorage.getItem('articles-view') ?? 'grid') as 'grid' | 'timeline';
+  }
+
+  function setView(mode: 'grid' | 'timeline') {
+    localStorage.setItem('articles-view', mode);
+    gridBtn?.classList.toggle('active', mode === 'grid');
+    tlBtn?.classList.toggle('active', mode === 'timeline');
+    if (grid)     grid.hidden   = mode === 'timeline';
+    if (tlEl)     tlEl.hidden   = mode === 'grid';
+    if (sortGroup) sortGroup.hidden = mode === 'timeline';
+  }
+
   function applyFilters() {
-    if (!grid || !sortSel) return;
-    const sort = sortSel.value;
     const lang = localStorage.getItem('site-lang') || 'all';
-    localStorage.setItem('articles-sort', sort);
 
-    const cards = [...grid.querySelectorAll<HTMLElement>('[data-article-lang]')];
-
-    cards
-      .sort((a, b) => {
-        const da = +(a.dataset.articleDate ?? 0);
-        const db = +(b.dataset.articleDate ?? 0);
-        return sort === 'date-asc' ? da - db : db - da;
-      })
-      .forEach(c => grid.appendChild(c));
-
-    let visible = 0;
-    cards.forEach(c => {
-      const show = lang === 'all' || c.dataset.articleLang === lang;
-      c.style.display = show ? '' : 'none';
-      if (show) visible++;
-    });
-
-    updateCount(visible);
+    if (currentView() === 'grid' && grid && sortSel) {
+      const sort = sortSel.value;
+      localStorage.setItem('articles-sort', sort);
+      const cards = [...grid.querySelectorAll<HTMLElement>('[data-article-lang]')];
+      cards
+        .sort((a, b) => {
+          const da = +(a.dataset.articleDate ?? 0);
+          const db = +(b.dataset.articleDate ?? 0);
+          return sort === 'date-asc' ? da - db : db - da;
+        })
+        .forEach(c => grid.appendChild(c));
+      cards.forEach(c => {
+        c.style.display = lang === 'all' || c.dataset.articleLang === lang ? '' : 'none';
+      });
+      updateCount(countVisible(grid, lang));
+    } else {
+      updateCount(countVisible(tlEl, lang));
+    }
   }
 
   // Restore saved preferences
   const savedSort = localStorage.getItem('articles-sort') || 'date-desc';
   if (sortSel) sortSel.value = savedSort;
   setActiveLangBtn(localStorage.getItem('site-lang') || 'all');
-
+  setView(currentView());
   applyFilters();
 
+  gridBtn?.addEventListener('click', () => { setView('grid'); applyFilters(); });
+  tlBtn?.addEventListener('click',   () => { setView('timeline'); applyFilters(); });
   sortSel?.addEventListener('change', applyFilters);
 
   langBtns.forEach(btn => {
@@ -87,7 +126,6 @@ const { totalCount } = Astro.props;
       const lang = btn.dataset.lang ?? 'all';
       document.documentElement.setAttribute('data-lang-filter', lang);
       localStorage.setItem('site-lang', lang);
-      // Sync header LangToggle buttons
       document.querySelectorAll<HTMLElement>('.lt-btn').forEach(b =>
         b.classList.toggle('active', b.dataset.lang === lang));
       setActiveLangBtn(lang);
@@ -96,7 +134,6 @@ const { totalCount } = Astro.props;
     });
   });
 
-  // Sync when header LangToggle changes language
   document.addEventListener('i18n:change', (e) => {
     uiLang = (e as CustomEvent<'no' | 'en'>).detail ?? 'no';
     setActiveLangBtn(localStorage.getItem('site-lang') || 'all');
@@ -188,11 +225,47 @@ const { totalCount } = Astro.props;
     color: var(--color-heading);
   }
 
+  .controls-right {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+
   .controls-count {
     font-family: var(--font-ui);
     font-size: 0.75rem;
     color: var(--color-muted);
     white-space: nowrap;
+  }
+
+  .view-toggle {
+    display: inline-flex;
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+  }
+
+  .view-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: transparent;
+    color: var(--color-muted);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .view-btn.active {
+    background: var(--color-navy);
+    color: #fff;
+  }
+
+  .view-btn:hover:not(.active) {
+    background: var(--color-bg);
+    color: var(--color-heading);
   }
 
   @media (max-width: 480px) {

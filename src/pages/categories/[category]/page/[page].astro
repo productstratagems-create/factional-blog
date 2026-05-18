@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import ArticleGrid from '../../../../components/ArticleGrid.astro';
+import ArticleTimeline from '../../../../components/ArticleTimeline.astro';
 import ArticleControls from '../../../../components/ArticleControls.astro';
 import Divider from '../../../../components/Divider.astro';
 import { siteHref } from '../../../../utils/slug';
@@ -89,6 +90,7 @@ const nextHref = pageNum < totalPages ? siteHref(`/categories/${category}/page/$
 
       <div class="articles-wrapper">
         <ArticleGrid articles={articles} columns={3} id="article-grid" />
+        <ArticleTimeline articles={articles} />
       </div>
 
       <nav class="pagination" aria-label="Sidenavigasjon">
