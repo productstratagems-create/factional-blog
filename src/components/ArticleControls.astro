@@ -17,7 +17,6 @@ const { totalCount } = Astro.props;
     <div class="control-group">
       <span class="control-label" data-i18n="controls.lang">Language</span>
       <div class="lang-filter-group" role="group">
-        <button class="controls-lang-btn" data-lang="all" data-i18n="controls.all">All</button>
         <button class="controls-lang-btn" data-lang="no">NO</button>
         <button class="controls-lang-btn" data-lang="en">EN</button>
       </div>
@@ -38,6 +37,10 @@ const { totalCount } = Astro.props;
 
   let uiLang: 'no' | 'en' = 'no';
 
+  function getLang(): 'no' | 'en' {
+    return localStorage.getItem('site-lang') === 'en' ? 'en' : 'no';
+  }
+
   function setActiveLangBtn(lang: string) {
     langBtns.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
   }
@@ -50,7 +53,7 @@ const { totalCount } = Astro.props;
   }
 
   function applyFilters() {
-    const lang = localStorage.getItem('site-lang') || 'all';
+    const lang = getLang();
     if (!grid || !sortSel) return;
 
     const sort = sortSel.value;
@@ -64,22 +67,22 @@ const { totalCount } = Astro.props;
       })
       .forEach(c => grid.appendChild(c));
     cards.forEach(c => {
-      c.style.display = lang === 'all' || c.dataset.articleLang === lang ? '' : 'none';
+      c.style.display = c.dataset.articleLang === lang ? '' : 'none';
     });
-    updateCount(cards.filter(c => lang === 'all' || c.dataset.articleLang === lang).length);
+    updateCount(cards.filter(c => c.dataset.articleLang === lang).length);
   }
 
   // Restore saved preferences
   const savedSort = localStorage.getItem('articles-sort') || 'date-desc';
   if (sortSel) sortSel.value = savedSort;
-  setActiveLangBtn(localStorage.getItem('site-lang') || 'all');
+  setActiveLangBtn(getLang());
   applyFilters();
 
   sortSel?.addEventListener('change', applyFilters);
 
   langBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      const lang = btn.dataset.lang ?? 'all';
+      const lang = btn.dataset.lang === 'en' ? 'en' : 'no';
       document.documentElement.setAttribute('data-lang-filter', lang);
       localStorage.setItem('site-lang', lang);
       document.querySelectorAll<HTMLElement>('.lt-btn').forEach(b =>
@@ -91,7 +94,7 @@ const { totalCount } = Astro.props;
 
   document.addEventListener('i18n:change', (e) => {
     uiLang = (e as CustomEvent<'no' | 'en'>).detail ?? 'no';
-    setActiveLangBtn(localStorage.getItem('site-lang') || 'all');
+    setActiveLangBtn(getLang());
     applyFilters();
   });
 </script>

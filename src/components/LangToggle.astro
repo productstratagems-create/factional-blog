@@ -1,6 +1,5 @@
 <div class="lang-toggle" role="group" aria-label="Språkfilter">
   <button class="lt-btn" data-lang="no">NO</button>
-  <button class="lt-btn" data-lang="all">ALL</button>
   <button class="lt-btn" data-lang="en">EN</button>
 </div>
 
@@ -9,16 +8,21 @@
 
   const KEY = 'site-lang';
 
-  function applyLang(lang: string) {
-    document.documentElement.setAttribute('data-lang-filter', lang);
-    localStorage.setItem(KEY, lang);
-    document.querySelectorAll('.lt-btn').forEach((btn) => {
-      btn.classList.toggle('active', (btn as HTMLElement).dataset.lang === lang);
-    });
-    apply(lang);
+  function normLang(l: string | null): 'no' | 'en' {
+    return l === 'en' ? 'en' : 'no';
   }
 
-  applyLang(localStorage.getItem(KEY) || 'all');
+  function applyLang(lang: string) {
+    const l = normLang(lang);
+    document.documentElement.setAttribute('data-lang-filter', l);
+    localStorage.setItem(KEY, l);
+    document.querySelectorAll('.lt-btn').forEach((btn) => {
+      btn.classList.toggle('active', (btn as HTMLElement).dataset.lang === l);
+    });
+    apply(l);
+  }
+
+  applyLang(localStorage.getItem(KEY));
 
   // Delegate from document so all instances (desktop + mobile dropdown) respond
   document.addEventListener('click', (e) => {
