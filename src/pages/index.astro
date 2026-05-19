@@ -12,14 +12,18 @@ const sorted = allArticles.sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime()
 );
 
-const seriesCards = Object.entries(SERIES).map(([slug, meta]) => ({
-  slug,
-  titleNo: meta.titleNo,
-  titleEn: meta.titleEn,
-  descriptionNo: meta.descriptionNo,
-  descriptionEn: meta.descriptionEn,
-  count: allArticles.filter((a) => a.data.series === slug).length,
-})).filter((s) => s.count > 0);
+const seriesCards = Object.entries(SERIES).map(([slug, meta]) => {
+  const inSeries = allArticles.filter((a) => a.data.series === slug);
+  return {
+    slug,
+    titleNo: meta.titleNo,
+    titleEn: meta.titleEn,
+    descriptionNo: meta.descriptionNo,
+    descriptionEn: meta.descriptionEn,
+    countNo: inSeries.filter((a) => a.data.lang !== 'en').length,
+    countEn: inSeries.filter((a) => a.data.lang === 'en').length,
+  };
+}).filter((s) => s.countNo + s.countEn > 0);
 
 const featuredNo = sorted.find((a) => a.data.featured && a.data.lang !== 'en')
   ?? sorted.find((a) => a.data.lang !== 'en') ?? sorted[0];
@@ -99,7 +103,11 @@ function readingTime(a: (typeof sorted)[0]) {
                 <span data-article-lang="en">{s.descriptionEn}</span>
               </span>
               <span class="series-card-footer">
-                <span class="series-card-count">{s.count} <span data-i18n="series.parts">deler</span></span>
+                <span class="series-card-count">
+                  <span data-article-lang="no">{s.countNo}</span>
+                  <span data-article-lang="en">{s.countEn}</span>
+                  {' '}<span data-i18n="series.parts">deler</span>
+                </span>
                 <span class="series-card-cta" data-i18n="series.explore">Utforsk →</span>
               </span>
             </a>

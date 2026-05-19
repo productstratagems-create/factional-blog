@@ -7,14 +7,18 @@ import { SERIES } from '../../data/series';
 
 const allArticles = await getCollection('articles', (e) => !e.data.draft);
 
-const seriesData = Object.entries(SERIES).map(([slug, meta]) => ({
-  slug,
-  titleNo: meta.titleNo,
-  titleEn: meta.titleEn,
-  descriptionNo: meta.descriptionNo,
-  descriptionEn: meta.descriptionEn,
-  count: allArticles.filter((a) => a.data.series === slug).length,
-})).filter((s) => s.count > 0);
+const seriesData = Object.entries(SERIES).map(([slug, meta]) => {
+  const inSeries = allArticles.filter((a) => a.data.series === slug);
+  return {
+    slug,
+    titleNo: meta.titleNo,
+    titleEn: meta.titleEn,
+    descriptionNo: meta.descriptionNo,
+    descriptionEn: meta.descriptionEn,
+    countNo: inSeries.filter((a) => a.data.lang !== 'en').length,
+    countEn: inSeries.filter((a) => a.data.lang === 'en').length,
+  };
+}).filter((s) => s.countNo + s.countEn > 0);
 ---
 
 <BaseLayout
@@ -43,7 +47,9 @@ const seriesData = Object.entries(SERIES).map(([slug, meta]) => ({
           </span>
           <span class="series-card-footer">
             <span class="series-card-count">
-              {s.count} <span data-i18n="series.parts">deler</span>
+              <span data-article-lang="no">{s.countNo}</span>
+              <span data-article-lang="en">{s.countEn}</span>
+              {' '}<span data-i18n="series.parts">deler</span>
             </span>
             <span class="series-card-cta" data-i18n="series.explore">Utforsk →</span>
           </span>

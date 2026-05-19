@@ -10,13 +10,17 @@ import { SERIES } from '../../data/series';
 const allArticles = await getCollection('articles', (e) => !e.data.draft);
 const sorted = allArticles.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
-const seriesMap = new Map<string, number>();
+const seriesMap = new Map<string, { no: number; en: number }>();
 for (const a of sorted) {
-  if (a.data.series) seriesMap.set(a.data.series, (seriesMap.get(a.data.series) ?? 0) + 1);
+  if (a.data.series) {
+    const cur = seriesMap.get(a.data.series) ?? { no: 0, en: 0 };
+    if (a.data.lang === 'en') cur.en++; else cur.no++;
+    seriesMap.set(a.data.series, cur);
+  }
 }
 const seriesList = [...seriesMap.entries()]
   .filter(([slug]) => slug in SERIES)
-  .sort((a, b) => b[1] - a[1]);
+  .sort((a, b) => (b[1].no + b[1].en) - (a[1].no + a[1].en));
 ---
 
 <BaseLayout
@@ -44,7 +48,11 @@ const seriesList = [...seriesMap.entries()]
           <span data-article-lang="no">{SERIES[slug].descriptionNo}</span>
           <span data-article-lang="en">{SERIES[slug].descriptionEn}</span>
         </span>
-        <span class="series-spotlight-cta"><span data-i18n="series.view-all">Se alle</span> {count} <span data-i18n="series.parts">deler</span> →</span>
+        <span class="series-spotlight-cta">
+          <span data-i18n="series.view-all">Se alle</span>
+          {' '}<span data-article-lang="no">{count.no}</span><span data-article-lang="en">{count.en}</span>{' '}
+          <span data-i18n="series.parts">deler</span> →
+        </span>
       </a>
     ))}
 
