@@ -30,6 +30,7 @@ const searchIndex = articles
       date:      entry.data.date.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' }),
       firstPara: firstPara.slice(0, 250),
       body:      plain.slice(0, 500),
+      lang:      entry.data.lang ?? 'no',
     };
   });
 ---
@@ -268,7 +269,8 @@ const searchIndex = articles
   // ── Render ───────────────────────────────────────────────────
 
   function renderIdle() {
-    status.textContent = SEARCH_T[sl()].among(searchIndex.length);
+    const langCount = searchIndex.filter(a => a.lang === sl()).length;
+    status.textContent = SEARCH_T[sl()].among(langCount);
     input.removeAttribute('aria-activedescendant');
     listbox.removeAttribute('data-has-results');
     listbox.innerHTML = '';
@@ -281,8 +283,10 @@ const searchIndex = articles
 
     if (!q) { renderIdle(); return; }
 
+    const activeLang = sl();
     // Rank: title match (3) > first-paragraph match (2) > body match (1)
     const scored = searchIndex
+      .filter(a => a.lang === activeLang)
       .map(a => {
         const score = a.title.toLowerCase().includes(ql) ? 3
           : a.firstPara.toLowerCase().includes(ql)       ? 2
