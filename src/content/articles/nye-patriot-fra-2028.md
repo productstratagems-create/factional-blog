@@ -4,7 +4,7 @@ date: 2017-06-23
 excerpt: "Oppdatering 3. april 2025: Raytheon, som bygger den nye radaren til Patriot (som har det lite klinkende «navnet» LTAMDS) holder tidsplanen frem mot 2028. Radaren skal «doble kapasiteten og gi 360° dekning» sammenlignet…"
 category: missilforsvar
 author: "Norsk luftvern"
-lang: en
+lang: no
 draft: false
 heroImage: "/images/49ddcdcf-3e86-4fc1-bd47-8095ac35e1f5.jpeg"
 heroImageAlt: "Patriot missile launcher deployed in desert"
