@@ -58,7 +58,7 @@ const { totalCount } = Astro.props;
 
     const sort = sortSel.value;
     localStorage.setItem('articles-sort', sort);
-    const cards = [...grid.querySelectorAll<HTMLElement>('[data-article-lang]')];
+    const cards = [...grid.querySelectorAll<HTMLElement>(':scope > [data-article-lang]')];
     cards
       .sort((a, b) => {
         const da = +(a.dataset.articleDate ?? 0);
