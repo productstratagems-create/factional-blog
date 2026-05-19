@@ -30,7 +30,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          SITE: https://productstratagems-create.github.io/factional-blog
+          SITE: https://norskluftvern.no
 
       - uses: actions/upload-pages-artifact@v3
         with:
