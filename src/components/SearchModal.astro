@@ -707,7 +707,7 @@ const tagCloud = [...tagMap.entries()]
     gap: 0.35rem;
   }
 
-  .search-idle-tag {
+  :global(.search-idle-tag) {
     font-family: var(--font-ui);
     font-size: 0.72rem;
     font-weight: 600;
@@ -720,7 +720,7 @@ const tagCloud = [...tagMap.entries()]
     transition: background 0.12s, color 0.12s;
   }
 
-  .search-idle-tag:hover {
+  :global(.search-idle-tag:hover) {
     background: var(--color-navy);
     color: var(--color-bg);
   }
