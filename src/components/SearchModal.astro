@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import { articleHref } from '../utils/slug';
+import { articleHref, siteHref } from '../utils/slug';
 
 // Strip markdown syntax to plain searchable text
 function extractText(raw = '') {
@@ -33,6 +33,23 @@ const searchIndex = articles
       lang:      entry.data.lang ?? 'no',
     };
   });
+
+const tagMap = new Map<string, { no: number; en: number }>();
+for (const entry of articles) {
+  for (const tag of entry.data.tags ?? []) {
+    const cur = tagMap.get(tag) ?? { no: 0, en: 0 };
+    if (entry.data.lang === 'en') cur.en++; else cur.no++;
+    tagMap.set(tag, cur);
+  }
+}
+const tagCloud = [...tagMap.entries()]
+  .map(([tag, counts]) => ({
+    tag,
+    href: siteHref(`/tags/${tag}`),
+    no: counts.no,
+    en: counts.en,
+  }))
+  .filter(t => t.no + t.en > 0);
 ---
 
 <dialog class="search-dialog" id="search-dialog" aria-label="Søk i artikler">
@@ -62,6 +79,11 @@ const searchIndex = articles
       </button>
     </div>
 
+    <div id="search-idle-cloud" class="search-idle-cloud" hidden>
+      <p class="search-idle-label" data-i18n="tags.label">Stikkord</p>
+      <div class="search-idle-tags" role="list"></div>
+    </div>
+
     <ul class="search-listbox" id="search-listbox" role="listbox" aria-label="Søkeresultater"></ul>
 
     <div class="search-footer">
@@ -78,7 +100,7 @@ const searchIndex = articles
   </div>
 </dialog>
 
-<script define:vars={{ searchIndex }}>
+<script define:vars={{ searchIndex, tagCloud }}>
   const SEARCH_T = {
     no: {
       among:   (n) => `Søk blant ${n} artikler`,
@@ -135,6 +157,7 @@ const searchIndex = articles
   dialog.addEventListener('click', e => { if (e.target === dialog) closeSearch(); });
   dialog.addEventListener('cancel', e => { e.preventDefault(); closeSearch(); });
   closeBtn.addEventListener('click', closeSearch);
+  document.getElementById('search-idle-cloud')?.addEventListener('click', closeSearch);
 
   document.querySelectorAll('.search-btn').forEach(btn =>
     btn.addEventListener('click', () => openSearch(btn))
@@ -269,11 +292,31 @@ const searchIndex = articles
   // ── Render ───────────────────────────────────────────────────
 
   function renderIdle() {
-    const langCount = searchIndex.filter(a => a.lang === sl()).length;
-    status.textContent = SEARCH_T[sl()].among(langCount);
+    const lang = sl();
+    const langCount = searchIndex.filter(a => a.lang === lang).length;
+    status.textContent = SEARCH_T[lang].among(langCount);
     input.removeAttribute('aria-activedescendant');
     listbox.removeAttribute('data-has-results');
     listbox.innerHTML = '';
+
+    const cloud = document.getElementById('search-idle-cloud');
+    const tagsContainer = cloud?.querySelector('.search-idle-tags');
+    if (cloud && tagsContainer) {
+      const topTags = tagCloud
+        .filter(t => lang === 'en' ? t.en > 0 : t.no > 0)
+        .sort((a, b) => lang === 'en' ? b.en - a.en : b.no - a.no)
+        .slice(0, 20);
+      tagsContainer.innerHTML = '';
+      topTags.forEach(t => {
+        const a = document.createElement('a');
+        a.href = t.href;
+        a.textContent = t.tag;
+        a.className = 'search-idle-tag';
+        a.setAttribute('role', 'listitem');
+        tagsContainer.appendChild(a);
+      });
+      cloud.hidden = topTags.length === 0;
+    }
   }
 
   function renderResults(query) {
@@ -282,6 +325,9 @@ const searchIndex = articles
     const ql = q.toLowerCase();
 
     if (!q) { renderIdle(); return; }
+
+    const cloud = document.getElementById('search-idle-cloud');
+    if (cloud) cloud.hidden = true;
 
     const activeLang = sl();
     // Rank: title match (3) > first-paragraph match (2) > body match (1)
@@ -636,5 +682,46 @@ const searchIndex = articles
     padding: 1px 5px;
     background: var(--color-bg);
     color: var(--color-muted);
+  }
+
+  /* ── Tag cloud (idle state) ── */
+  .search-idle-cloud {
+    padding: 0.75rem 1rem 0.6rem;
+    border-bottom: 1px solid var(--color-border);
+    flex-shrink: 0;
+  }
+
+  .search-idle-label {
+    font-family: var(--font-ui);
+    font-size: 0.62rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .search-idle-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .search-idle-tag {
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.18em 0.6em;
+    text-decoration: none;
+    transition: background 0.12s, border-color 0.12s;
+  }
+
+  .search-idle-tag:hover {
+    background: var(--color-border);
+    border-color: var(--color-navy);
   }
 </style>
